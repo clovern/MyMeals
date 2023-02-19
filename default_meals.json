@@ -1,0 +1,789 @@
+[{
+    "meal_name": "blueberry waffles",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "kodiak cakes mix": ["1", "cup(s)"],
+            "eggs": ["1", "unit(s)"],
+            "oil": ["2", "Tbsp"],
+            "milk": [".75", "cup(s)"],
+            "blueberries": [".5", "cup(s)"],
+            "syrup": ["1/4", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "chocolate chip waffles",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "kodiak cakes mix": ["1", "cup(s)"],
+            "eggs": ["1", "unit(s)"],
+            "oil": ["2", "Tbsp"],
+            "milk": [".75", "cup(s)"],
+            "chocolate chips": [".5", "cup(s)"],
+            "syrup": ["1/4", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "cinnamon waffles",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "kodiak cakes mix": ["1", "cup(s)"],
+            "eggs": ["1", "unit(s)"],
+            "oil": ["2", "tbsp(s)"],
+            "milk": [".75", "cup(s)"],
+            "cinnamon": ["1", "Tbsp"],
+            "syrup": ["1/4", "cup"]
+        }
+    ]
+},
+
+{
+    "meal_name": "pancakes with strawberries",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "kodiak cakes mix": ["1", "cup"],
+            "eggs": ["1", "unit"],
+            "milk": [".75", "cup"],
+            "strawberries": ["1", "package"]
+        }
+    ]
+},
+
+{
+    "meal_name": "breakfast sandwich",
+    "meat_type": "pork",
+    "reheats_well": "False",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "onion bagels": ["2", "bagel(s)"],
+            "eggs": ["2", "unit(s)"],
+            "sausage": [".5", "package(s)"],
+            "cheddar cheese": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "breakfast burrito",
+    "meat_type": "pork",
+    "reheats_well": "False",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "tortillas": [".25", "package(s)"],
+            "eggs": ["2", "unit(s)"],
+            "hash browns": [".25", "package(s)"],
+            "cheddar cheese": [".25", "package(s)"], 
+            "green bell peppers": ["1", "uhit(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "biscuits and gravy",
+    "meat_type": "pork",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "biscuits": ["1", "package(s)"],
+            "flour": ["1", "cup(s)"],
+            "sausage": [".5", "package(s)"],
+            "milk": ["2", "cup(s)"]
+        }
+    ]
+}, 
+
+{
+    "meal_name": "fruit and cream oatmeal",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "fruit and cream oatmeal": ["2", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "nutella croissant",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "croissants": ["2", "unit(s)"],
+            "nutella": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "cereal",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "cereal": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "bacon, hash browns, fruit, and eggs",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients": [
+        {
+            "bacon": [".5", "package(s)"],
+            "hash browns": [".25", "package(s)"],
+            "fruit":  [".25", "package(s)"],
+            "eggs": ["2", "unit(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "peanut butter and jelly",
+    "meat_type": "vegan",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "bread": [".25", "loave(s)"],
+            "peanut butter": [".25", "jar(s)"],
+            "jelly":  [".25", "jar(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "margherita pita pizza",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "pitas": [".25", "package(s)"],
+            "tomatoes": ["4", "unit(s)"],
+            "mozzarella cheese":  [".25", "package(s)"],
+            "pizza sauce": [".25", "jar(s)"],
+            "basil leaves": ["20", "unit(s)"],
+            "minced garlic": ["2", "tsp"]
+        }
+    ]
+},
+
+{
+    "meal_name": "italian sub",
+    "meat_type": "pork",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "ham": [".25", "lb(s)"],
+            "salami": [".25", "lb(s)"],
+            "banana peppers":  [".1", "jar(s)"],
+            "iceburg lettuce": [".25", "unit(s)"],
+            "italian dressing": [".1", "package(s)"],
+            "cucumbers": [".5", "unit(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "turkey, apple, cheddar sandwich",
+    "meat_type": "turkey",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "apples": ["1", "unit(s)"],
+            "cheddar cheese slices": [".25", "package(s)"],
+            "turkey":  [".25", "lb(s)"],
+            "red cabbage": [".5", "unit(s)"],
+            "apple cider vinegar": ["1", "tsp(s)"],
+            "honey": ["1", "tsp(s)"],
+            "greek yogurt": ["1", "unit(s)"],
+            "rye bread": [".25", "loave(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "chicken tortilla soup",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "chicken breast": ["1", "lb(s)"],
+            "flour": [".16", "cup(s)"],
+            "olive oil":  ["2", "Tbsp(s)"],
+            "red onions": ["1", "unit(s)"],
+            "carrots": ["2", "unit(s)"],
+            "red bell peppers": ["2", "unit(s)"],
+            "jalapenos": ["1", "unit(s)"],
+            "chicken broth cubes": ["5", "unit(s)"],
+            "fresh cilantro": [".25", "package(s)"],
+            "cumin": ["/25", "tsp(s)"],
+            "salt": [".5", "tsp(s)"],
+            "pepper": [".25", "tsp(s)"],
+            "corn": ["1", "can(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "broccoli cheddar soup",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "butter": ["2", "Tbsp(s)"],
+            "yellow onions": ["1", "unit(s)"],
+            "broccoli crowns":  ["1", "unit(s)"],
+            "carrots": ["1", "package(s)"],
+            "chicken broth cubes": ["4", "unit(s)"],
+            "garlic powder": [".25", "tsp(s)"],
+            "onion powder": [".25", "unit(s)"],
+            "heavy cream": ["1", "cup(s)"],
+            "fresh cilantro": [".25", "package(s)"],
+            "cumin": ["/25", "tsp(s)"],
+            "shredded cheddar cheese": ["1.25", "cup(s)"],
+            "pepper": [".25", "tsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "grilled cheese with tomato basil soup",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "sourdough bread": [".25", "loave(s)"],
+            "cheese": [".25", "package(s)"],
+            "butter":  ["4", "Tbsp(s)"],
+            "tomato basil soup": ["1", "can(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "chicken stir fry",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "rice": ["1", "cup(s)"],
+            "stir fry sauce": [".25", "bottle(s)"],
+            "frozen chicken tenders":  [".25", "package(s)"],
+            "frozen mixed vegetables": [".5", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "barbeque chicken tenders and fries",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "frozen chicken tenders": [".25", "package(s)"],
+            "barbeque sauce": [".25", "bottle(s)"],
+            "frozen french fries":  [".5", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "air fried cauliflower stir fry",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "rice": ["1", "cup(s)"],
+            "stir fry sauce": [".25", "bottle(s)"],
+            "cauliflower crowns":  ["1", "unit(s)"],
+            "eggs": ["2", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "pepperoni pizza bagel",
+    "meat_type": "pork",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "bagels": ["2", "unit(s)"],
+            "pizza sauce": [".25", "jar(s)"],
+            "mozzarella cheese":  [".25", "package(s)"],
+            "pepperonis": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "cream cheese bagel",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients": [
+        {
+            "bagels": ["2", "unit(s)"],
+            "cream cheese": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "spaghetti",
+    "meat_type": "beef",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "spaghetti noodles": [".5", "package(s)"],
+            "spaghetti sauce": [".5", "jar(s)"],
+            "ground beef": [".5", "lb(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "brats and mashed potatoes",
+    "meat_type": "pork",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "brats": ["1", "package(s)"],
+            "hot dog buns": [".5", "package(s)"],
+            "russet potatoes": ["3", "unit(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "bulgogi spring rolls",
+    "meat_type": "beef",
+    "reheats_well": "False",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "rice paper": ["1", "package(s)"],
+            "steak": [".5", "lb(s)"],
+            "green onions": [".5", "package(s)"],
+            "carrots": ["2", "unit(s)"],
+            "habanero peppers": ["2", "unit(s)"],
+            "soy sauce": ["1", "Tbsp(s)"],
+            "oyster sauce": ["1", "Tbsp(s)"],
+            "sugar": ["1", "Tbsp(s)"],
+            "Mirin": ["1", "Tbsp(s)"],
+            "minced garlic": ["1", "Tbsp(s)"],
+            "sesame oil": ["1", "tsp(s)"],
+            "pepper": ["1", "tsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "pecan crusted chicken",
+    "meat_type": "chicken",
+    "reheats_well": "False",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "pecans": [".5", "package(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "hello fresh fry seasoning": ["1", "Tbsp(s)"],
+            "honey": ["2", "tsp(s)"],
+            "dijon mustard": ["2", "tsp(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "chicken breast": ["2", "unit(s)"],
+            "apples": ["1", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
+            "spring mix": [".5", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Date Night Burgers and hash browns",
+    "meat_type": "beef",
+    "reheats_well": "False",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "ground chuck": [".5", "lb(s)"],
+            "burger buns": ["2", "unit(s)"],
+            "goat cheese": ["1", "package(s)"],
+            "poblano peppers": ["1", "unit(s)"],
+            "dates": [".5", "unit(s)"],
+            "hamburger buns": ["2", "unit(s)"],
+            "hash browns": [".5", "package(s)"],
+            "olive oil": ["4", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Brown sugar bourbon apple pork chops",
+    "meat_type": "pork",
+    "reheats_well": "False",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "yukon gold potatoes": [".5", "package(s)"],
+            "green beans": [".5", "package(s)"],
+            "apples": ["1", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "pork chops": ["1.5", "lb(s)"],
+            "McCormick Grill Mates Brown Sugar Bourbon Seasoniong": ["1", "package(s)"],
+            "chicken broth cubes": ["1", "unit(s)"],
+            "sour cream": ["2", "Tbsp(s)"],
+            "olive oil": ["2", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Yellow Coconut Curry with Chickpeas",
+    "meat_type": "vegan",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "Yai's Thai Yellow Thai coconut curry": [".5", "package(s)"],
+            "rice": ["1", "cup(s)"],
+            "chickpeas": ["1", "can(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Lemony Spaghetti with Brussels Sprouts",
+    "meat_type": "vegetarian",
+    "reheats_well": "False",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "chives": [".5", "package(s)"],
+            "brussels sprouts": [".5", "package(s)"],
+            "lemons": ["1", "unit(s)"],
+            "spaghetti": [".5", "package(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "chili flakes": ["1", "tsp(s)"],
+            "cheese roux concentrate": ["1", "unit(s)"],
+            "garlic herb cream cheese": ["2", "Tbsp(s)"],
+            "butter": ["2", "Tbsp(s)"],
+            "parmesan cheese": [".25", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Sweet Corn and Poblano Chowder with Old Bay Toast",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "poblano peppers": ["1", "unit(s)"],
+            "yukon gold potatoes": [".5", "package(s)"],
+            "yellow onion": ["1", "unit(s)"],
+            "corn": ["1", "can(s)"],
+            "flour": ["1", "Tbsp(s)"],
+            "milk": ["3", "cup(s)"],
+            "vegetable broth cube": ["1", "unit(s)"],
+            "old bay seasoning": ["2", "Tbsp(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "french bread": ["1", "unit(s)"],
+            "monterey jack cheese": [".25", "cup(s)"],
+            "sour cream": ["2", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Sweet Corn and Poblano Chowder with Old Bay Toast",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "poblano peppers": ["1", "unit(s)"],
+            "yukon gold potatoes": [".5", "package(s)"],
+            "yellow onion": ["1", "unit(s)"],
+            "corn": ["1", "can(s)"],
+            "flour": ["1", "Tbsp(s)"],
+            "milk": ["3", "cup(s)"],
+            "vegetable broth cube": ["1", "unit(s)"],
+            "old bay seasoning": ["2", "Tbsp(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "french bread": ["1", "unit(s)"],
+            "monterey jack cheese": [".25", "cup(s)"],
+            "sour cream": ["2", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Edamame Stir Fry Noodle Bowl",
+    "meat_type": "vegan",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "limes": ["1", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "carrots": [".25", "package(s)"],
+            "edamame": ["1", "package(s)"],
+            "sweet thai chili sauce": [".1", "package(s)"],
+            "ramen noodles": ["1", "package(s)"],
+            "bok choy": ["1", "unit(s)"],
+            "kikkoman sweet soy glaze": ["4", "Tbsp(s)"],
+            "sesame seeds": ["1", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Honey Hoisin Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "False",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "rice": [".5", "cup(s)"],
+            "green beans": [".5", "package(s)"],
+            "scallions": [".5", "package(s)"],
+            "fresh ginger": ["1", "unit(s)"],
+            "hoisin sauce": ["4", "Tbsp(s)"],
+            "honey": ["2", "tsp(s)"],
+            "sriracha": ["1", "tsp(s)"],
+            "old bay seasoning": ["2", "Tbsp(s)"],
+            "chicken breast": ["2", "unit(s)"],
+            "sesame seeds": ["1", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Honey Miso Broccoli and Sweet Potato Donburi",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "green onions": [".5", "package(s)"],
+            "sweet potatoes": ["1", "unit(s)"],
+            "lime": ["1", "unit(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "miso sauce concentrate": ["1", "unit(s)"],
+            "honey": ["2", "tsp(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "sriracha": ["1", "tsp(s)"],
+            "eggs": ["2", "unit(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Taqueria Chicken Bowls",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "rice": [".5", "cup(s)"],
+            "lime": ["1", "unit(s)"],
+            "corn": ["1", "can(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "hello fresh southwest spice blend": ["1", "Tbsp(s)"],
+            "chicken broth cubes": ["1", "unit(s)"],
+            "monterey jack cheese": [".25", "cup(s)"],
+            "sour cream": ["4", "Tbsp(s)"],
+            "hot sauce": ["1", "tsp(s)"],
+            "cilantro": [".25", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Spicy Peruvian Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "green onions": [".5", "package(s)"],
+            "minced garlic": ["2", "tsp(s)"],
+            "jalapenos": ["1", "unit(s)"],
+            "lime": ["1", "unit(s)"],
+            "tomatoes": ["1", "unit(s)"],
+            "cilantro": [".25", "package(s)"],
+            "hello fresh fajita spice blend": ["1", "Tbsp(s)"],
+            "chicken broth cubes": ["1", "unit(s)"],
+            "rice": [".5", "cup(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "sour cream": ["2", "Tbsp(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Firecracker Meatballs",
+    "meat_type": "beef",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "green onions": [".5", "package(s)"],
+            "fresh ginger": ["1", "unit(s)"],
+            "honey": ["2", "tsp(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "sour cream": ["2", "Tbsp(s)"],
+            "ponzu sauce": [".25", "bottle(s)"],
+            "sriracha": ["1", "tsp(s)"],
+            "rice": [".5", "cup(s)"],
+            "ground beef": [".75", "lb(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "green beans": [".5", "package(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Pork Sausage and Bell Pepper Risotto",
+    "meat_type": "pork",
+    "reheats_well": "True",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "green onions": [".5", "package(s)"],
+            "minced garlic": ["1", "tsp(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "chicken broth cubes": ["2", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
+            "breakfast sausage": ["1", "packages(s)"],
+            "italian seasoning": ["1", "Tbsp(s)"],
+            "rice": [".75", "cup(s)"],
+            "parmesan cheese": [".25", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Chicken Sausage spaghetti Bolognese",
+    "meat_type": "chicken",
+    "reheats_well": "True",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "zuchhini": ["1", "unit(s)"],
+            "italian seasoning": ["1", "Tbsp(s)"],
+            "italian chicken sausage": ["9", "oz(s)"],
+            "spaghetti noodles": [".5", "package(s)"],
+            "tomato sauce": ["1", "can(s)"],
+            "chicken broth cubes": [".1", "unit(s)"],
+            "sour cream": ["2", "Tbsp(s)"],
+            "parmesan cheese": [".25", "cup(s)"]
+        }
+    ]
+},
+
+{
+    "meal_name": "Za'atar crusted grilling cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "True",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients": [
+        {
+            "red onions": ["1", "unit(s)"],
+            "zucchini": ["1", "unit(s)"],
+            "grape tomatoes": [".5", "package(s)"],
+            "lemons": ["1", "unit(s)"],
+            "cilantro": [".5", "package(s)"],
+            "couscous": ["2.5", "oz(s)"],
+            "veggetable broth cubes": ["1", "unit(s)"],
+            "sumac": ["1", "tsp(s)"],
+            "grilling cheese": [".5", "lb(s)"],
+            "Za'atar Spice": ["1", "Tbsp(s)"]
+        }
+    ]
+}
+
+]
