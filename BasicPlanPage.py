@@ -5,7 +5,9 @@ from PIL import ImageTk
 from PlanPage import PlanPage
 
 class BasicPlanPage(PlanPage):
-    def __init__(self, root):
+    def __init__(self, root, outer):
+        # super().__init__(root)
+        self.outer = outer
         pass
     
     def createNumMealsWidget(self, root):

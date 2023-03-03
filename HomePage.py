@@ -16,7 +16,7 @@ class HomePage:
     def createOuterFrame(self):
         self.outer = ttk.Frame(root, height=800, width=800)
         self.outer.grid_propagate(0)
-        self.outer.pack()
+        self.outer.grid(column=0, row=0)
 
     def createInnerFrame(self):
         self.content = ttk.Frame(self.outer)
@@ -46,12 +46,12 @@ class HomePage:
 
     def basicPlan(self):
         self.clearPage()
-        basicPlanPage = BasicPlanPage(root)
+        basicPlanPage = BasicPlanPage(root, self.outer)
         return
     
     def advancedPlan(self):
         self.clearPage()
-        advancedPlanPage = AdvancedPlanPage(root)
+        advancedPlanPage = AdvancedPlanPage(root, self.outer)
         return
     
     def clearPage(self):

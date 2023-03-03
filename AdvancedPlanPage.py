@@ -5,13 +5,15 @@ from PIL import ImageTk
 from PlanPage import PlanPage
 
 class AdvancedPlanPage(PlanPage):
-    def __init__(self, root):
+    def __init__(self, root, outer):
+        # super().__init__(root)
+        self.outer = outer
         self.createAdvancedPlanDisplay()
     
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
-        self.createTitle("Advanced Plan Creator")
         self.createLowerFrame()
+        self.createTitle("Advanced Plan Creator")
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         for day in days:
             self.createDayPanel(day)
