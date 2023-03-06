@@ -15,8 +15,10 @@ class PlanPage(ABC):
         self.uppercontent.grid(column=0, row=0)
     
     def createLowerFrame(self):
-        self.lowercontent = Frame(self.outer, background = "Blue")
+        self.lowercontent = ttk.Frame(self.outer, height=600, width=800)
         self.lowercontent.grid(column=0, row=1)
+        self.lowercontent.grid_propagate(0)
+        
 
     # FIXME implement
     def createNavBar(self):
