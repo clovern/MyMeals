@@ -12,10 +12,10 @@ class BasicPlanPage(PlanPage):
     def createBasicPlanDisplay(self):
         self.createUpperFrame()
         self.createLowerFrame()
+        self.centerInFrame()
         self.createTitle("Basic Plan Creator")
         self.addQuestions()
         self.createSubmitButton()
-        self.centerInFrame()
     
     def addQuestions(self):
         self.mealQuestionPrompt("breakfasts")
@@ -25,7 +25,7 @@ class BasicPlanPage(PlanPage):
     
     def mealQuestionPrompt(self, meal):
         self.questionFrame= ttk.Frame(self.lowercontent)
-        self.questionFrame['padding'] = (20, 20, 20, 20)
+        self.questionFrame['padding'] = (15, 15, 15, 15)
         mealQuestion = 'How many {0} would you like planned this week?'.format(meal)
         self.mealQuestionLabel = ttk.Label(self.questionFrame, text=mealQuestion, font=("Arial", 15))
         self.createNumberDropdown()
@@ -34,8 +34,8 @@ class BasicPlanPage(PlanPage):
         if (meal == "lunches"): index = 1
         elif (meal == "dinners"): index = 2
 
-        self.mealQuestionLabel.grid(column=0, row=0, columnspan=3)
-        self.basicDropdown.grid(column=2, row=1)
+        self.mealQuestionLabel.grid(column=0, row=0, columnspan=3, sticky='E')
+        self.basicDropdown.grid(column=2, row=1, sticky='E', pady= (2,2))
         self.questionFrame.grid(column=0, row=index)
     
     def createSubmitButton(self):
@@ -57,15 +57,17 @@ class BasicPlanPage(PlanPage):
         self.basicDropdown.current(0)
 
     def centerInFrame(self):
-        pass
+        self.lowercontent.grid_columnconfigure(0, weight=1)
     
     def specialOptionsPrompt(self):
-        self.questionFrame= ttk.Frame(self.lowercontent)
+        self.questionFrame= ttk.Frame(self.lowercontent, width=600)
+        self.questionFrame['padding'] = (15, 15, 15, 15)
+
         self.mealQuestionLabel = ttk.Label(self.questionFrame, text="Special options?", font=("Arial", 15))
         self.createSpecialOptionsDropdown(self.questionFrame)
 
         self.mealQuestionLabel.grid(column=0, row=0, columnspan = 3, sticky='E')
-        self.specialDropdown.grid(column=2, row=1)
+        self.specialDropdown.grid(column=2, row=1, pady = (2, 2))
         self.questionFrame.grid(column=0, row=3)
         
 
