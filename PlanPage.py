@@ -40,6 +40,26 @@ class PlanPage(ABC):
 
     def createSubmitButton(self):
         self.submitButton = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generatePlan)
+        # self.submitButton['padding'] = (20, 20, 20, 20)
+
+    def createSpecialOptionsDropdown(self, frame):
+        self.choiceSelection = StringVar()
+        self.specialDropdown = ttk.Combobox(frame, textvariable=self.choiceSelection)
+        self.specialDropdown['values'] = (
+                            'None',
+                            'Vegan',
+                            'Vegetarian',
+                            'Chicken',
+                            'Pork',
+                            'Beef',
+                            'Turkey',
+                            'Seafood',
+                            'Reheats-well',
+                            '$',
+                            '$$',
+                            '$$$')
+        
+        self.specialDropdown.current(0)
 
     @abstractmethod
     def generatePlan(self):
