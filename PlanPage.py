@@ -40,7 +40,6 @@ class PlanPage(ABC):
 
     def createSubmitButton(self):
         self.submitButton = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generatePlan)
-        # self.submitButton['padding'] = (20, 20, 20, 20)
 
     def createSpecialOptionsDropdown(self, frame):
         self.choiceSelection = StringVar()
