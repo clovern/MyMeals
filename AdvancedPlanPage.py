@@ -6,19 +6,8 @@ from PlanPage import PlanPage
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
-        # super().__init__(root)
         self.outer = outer
         self.createAdvancedPlanDisplay()
-    
-    def createLowerLeftFrame(self):
-        self.lowerLeftContent = Frame(self.lowercontent, height=600, width=400)
-        self.lowerLeftContent.grid(column=0, row=0)
-        self.lowerLeftContent.grid_propagate(0)
-    
-    def createLowerRightFrame(self):
-        self.lowerRightContent = Frame(self.lowercontent, height=600, width=400)
-        self.lowerRightContent.grid(column=1, row=0)
-        self.lowerRightContent.grid_propagate(0)
     
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
@@ -26,6 +15,20 @@ class AdvancedPlanPage(PlanPage):
         self.createLowerLeftFrame()
         self.createLowerRightFrame()
         self.createTitle("Advanced Plan Creator")
+        self.createAllDays()
+        self.createSubmitButton()
+    
+    def createLowerLeftFrame(self):
+        self.lowerLeftContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerLeftContent.grid(column=0, row=0)
+        self.lowerLeftContent.grid_propagate(0)
+    
+    def createLowerRightFrame(self):
+        self.lowerRightContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerRightContent.grid(column=1, row=0)
+        self.lowerRightContent.grid_propagate(0)
+    
+    def createAllDays(self):
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         index = 0
         for day in days:
@@ -74,11 +77,13 @@ class AdvancedPlanPage(PlanPage):
                              '$$',
                              '$$$')
             self.advancedDropdown.current(0)
+    
+    def createSubmitButton(self):
+        super().createSubmitButton()
+        self.submitButton.grid(column=0, columnspan=3, row=1)
 
-    def populateWidgets(self):
-        pass
 
-    def setWidgetGrid(self):
+    def generatePlan(self):
         pass
 
 
