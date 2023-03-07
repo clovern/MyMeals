@@ -10,28 +10,44 @@ class AdvancedPlanPage(PlanPage):
         self.outer = outer
         self.createAdvancedPlanDisplay()
     
+    def createLowerLeftFrame(self):
+        self.lowerLeftContent = Frame(self.lowercontent, height=600, width=400)
+        self.lowerLeftContent.grid(column=0, row=0)
+        self.lowerLeftContent.grid_propagate(0)
+    
+    def createLowerRightFrame(self):
+        self.lowerRightContent = Frame(self.lowercontent, height=600, width=400)
+        self.lowerRightContent.grid(column=1, row=0)
+        self.lowerRightContent.grid_propagate(0)
+    
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
         self.createLowerFrame()
+        self.createLowerLeftFrame()
+        self.createLowerRightFrame()
         self.createTitle("Advanced Plan Creator")
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         index = 0
         for day in days:
             self.createDayPanel(day, index)
             index += 1
-            # add something here to add it to the grid, at given index.
 
     def createDayPanel(self, day, index):
-            self.dayFrame= ttk.Frame(self.lowercontent)
-            self.dayFrame['padding'] = (10, 10, 10, 10)
-            self.dayFrame.grid(column=0, row=index)
-            self.createDayFlag(day)
-            self.createSingleMealPanel("Breakfast", 1)
-            self.createSingleMealPanel("Lunch", 2)
-            self.createSingleMealPanel("Dinner", 3)
+        if (index < 4):
+            self.dayFrame= ttk.Frame(self.lowerLeftContent)
+        else:
+            self.dayFrame= ttk.Frame(self.lowerRightContent)
+            index -= 4
+        
+        self.dayFrame['padding'] = (10, 10, 10, 10)
+        self.dayFrame.grid(column=0, row=index)
+        self.createDayFlag(day)
+        self.createSingleMealPanel("Breakfast", 1)
+        self.createSingleMealPanel("Lunch", 2)
+        self.createSingleMealPanel("Dinner", 3)
 
     def createDayFlag(self, day):
-        self.dayFlag = ttk.Label(self.dayFrame, text=day, width=20, font=("Arial", 15))
+        self.dayFlag = ttk.Label(self.dayFrame, text=day, width=10, font=("Arial", 15))
         self.dayFlag.grid(column=0, row=0)
 
     def createSingleMealPanel(self, meal, index):
@@ -43,7 +59,9 @@ class AdvancedPlanPage(PlanPage):
     def createMealDropdown(self):
             self.choiceSelection = StringVar()
             self.advancedDropdown = ttk.Combobox(self.dayFrame, textvariable=self.choiceSelection)
-            self.advancedDropdown['values'] = ('None',
+            self.advancedDropdown['values'] = (
+                             'Exclude this meal',
+                             'None',
                              'Vegan',
                              'Vegetarian',
                              'Chicken',
@@ -56,9 +74,6 @@ class AdvancedPlanPage(PlanPage):
                              '$$',
                              '$$$')
             self.advancedDropdown.current(0)
-
-    def createScrollBar(self):
-        pass
 
     def populateWidgets(self):
         pass
