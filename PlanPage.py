@@ -23,7 +23,6 @@ class PlanPage(ABC):
     def createNavBar(self):
         pass
 
-    # FIXME implement
     def createTitle(self, titleText):
 
         self.logoImage = Image.open("./MyMealsLogo.png")
@@ -39,21 +38,32 @@ class PlanPage(ABC):
         self.title['padding'] = (40, 40, 40, 40)
         self.title.grid(column=1, row=0)
 
-    # FIXME implement
-    def createPlanButton():
-        pass
+    def createSubmitButton(self):
+        self.submitButton = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generatePlan)
+        # self.submitButton['padding'] = (20, 20, 20, 20)
 
-    # FIXME implement
-    def generatePlan():
-        pass
+    def createSpecialOptionsDropdown(self, frame):
+        self.choiceSelection = StringVar()
+        self.specialDropdown = ttk.Combobox(frame, textvariable=self.choiceSelection)
+        self.specialDropdown['values'] = (
+                            'None',
+                            'Vegan',
+                            'Vegetarian',
+                            'Chicken',
+                            'Pork',
+                            'Beef',
+                            'Turkey',
+                            'Seafood',
+                            'Reheats-well',
+                            '$',
+                            '$$',
+                            '$$$')
+        
+        self.specialDropdown.current(0)
 
     @abstractmethod
-    def populateWidgets(self):
-        ...
-
-    @abstractmethod
-    def setWidgetGrid(self):
-        ...
+    def generatePlan(self):
+        pass
     
     def clearPage(self):
         self.uppercontent.destroy()

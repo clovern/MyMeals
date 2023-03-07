@@ -6,19 +6,8 @@ from PlanPage import PlanPage
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
-        # super().__init__(root)
         self.outer = outer
         self.createAdvancedPlanDisplay()
-    
-    def createLowerLeftFrame(self):
-        self.lowerLeftContent = Frame(self.lowercontent, height=600, width=400)
-        self.lowerLeftContent.grid(column=0, row=0)
-        self.lowerLeftContent.grid_propagate(0)
-    
-    def createLowerRightFrame(self):
-        self.lowerRightContent = Frame(self.lowercontent, height=600, width=400)
-        self.lowerRightContent.grid(column=1, row=0)
-        self.lowerRightContent.grid_propagate(0)
     
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
@@ -26,6 +15,20 @@ class AdvancedPlanPage(PlanPage):
         self.createLowerLeftFrame()
         self.createLowerRightFrame()
         self.createTitle("Advanced Plan Creator")
+        self.createAllDays()
+        self.createSubmitButton()
+    
+    def createLowerLeftFrame(self):
+        self.lowerLeftContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerLeftContent.grid(column=0, row=0)
+        self.lowerLeftContent.grid_propagate(0)
+    
+    def createLowerRightFrame(self):
+        self.lowerRightContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerRightContent.grid(column=1, row=0)
+        self.lowerRightContent.grid_propagate(0)
+    
+    def createAllDays(self):
         days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         index = 0
         for day in days:
@@ -53,32 +56,19 @@ class AdvancedPlanPage(PlanPage):
     def createSingleMealPanel(self, meal, index):
         self.mealLabel = ttk.Label(self.dayFrame, text=meal, padding=(20,2,20,2))
         self.mealLabel.grid(column=1, row=index)
-        self.createMealDropdown()
-        self.advancedDropdown.grid(column=2, row=index)
+        self.createSpecialOptionsDropdown()
+        self.specialDropdown.grid(column=2, row=index)
     
-    def createMealDropdown(self):
-            self.choiceSelection = StringVar()
-            self.advancedDropdown = ttk.Combobox(self.dayFrame, textvariable=self.choiceSelection)
-            self.advancedDropdown['values'] = (
-                             'Exclude this meal',
-                             'None',
-                             'Vegan',
-                             'Vegetarian',
-                             'Chicken',
-                             'Pork',
-                             'Beef',
-                             'Turkey',
-                             'Seafood',
-                             'Reheats-well',
-                             '$',
-                             '$$',
-                             '$$$')
-            self.advancedDropdown.current(0)
+    def createSpecialOptionsDropdown(self):
+            super().createSpecialOptionsDropdown(self.dayFrame)
+            self.specialDropdown['values'] = ('Exclude this meal', *self.specialDropdown['values'])
+    
+    def createSubmitButton(self):
+        super().createSubmitButton()
+        self.submitButton.grid(column=0, columnspan=3, row=1)
 
-    def populateWidgets(self):
-        pass
 
-    def setWidgetGrid(self):
+    def generatePlan(self):
         pass
 
 
