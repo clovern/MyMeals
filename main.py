@@ -1,7 +1,7 @@
 from MealCreator import MealCreator
 from Meal import Meal
 from MealDay import MealDay
-from HomePage import MealGUI
+from HomePage import HomePage, startGUI
 import json
 
 
@@ -34,14 +34,9 @@ def main():
     meal_creator = MealCreator()
     populate_default_meals(meal_creator)
 
-    #have option to select basic meal plan
-    #take in options
-    #have option to select advanced meal plan and set options
-    #take in options
-
-    #sets preferences for Breakfast, Lunch, and Dinner based on input from the GUI
     mealdays_array = set_mealday_preferences()
 
+    print("TESTING")
     # #FIXME TESTING
     # for mealday in mealdays_array:
     #     print('Options')
@@ -62,8 +57,6 @@ def main():
             print("Dinner: " + str(mealday.dinner_choice))
         print()
 
-    #instead I should output the meal plan and the ingredients list to a file.
-    #But this functionality should probably be in a separate function. 
     for meal in (meal_creator.create_basic_plan(4)):
         print(meal)
     
@@ -71,20 +64,7 @@ def main():
 
     for meal in (meal_creator.create_basic_plan(4)):
         print(meal)
-
-    gui = MealGUI()
-    gui.start_gui
     
-
-        
-    
-
-
-    
-
-
-    
-if __name__ == 'main':
-    main()
+    startGUI()
 
 main()
