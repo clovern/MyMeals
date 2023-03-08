@@ -7,7 +7,10 @@ from PlanPage import PlanPage
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
         self.outer = outer
+        self.dropdownDict = {"Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [],
+                        "Friday": [], "Saturday": [], "Sunday": []}
         self.createAdvancedPlanDisplay()
+        self.setDropdownDefault()
     
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
@@ -45,31 +48,43 @@ class AdvancedPlanPage(PlanPage):
         self.dayFrame['padding'] = (10, 10, 10, 10)
         self.dayFrame.grid(column=0, row=index)
         self.createDayFlag(day)
-        self.createSingleMealPanel("Breakfast", 1)
-        self.createSingleMealPanel("Lunch", 2)
-        self.createSingleMealPanel("Dinner", 3)
+        self.createSingleMealPanel("Breakfast", day)
+        self.createSingleMealPanel("Lunch", day)
+        self.createSingleMealPanel("Dinner", day)
 
     def createDayFlag(self, day):
         self.dayFlag = ttk.Label(self.dayFrame, text=day, width=10, font=("Arial", 15))
         self.dayFlag.grid(column=0, row=0)
 
-    def createSingleMealPanel(self, meal, index):
+    def createSingleMealPanel(self, meal, day):
         self.mealLabel = ttk.Label(self.dayFrame, text=meal, padding=(20,2,20,2))
+
+        index = 0
+        if meal == "Lunch":
+            index = 1
+        elif meal == "Dinner":
+            index = 2
+
         self.mealLabel.grid(column=1, row=index)
-        self.createSpecialOptionsDropdown()
-        self.specialDropdown.grid(column=2, row=index)
+        self.createSpecialOptionsDropdown(day)
+        (self.dropdownDict[day][-1]).grid(column=2, row=index)
     
-    def createSpecialOptionsDropdown(self):
+    def createSpecialOptionsDropdown(self, day):
             super().createSpecialOptionsDropdown(self.dayFrame)
             self.specialDropdown['values'] = ('Exclude this meal', *self.specialDropdown['values'])
+            self.dropdownDict[day].append(self.specialDropdown)
+    
+    def setDropdownDefault(self):
+        for key in self.dropdownDict.keys():
+            for val in self.dropdownDict[key]:
+                val.current(1)
     
     def createSubmitButton(self):
         super().createSubmitButton()
         self.submitButton.grid(column=0, columnspan=3, row=1)
 
-
     def generatePlan(self):
-        pass
+        print(self.dropdownDict["Monday"][-1].get())
 
 
 
