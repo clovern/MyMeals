@@ -7,7 +7,9 @@ from PlanPage import PlanPage
 class BasicPlanPage(PlanPage):
     def __init__(self, root, outer):
         self.outer = outer
+        self.dropdownList = []
         self.createBasicPlanDisplay()
+        self.setDropdownDefault()
     
     def createBasicPlanDisplay(self):
         self.createUpperFrame()
@@ -35,7 +37,7 @@ class BasicPlanPage(PlanPage):
         elif (meal == "dinners"): index = 2
 
         self.mealQuestionLabel.grid(column=0, row=0, columnspan=3, sticky='E')
-        self.basicDropdown.grid(column=2, row=1, sticky='E', pady= (2,2))
+        (self.dropdownList[-1]).grid(column=2, row=1, sticky='E', pady= (2,2))
         self.questionFrame.grid(column=0, row=index)
     
     def createSubmitButton(self):
@@ -54,7 +56,7 @@ class BasicPlanPage(PlanPage):
                             '5',
                             '6',
                             '7')
-        self.basicDropdown.current(0)
+        self.dropdownList.append(self.basicDropdown)
 
     def centerInFrame(self):
         self.lowercontent.grid_columnconfigure(0, weight=1)
@@ -69,8 +71,19 @@ class BasicPlanPage(PlanPage):
         self.mealQuestionLabel.grid(column=0, row=0, columnspan = 3, sticky='E')
         self.specialDropdown.grid(column=2, row=1, pady = (2, 2))
         self.questionFrame.grid(column=0, row=3)
-        
+    
+    def setDropdownDefault(self):
+        for d in self.dropdownList:
+            d.current(7)
 
     def generatePlan(self):
-        pass
+        spSelection = self.specialDropdown.get()
+        print(spSelection)
+
+        mainSelection = self.dropdownList[0].get()
+        print(mainSelection)
+        mainSelection = self.dropdownList[1].get()
+        print(mainSelection)
+        mainSelection = self.dropdownList[2].get()
+        print(mainSelection)
 

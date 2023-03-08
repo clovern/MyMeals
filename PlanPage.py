@@ -57,8 +57,6 @@ class PlanPage(ABC):
                             '$',
                             '$$',
                             '$$$')
-        
-        self.specialDropdown.current(0)
 
     @abstractmethod
     def generatePlan(self):
