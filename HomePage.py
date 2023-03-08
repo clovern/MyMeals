@@ -57,7 +57,8 @@ class HomePage:
     def clearPage(self):
         self.content.destroy()
 
-
-root = Tk()
-homepage = HomePage(root)
-root.mainloop()
+def startGUI():
+    global root 
+    root = Tk()
+    homepage = HomePage(root)
+    root.mainloop()
