@@ -46,24 +46,24 @@ def main():
     #     print()
     
     #chooses options for breakfast, lunch, and dinner based on advanced options. 
-    meal_creator.create_advanced_plan(mealdays_array)
-    for mealday in mealdays_array:
-        print(mealday.day + ":")
-        if (mealday.breakfast_choice != None): 
-            print("Breakfast: " + str(mealday.breakfast_choice))
-        if (mealday.lunch_choice != None): 
-            print("Lunch: " + str(mealday.lunch_choice))
-        if (mealday.dinner_choice != None): 
-            print("Dinner: " + str(mealday.dinner_choice))
-        print()
+    # meal_creator.create_meal_plan(mealdays_array)
+    # for mealday in mealdays_array:
+    #     print(mealday.day + ":")
+    #     if (mealday.breakfast_choice != None): 
+    #         print("Breakfast: " + str(mealday.breakfast_choice))
+    #     if (mealday.lunch_choice != None): 
+    #         print("Lunch: " + str(mealday.lunch_choice))
+    #     if (mealday.dinner_choice != None): 
+    #         print("Dinner: " + str(mealday.dinner_choice))
+    #     print()
 
-    for meal in (meal_creator.create_basic_plan(4)):
-        print(meal)
+    # for meal in (meal_creator.create_basic_plan(4)):
+    #     print(meal)
     
-    print()
+    # print()
 
-    for meal in (meal_creator.create_basic_plan(4)):
-        print(meal)
+    # for meal in (meal_creator.create_basic_plan(4)):
+    #     print(meal)
     
     startGUI()
 

@@ -11,7 +11,7 @@ class Meal:
         self.ingredients[ingredient] = str(amount)
 
     def __repr__(self):
-        return "Meal Name: " + self.name
+        return self.name
 
 
     

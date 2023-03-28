@@ -9,7 +9,6 @@ class BasicPlanPage(PlanPage):
         self.outer = outer
         self.dropdownList = []
         self.createBasicPlanDisplay()
-        self.setDropdownDefault()
     
     def createBasicPlanDisplay(self):
         self.createUpperFrame()
@@ -69,12 +68,8 @@ class BasicPlanPage(PlanPage):
         self.createSpecialOptionsDropdown(self.questionFrame)
 
         self.mealQuestionLabel.grid(column=0, row=0, columnspan = 3, sticky='E')
-        self.specialDropdown.grid(column=2, row=1, pady = (2, 2))
+        self.specialDropdown.display.grid(column=2, row=1, pady = (2, 2))
         self.questionFrame.grid(column=0, row=3)
-    
-    def setDropdownDefault(self):
-        for d in self.dropdownList:
-            d.current(7)
 
     def generatePlan(self):
         spSelection = self.specialDropdown.get()

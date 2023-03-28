@@ -1,32 +1,40 @@
 import random
+import json
+from Meal import Meal
+from MealDay import MealDay
+
 
 class MealCreator: 
 
     def __init__(self):
-        self.advanced = False
-        self.use_fridge_pantry = False
-        self.optimize_overlap = False
-        self.advanced_options = []   #array of MealDay to store advanced options for each day
-
-        self.all_meals = []   #array of Meal to store all the potential meal options
+        self.all_meals = []
+        self.populate_default_meals()
+        self.mealdays_array = [MealDay("Monday"), MealDay("Tuesday"), MealDay("Wednesday"), MealDay("Thursday"), MealDay("Friday"), MealDay("Saturday"), MealDay("Sunday")]
 
         self.breakfast_meal_plan = []
         self.lunch_meal_plan = []
         self.dinner_meal_plan = []
+
         self.ingredients = {}       #a dictionary of ingredients, to build a grocery list
 
-    def set_advanced(self, advanced):
-        self.advanced = advanced
-    
-    def set_optimize_overlap(optimize_overlap):
-        optimize_overlap = optimize_overlap
+    def populate_default_meals(self): 
+        default_file = open('default_meals.json')
+        default_data = json.load(default_file)
+
+        #create a meal object for each meal read
+        for recipe in default_data:
+            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], recipe['reheats_well'], recipe['price_range'], recipe['meal_type'], recipe['ingredients'])
+            self.add_meal(temp_meal)
+        default_file.close()
 
     def add_meal(self, meal):
         self.all_meals.append(meal)
     
-    def add_advanced_options(self, meal_day):
-        self.advanced_options.append(meal_day)
-    
+    def set_mealday_preference(self, day, meal, preferences):
+        day_to_index = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
+        mealday = self.mealdays_array[day_to_index[day]]
+        mealday.add_options(meal, preferences)
+
     #creates a filtered array based on meal options
     #filtering occurs on base_array self.all_meals unless otherwise specified
     def create_filtered_array(self, base_array = None, **kwargs):
@@ -38,8 +46,6 @@ class MealCreator:
         for meal in base_array:
             match = True
             for key, value in kwargs.items():
-                #if any value does not match, move on to next meal immediately
-                #set match = False so that this meal will not be added
                 if getattr(meal, key) != value:
                     match = False
                     break
@@ -49,19 +55,7 @@ class MealCreator:
 
         return filtered_array
 
-
-    def create_basic_plan(self, num_days = 7):
-        self.dinner_meal_plan.clear()
-
-        filtered_array = self.create_filtered_array(meal_type = 'dinner')
-        
-        #select num_meals random choices from all_meals
-        for i in range(0, num_days):
-            self.dinner_meal_plan.append(random.choice(filtered_array))
-        
-        return self.dinner_meal_plan
-
-    def create_advanced_plan(self, mealdays_array):
+    def create_meal_plan(self):
 
         # filter out arrays for breakfast, lunch, and dinner meals
         breakfast_array = self.create_filtered_array(meal_type = 'breakfast')
@@ -70,14 +64,29 @@ class MealCreator:
 
         # add in all daily options for each meal, create an array of meals fitting those options
         # and select a random meal from the filtered array. 
-        for mealday in mealdays_array:
-            if mealday.breakfast_opts != None:
-                filtered_array = self.create_filtered_array(breakfast_array, **mealday.breakfast_opts)
-                mealday.breakfast_choice = random.choice(filtered_array)
-            if mealday.lunch_opts != None:
-                filtered_array = self.create_filtered_array(lunch_array, **mealday.lunch_opts)
-                mealday.lunch_choice = random.choice(filtered_array)
-            if mealday.dinner_opts != None:
-                filtered_array = self.create_filtered_array(dinner_array, **mealday.dinner_opts)
-                mealday.dinner_choice = random.choice(filtered_array)
+        for mealday in self.mealdays_array:
+
+            #generate breakfast choices
+            filtered_array = self.create_filtered_array(breakfast_array, **mealday.breakfast_opts)
+            mealday.breakfast_choice = random.choice(filtered_array)
+
+            #generate lunch choices
+            filtered_array = self.create_filtered_array(lunch_array, **mealday.lunch_opts)
+            mealday.lunch_choice = random.choice(filtered_array)
+
+            #generate dinner choices
+            filtered_array = self.create_filtered_array(dinner_array, **mealday.dinner_opts)
+            mealday.dinner_choice = random.choice(filtered_array)
+    
+    def print_meals(self):
+        for mealday in self.mealdays_array:
+            print(mealday.day + ":")
+            if (mealday.breakfast_choice != None): 
+                print("Breakfast: " + str(mealday.breakfast_choice))
+            if (mealday.lunch_choice != None): 
+                print("Lunch: " + str(mealday.lunch_choice))
+            if (mealday.dinner_choice != None): 
+                print("Dinner: " + str(mealday.dinner_choice))
+            print()
+
         

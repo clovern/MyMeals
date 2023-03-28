@@ -10,7 +10,6 @@ class AdvancedPlanPage(PlanPage):
         self.dropdownDict = {"Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [],
                         "Friday": [], "Saturday": [], "Sunday": []}
         self.createAdvancedPlanDisplay()
-        self.setDropdownDefault()
     
     def createAdvancedPlanDisplay(self):
         self.createUpperFrame()
@@ -67,24 +66,34 @@ class AdvancedPlanPage(PlanPage):
 
         self.mealLabel.grid(column=1, row=index)
         self.createSpecialOptionsDropdown(day)
-        (self.dropdownDict[day][-1]).grid(column=2, row=index)
+        (self.dropdownDict[day][-1].display).grid(column=2, row=index)
     
     def createSpecialOptionsDropdown(self, day):
             super().createSpecialOptionsDropdown(self.dayFrame)
-            self.specialDropdown['values'] = ('Exclude this meal', *self.specialDropdown['values'])
             self.dropdownDict[day].append(self.specialDropdown)
-    
-    def setDropdownDefault(self):
-        for key in self.dropdownDict.keys():
-            for val in self.dropdownDict[key]:
-                val.current(1)
     
     def createSubmitButton(self):
         super().createSubmitButton()
         self.submitButton.grid(column=0, columnspan=3, row=1)
 
     def generatePlan(self):
-        print(self.dropdownDict["Monday"][-1].get())
+
+        print("________________________________")
+        print(self.dropdownDict["Monday"][0].veganBool.get())
+        print("________________________________")
+        super().generatePlan()
+        self.meal_creator.set_mealday_preference("Monday", "dinner", {'meat_type': 'vegan'})
+
+        # need to add preferences for every meal and every day
+        # the days would be keys in the dict
+        # each day will have 3 values (0, 1, and 2) corresponding to breakfast lunch and dinner
+        # for day in self.dropdownDict.keys():
+        #     self.dropdownDict["Monday"][-1].get()
+
+        self.meal_creator.create_meal_plan()
+
+        self.meal_creator.print_meals()
+
 
 
 

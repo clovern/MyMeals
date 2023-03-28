@@ -11,9 +11,9 @@ class MealDay:
 
     def __init__(self, day):
         self.day = day
-        self.breakfast_opts = None
-        self.lunch_opts = None
-        self.dinner_opts = None
+        self.breakfast_opts = {}
+        self.lunch_opts = {}
+        self.dinner_opts = {}
 
         self.breakfast_choice = None
         self.lunch_choice = None
