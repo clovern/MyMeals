@@ -3,6 +3,8 @@ from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
 from abc import ABC, abstractmethod
+from SpecialOptionsDropdown import SpecialOptionsDropdown
+from MealCreator import MealCreator
 
 class PlanPage(ABC):
     def __init__(self, root):
@@ -42,25 +44,10 @@ class PlanPage(ABC):
         self.submitButton = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generatePlan)
 
     def createSpecialOptionsDropdown(self, frame):
-        self.choiceSelection = StringVar()
-        self.specialDropdown = ttk.Combobox(frame, textvariable=self.choiceSelection)
-        self.specialDropdown['values'] = (
-                            'None',
-                            'Vegan',
-                            'Vegetarian',
-                            'Chicken',
-                            'Pork',
-                            'Beef',
-                            'Turkey',
-                            'Seafood',
-                            'Reheats-well',
-                            '$',
-                            '$$',
-                            '$$$')
+        self.specialDropdown = SpecialOptionsDropdown(frame) 
 
-    @abstractmethod
     def generatePlan(self):
-        pass
+        self.meal_creator = MealCreator()
     
     def clearPage(self):
         self.uppercontent.destroy()
