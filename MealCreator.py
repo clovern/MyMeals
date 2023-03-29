@@ -36,7 +36,6 @@ class MealCreator:
         mealday.add_options(meal, preferences)
 
     #creates a filtered array based on meal options
-    #filtering occurs on base_array self.all_meals unless otherwise specified
     def create_filtered_array(self, base_array = None, **kwargs):
         if base_array == None:
             base_array = self.all_meals
@@ -45,10 +44,19 @@ class MealCreator:
         #iterate through all meals, and add ones matching all kwargs to filtered_array
         for meal in base_array:
             match = True
+
             for key, value in kwargs.items():
-                if getattr(meal, key) != value:
+                #this handles values like meat_type, where it can match one out of a list of options
+                if type(value) == list:
+                    if (not getattr(meal, key) in value):
+                        match = False
+                        break
+                
+                #this handles values like meal_type, where it must match a singe passed value
+                elif getattr(meal, key) != value:
                     match = False
-                    break
+                    break     
+
             #only add a meal if it matched all arguments.
             if match == True:
                 filtered_array.append(meal)
@@ -62,8 +70,6 @@ class MealCreator:
         lunch_array = self.create_filtered_array(meal_type = 'lunch')
         dinner_array = self.create_filtered_array(meal_type = 'dinner')
 
-        # add in all daily options for each meal, create an array of meals fitting those options
-        # and select a random meal from the filtered array. 
         for mealday in self.mealdays_array:
 
             #generate breakfast choices
@@ -76,6 +82,11 @@ class MealCreator:
 
             #generate dinner choices
             filtered_array = self.create_filtered_array(dinner_array, **mealday.dinner_opts)
+            print('______________________________________')
+            print(filtered_array)
+            print('______________________________________')
+
+            
             mealday.dinner_choice = random.choice(filtered_array)
     
     def print_meals(self):

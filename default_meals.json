@@ -1,7 +1,7 @@
 [{
     "meal_name": "blueberry waffles",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -19,7 +19,7 @@
 {
     "meal_name": "chocolate chip waffles",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -37,7 +37,7 @@
 {
     "meal_name": "cinnamon waffles",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -55,7 +55,7 @@
 {
     "meal_name": "pancakes with strawberries",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -71,7 +71,7 @@
 {
     "meal_name": "breakfast sandwich",
     "meat_type": "pork",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "breakfast",
     "ingredients": [
@@ -87,7 +87,7 @@
 {
     "meal_name": "breakfast burrito",
     "meat_type": "pork",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "breakfast",
     "ingredients": [
@@ -104,7 +104,7 @@
 {
     "meal_name": "biscuits and gravy",
     "meat_type": "pork",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "breakfast",
     "ingredients": [
@@ -120,7 +120,7 @@
 {
     "meal_name": "fruit and cream oatmeal",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -133,7 +133,7 @@
 {
     "meal_name": "nutella croissant",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -147,7 +147,7 @@
 {
     "meal_name": "cereal",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
     "ingredients": [
@@ -160,7 +160,7 @@
 {
     "meal_name": "bacon, hash browns, fruit, and eggs",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "breakfast",
     "ingredients": [
@@ -176,7 +176,7 @@
 {
     "meal_name": "peanut butter and jelly",
     "meat_type": "vegan",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
     "ingredients": [
@@ -191,7 +191,7 @@
 {
     "meal_name": "margherita pita pizza",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -209,7 +209,7 @@
 {
     "meal_name": "italian sub",
     "meat_type": "pork",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -227,7 +227,7 @@
 {
     "meal_name": "turkey, apple, cheddar sandwich",
     "meat_type": "turkey",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -247,7 +247,7 @@
 {
     "meal_name": "chicken tortilla soup",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -272,7 +272,7 @@
 {
     "meal_name": "broccoli cheddar soup",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -296,7 +296,7 @@
 {
     "meal_name": "grilled cheese with tomato basil soup",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
     "ingredients": [
@@ -312,7 +312,7 @@
 {
     "meal_name": "chicken stir fry",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -328,7 +328,7 @@
 {
     "meal_name": "barbeque chicken tenders and fries",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -343,7 +343,7 @@
 {
     "meal_name": "air fried cauliflower stir fry",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -360,7 +360,7 @@
 {
     "meal_name": "pepperoni pizza bagel",
     "meat_type": "pork",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -376,7 +376,7 @@
 {
     "meal_name": "cream cheese bagel",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
     "ingredients": [
@@ -390,7 +390,7 @@
 {
     "meal_name": "spaghetti",
     "meat_type": "beef",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -405,7 +405,7 @@
 {
     "meal_name": "brats and mashed potatoes",
     "meat_type": "pork",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -420,7 +420,7 @@
 {
     "meal_name": "bulgogi spring rolls",
     "meat_type": "beef",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
     "ingredients": [
@@ -444,7 +444,7 @@
 {
     "meal_name": "pecan crusted chicken",
     "meat_type": "chicken",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
     "ingredients": [
@@ -466,7 +466,7 @@
 {
     "meal_name": "Date Night Burgers and hash browns",
     "meat_type": "beef",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
     "ingredients": [
@@ -486,7 +486,7 @@
 {
     "meal_name": "Brown sugar bourbon apple pork chops",
     "meat_type": "pork",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "dinner",
     "ingredients": [
@@ -507,7 +507,7 @@
 {
     "meal_name": "Yellow Coconut Curry with Chickpeas",
     "meat_type": "vegan",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -522,7 +522,7 @@
 {
     "meal_name": "Lemony Spaghetti with Brussels Sprouts",
     "meat_type": "vegetarian",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -544,7 +544,7 @@
 {
     "meal_name": "Sweet Corn and Poblano Chowder with Old Bay Toast",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -568,7 +568,7 @@
 {
     "meal_name": "Sweet Corn and Poblano Chowder with Old Bay Toast",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -592,7 +592,7 @@
 {
     "meal_name": "Edamame Stir Fry Noodle Bowl",
     "meat_type": "vegan",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "dinner",
     "ingredients": [
@@ -613,7 +613,7 @@
 {
     "meal_name": "Honey Hoisin Chicken",
     "meat_type": "chicken",
-    "reheats_well": "False",
+    "reheats_well": "false",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -635,7 +635,7 @@
 {
     "meal_name": "Honey Miso Broccoli and Sweet Potato Donburi",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -656,7 +656,7 @@
 {
     "meal_name": "Taqueria Chicken Bowls",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -679,7 +679,7 @@
 {
     "meal_name": "Spicy Peruvian Chicken",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -703,7 +703,7 @@
 {
     "meal_name": "Firecracker Meatballs",
     "meat_type": "beef",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -726,7 +726,7 @@
 {
     "meal_name": "Pork Sausage and Bell Pepper Risotto",
     "meat_type": "pork",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
     "ingredients": [
@@ -747,7 +747,7 @@
 {
     "meal_name": "Chicken Sausage spaghetti Bolognese",
     "meat_type": "chicken",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "dinner",
     "ingredients": [
@@ -767,7 +767,7 @@
 {
     "meal_name": "Za'atar crusted grilling cheese",
     "meat_type": "vegetarian",
-    "reheats_well": "True",
+    "reheats_well": "true",
     "price_range": "expensive",
     "meal_type": "dinner",
     "ingredients": [
