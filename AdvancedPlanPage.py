@@ -9,6 +9,7 @@ class AdvancedPlanPage(PlanPage):
         self.outer = outer
         self.dropdownDict = {"Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [],
                         "Friday": [], "Saturday": [], "Sunday": []}
+        self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         self.createAdvancedPlanDisplay()
     
     def createAdvancedPlanDisplay(self):
@@ -31,9 +32,8 @@ class AdvancedPlanPage(PlanPage):
         self.lowerRightContent.grid_propagate(0)
     
     def createAllDays(self):
-        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         index = 0
-        for day in days:
+        for day in self.days:
             self.createDayPanel(day, index)
             index += 1
 
@@ -78,21 +78,33 @@ class AdvancedPlanPage(PlanPage):
 
     def generatePlan(self):
 
-        print("________________________________")
-        print(self.dropdownDict["Monday"][0].veganBool.get())
-        print("________________________________")
+        self.weeklyPreferences = []
+
         super().generatePlan()
         self.meal_creator.set_mealday_preference("Monday", "dinner", {'meat_type': 'vegan'})
+        self.meal_creator.set_mealday_preference("Sunday", "dinner", {'meat_type': ['vegan', 'beef']})
 
-        # need to add preferences for every meal and every day
-        # the days would be keys in the dict
-        # each day will have 3 values (0, 1, and 2) corresponding to breakfast lunch and dinner
-        # for day in self.dropdownDict.keys():
-        #     self.dropdownDict["Monday"][-1].get()
+        #add selected options from each day to weeklyPreferences, as an array
+        for day in self.days:
+            for index in range(3):
+                self.weeklyPreferences.append(self.getSelection(day, index))
 
         self.meal_creator.create_meal_plan()
 
         self.meal_creator.print_meals()
+    
+    def getSelection(self, day, index): 
+        selected = []
+        dropdown = self.dropdownDict[day][index]
+        dropdownOptions = dropdown.dropdownVars
+        for i in range(len(dropdownOptions)):
+
+            #value of 1 indicates this variable is selected
+            if dropdownOptions[i].get() == 1:
+                selectedOption = dropdown.dropdownOpts[i]
+                selected.append(selectedOption)
+        
+        return selected
 
 
 
