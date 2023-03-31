@@ -90,9 +90,6 @@ class AdvancedPlanPage(PlanPage):
 
         self.setDailyPreferences(self.weeklyPreferences)
 
-        # print("+++++++++++++++++++++++++++++")
-        # print(self.weeklyPreferences)
-
         self.meal_creator.create_meal_plan()
 
         self.meal_creator.print_meals()
@@ -112,6 +109,13 @@ class AdvancedPlanPage(PlanPage):
                 selectedOption = dropdown.dropdownOpts[i]
                 selectedInitial.append(selectedOption)
         
+        selectedFinal = self.formatSelection(selectedInitial)
+                
+        return selectedFinal
+
+    def formatSelection(self, selectedInitial):
+        
+        selectedFinal = {}
         # If multiple values are selected for meat type or price, these selections are put into arrays.
         # This allows us to search for meals which match 1 or more of these options in MealCreator. 
         meat_types = []
@@ -151,8 +155,6 @@ class AdvancedPlanPage(PlanPage):
 
         for day in self.days:
 
-            # print("check setDailyPreferences output")
-            # print(weeklyPreferences[day][breakfastindex])
             self.meal_creator.set_mealday_preference(day, "breakfast", weeklyPreferences[day][breakfastindex])
             self.meal_creator.set_mealday_preference(day, "lunch", weeklyPreferences[day][lunchindex])
             self.meal_creator.set_mealday_preference(day, "dinner", weeklyPreferences[day][dinnerindex])
