@@ -46,8 +46,10 @@ class MealCreator:
             match = True
 
             for key, value in kwargs.items():
+
                 #this handles values like meat_type, where it can match one out of a list of options
                 if type(value) == list:
+                    
                     if (not getattr(meal, key) in value):
                         match = False
                         break
@@ -74,20 +76,20 @@ class MealCreator:
 
             #generate breakfast choices
             filtered_array = self.create_filtered_array(breakfast_array, **mealday.breakfast_opts)
-            mealday.breakfast_choice = random.choice(filtered_array)
+            mealday.breakfast_choice = self.choose_meal(filtered_array)
 
             #generate lunch choices
             filtered_array = self.create_filtered_array(lunch_array, **mealday.lunch_opts)
-            mealday.lunch_choice = random.choice(filtered_array)
+            mealday.lunch_choice = self.choose_meal(filtered_array)
 
             #generate dinner choices
             filtered_array = self.create_filtered_array(dinner_array, **mealday.dinner_opts)
-            print('______________________________________')
-            print(filtered_array)
-            print('______________________________________')
-
-            
-            mealday.dinner_choice = random.choice(filtered_array)
+            mealday.dinner_choice = self.choose_meal(filtered_array)
+    
+    def choose_meal(self, filtered_array):
+        if (len(filtered_array) > 0):
+            return random.choice(filtered_array)
+        return None
     
     def print_meals(self):
         for mealday in self.mealdays_array:

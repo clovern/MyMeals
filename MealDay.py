@@ -28,6 +28,7 @@ class MealDay:
             self.dinner_opts = options
         else:
             print("\n\nInvalid meal input type. Options are breakfast, lunch, dinner. You input" + str(meal))
+        pass
     
 
 
