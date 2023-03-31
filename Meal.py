@@ -8,7 +8,7 @@ class Meal:
         self.ingredients = ingredients
 
     def add_ingredient(self, ingredient, amount):
-        self.ingredients[ingredient] = str(amount)
+        self.ingredients[ingredient] = str(amount)     
 
     def __repr__(self):
         return self.name
