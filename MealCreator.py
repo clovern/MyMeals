@@ -9,7 +9,8 @@ class MealCreator:
     def __init__(self):
         self.all_meals = []
         self.populate_default_meals()
-        self.mealdays_array = [MealDay("Monday"), MealDay("Tuesday"), MealDay("Wednesday"), MealDay("Thursday"), MealDay("Friday"), MealDay("Saturday"), MealDay("Sunday")]
+        self.mealdays_dict = {"Monday": MealDay("Monday"), "Tuesday": MealDay("Tuesday"), "Wednesday": MealDay("Wednesday"), "Thursday": MealDay("Thursday"), "Friday": MealDay("Friday"), "Saturday": MealDay("Saturday"), "Sunday": MealDay("Sunday")}
+        self.day_to_index = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
 
         self.breakfast_meal_plan = []
         self.lunch_meal_plan = []
@@ -31,9 +32,18 @@ class MealCreator:
         self.all_meals.append(meal)
     
     def set_mealday_preference(self, day, meal, preferences):
-        day_to_index = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
-        mealday = self.mealdays_array[day_to_index[day]]
+        # mealday = self.mealdays_array[self.day_to_index[day]]
+        mealday = self.mealdays_dict[day]
         mealday.add_options(meal, preferences)
+    
+    def get_meal_choice(self, day, meal):
+        day = self.mealdays_dict[day]
+        if meal.lower() == "Breakfast":
+            return day.breakfast_choice
+        elif meal.lower() == "lunch":
+            return day.lunch_choice
+        elif meal.lower() == "dinner":
+            return day.dinner_choice
 
     #creates a filtered array based on meal options
     def create_filtered_array(self, base_array = None, **kwargs):
@@ -72,7 +82,8 @@ class MealCreator:
         lunch_array = self.create_filtered_array(meal_type = 'lunch')
         dinner_array = self.create_filtered_array(meal_type = 'dinner')
 
-        for mealday in self.mealdays_array:
+        # for mealday in self.mealdays_array:
+        for mealday in self.mealdays_dict.values():
 
             #generate breakfast choices
             filtered_array = self.create_filtered_array(breakfast_array, **mealday.breakfast_opts)
@@ -92,7 +103,7 @@ class MealCreator:
         return None
     
     def print_meals(self):
-        for mealday in self.mealdays_array:
+        for mealday in self.mealdays_dict.values():
             print(mealday.day + ":")
             if (mealday.breakfast_choice != None): 
                 print("Breakfast: " + str(mealday.breakfast_choice))
