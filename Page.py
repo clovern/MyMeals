@@ -7,8 +7,6 @@ from abc import ABC, abstractmethod
 class Page(ABC):
     def __init__(self, root):
         root.title("MyMeals")
-        self.createUpperFrame()
-        self.createLowerFrame()
 
     def createUpperFrame(self):
         self.uppercontent= ttk.Frame(self.outer)
@@ -18,6 +16,16 @@ class Page(ABC):
         self.lowercontent = ttk.Frame(self.outer, height=600, width=800)
         self.lowercontent.grid(column=0, row=1)
         self.lowercontent.grid_propagate(0)
+    
+    def createLowerLeftFrame(self):
+        self.lowerLeftContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerLeftContent.grid(column=0, row=0)
+        self.lowerLeftContent.grid_propagate(0)
+    
+    def createLowerRightFrame(self):
+        self.lowerRightContent = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lowerRightContent.grid(column=1, row=0)
+        self.lowerRightContent.grid_propagate(0) 
 
     # FIXME implement
     def createNavBar(self):
