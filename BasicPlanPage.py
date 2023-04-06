@@ -3,11 +3,14 @@ from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
 from PlanPage import PlanPage
+from MealInfoDisplay import MealInfoDisplay
 
 class BasicPlanPage(PlanPage):
     def __init__(self, root, outer):
         self.outer = outer
+        super().__init__()
         self.dropdownList = []
+
         self.createBasicPlanDisplay()
     
     def createBasicPlanDisplay(self):
@@ -72,13 +75,28 @@ class BasicPlanPage(PlanPage):
         self.questionFrame.grid(column=0, row=3)
 
     def generatePlan(self):
-        spSelection = self.specialDropdown.get()
-        print(spSelection)
 
-        mainSelection = self.dropdownList[0].get()
-        print(mainSelection)
-        mainSelection = self.dropdownList[1].get()
-        print(mainSelection)
-        mainSelection = self.dropdownList[2].get()
-        print(mainSelection)
+        super().generatePlan()
+        preferencesDropdown = self.specialDropdown
+        preferences = self.getSelection(preferencesDropdown)
+
+
+        breakfastNum = int(self.dropdownList[0].get())
+        lunchNum = int(self.dropdownList[1].get())
+        dinnerNum = int(self.dropdownList[2].get())
+
+        for i in range(breakfastNum):
+            self.weeklyPreferences[self.days[i]][0] = preferences
+        for i in range(lunchNum):
+            self.weeklyPreferences[self.days[i]][1] = preferences
+        for i in range(dinnerNum):
+            self.weeklyPreferences[self.days[i]][2] = preferences
+        
+        self.setDailyPreferences(self.weeklyPreferences)
+
+        self.meal_creator.create_meal_plan()
+
+        self.clearPage()
+        displayMealPage = MealInfoDisplay(self.outer, self.meal_creator)
+        
 
