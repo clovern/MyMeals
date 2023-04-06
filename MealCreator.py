@@ -38,7 +38,7 @@ class MealCreator:
     
     def get_meal_choice(self, day, meal):
         day = self.mealdays_dict[day]
-        if meal.lower() == "Breakfast":
+        if meal.lower() == "breakfast":
             return day.breakfast_choice
         elif meal.lower() == "lunch":
             return day.lunch_choice
