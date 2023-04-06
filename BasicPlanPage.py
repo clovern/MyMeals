@@ -26,6 +26,7 @@ class BasicPlanPage(PlanPage):
         self.mealQuestionPrompt("lunches")
         self.mealQuestionPrompt("dinners")
         self.specialOptionsPrompt()
+        self.setDropdownDefaults()
     
     def mealQuestionPrompt(self, meal):
         self.questionFrame= ttk.Frame(self.lowercontent)
@@ -73,6 +74,11 @@ class BasicPlanPage(PlanPage):
         self.mealQuestionLabel.grid(column=0, row=0, columnspan = 3, sticky='E')
         self.specialDropdown.display.grid(column=2, row=1, pady = (2, 2))
         self.questionFrame.grid(column=0, row=3)
+    
+    def setDropdownDefaults(self):
+        self.dropdownList[0].current(6)
+        self.dropdownList[1].current(6)
+        self.dropdownList[2].current(6)
 
     def generatePlan(self):
 
