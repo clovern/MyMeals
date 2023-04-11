@@ -6,22 +6,22 @@ class SpecialOptionsDropdown():
 
         self.frame = frame
 
-        self.veganBool = IntVar()
-        self.vegetarianBool = IntVar()
-        self.chickenBool = IntVar()
-        self.porkBool = IntVar()
-        self.beefBool = IntVar()
-        self.turkeyBool = IntVar()
-        self.seafoodBool = IntVar()
-        self.reheatsBool = IntVar()
-        self.lowPriceBool = IntVar()
-        self.mediumPriceBool = IntVar()
-        self.highPriceBool = IntVar()
+        self.vegan_bool = IntVar()
+        self.vegetarian_bool = IntVar()
+        self.chicken_bool = IntVar()
+        self.pork_bool = IntVar()
+        self.beef_bool = IntVar()
+        self.turkey_bool = IntVar()
+        self.seafood_bool = IntVar()
+        self.reheats_bool = IntVar()
+        self.low_price_bool = IntVar()
+        self.medium_price_bool = IntVar()
+        self.high_price_bool = IntVar()
 
-        self.dropdownVars = [self.veganBool, self.vegetarianBool, self.chickenBool, self.porkBool, self.beefBool, 
-                             self.turkeyBool, self.seafoodBool, self.reheatsBool, self.lowPriceBool, self.mediumPriceBool, self.highPriceBool]
+        self.dropdown_vars = [self.vegan_bool, self.vegetarian_bool, self.chicken_bool, self.pork_bool, self.beef_bool, 
+                             self.turkey_bool, self.seafood_bool, self.reheats_bool, self.low_price_bool, self.medium_price_bool, self.high_price_bool]
 
-        self.dropdownOpts = [    'Vegan',
+        self.dropdown_opts = [    'Vegan',
                     'Vegetarian',
                     'Chicken',
                     'Pork',
@@ -33,51 +33,51 @@ class SpecialOptionsDropdown():
                     '$$',
                     '$$$']
         
-        self.createSpecialOptionsDropdown()
+        self.create_special_options_dropdown()
 
-    def createSpecialOptionsDropdown(self):
+    def create_special_options_dropdown(self):
         self.display= Menubutton (self.frame, text="            \u2193", relief=RAISED, background="white")
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
 
-        for index in range(len(self.dropdownOpts)):
-            self.display.menu.add_checkbutton ( label=self.dropdownOpts[index],
-            variable=self.dropdownVars[index] )
+        for index in range(len(self.dropdown_opts)):
+            self.display.menu.add_checkbutton ( label=self.dropdown_opts[index],
+            variable=self.dropdown_vars[index] )
 
-    def makeAdvanced(self):
-        self.dropdownOpts.insert(0, "Exclude this Meal")
-        self.excludeBool = IntVar()
-        self.dropdownVars.insert(0, self.excludeBool)
-        self.display.menu.add_checkbutton ( label=self.dropdownOpts[0],
-            variable=self.dropdownVars[0] )
+    def make_advanced(self):
+        self.dropdown_opts.insert(0, "Exclude this Meal")
+        self.exclude_bool = IntVar()
+        self.dropdown_vars.insert(0, self.exclude_bool)
+        self.display.menu.add_checkbutton ( label=self.dropdown_opts[0],
+            variable=self.dropdown_vars[0] )
 
-    def getSelection(self): 
-        selectedInitial = []
-        selectedFinal = {}
+    def get_selection(self): 
+        selected_initial = []
+        selected_final = {}
 
-        # adds all selected values directly into selectedInitial list
-        for i in range(len(self.dropdownVars)):
+        # adds all selected values directly into selected_initial list
+        for i in range(len(self.dropdown_vars)):
 
             #value of 1 indicates this variable is selected
-            if self.dropdownVars[i].get() == 1:
-                selectedOption = self.dropdownOpts[i]
-                selectedInitial.append(selectedOption)
+            if self.dropdown_vars[i].get() == 1:
+                selected_option = self.dropdown_opts[i]
+                selected_initial.append(selected_option)
         
-        selectedFinal = self.formatSelection(selectedInitial)
+        selected_final = self.format_selection(selected_initial)
                 
-        return selectedFinal
+        return selected_final
     
-    def formatSelection(self, selectedInitial):
+    def format_selection(self, selected_initial):
         
-        selectedFinal = {}
+        selected_final = {}
         # If multiple values are selected for meat type or price, these selections are put into arrays.
         # This allows us to search for meals which match 1 or more of these options in MealCreator. 
         meat_types = []
         price_types = []
-        for value in selectedInitial:
+        for value in selected_initial:
             if value.lower() == "exclude this meal":
-                selectedFinal["exclude"] = "true"
-                return selectedFinal
+                selected_final["exclude"] = "true"
+                return selected_final
             
             if value.lower() in ["vegan", "vegetarian", "chicken", "pork", "beef", "turkey", "seafood"]:
                 meat_types.append(value.lower())
@@ -90,18 +90,18 @@ class SpecialOptionsDropdown():
                     price_types.append("expensive")
             else:
                 if (value.lower() == "reheats-well"):
-                    selectedFinal["reheats_well"] = "true"
+                    selected_final["reheats_well"] = "true"
 
         if (len(meat_types) > 0):
             if (len(meat_types) == 1):
-                selectedFinal["meat_type"] = meat_types[0]
+                selected_final["meat_type"] = meat_types[0]
             else:
-                selectedFinal["meat_type"] = meat_types
+                selected_final["meat_type"] = meat_types
         
         if (len(price_types) > 0):
             if (len(meat_types) == 1):
-                selectedFinal["price_range"] = price_types[0]
+                selected_final["price_range"] = price_types[0]
             else:
-                selectedFinal["price_range"] = price_types
+                selected_final["price_range"] = price_types
         
-        return selectedFinal
+        return selected_final

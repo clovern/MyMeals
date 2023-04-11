@@ -9,48 +9,48 @@ class BasicPlanPage(PlanPage):
     def __init__(self, root, outer):
         self.outer = outer
         super().__init__()
-        self.dropdownList = []
+        self.dropdown_list = []
 
-        self.createBasicPlanDisplay()
+        self.create_basic_plan_display()
     
-    def createBasicPlanDisplay(self):
-        self.createUpperFrame()
-        self.createLowerFrame()
-        self.centerInFrame()
-        self.createTitle("Basic Plan Creator")
-        self.addQuestions()
-        self.createSubmitButton()
+    def create_basic_plan_display(self):
+        self.create_upper_frame()
+        self.create_lower_frame()
+        self.center_in_frame()
+        self.create_title("Basic Plan Creator")
+        self.add_questions()
+        self.create_submit_button()
     
-    def addQuestions(self):
-        self.createMealQuestionPrompt("breakfasts")
-        self.createMealQuestionPrompt("lunches")
-        self.createMealQuestionPrompt("dinners")
-        self.specialOptionsPrompt()
-        self.setDropdownDefaults()
+    def add_questions(self):
+        self.create_meal_question_prompt("breakfasts")
+        self.create_meal_question_prompt("lunches")
+        self.create_meal_question_prompt("dinners")
+        self.special_options_prompt()
+        self.set_dropdown_defaults()
     
-    def createMealQuestionPrompt(self, meal):
-        self.questionFrame= ttk.Frame(self.lowercontent)
-        self.questionFrame['padding'] = (15, 15, 15, 15)
-        mealQuestion = 'How many {0} would you like planned this week?'.format(meal)
-        self.mealQuestionLabel = ttk.Label(self.questionFrame, text=mealQuestion, font=("Arial", 15))
-        self.createNumberDropdown()
+    def create_meal_question_prompt(self, meal):
+        self.question_frame= ttk.Frame(self.lowercontent)
+        self.question_frame['padding'] = (15, 15, 15, 15)
+        meal_question = 'How many {0} would you like planned this week?'.format(meal)
+        self.meal_question_label = ttk.Label(self.question_frame, text=meal_question, font=("Arial", 15))
+        self.create_number_dropdown()
 
         index = 0
         if (meal == "lunches"): index = 1
         elif (meal == "dinners"): index = 2
 
-        self.mealQuestionLabel.grid(column=0, row=0, columnspan=3, sticky='E')
-        (self.dropdownList[-1]).grid(column=2, row=1, sticky='E', pady= (2,2))
-        self.questionFrame.grid(column=0, row=index)
+        self.meal_question_label.grid(column=0, row=0, columnspan=3, sticky='E')
+        (self.dropdown_list[-1]).grid(column=2, row=1, sticky='E', pady= (2,2))
+        self.question_frame.grid(column=0, row=index)
     
-    def createSubmitButton(self):
-        super().createSubmitButton()
-        self.submitButton.grid(column=0, columnspan=3, row=4)
+    def create_submit_button(self):
+        super().create_submit_button()
+        self.submit_button.grid(column=0, columnspan=3, row=4)
     
-    def createNumberDropdown(self):
-        self.choiceSelection = StringVar()
-        self.basicDropdown = ttk.Combobox(self.questionFrame, textvariable=self.choiceSelection)
-        self.basicDropdown['values'] = (
+    def create_number_dropdown(self):
+        self.choice_selection = StringVar()
+        self.basic_dropdown = ttk.Combobox(self.question_frame, textvariable=self.choice_selection)
+        self.basic_dropdown['values'] = (
                             '0',
                             '1',
                             '2',
@@ -59,35 +59,35 @@ class BasicPlanPage(PlanPage):
                             '5',
                             '6',
                             '7')
-        self.dropdownList.append(self.basicDropdown)
+        self.dropdown_list.append(self.basic_dropdown)
 
-    def centerInFrame(self):
+    def center_in_frame(self):
         self.lowercontent.grid_columnconfigure(0, weight=1)
     
-    def specialOptionsPrompt(self):
-        self.questionFrame= ttk.Frame(self.lowercontent, width=600)
-        self.questionFrame['padding'] = (15, 15, 15, 15)
+    def special_options_prompt(self):
+        self.question_frame= ttk.Frame(self.lowercontent, width=600)
+        self.question_frame['padding'] = (15, 15, 15, 15)
 
-        self.mealQuestionLabel = ttk.Label(self.questionFrame, text="Special options?", font=("Arial", 15))
-        self.createSpecialOptionsDropdown(self.questionFrame)
+        self.meal_question_label = ttk.Label(self.question_frame, text="Special options?", font=("Arial", 15))
+        self.create_special_options_dropdown(self.question_frame)
 
-        self.mealQuestionLabel.grid(column=0, row=0, columnspan = 3, sticky='E')
-        self.specialDropdown.display.grid(column=2, row=1, pady = (2, 2))
-        self.questionFrame.grid(column=0, row=3)
+        self.meal_question_label.grid(column=0, row=0, columnspan = 3, sticky='E')
+        self.special_dropdown.display.grid(column=2, row=1, pady = (2, 2))
+        self.question_frame.grid(column=0, row=3)
     
-    def setDropdownDefaults(self):
-        self.dropdownList[0].current(7)
-        self.dropdownList[1].current(7)
-        self.dropdownList[2].current(7)
+    def set_dropdown_defaults(self):
+        self.dropdown_list[0].current(7)
+        self.dropdown_list[1].current(7)
+        self.dropdown_list[2].current(7)
 
-    def generatePlan(self):
+    def generate_plan(self):
 
-        super().generatePlan()
+        super().generate_plan()
 
-        self.meal_creator.setWeeklyPreferencesBasic(self.dropdownList, self.specialDropdown)
+        self.meal_creator.set_weekly_preferences_basic(self.dropdown_list, self.special_dropdown)
         self.meal_creator.create_meal_plan()
 
-        self.clearPage()
-        displayMealPage = MealInfoDisplay(self.outer, self.meal_creator)
+        self.clear_page()
+        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)
         
 
