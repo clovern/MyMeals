@@ -32,7 +32,7 @@ class SpecialOptionsDropdown():
                     '$',
                     '$$',
                     '$$$']
-    
+        
         self.createSpecialOptionsDropdown()
 
     def createSpecialOptionsDropdown(self):
@@ -42,8 +42,15 @@ class SpecialOptionsDropdown():
 
         for index in range(len(self.dropdownOpts)):
             self.display.menu.add_checkbutton ( label=self.dropdownOpts[index],
-            variable=self.dropdownVars[index] )     
-    
+            variable=self.dropdownVars[index] )
+
+    def makeAdvanced(self):
+        self.dropdownOpts.insert(0, "Exclude this Meal")
+        self.excludeBool = IntVar()
+        self.dropdownVars.insert(0, self.excludeBool)
+        self.display.menu.add_checkbutton ( label=self.dropdownOpts[0],
+            variable=self.dropdownVars[0] )
+
     def getSelection(self): 
         selectedInitial = []
         selectedFinal = {}
@@ -68,6 +75,10 @@ class SpecialOptionsDropdown():
         meat_types = []
         price_types = []
         for value in selectedInitial:
+            if value.lower() == "exclude this meal":
+                selectedFinal["exclude"] = "true"
+                return selectedFinal
+            
             if value.lower() in ["vegan", "vegetarian", "chicken", "pork", "beef", "turkey", "seafood"]:
                 meat_types.append(value.lower())
             elif value in ["$", "$$", "$$$"]:
@@ -92,5 +103,5 @@ class SpecialOptionsDropdown():
                 selectedFinal["price_range"] = price_types[0]
             else:
                 selectedFinal["price_range"] = price_types
-                
+        
         return selectedFinal

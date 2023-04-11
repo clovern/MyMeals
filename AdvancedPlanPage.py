@@ -41,6 +41,7 @@ class AdvancedPlanPage(PlanPage):
     
     def createSpecialOptionsDropdown(self, day):
             super().createSpecialOptionsDropdown(self.dayFrame)
+            self.specialDropdown.makeAdvanced()
             self.dropdownDict[day].append(self.specialDropdown)
     
     def createSubmitButton(self):
