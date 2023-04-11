@@ -32,11 +32,15 @@ class MealCreator:
         self.all_meals.append(meal)
     
     def set_mealday_preference(self, day, meal, preferences):
-        # mealday = self.mealdays_array[self.day_to_index[day]]
         mealday = self.mealdays_dict[day]
         mealday.add_options(meal, preferences)
     
-    def get_meal_choice(self, day, meal):
+    def select_meal(self, filtered_array):
+        if (len(filtered_array) > 0):
+            return random.choice(filtered_array)
+        return None
+    
+    def get_meal_selection(self, day, meal):
         day = self.mealdays_dict[day]
         if meal.lower() == "breakfast":
             return day.breakfast_choice
@@ -44,9 +48,78 @@ class MealCreator:
             return day.lunch_choice
         elif meal.lower() == "dinner":
             return day.dinner_choice
+    
+    def setWeeklyPreferencesAdvanced(self, dropdownDict):
+        self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        self.weeklyPreferences = {"Monday": [{}, {}, {}], "Tuesday": [{}, {}, {}], "Wednesday": [{}, {}, {}], "Thursday": [{}, {}, {}],
+                        "Friday": [{}, {}, {}], "Saturday": [{}, {}, {}], "Sunday": [{}, {}, {}]}
 
-    #creates a filtered array based on meal options
-    def create_filtered_array(self, base_array = None, **kwargs):
+        #add selected options from each day to weeklyPreferences, as an array
+        for day in self.days:
+            for index in range(3):
+                dropdown = dropdownDict[day][index]
+                self.weeklyPreferences[day][index] = (dropdown.getSelection())
+        
+        self.setDailyPreferences(self.weeklyPreferences)
+    
+    def setWeeklyPreferencesBasic(self, dropdownList, specialDropdown):
+        self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        self.weeklyPreferences = {"Monday": [{}, {}, {}], "Tuesday": [{}, {}, {}], "Wednesday": [{}, {}, {}], "Thursday": [{}, {}, {}],
+                        "Friday": [{}, {}, {}], "Saturday": [{}, {}, {}], "Sunday": [{}, {}, {}]}
+        
+        preferences = specialDropdown.getSelection()
+
+        breakfastNum = int(dropdownList[0].get())
+        lunchNum = int(dropdownList[1].get())
+        dinnerNum = int(dropdownList[2].get())
+
+        for i in range(breakfastNum):
+            self.weeklyPreferences[self.days[i]][0] = preferences
+        for i in range(lunchNum):
+            self.weeklyPreferences[self.days[i]][1] = preferences
+        for i in range(dinnerNum):
+            self.weeklyPreferences[self.days[i]][2] = preferences
+        
+        self.setDailyPreferences(self.weeklyPreferences)
+    
+    def setDailyPreferences(self, weeklyPreferences):
+        breakfastindex = 0
+        lunchindex = 1
+        dinnerindex = 2
+
+        for day in self.days:
+
+            self.set_mealday_preference(day, "breakfast", weeklyPreferences[day][breakfastindex])
+            self.set_mealday_preference(day, "lunch", weeklyPreferences[day][lunchindex])
+            self.set_mealday_preference(day, "dinner", weeklyPreferences[day][dinnerindex])
+            
+        return
+
+    def create_meal_plan(self):
+
+        # filter out arrays for breakfast, lunch, and dinner meals
+        breakfast_array = self.filter_meal_array(meal_type = 'breakfast')
+        lunch_array = self.filter_meal_array(meal_type = 'lunch')
+        dinner_array = self.filter_meal_array(meal_type = 'dinner')
+
+        # for mealday in self.mealdays_array:
+        for mealday in self.mealdays_dict.values():
+
+            #generate breakfast choices
+            filtered_array = self.filter_meal_array(breakfast_array, **mealday.breakfast_opts)
+            mealday.breakfast_choice = self.select_meal(filtered_array)
+
+            #generate lunch choices
+            filtered_array = self.filter_meal_array(lunch_array, **mealday.lunch_opts)
+            mealday.lunch_choice = self.select_meal(filtered_array)
+
+            #generate dinner choices
+            filtered_array = self.filter_meal_array(dinner_array, **mealday.dinner_opts)
+            mealday.dinner_choice = self.select_meal(filtered_array)
+    
+        #creates a filtered array based on meal options
+    
+    def filter_meal_array(self, base_array = None, **kwargs):
         if base_array == None:
             base_array = self.all_meals
         filtered_array = []
@@ -74,43 +147,5 @@ class MealCreator:
                 filtered_array.append(meal)
 
         return filtered_array
-
-    def create_meal_plan(self):
-
-        # filter out arrays for breakfast, lunch, and dinner meals
-        breakfast_array = self.create_filtered_array(meal_type = 'breakfast')
-        lunch_array = self.create_filtered_array(meal_type = 'lunch')
-        dinner_array = self.create_filtered_array(meal_type = 'dinner')
-
-        # for mealday in self.mealdays_array:
-        for mealday in self.mealdays_dict.values():
-
-            #generate breakfast choices
-            filtered_array = self.create_filtered_array(breakfast_array, **mealday.breakfast_opts)
-            mealday.breakfast_choice = self.choose_meal(filtered_array)
-
-            #generate lunch choices
-            filtered_array = self.create_filtered_array(lunch_array, **mealday.lunch_opts)
-            mealday.lunch_choice = self.choose_meal(filtered_array)
-
-            #generate dinner choices
-            filtered_array = self.create_filtered_array(dinner_array, **mealday.dinner_opts)
-            mealday.dinner_choice = self.choose_meal(filtered_array)
-    
-    def choose_meal(self, filtered_array):
-        if (len(filtered_array) > 0):
-            return random.choice(filtered_array)
-        return None
-    
-    def print_meals(self):
-        for mealday in self.mealdays_dict.values():
-            print(mealday.day + ":")
-            if (mealday.breakfast_choice != None): 
-                print("Breakfast: " + str(mealday.breakfast_choice))
-            if (mealday.lunch_choice != None): 
-                print("Lunch: " + str(mealday.lunch_choice))
-            if (mealday.dinner_choice != None): 
-                print("Dinner: " + str(mealday.dinner_choice))
-            print()
 
         
