@@ -14,35 +14,35 @@ class MealInfoDisplay(PlanPage):
         self.createMealDisplay()
     
     def createMealDisplay(self):
-        self.createLowerLeftFrame()
-        self.createLowerRightFrame()
-        self.createFooterFrame()
+        self.create_lower_left_frame()
+        self.create_lower_right_frame()
+        self.create_footer_frame()
         self.lowercontent["height"] = 500
-        self.createTitle("You're all set!")
-        self.createAllDays()
-        self.createFooterOptions()
+        self.create_title("You're all set!")
+        self.create_all_days()
+        self.create_footer_options()
     
-    def createFooterFrame(self):
+    def create_footer_frame(self):
         self.footercontent = ttk.Frame(self.outer, height=100, width=800)
         self.footercontent.grid(column=0, row=2)
         self.footercontent.grid_propagate(0)
     
-    def createDayPanel(self, day, index):
-        super().createDayPanel(day, index)
-        self.createMealDisplayPanel("Breakfast", day)
-        self.createMealDisplayPanel("Lunch", day)
-        self.createMealDisplayPanel("Dinner", day)
+    def create_day_panel(self, day, index):
+        super().create_day_panel(day, index)
+        self.create_meal_display_panel("Breakfast", day)
+        self.create_meal_display_panel("Lunch", day)
+        self.create_meal_display_panel("Dinner", day)
 
-    def createMealDisplayPanel(self, meal, day):
-        self.displayMeal(meal, day)
-        self.createDetailsButton()
-        self.createReRollButton()
+    def create_meal_display_panel(self, meal, day):
+        self.display_meal(meal, day)
+        self.create_details_button()
+        self.create_reroll_button()
     
-    def displayMeal(self, meal, day):
-        textValue = meal
-        textValue += ": "
-        textValue += self.meal_creator.get_meal_selection(day, meal).__repr__()
-        self.mealLabel = ttk.Label(self.dayFrame, text=textValue, padding=(20,2,20,2))
+    def display_meal(self, meal, day):
+        text_value = meal
+        text_value += ": "
+        text_value += self.meal_creator.get_meal_selection(day, meal).__repr__()
+        self.meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
 
         index = 0
         if meal == "Lunch":
@@ -50,25 +50,25 @@ class MealInfoDisplay(PlanPage):
         elif meal == "Dinner":
             index = 2
 
-        self.mealLabel.grid(column=1, row=index)
+        self.meal_label.grid(column=1, row=index)
     
-    def createDetailsButton(self):
-        self.detailsButton = ttk.Button(self.dayFrame, text="details", default="active", command=self.showMealDetails)
-        self.detailsButton.grid(row=3, column=0)
+    def create_details_button(self):
+        self.details_button = ttk.Button(self.day_frame, text="details", default="active", command=self.show_meal_details)
+        self.details_button.grid(row=3, column=0)
 
-    def createReRollButton(self):
-        self.rerollButton = ttk.Button(self.dayFrame, text="re-roll", default="active", command=self.reRollMeal)
-        self.rerollButton.grid(row=3, column=1)
+    def create_reroll_button(self):
+        self.reroll_button = ttk.Button(self.day_frame, text="re-roll", default="active", command=self.reroll_meal)
+        self.reroll_button.grid(row=3, column=1)
 
-    def showMealDetails(self):
+    def show_meal_details(self):
         pass
 
-    def reRollMeal(self):
+    def reroll_meal(self):
         pass
 
-    def createFooterOptions(self):
-        self.saveButton = ttk.Button(self.footercontent, text="save to file", default="active", command=self.saveMeals)
-        self.saveButton.pack()
+    def create_footer_options(self):
+        self.save_button = ttk.Button(self.footercontent, text="save to file", default="active", command=self.save_meals)
+        self.save_button.pack()
 
-    def saveMeals(self):
+    def save_meals(self):
         pass

@@ -1,6 +1,6 @@
-from HomePage import startGUI
+from HomePage import start_GUI
 
 def main():
-    startGUI()
+    start_GUI()
 
 main()

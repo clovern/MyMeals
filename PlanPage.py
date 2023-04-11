@@ -6,36 +6,36 @@ from Page import Page
 
 class PlanPage(Page):
     def __init__(self):
-        self.createUpperFrame()
-        self.createLowerFrame()
+        self.create_upper_frame()
+        self.create_lower_frame()
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-    def createSubmitButton(self):
-        self.submitButton = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generatePlan)
+    def create_submit_button(self):
+        self.submit_button = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generate_plan)
 
-    def createSpecialOptionsDropdown(self, frame):
-        self.specialDropdown = SpecialOptionsDropdown(frame)
+    def create_special_options_dropdown(self, frame):
+        self.special_dropdown = SpecialOptionsDropdown(frame)
 
-    def generatePlan(self):
+    def generate_plan(self):
         self.meal_creator = MealCreator()
     
-    def createAllDays(self):
+    def create_all_days(self):
         index = 0
         for day in self.days:
-            self.createDayPanel(day, index)
+            self.create_day_panel(day, index)
             index += 1
     
-    def createDayFlag(self, day):
-        self.dayFlag = ttk.Label(self.dayFrame, text=day, width=10, font=("Arial", 15))
+    def create_day_flag(self, day):
+        self.dayFlag = ttk.Label(self.day_frame, text=day, width=10, font=("Arial", 15))
         self.dayFlag.grid(column=0, row=0)
     
-    def createDayPanel(self, day, index):
+    def create_day_panel(self, day, index):
         if (index < 4):
-            self.dayFrame= ttk.Frame(self.lowerLeftContent)
+            self.day_frame= ttk.Frame(self.lower_left_content)
         else:
-            self.dayFrame= ttk.Frame(self.lowerRightContent)
+            self.day_frame= ttk.Frame(self.lower_right_content)
             index -= 4
         
-        self.dayFrame['padding'] = (10, 10, 10, 10)
-        self.dayFrame.grid(column=0, row=index)
-        self.createDayFlag(day)
+        self.day_frame['padding'] = (10, 10, 10, 10)
+        self.day_frame.grid(column=0, row=index)
+        self.create_day_flag(day)
