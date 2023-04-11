@@ -59,28 +59,42 @@ class MealCreator:
             for index in range(3):
                 dropdown = dropdownDict[day][index]
                 self.weeklyPreferences[day][index] = (dropdown.getSelection())
-        
+
         self.setDailyPreferences(self.weeklyPreferences)
     
     def setWeeklyPreferencesBasic(self, dropdownList, specialDropdown):
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         self.weeklyPreferences = {"Monday": [{}, {}, {}], "Tuesday": [{}, {}, {}], "Wednesday": [{}, {}, {}], "Thursday": [{}, {}, {}],
                         "Friday": [{}, {}, {}], "Saturday": [{}, {}, {}], "Sunday": [{}, {}, {}]}
-        
+
         preferences = specialDropdown.getSelection()
 
         breakfastNum = int(dropdownList[0].get())
         lunchNum = int(dropdownList[1].get())
         dinnerNum = int(dropdownList[2].get())
 
-        for i in range(breakfastNum):
-            self.weeklyPreferences[self.days[i]][0] = preferences
-        for i in range(lunchNum):
-            self.weeklyPreferences[self.days[i]][1] = preferences
-        for i in range(dinnerNum):
-            self.weeklyPreferences[self.days[i]][2] = preferences
-        
+        self.set_basic_preferences_helper(breakfastNum, "breakfast", preferences)
+        self.set_basic_preferences_helper(lunchNum, "lunch", preferences)
+        self.set_basic_preferences_helper(dinnerNum, "dinner", preferences)
+
         self.setDailyPreferences(self.weeklyPreferences)
+    
+    def set_basic_preferences_helper(self, num_meals, meal_name, preferences):
+
+        meal_index = 0
+        if meal_name == "lunch":
+            meal_index = 1
+        if meal_name == "dinner":
+            meal_index = 2
+
+        #set the selected preference(s) on the wanted number of meals
+        for i in range(num_meals):
+            meal_value = self.weeklyPreferences[self.days[i]][meal_index]
+            self.weeklyPreferences[self.days[i]][meal_index] = preferences
+            
+        #indicate that the remaining meals should be excluded
+        for i in range(num_meals, 7):
+            self.weeklyPreferences[self.days[i]][meal_index] = {"exclude": "true"}
     
     def setDailyPreferences(self, weeklyPreferences):
         breakfastindex = 0
@@ -106,16 +120,19 @@ class MealCreator:
         for mealday in self.mealdays_dict.values():
 
             #generate breakfast choices
-            filtered_array = self.filter_meal_array(breakfast_array, **mealday.breakfast_opts)
-            mealday.breakfast_choice = self.select_meal(filtered_array)
+            if "exclude" not in mealday.breakfast_opts:
+                filtered_array = self.filter_meal_array(breakfast_array, **mealday.breakfast_opts)
+                mealday.breakfast_choice = self.select_meal(filtered_array)
 
             #generate lunch choices
-            filtered_array = self.filter_meal_array(lunch_array, **mealday.lunch_opts)
-            mealday.lunch_choice = self.select_meal(filtered_array)
+            if "exclude" not in mealday.lunch_opts.keys():
+                filtered_array = self.filter_meal_array(lunch_array, **mealday.lunch_opts)
+                mealday.lunch_choice = self.select_meal(filtered_array)
 
             #generate dinner choices
-            filtered_array = self.filter_meal_array(dinner_array, **mealday.dinner_opts)
-            mealday.dinner_choice = self.select_meal(filtered_array)
+            if "exclude" not in mealday.dinner_opts.keys():
+                filtered_array = self.filter_meal_array(dinner_array, **mealday.dinner_opts)
+                mealday.dinner_choice = self.select_meal(filtered_array)
     
         #creates a filtered array based on meal options
     
