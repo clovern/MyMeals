@@ -50,32 +50,11 @@ class AdvancedPlanPage(PlanPage):
     def generatePlan(self):
 
         super().generatePlan()
-
-        #add selected options from each day to weeklyPreferences, as an array
-        for day in self.days:
-            for index in range(3):
-                dropdown = self.dropdownDict[day][index]
-                self.weeklyPreferences[day][index] = (self.getSelection(dropdown))
-
-        self.setDailyPreferences(self.weeklyPreferences)
-
+        self.meal_creator.setWeeklyPreferencesAdvanced(self.dropdownDict)
         self.meal_creator.create_meal_plan()
 
         self.clearPage()
         displayMealPage = MealInfoDisplay(self.outer, self.meal_creator)
-    
-    def setDailyPreferences(self, weeklyPreferences):
-        breakfastindex = 0
-        lunchindex = 1
-        dinnerindex = 2
-
-        for day in self.days:
-
-            self.meal_creator.set_mealday_preference(day, "breakfast", weeklyPreferences[day][breakfastindex])
-            self.meal_creator.set_mealday_preference(day, "lunch", weeklyPreferences[day][lunchindex])
-            self.meal_creator.set_mealday_preference(day, "dinner", weeklyPreferences[day][dinnerindex])
-            
-        return
 
 
 

@@ -22,13 +22,13 @@ class BasicPlanPage(PlanPage):
         self.createSubmitButton()
     
     def addQuestions(self):
-        self.mealQuestionPrompt("breakfasts")
-        self.mealQuestionPrompt("lunches")
-        self.mealQuestionPrompt("dinners")
+        self.createMealQuestionPrompt("breakfasts")
+        self.createMealQuestionPrompt("lunches")
+        self.createMealQuestionPrompt("dinners")
         self.specialOptionsPrompt()
         self.setDropdownDefaults()
     
-    def mealQuestionPrompt(self, meal):
+    def createMealQuestionPrompt(self, meal):
         self.questionFrame= ttk.Frame(self.lowercontent)
         self.questionFrame['padding'] = (15, 15, 15, 15)
         mealQuestion = 'How many {0} would you like planned this week?'.format(meal)
@@ -76,30 +76,15 @@ class BasicPlanPage(PlanPage):
         self.questionFrame.grid(column=0, row=3)
     
     def setDropdownDefaults(self):
-        self.dropdownList[0].current(6)
-        self.dropdownList[1].current(6)
-        self.dropdownList[2].current(6)
+        self.dropdownList[0].current(7)
+        self.dropdownList[1].current(7)
+        self.dropdownList[2].current(7)
 
     def generatePlan(self):
 
         super().generatePlan()
-        preferencesDropdown = self.specialDropdown
-        preferences = self.getSelection(preferencesDropdown)
 
-
-        breakfastNum = int(self.dropdownList[0].get())
-        lunchNum = int(self.dropdownList[1].get())
-        dinnerNum = int(self.dropdownList[2].get())
-
-        for i in range(breakfastNum):
-            self.weeklyPreferences[self.days[i]][0] = preferences
-        for i in range(lunchNum):
-            self.weeklyPreferences[self.days[i]][1] = preferences
-        for i in range(dinnerNum):
-            self.weeklyPreferences[self.days[i]][2] = preferences
-        
-        self.setDailyPreferences(self.weeklyPreferences)
-
+        self.meal_creator.setWeeklyPreferencesBasic(self.dropdownList, self.specialDropdown)
         self.meal_creator.create_meal_plan()
 
         self.clearPage()

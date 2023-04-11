@@ -41,7 +41,7 @@ class MealInfoDisplay(PlanPage):
     def displayMeal(self, meal, day):
         textValue = meal
         textValue += ": "
-        textValue += self.meal_creator.get_meal_choice(day, meal).__repr__()
+        textValue += self.meal_creator.get_meal_selection(day, meal).__repr__()
         self.mealLabel = ttk.Label(self.dayFrame, text=textValue, padding=(20,2,20,2))
 
         index = 0
