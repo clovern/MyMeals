@@ -122,19 +122,17 @@ class MealCreator:
             #generate breakfast choices
             if "exclude" not in mealday.breakfast_opts:
                 filtered_array = self.filter_meal_array(breakfast_array, **mealday.breakfast_opts)
-                mealday.breakfast_choice = self.select_meal(filtered_array)
+                mealday.breakfast_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
 
             #generate lunch choices
             if "exclude" not in mealday.lunch_opts.keys():
                 filtered_array = self.filter_meal_array(lunch_array, **mealday.lunch_opts)
-                mealday.lunch_choice = self.select_meal(filtered_array)
+                mealday.lunch_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
 
             #generate dinner choices
             if "exclude" not in mealday.dinner_opts.keys():
                 filtered_array = self.filter_meal_array(dinner_array, **mealday.dinner_opts)
-                mealday.dinner_choice = self.select_meal(filtered_array)
-    
-        #creates a filtered array based on meal options
+                mealday.dinner_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
     
     def filter_meal_array(self, base_array = None, **kwargs):
         if base_array == None:

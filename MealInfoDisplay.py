@@ -41,7 +41,11 @@ class MealInfoDisplay(PlanPage):
     def display_meal(self, meal, day):
         text_value = meal
         text_value += ": "
-        text_value += self.meal_creator.get_meal_selection(day, meal).__repr__()
+        meal_value = self.meal_creator.get_meal_selection(day, meal)
+        if meal_value == "N/A":
+            text_value += "No Meals Match Criteria"
+        else:
+            text_value += meal_value.__repr__()
         self.meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
 
         index = 0
