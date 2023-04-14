@@ -4,6 +4,7 @@ from PIL import Image
 from PIL import ImageTk
 from PlanPage import PlanPage
 from MealInfoDisplay import MealInfoDisplay
+from DropdownTranslator import DropdownTranslator
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
@@ -51,8 +52,9 @@ class AdvancedPlanPage(PlanPage):
     def generate_plan(self):
 
         super().generate_plan()
-        self.meal_creator.set_weekly_preferences_advanced(self.dropdown_dict)
-        self.meal_creator.create_meal_plan()
+        dropdown_translator = DropdownTranslator()
+        weekly_preferences = dropdown_translator.set_weekly_preferences_advanced(self.dropdown_dict)
+        self.meal_creator.create_meal_plan(weekly_preferences)
 
         self.clear_page()
         display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)

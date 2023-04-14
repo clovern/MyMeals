@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
@@ -34,6 +35,7 @@ class MealInfoDisplay(PlanPage):
         self.create_meal_display_panel("Dinner", day)
 
     def create_meal_display_panel(self, meal, day):
+        mealDay = self.meal_creator.mealdays_dict[day]
         self.display_meal(meal, day)
         self.create_details_button()
         self.create_reroll_button()
@@ -64,7 +66,9 @@ class MealInfoDisplay(PlanPage):
         self.reroll_button = ttk.Button(self.day_frame, text="re-roll", default="active", command=self.reroll_meal)
         self.reroll_button.grid(row=3, column=1)
 
-    def show_meal_details(self):
+    def show_meal_details(self, meal):
+        # open a message box that shows the ingredients and the recipe
+        messagebox.showinfo("showinfo", "Information")
         pass
 
     def reroll_meal(self):
