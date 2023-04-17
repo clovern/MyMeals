@@ -35,44 +35,67 @@ class MealInfoDisplay(PlanPage):
         self.create_meal_display_panel("Dinner", day)
 
     def create_meal_display_panel(self, meal, day):
-        mealDay = self.meal_creator.mealdays_dict[day]
-        self.display_meal(meal, day)
+
+        mealday = self.meal_creator.mealdays_dict[day]
+        self.display_meal(mealday, meal)
         self.create_details_button()
-        self.create_reroll_button()
     
-    def display_meal(self, meal, day):
-        text_value = meal
+    def display_meal(self, mealday, meal):
+
+        text_value= self.set_meal_label(mealday, meal)
+        index = self.set_meal_index(meal)
+
+        meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
+        meal_label.grid(column=2, row=index)
+        self.create_reroll_button(mealday, meal, meal_label)
+    
+    def set_meal_index(self, meal):
+        index = 0
+        if meal.lower() == "lunch":
+            index = 1
+        elif meal.lower() == "dinner":
+            index = 2
+        return index
+
+    def set_meal_label(self, mealday, meal):
+        text_value = "B"
+        if meal.lower() == "lunch":
+            text_value = "L"
+        elif meal.lower() == "dinner":
+            text_value = "D"
+
         text_value += ": "
-        meal_value = self.meal_creator.get_meal_selection(day, meal)
+        meal_value = self.meal_creator.get_meal_selection(mealday, meal)
         if meal_value == "N/A":
             text_value += "No Meals Match Criteria"
         else:
             text_value += meal_value.__repr__()
-        self.meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
-
-        index = 0
-        if meal == "Lunch":
-            index = 1
-        elif meal == "Dinner":
-            index = 2
-
-        self.meal_label.grid(column=1, row=index)
+        
+        return text_value
     
     def create_details_button(self):
         self.details_button = ttk.Button(self.day_frame, text="details", default="active", command=self.show_meal_details)
         self.details_button.grid(row=3, column=0)
 
-    def create_reroll_button(self):
-        self.reroll_button = ttk.Button(self.day_frame, text="re-roll", default="active", command=self.reroll_meal)
-        self.reroll_button.grid(row=3, column=1)
+    def create_reroll_button(self, mealday, meal, label):
+        # self.reroll_button = ttk.Button(self.day_frame, text="re-roll", default="active", command=self.reroll_meal(mealday, meal))
+        index = self.set_meal_index(meal)
+        self.reroll_button = ttk.Button(self.day_frame, text="Re-Roll", default="active", command=lambda: self.reroll_meal(mealday, meal, label))
+        self.reroll_button.grid(row=index, column=1)
 
     def show_meal_details(self, meal):
         # open a message box that shows the ingredients and the recipe
         messagebox.showinfo("showinfo", "Information")
         pass
 
-    def reroll_meal(self):
-        pass
+    def reroll_meal(self, mealday, meal, label):
+        self.meal_creator.select_meal(mealday, meal)
+        self.update_meal_display(mealday, meal, label)
+    
+    def update_meal_display(self, mealday, meal, label):
+        text_value = self.set_meal_label(mealday, meal)
+        label["text"] = text_value
+        
 
     def create_footer_options(self):
         self.save_button = ttk.Button(self.footercontent, text="save to file", default="active", command=self.save_meals)
