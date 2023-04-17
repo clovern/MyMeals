@@ -8,7 +8,12 @@ class MealCreator:
 
     def __init__(self):
         self.all_meals = []
+        self.breakfast_meals = []
+        self.lunch_meals = []
+        self.dinner_meals = []
+
         self.populate_default_meals()
+
         self.mealdays_dict = {"Monday": MealDay("Monday"), "Tuesday": MealDay("Tuesday"), "Wednesday": MealDay("Wednesday"), "Thursday": MealDay("Thursday"), "Friday": MealDay("Friday"), "Saturday": MealDay("Saturday"), "Sunday": MealDay("Sunday")}
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         self.day_to_index = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3, "Friday": 4, "Saturday": 5, "Sunday": 6}
@@ -31,24 +36,50 @@ class MealCreator:
 
     def add_meal(self, meal):
         self.all_meals.append(meal)
+        if meal.meal_type.lower() == "breakfast":
+            self.breakfast_meals.append(meal)
+        elif meal.meal_type.lower() == "lunch":
+            self.lunch_meals.append(meal)
+        elif meal.meal_type.lower() == "dinner":
+            self.dinner_meals.append(meal)
     
     def set_meal_preference(self, day, meal, preferences):
         mealday = self.mealdays_dict[day]
         mealday.add_options(meal, preferences)
     
-    def select_meal(self, filtered_array):
+    def select_meal(self, mealday, meal):
+        base_array = []
+        
+        if meal.lower() == "breakfast":
+            base_array = self.breakfast_meals
+            if "exclude" not in mealday.breakfast_opts:
+                filtered_array = self.filter_meal_array(base_array, **mealday.breakfast_opts)
+                mealday.breakfast_choice = self.random_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
+        
+        elif meal.lower() == "lunch":
+            base_array = self.lunch_meals
+            if "exclude" not in mealday.lunch_opts.keys():
+                filtered_array = self.filter_meal_array(base_array, **mealday.lunch_opts)
+                mealday.lunch_choice = self.random_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
+        
+        elif meal.lower() == "dinner":
+            base_array = self.dinner_meals
+            if "exclude" not in mealday.dinner_opts.keys():
+                filtered_array = self.filter_meal_array(base_array, **mealday.dinner_opts)
+                mealday.dinner_choice = self.random_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
+
+    def random_meal(self, filtered_array):
         if (len(filtered_array) > 0):
             return random.choice(filtered_array)
         return None
     
-    def get_meal_selection(self, day, meal):
-        day = self.mealdays_dict[day]
+    def get_meal_selection(self, mealday, meal):
         if meal.lower() == "breakfast":
-            return day.breakfast_choice
+            return mealday.breakfast_choice
         elif meal.lower() == "lunch":
-            return day.lunch_choice
+            return mealday.lunch_choice
         elif meal.lower() == "dinner":
-            return day.dinner_choice
+            return mealday.dinner_choice
     
     def set_daily_preferences(self, weekly_preferences):
         breakfastindex = 0
@@ -66,29 +97,13 @@ class MealCreator:
     def create_meal_plan(self, weekly_preferences):
         self.set_daily_preferences(weekly_preferences)
 
-        # filter out arrays for breakfast, lunch, and dinner meals
-        breakfast_array = self.filter_meal_array(meal_type = 'breakfast')
-        lunch_array = self.filter_meal_array(meal_type = 'lunch')
-        dinner_array = self.filter_meal_array(meal_type = 'dinner')
-
         # for mealday in self.mealdays_array:
         for mealday in self.mealdays_dict.values():
+            self.select_meal(mealday, "breakfast")
+            self.select_meal(mealday, "lunch")
+            self.select_meal(mealday, "dinner")
 
-            #generate breakfast choices
-            if "exclude" not in mealday.breakfast_opts:
-                filtered_array = self.filter_meal_array(breakfast_array, **mealday.breakfast_opts)
-                mealday.breakfast_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
 
-            #generate lunch choices
-            if "exclude" not in mealday.lunch_opts.keys():
-                filtered_array = self.filter_meal_array(lunch_array, **mealday.lunch_opts)
-                mealday.lunch_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
-
-            #generate dinner choices
-            if "exclude" not in mealday.dinner_opts.keys():
-                filtered_array = self.filter_meal_array(dinner_array, **mealday.dinner_opts)
-                mealday.dinner_choice = self.select_meal(filtered_array) if len(filtered_array) > 0 else "N/A"
-    
     def filter_meal_array(self, base_array = None, **kwargs):
         if base_array == None:
             base_array = self.all_meals
