@@ -4,7 +4,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "kodiak cakes mix": ["1", "cup(s)"],
             "eggs": ["1", "unit(s)"],
@@ -13,7 +13,6 @@
             "blueberries": [".5", "cup(s)"],
             "syrup": ["1/4", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -22,7 +21,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "kodiak cakes mix": ["1", "cup(s)"],
             "eggs": ["1", "unit(s)"],
@@ -31,7 +30,6 @@
             "chocolate chips": [".5", "cup(s)"],
             "syrup": ["1/4", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -40,7 +38,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "kodiak cakes mix": ["1", "cup(s)"],
             "eggs": ["1", "unit(s)"],
@@ -49,7 +47,6 @@
             "cinnamon": ["1", "Tbsp"],
             "syrup": ["1/4", "cup"]
         }
-    ]
 },
 
 {
@@ -58,14 +55,13 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "kodiak cakes mix": ["1", "cup"],
             "eggs": ["1", "unit"],
             "milk": [".75", "cup"],
             "strawberries": ["1", "package"]
         }
-    ]
 },
 
 {
@@ -74,14 +70,13 @@
     "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "onion bagels": ["2", "bagel(s)"],
             "eggs": ["2", "unit(s)"],
             "sausage": [".5", "package(s)"],
             "cheddar cheese": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -90,7 +85,7 @@
     "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "tortillas": [".25", "package(s)"],
             "eggs": ["2", "unit(s)"],
@@ -98,7 +93,6 @@
             "cheddar cheese": [".25", "package(s)"], 
             "green bell peppers": ["1", "uhit(s)"]
         }
-    ]
 },
 
 {
@@ -107,14 +101,13 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "biscuits": ["1", "package(s)"],
             "flour": ["1", "cup(s)"],
             "sausage": [".5", "package(s)"],
             "milk": ["2", "cup(s)"]
         }
-    ]
 }, 
 
 {
@@ -123,11 +116,10 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "fruit and cream oatmeal": ["2", "package(s)"]
         }
-    ]
 },
 
 {
@@ -136,12 +128,11 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "croissants": ["2", "unit(s)"],
             "nutella": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -150,11 +141,10 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "cereal": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -163,14 +153,13 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "breakfast",
-    "ingredients": [
+    "ingredients":
         {
             "bacon": [".5", "package(s)"],
             "hash browns": [".25", "package(s)"],
             "fruit":  [".25", "package(s)"],
             "eggs": ["2", "unit(s)"]
         }
-    ]
 },
 
 {
@@ -179,13 +168,12 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "bread": [".25", "loave(s)"],
             "peanut butter": [".25", "jar(s)"],
             "jelly":  [".25", "jar(s)"]
         }
-    ]
 },
 
 {
@@ -194,7 +182,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "pitas": [".25", "package(s)"],
             "tomatoes": ["4", "unit(s)"],
@@ -203,7 +191,6 @@
             "basil leaves": ["20", "unit(s)"],
             "minced garlic": ["2", "tsp"]
         }
-    ]
 },
 
 {
@@ -212,7 +199,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "ham": [".25", "lb(s)"],
             "salami": [".25", "lb(s)"],
@@ -221,7 +208,6 @@
             "italian dressing": [".1", "package(s)"],
             "cucumbers": [".5", "unit(s)"]
         }
-    ]
 },
 
 {
@@ -230,7 +216,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "apples": ["1", "unit(s)"],
             "cheddar cheese slices": [".25", "package(s)"],
@@ -241,7 +227,6 @@
             "greek yogurt": ["1", "unit(s)"],
             "rye bread": [".25", "loave(s)"]
         }
-    ]
 },
 
 {
@@ -250,7 +235,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "chicken breast": ["1", "lb(s)"],
             "flour": [".16", "cup(s)"],
@@ -266,7 +251,6 @@
             "pepper": [".25", "tsp(s)"],
             "corn": ["1", "can(s)"]
         }
-    ]
 },
 
 {
@@ -275,7 +259,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "butter": ["2", "Tbsp(s)"],
             "yellow onions": ["1", "unit(s)"],
@@ -290,7 +274,6 @@
             "shredded cheddar cheese": ["1.25", "cup(s)"],
             "pepper": [".25", "tsp(s)"]
         }
-    ]
 },
 
 {
@@ -299,14 +282,13 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "sourdough bread": [".25", "loave(s)"],
             "cheese": [".25", "package(s)"],
             "butter":  ["4", "Tbsp(s)"],
             "tomato basil soup": ["1", "can(s)"]
         }
-    ]
 },
 
 {
@@ -315,14 +297,13 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "rice": ["1", "cup(s)"],
             "stir fry sauce": [".25", "bottle(s)"],
             "frozen chicken tenders":  [".25", "package(s)"],
             "frozen mixed vegetables": [".5", "package(s)"]
         }
-    ]
 },
 
 {
@@ -331,13 +312,12 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "frozen chicken tenders": [".25", "package(s)"],
             "barbeque sauce": [".25", "bottle(s)"],
             "frozen french fries":  [".5", "package(s)"]
         }
-    ]
 },
 
 {
@@ -346,7 +326,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "rice": ["1", "cup(s)"],
             "stir fry sauce": [".25", "bottle(s)"],
@@ -354,7 +334,6 @@
             "eggs": ["2", "unit(s)"],
             "panko bread crumbs": ["1", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -363,14 +342,13 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "bagels": ["2", "unit(s)"],
             "pizza sauce": [".25", "jar(s)"],
             "mozzarella cheese":  [".25", "package(s)"],
             "pepperonis": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -379,12 +357,11 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients": [
+    "ingredients":
         {
             "bagels": ["2", "unit(s)"],
             "cream cheese": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -393,13 +370,12 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "spaghetti noodles": [".5", "package(s)"],
             "spaghetti sauce": [".5", "jar(s)"],
             "ground beef": [".5", "lb(s)"]
         }
-    ]
 },
 
 {
@@ -408,13 +384,12 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "brats": ["1", "package(s)"],
             "hot dog buns": [".5", "package(s)"],
             "russet potatoes": ["3", "unit(s)"]
         }
-    ]
 },
 
 {
@@ -423,7 +398,7 @@
     "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "rice paper": ["1", "package(s)"],
             "steak": [".5", "lb(s)"],
@@ -438,7 +413,6 @@
             "sesame oil": ["1", "tsp(s)"],
             "pepper": ["1", "tsp(s)"]
         }
-    ]
 },
 
 {
@@ -447,7 +421,7 @@
     "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "pecans": [".5", "package(s)"],
             "panko bread crumbs": [".25", "cup(s)"],
@@ -460,7 +434,6 @@
             "lemons": ["1", "unit(s)"],
             "spring mix": [".5", "package(s)"]
         }
-    ]
 },
 
 {
@@ -469,7 +442,7 @@
     "reheats_well": "false",
     "price_range": "expensive",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "ground chuck": [".5", "lb(s)"],
             "burger buns": ["2", "unit(s)"],
@@ -480,7 +453,6 @@
             "hash browns": [".5", "package(s)"],
             "olive oil": ["4", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -489,7 +461,7 @@
     "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "yukon gold potatoes": [".5", "package(s)"],
             "green beans": [".5", "package(s)"],
@@ -501,7 +473,6 @@
             "sour cream": ["2", "Tbsp(s)"],
             "olive oil": ["2", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -510,13 +481,12 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "Yai's Thai Yellow Thai coconut curry": [".5", "package(s)"],
             "rice": ["1", "cup(s)"],
             "chickpeas": ["1", "can(s)"]
         }
-    ]
 },
 
 {
@@ -525,7 +495,7 @@
     "reheats_well": "false",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "chives": [".5", "package(s)"],
             "brussels sprouts": [".5", "package(s)"],
@@ -538,7 +508,6 @@
             "butter": ["2", "Tbsp(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -547,7 +516,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "poblano peppers": ["1", "unit(s)"],
             "yukon gold potatoes": [".5", "package(s)"],
@@ -562,7 +531,6 @@
             "monterey jack cheese": [".25", "cup(s)"],
             "sour cream": ["2", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -571,7 +539,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "poblano peppers": ["1", "unit(s)"],
             "yukon gold potatoes": [".5", "package(s)"],
@@ -586,7 +554,6 @@
             "monterey jack cheese": [".25", "cup(s)"],
             "sour cream": ["2", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -595,7 +562,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "limes": ["1", "unit(s)"],
             "green onions": [".5", "package(s)"],
@@ -607,7 +574,6 @@
             "kikkoman sweet soy glaze": ["4", "Tbsp(s)"],
             "sesame seeds": ["1", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -616,7 +582,7 @@
     "reheats_well": "false",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "rice": [".5", "cup(s)"],
             "green beans": [".5", "package(s)"],
@@ -629,7 +595,6 @@
             "chicken breast": ["2", "unit(s)"],
             "sesame seeds": ["1", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -638,7 +603,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "green onions": [".5", "package(s)"],
             "sweet potatoes": ["1", "unit(s)"],
@@ -650,7 +615,6 @@
             "sriracha": ["1", "tsp(s)"],
             "eggs": ["2", "unit(s)"]
         }
-    ]
 },
 
 {
@@ -659,7 +623,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "rice": [".5", "cup(s)"],
             "lime": ["1", "unit(s)"],
@@ -673,7 +637,6 @@
             "hot sauce": ["1", "tsp(s)"],
             "cilantro": [".25", "package(s)"]
         }
-    ]
 },
 
 {
@@ -682,7 +645,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "green onions": [".5", "package(s)"],
             "minced garlic": ["2", "tsp(s)"],
@@ -697,7 +660,6 @@
             "mayonnaise": ["2", "Tbsp(s)"],
             "sour cream": ["2", "Tbsp(s)"]
         }
-    ]
 },
 
 {
@@ -706,7 +668,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "green onions": [".5", "package(s)"],
             "fresh ginger": ["1", "unit(s)"],
@@ -720,7 +682,6 @@
             "panko bread crumbs": [".25", "cup(s)"],
             "green beans": [".5", "package(s)"]
         }
-    ]
 },
 
 {
@@ -729,7 +690,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "green onions": [".5", "package(s)"],
             "minced garlic": ["1", "tsp(s)"],
@@ -741,7 +702,6 @@
             "rice": [".75", "cup(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -750,7 +710,7 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "zuchhini": ["1", "unit(s)"],
             "italian seasoning": ["1", "Tbsp(s)"],
@@ -761,7 +721,6 @@
             "sour cream": ["2", "Tbsp(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         }
-    ]
 },
 
 {
@@ -770,7 +729,7 @@
     "reheats_well": "true",
     "price_range": "expensive",
     "meal_type": "dinner",
-    "ingredients": [
+    "ingredients":
         {
             "red onions": ["1", "unit(s)"],
             "zucchini": ["1", "unit(s)"],
@@ -783,7 +742,6 @@
             "grilling cheese": [".5", "lb(s)"],
             "Za'atar Spice": ["1", "Tbsp(s)"]
         }
-    ]
 }
 
 ]

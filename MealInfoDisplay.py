@@ -38,7 +38,6 @@ class MealInfoDisplay(PlanPage):
 
         mealday = self.meal_creator.mealdays_dict[day]
         self.display_meal(mealday, meal)
-        self.create_details_button()
     
     def display_meal(self, mealday, meal):
 
@@ -46,8 +45,9 @@ class MealInfoDisplay(PlanPage):
         index = self.set_meal_index(meal)
 
         meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
-        meal_label.grid(column=2, row=index)
+        meal_label.grid(column=3, row=index)
         self.create_reroll_button(mealday, meal, meal_label)
+        self.create_details_button(mealday, meal)
     
     def set_meal_index(self, meal):
         index = 0
@@ -73,20 +73,33 @@ class MealInfoDisplay(PlanPage):
         
         return text_value
     
-    def create_details_button(self):
-        self.details_button = ttk.Button(self.day_frame, text="details", default="active", command=self.show_meal_details)
-        self.details_button.grid(row=3, column=0)
+    def create_details_button(self, mealday, meal):
+        index = self.set_meal_index(meal)
+        self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 4, default="active", command=lambda: self.show_meal_details(mealday, meal))
+        self.details_button.grid(row=index, column=2)
 
     def create_reroll_button(self, mealday, meal, label):
-        # self.reroll_button = ttk.Button(self.day_frame, text="re-roll", default="active", command=self.reroll_meal(mealday, meal))
         index = self.set_meal_index(meal)
-        self.reroll_button = ttk.Button(self.day_frame, text="Re-Roll", default="active", command=lambda: self.reroll_meal(mealday, meal, label))
+        self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 4, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
         self.reroll_button.grid(row=index, column=1)
 
-    def show_meal_details(self, meal):
+    def show_meal_details(self, mealday, meal):
         # open a message box that shows the ingredients and the recipe
-        messagebox.showinfo("showinfo", "Information")
-        pass
+
+        # FIXME
+        print("TEST 1")
+        print(mealday.breakfast_choice.ingredients)
+        
+        meal_index = self.set_meal_index(meal)
+
+        meal_ingredients_dict = mealday.breakfast_choice.ingredients
+
+        information = meal.title() + ": \n"
+        information += "Ingredients: \n"
+
+        for ingr in meal_ingredients_dict.keys():
+            information += ingr + " \n"
+        messagebox.showinfo("showinfo", information)
 
     def reroll_meal(self, mealday, meal, label):
         self.meal_creator.select_meal(mealday, meal)
@@ -95,7 +108,6 @@ class MealInfoDisplay(PlanPage):
     def update_meal_display(self, mealday, meal, label):
         text_value = self.set_meal_label(mealday, meal)
         label["text"] = text_value
-        
 
     def create_footer_options(self):
         self.save_button = ttk.Button(self.footercontent, text="save to file", default="active", command=self.save_meals)
