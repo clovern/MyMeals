@@ -255,7 +255,7 @@
     "meal_type": "lunch",
     "ingredients":
         {
-            "chicken breast": ["1", "lb(s)"],
+            "chicken breasts": ["1", "lb(s)"],
             "flour": [".16", "cup(s)"],
             "olive oil":  ["2", "Tbsp(s)"],
             "red onions": ["1", "unit(s)"],
@@ -460,7 +460,7 @@
             "honey": ["2", "tsp(s)"],
             "dijon mustard": ["2", "tsp(s)"],
             "mayonnaise": ["2", "Tbsp(s)"],
-            "chicken breast": ["2", "unit(s)"],
+            "chicken breasts": ["2", "unit(s)"],
             "apples": ["1", "unit(s)"],
             "lemons": ["1", "unit(s)"],
             "spring mix": [".5", "package(s)"]
@@ -477,7 +477,7 @@
     "ingredients":
         {
             "ground chuck": [".5", "lb(s)"],
-            "burger buns": ["2", "unit(s)"],
+            "hamburger buns": ["2", "unit(s)"],
             "goat cheese": ["1", "package(s)"],
             "poblano peppers": ["1", "unit(s)"],
             "dried dates": [".5", "unit(s)"],
@@ -609,7 +609,7 @@
             "honey": ["2", "tsp(s)"],
             "sriracha": ["1", "tsp(s)"],
             "old bay seasoning": ["2", "Tbsp(s)"],
-            "chicken breast": ["2", "unit(s)"],
+            "chicken breasts": ["2", "unit(s)"],
             "sesame seeds": ["1", "Tbsp(s)"]
         }, 
     "link" : "https://www.hellofresh.com/recipes/hoisin-honey-chicken-61f98807dc87845a6a01df6c"
@@ -761,13 +761,275 @@
             "lemons": ["1", "unit(s)"],
             "cilantro": [".5", "package(s)"],
             "couscous": ["2.5", "oz(s)"],
-            "veggetable broth cubes": ["1", "unit(s)"],
+            "vegetable broth cubes": ["1", "unit(s)"],
             "sumac": ["1", "tsp(s)"],
             "grilling cheese": [".5", "lb(s)"],
             "Za'atar Spice": ["1", "Tbsp(s)"]
         },
     "link": "https://www.hellofresh.com/recipes/zaatar-crusted-grilling-cheese-5b9199dd30006c7e125da4c2"
     
+},
+
+{
+    "meal_name": "Sweet Chili Pork Bowls",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "bell pepper": ["1", "unit(s)"],
+            "yellow onion": ["1", "unit(s)"],
+            "lime": ["1", "unit(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "rice": [".5", "cup(s)"],
+            "peanuts": ["1/2", "oz(s)"],
+            "ground pork": ["10", "oz(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"],
+            "sweet thai chili sauce": ["1.5", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sweet-chili-pork-bowls-5efb358e43975d50ea6927d2"
+    
+},
+
+{
+    "meal_name": "Slow Cooker Beef and Broccoli",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "beef toast": ["1", "lb(s)"],
+            "beef broth": ["1", "cup(s)"],
+            "soy sauce": [".5", "cup(s)"],
+            "brown sugar": [".33", "cup(s)"],
+            "sesame oil": ["1", "Tbsp(s)"],
+            "minced garlic": ["1.5", "tsp(s)"],
+            "corn starch": ["1.5", "Tbsp(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "rice": ["1", "cup(s)"]
+        },
+    "link": "https://www.tablefortwoblog.com/take-out-fake-out-beef-broccoli-crockpot/"
+    
+},
+
+{
+    "meal_name": "Sweet, Sticky, and Spicy Chicken stir fry",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "soy sauce": [".25", "cup(s)"],
+            "honey": ["2", "Tbsp(s)"],
+            "hot sauce": ["2", "Tbsp(s)"],
+            "fresh ginger": ["2", "tsp(s)"],
+            "minced garlic": ["2", "tsp(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "vegetable oil": ["1", "Tbsp(s)"]
+        },
+    "link": "https://www.allrecipes.com/recipe/143082/sweet-sticky-and-spicy-chicken/"
+    
+},
+
+{
+    "meal_name": "Chicken parmigiana",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "eggs": ["2", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "spaghetti sauce": ["1.5", "package(s)"],
+            "mozzarella cheese": [".25", "lb(s)"],
+            "parmesan cheese": [".25", "cup(s)"]
+        },
+    "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n 2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n 3. Prepare pasta of your choice.\n 4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
+    
+},
+
+{
+    "meal_name": "Nutmeg and Thyme Chicken Thighs with Carrots and Potatoes",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "olive oil": ["3", "Tbsp(s)"],
+            "chicken thighs": ["3", "unit(s)"],
+            "dried thyme": ["2", "tsp(s)"],
+            "ground nutmeg": [".25", "tsp(s)"],
+            "yukon gold potatoes": ["2", "lb(s)"],
+            "carrots": ["2", "lb(s)"],
+            "fresh chives": ["3", "Tbsp(s)"]
+        },
+    "link": "https://www.epicurious.com/recipes/food/views/oven-roasted-chicken-thighs-with-carrots-and-yukon-gold-potatoes-351711"
+    
+},
+
+{
+    "meal_name": "Soy-Glazed meatballs",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "green onions": ["1", "package(s)"],
+            "ginger": ["1", "Tbsp(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "ground beef": ["10", "oz(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "green beans": ["6", "oz(s)"],
+            "ponzu sauce": ["12", "ml(s)"],
+            "sesame seeds": ["1", "Tbsp(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"],
+            "sweet thai chili sauce": ["1.5", "Tbsp(s)"],
+            "shredded carrots": ["4", "oz(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
+    
+},
+
+{
+    "meal_name": "Soy-Glazed meatballs",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "green onions": ["1", "package(s)"],
+            "ginger": ["1", "Tbsp(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "ground beef": ["10", "oz(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "green beans": ["6", "oz(s)"],
+            "ponzu sauce": ["12", "ml(s)"],
+            "sesame seeds": ["1", "Tbsp(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"],
+            "sweet thai chili sauce": ["1.5", "Tbsp(s)"],
+            "shredded carrots": ["4", "oz(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
+    
+},
+
+{
+    "meal_name": "Tempura Battered Chicken Fingers",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "lime": ["1", "unit(s)"],
+            "tempura mix": [".25", "package(s)"],
+            "rice": [".5", "cup(s)"],
+            "sriracha": ["1", "tsp(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "chicken breasts": ["10", "oz(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/tempura-chicken-fingers-dipping-sauce-5f4d5fb78cbc28156118f6e8"
+
+},
+
+{
+    "meal_name": "Tempura Battered Chicken Fingers",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "lime": ["1", "unit(s)"],
+            "tempura mix": [".25", "package(s)"],
+            "rice": [".5", "cup(s)"],
+            "sriracha": ["1", "tsp(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "chicken breasts": ["10", "oz(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/tempura-chicken-fingers-dipping-sauce-5f4d5fb78cbc28156118f6e8"
+
+},
+
+{
+    "meal_name": "White Cheddar Wonderburgers",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "yellow onion": ["1", "unit(s)"],
+            "yukon gold potatoes": ["12", "oz(s)"],
+            "old bay seasoning": ["2", "Tbsp(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "ketchup": ["2", "Tbsp(s)"],
+            "dijon mustard": ["2", "tsp(s)"],
+            "white cheddar cheese": [".5", "cup(s)"],
+            "hamburger buns": ["2", "unit(s)"],
+            "ground beef": ["10", "oz(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/white-cheddar-wonderburgers-61cb23eb4547a11c25516b1e"
+
+},
+
+{
+    "meal_name": "Thai Coconut Curry Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "rice": [".5", "cup(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "lime": ["1", "unit(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "chili pepper": ["1", "unit(s)"],
+            "chicken breasts": ["10", "oz(s)"],
+            "curry powder": ["1", "Tbsp(s)"],
+            "coconut cream": ["1", "package(s)"],
+            "chicken broth cubes": ["1", "unit(s)"],
+            "sweet thai chili sauce": ["1", "oz(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/thai-coconut-curry-chicken-5fea59f795e99a13fb4bddf0"
+
+},
+
+{
+    "meal_name": "Steak with Mushroom Cream Sauce",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "potatoes": ["12", "oz(s)"],
+            "carrots": ["12", "oz(s)"],
+            "button mushrooms": ["1", "package(s)"],
+            "minced garlic": [".5", "tsp(s)"],
+            "green onions": [".5", "package(s)"],
+            "steak": ["10", "oz(s)"],
+            "beef broth cubes": ["1", "unit(s)"],
+            "sour cream": ["1.5", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/steak-with-mushroom-cream-sauce-6231f2c98cae5f6cde4c6187"
+
 }
+
+
+
+
+
 
 ]
