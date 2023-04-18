@@ -12,7 +12,9 @@
             "milk": [".75", "cup(s)"],
             "blueberries": [".5", "cup(s)"],
             "syrup": ["1/4", "cup(s)"]
-        }
+        },
+    "recipe": "Follow instructions on kodiak cakes box. Add blueberries and syrup to taste."
+    
 },
 
 {
@@ -29,7 +31,8 @@
             "milk": [".75", "cup(s)"],
             "chocolate chips": [".5", "cup(s)"],
             "syrup": ["1/4", "cup(s)"]
-        }
+        },
+    "recipe": "Follow instructions on kodiak cakes box. Add chocolate chips and syrup to taste."
 },
 
 {
@@ -46,7 +49,8 @@
             "milk": [".75", "cup(s)"],
             "cinnamon": ["1", "Tbsp"],
             "syrup": ["1/4", "cup"]
-        }
+        },
+    "recipe": "Follow instructions on kodiak cakes box. Add 1 Tbsp cinnamon and 1 tsp vanilla per 1 cup of mix used. Add syrup to taste."
 },
 
 {
@@ -61,7 +65,8 @@
             "eggs": ["1", "unit"],
             "milk": [".75", "cup"],
             "strawberries": ["1", "package"]
-        }
+        },
+        "recipe": "Follow instructions on kodiak cakes box for pancakes. Slice up fresh strawberries, or heat up frozen strawberries, then place them on pancakes as topping."
 },
 
 {
@@ -76,7 +81,8 @@
             "eggs": ["2", "unit(s)"],
             "sausage": [".5", "package(s)"],
             "cheddar cheese": [".25", "package(s)"]
-        }
+        },
+    "recipe": "Cook sausages as large patties. Cook eggs over medium, breaking and spreading the yolk during cooking. While egg is cooking, slice and toast onion bagel. Place 1 slice cheddar cheese on onion bagel. Place cooked egg onto cheese, then sausage on top of egg. Enjoy!"
 },
 
 {
@@ -91,8 +97,11 @@
             "eggs": ["2", "unit(s)"],
             "hash browns": [".25", "package(s)"],
             "cheddar cheese": [".25", "package(s)"], 
-            "green bell peppers": ["1", "uhit(s)"]
-        }
+            "green bell peppers": ["1", "unit(s)"],
+            "white onion" : [".5", "unit(s)"],
+            "sausage" : ["1", "package(s)"]
+        },
+    "recipe": "Cook ground breakfast sausage.\n Cook shredded hash browns in oil.\n Slice up bell pepper and onion. Heat a drizzle of oil in a pan on medium high heat. Add sliced pepper and onion and cook until softened.\n With the pepper and onion still in the pan, add 4 eggs and scramble while cooking, incorporating with the vegatables. When the eggs are almost done, add breakfast sausage.\n Heat up tortilla in microwave for 15 seconds. Add egg mixture, shredded cheese, and hash browns into tortilla.\n Wrap up and secure with toothpicks. Enjoy!"
 },
 
 {
@@ -107,7 +116,8 @@
             "flour": ["1", "cup(s)"],
             "sausage": [".5", "package(s)"],
             "milk": ["2", "cup(s)"]
-        }
+        },
+    "link": "https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/"
 }, 
 
 {
@@ -119,7 +129,8 @@
     "ingredients":
         {
             "fruit and cream oatmeal": ["2", "package(s)"]
-        }
+        },
+    "recipe": "Add milk to rolled oats in a bowl until just covered. Cook in microwave for 2 minutes, or until milk is dissolved. Add fresh fruit and cream. Enjoy!"
 },
 
 {
@@ -132,7 +143,8 @@
         {
             "croissants": ["2", "unit(s)"],
             "nutella": [".25", "package(s)"]
-        }
+        },
+    "recipe": "Slice croissant and heat for 2 minutes on low broil. Spread nutella on croissant. Enjoy!"
 },
 
 {
@@ -189,8 +201,11 @@
             "mozzarella cheese":  [".25", "package(s)"],
             "pizza sauce": [".25", "jar(s)"],
             "basil leaves": ["20", "unit(s)"],
-            "minced garlic": ["2", "tsp"]
-        }
+            "minced garlic": ["2", "tsp"],
+            "rosemary": ["1", "Tbsp"],
+            "balsalmic reduction": ["1", "Tbsp"]
+        },
+    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n Add pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n Make a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n Bake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
 },
 
 {
@@ -206,8 +221,10 @@
             "banana peppers":  [".1", "jar(s)"],
             "iceburg lettuce": [".25", "unit(s)"],
             "italian dressing": [".1", "package(s)"],
-            "cucumbers": [".5", "unit(s)"]
-        }
+            "cucumbers": [".5", "unit(s)"],
+            "provolone cheese": [".25", "package"]
+        },
+    "recipe": "Turn oven on to a low broil. Place ham, salami, and provolone cheese onto an open sub bun. Bake on a low broil for 2 minutes, until cheese is melted. \n Add banana peppers, cucumber slices, lettuce, and a drizzle of italian dressing. Enjoy!"
 },
 
 {
@@ -226,7 +243,8 @@
             "honey": ["1", "tsp(s)"],
             "greek yogurt": ["1", "unit(s)"],
             "rye bread": [".25", "loave(s)"]
-        }
+        },
+    "link": "https://triedandtasty.com/copycat-panera-turkey-apple-cheddar-sandwich/"
 },
 
 {
@@ -250,7 +268,8 @@
             "salt": [".5", "tsp(s)"],
             "pepper": [".25", "tsp(s)"],
             "corn": ["1", "can(s)"]
-        }
+        },
+    "recipe": "1. Toss the cubed chicken breasts in flour that has been generously seasoned with salt and pepper, until all pieces are lightly coated.\n 2. With the cooker's lid off, heat oil on HIGH or brown, until sizzling. \n 3. Place the ocated chicken in the cooker and saute until lightly browned, about 5 minutes.\n 4. Add the onion, carrots, bell pepper, and jalapeno pepper, and stir well, sauteing 1 additional minute. 5. Add the chicken stock, cilantro, cumin, salt, and pepper to the chicken mixture. Securely lock the pressure cooker's lid and set for 7 minutes on HIGH. \n 6. Perform a quick release to release the cooker's pressure. Stir in corn kernels and tortilla strips before serving. "
 },
 
 {
@@ -273,7 +292,8 @@
             "cumin": ["/25", "tsp(s)"],
             "shredded cheddar cheese": ["1.25", "cup(s)"],
             "pepper": [".25", "tsp(s)"]
-        }
+        },
+    "recipe" : "1. With your slow cooker's lid off, heat button on HIGH or brown, until melted and sizzling. \n 2. Place onion in cooker and saute until translucent, 4-5 minutes. \n 3. Add broccoli florets, caroots, chicken stock, garlic powder, and onion powder. Securely lock the pressure cooker's lid and set for 4 minutes on HIGH.\n 4. Perform a quick release to release the cooker's pressure. \n 5. Stir in heavy cream and Cheddar cheese, and then add salt and pepper to taste before serving."
 },
 
 {
@@ -288,7 +308,8 @@
             "cheese": [".25", "package(s)"],
             "butter":  ["4", "Tbsp(s)"],
             "tomato basil soup": ["1", "can(s)"]
-        }
+        },
+    "recipe" : "Heat up your favorite brand of canned tomato basil soup. Make a grilled cheese. Enjoy!"
 },
 
 {
@@ -303,7 +324,8 @@
             "stir fry sauce": [".25", "bottle(s)"],
             "frozen chicken tenders":  [".25", "package(s)"],
             "frozen mixed vegetables": [".5", "package(s)"]
-        }
+        },
+    "recipe": "Cook rice by following instructions on bag. Cook frozen chicken tenders in the air fryer at 400 for 10 minutes (or follow instructions on bag, if available). Steam frozen mixed vegetables in microwave. Top with your favorite stir fry sauce."
 },
 
 {
@@ -331,9 +353,14 @@
             "rice": ["1", "cup(s)"],
             "stir fry sauce": [".25", "bottle(s)"],
             "cauliflower crowns":  ["1", "unit(s)"],
-            "eggs": ["2", "unit(s)"],
-            "panko bread crumbs": ["1", "cup(s)"]
-        }
+            "eggs": ["1", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "baking powder" : ["1", "tsp(s)"],
+            "flour" : ["1", "cup"],
+            "milk" : ["1", "cup"],
+            "paprika" : ["1", "tsp"]
+        },
+    "recipe": "Prepare rice. Prepare the batter at https://www.spendwithpennies.com/crispy-fried-dill-pickles/, leaving out the dill. \n Slice up cauliflower into bite sized pieces, and cover in batter, then panko bread crumbs. \n Place in air fryer at 400 degrees for 8 minutes, or until outside is golden brown and crispy.\n Remove from air fryer and place in a container with a lid. Put your favorite stir fry sauce in the container and shake cauliflower and stir fry sauce together gently, until cauliflower is covered. \n Heat up mixed vegetables in the microwave. Serve vegetables and coated cauliflower over rice. Enjoy!"
 },
 
 {
@@ -348,7 +375,8 @@
             "pizza sauce": [".25", "jar(s)"],
             "mozzarella cheese":  [".25", "package(s)"],
             "pepperonis": [".25", "package(s)"]
-        }
+        },
+    "recipe": "Preheat open to 450 degrees F. Slice bagel in half, and spread a drizzle of pizza sauce on each side. Put mozzarella cheese and pepperonis on top of pizza sauce. Bake for 5 minutes at 450 degrees F. Enjoy!"
 },
 
 {
@@ -374,8 +402,10 @@
         {
             "spaghetti noodles": [".5", "package(s)"],
             "spaghetti sauce": [".5", "jar(s)"],
-            "ground beef": [".5", "lb(s)"]
-        }
+            "ground beef": [".5", "lb(s)"],
+            "parmesan cheese": [".125", "package(s)"]
+        },
+    "recipe": "Prepare noodles. Shred and cook ground beef in a pan on medium high heat. Drain the fat, and add spaghetti sauce to pan with beef. Cook on a low simmer for a few minutes, then serve meat sauce over noodles. Add parmesan to taste."
 },
 
 {
@@ -412,7 +442,8 @@
             "minced garlic": ["1", "Tbsp(s)"],
             "sesame oil": ["1", "tsp(s)"],
             "pepper": ["1", "tsp(s)"]
-        }
+        },
+    "link": "https://aaronandclaire.com/4-ways-to-enjoy-rice-paper-recipe/"
 },
 
 {
@@ -433,7 +464,8 @@
             "apples": ["1", "unit(s)"],
             "lemons": ["1", "unit(s)"],
             "spring mix": [".5", "package(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/pecan-crusted-chicken-6203c3d357b8e37e4638262a"
 },
 
 {
@@ -448,11 +480,12 @@
             "burger buns": ["2", "unit(s)"],
             "goat cheese": ["1", "package(s)"],
             "poblano peppers": ["1", "unit(s)"],
-            "dates": [".5", "unit(s)"],
+            "dried dates": [".5", "unit(s)"],
             "hamburger buns": ["2", "unit(s)"],
             "hash browns": [".5", "package(s)"],
             "olive oil": ["4", "Tbsp(s)"]
-        }
+        },
+    "recipe": "1. Heat a generous amount of oil in a pan on high heat. Place shredded hash browns in the oil and cook until golden brown, about 10 minutes. 2. Form ground chuck into burger shapes, season with salt and pepper to taste, and place on a pan on medium heat. Cook to taste, about 4-5 minutes per side recommended.\n 3. Slice up poblano peppers into long strips. Heat a drizzle of oil on medium high heat in a pan, and add the pepper slices. Cook until slightly charred, about 5 minutes.\n 4. De-seed dates and add into blender with 2 Tbsp water. Blend, and continue to add water 1 tsp at a time and blend until a thick but spreadable paste is formed. \n. 5. Toast burger buns. Once toasted, spread about 1.5 Tbsp Date Spread and 3 Tbsp goat cheese on each bun. Place 4-5 poblano slices on top of the goat cheese on each. Place burger on bun. Server with hash browns and enjoy!"
 },
 
 {
@@ -472,11 +505,12 @@
             "chicken broth cubes": ["1", "unit(s)"],
             "sour cream": ["2", "Tbsp(s)"],
             "olive oil": ["2", "Tbsp(s)"]
-        }
+        },
+        "link" : "https://www.hellofresh.com/recipes/brown-sugar-bourbon-pork-chops-5fe0e80c9d7ee35a831ebf0d"
 },
 
 {
-    "meal_name": "Yellow Coconut Curry with Chickpeas",
+    "meal_name": "Yellow Coconut Curry with Chickpeas and rice",
     "meat_type": "vegan",
     "reheats_well": "true",
     "price_range": "cheap",
@@ -486,7 +520,8 @@
             "Yai's Thai Yellow Thai coconut curry": [".5", "package(s)"],
             "rice": ["1", "cup(s)"],
             "chickpeas": ["1", "can(s)"]
-        }
+        },
+    "recipe" : "Prepare rice. Heat a drizzle of oil in a pan on medium high heat. Drain a can of chickpeas, and add to pain with oil, cooking until lightly browned (about 3-5 minutes). Add a can of Lai's Thai coconut curry, found here: https://www.yaisthai.com/products/thai-coconut-curry-yellow to the same pan, and simmar for a few minutes. Serve chickpea curry over rice. Enjoy! "
 },
 
 {
@@ -507,7 +542,9 @@
             "garlic herb cream cheese": ["2", "Tbsp(s)"],
             "butter": ["2", "Tbsp(s)"],
             "parmesan cheese": [".25", "cup(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/lemony-spaghetti-with-brussels-sprouts-620bf6b6f147ed78702a4cd4"
+    
 },
 
 {
@@ -530,30 +567,8 @@
             "french bread": ["1", "unit(s)"],
             "monterey jack cheese": [".25", "cup(s)"],
             "sour cream": ["2", "Tbsp(s)"]
-        }
-},
-
-{
-    "meal_name": "Sweet Corn and Poblano Chowder with Old Bay Toast",
-    "meat_type": "vegetarian",
-    "reheats_well": "true",
-    "price_range": "cheap",
-    "meal_type": "dinner",
-    "ingredients":
-        {
-            "poblano peppers": ["1", "unit(s)"],
-            "yukon gold potatoes": [".5", "package(s)"],
-            "yellow onion": ["1", "unit(s)"],
-            "corn": ["1", "can(s)"],
-            "flour": ["1", "Tbsp(s)"],
-            "milk": ["3", "cup(s)"],
-            "vegetable broth cube": ["1", "unit(s)"],
-            "old bay seasoning": ["2", "Tbsp(s)"],
-            "cream cheese": ["2", "Tbsp(s)"],
-            "french bread": ["1", "unit(s)"],
-            "monterey jack cheese": [".25", "cup(s)"],
-            "sour cream": ["2", "Tbsp(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/sweet-corn-poblano-chowder-61a78482d3afc75ab13b9761"
 },
 
 {
@@ -573,7 +588,9 @@
             "bok choy": ["1", "unit(s)"],
             "kikkoman sweet soy glaze": ["4", "Tbsp(s)"],
             "sesame seeds": ["1", "Tbsp(s)"]
-        }
+        },
+        "link" : "https://www.hellofresh.com/recipes/edamame-stir-fry-noodle-bowls-60f82b8040ec771948112c6b"
+    
 },
 
 {
@@ -594,7 +611,8 @@
             "old bay seasoning": ["2", "Tbsp(s)"],
             "chicken breast": ["2", "unit(s)"],
             "sesame seeds": ["1", "Tbsp(s)"]
-        }
+        }, 
+    "link" : "https://www.hellofresh.com/recipes/hoisin-honey-chicken-61f98807dc87845a6a01df6c"
 },
 
 {
@@ -614,7 +632,8 @@
             "mayonnaise": ["2", "Tbsp(s)"],
             "sriracha": ["1", "tsp(s)"],
             "eggs": ["2", "unit(s)"]
-        }
+        },
+        "link": "https://www.hellofresh.com/recipes/honey-miso-broccoli-donburi-61670da9b2686e6428269b07"
 },
 
 {
@@ -636,7 +655,8 @@
             "sour cream": ["4", "Tbsp(s)"],
             "hot sauce": ["1", "tsp(s)"],
             "cilantro": [".25", "package(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/taqueria-pork-bowls-6231e9115969e541f74ad307"
 },
 
 {
@@ -659,7 +679,8 @@
             "chicken breasts": ["2", "unit(s)"],
             "mayonnaise": ["2", "Tbsp(s)"],
             "sour cream": ["2", "Tbsp(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/spicy-peruvian-chicken-and-loaded-rice-61a783ead3afc75ab13b975d"
 },
 
 {
@@ -681,7 +702,8 @@
             "ground beef": [".75", "lb(s)"],
             "panko bread crumbs": [".25", "cup(s)"],
             "green beans": [".5", "package(s)"]
-        }
+        },
+    "link" : "https://www.hellofresh.com/recipes/firecracker-meatballs-5ea70fe14c4efb3fb12140f1"
 },
 
 {
@@ -701,7 +723,8 @@
             "italian seasoning": ["1", "Tbsp(s)"],
             "rice": [".75", "cup(s)"],
             "parmesan cheese": [".25", "cup(s)"]
-        }
+        },
+    "link": "https://www.hellofresh.com/recipes/pork-sausage-bell-pepper-risotto-617041791f771a6a0b36e4b2"
 },
 
 {
@@ -720,7 +743,8 @@
             "chicken broth cubes": [".1", "unit(s)"],
             "sour cream": ["2", "Tbsp(s)"],
             "parmesan cheese": [".25", "cup(s)"]
-        }
+        },
+    "link": "https://www.hellofresh.com/recipes/chicken-sausage-spaghetti-bolognese-61dddda050f10576b91d9a3b"
 },
 
 {
@@ -741,7 +765,9 @@
             "sumac": ["1", "tsp(s)"],
             "grilling cheese": [".5", "lb(s)"],
             "Za'atar Spice": ["1", "Tbsp(s)"]
-        }
+        },
+    "link": "https://www.hellofresh.com/recipes/zaatar-crusted-grilling-cheese-5b9199dd30006c7e125da4c2"
+    
 }
 
 ]
