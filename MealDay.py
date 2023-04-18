@@ -18,6 +18,8 @@ class MealDay:
         self.breakfast_choice = None
         self.lunch_choice = None
         self.dinner_choice = None
+
+        self.meals = [self.breakfast_choice, self.lunch_choice, self.dinner_choice]
     
     def add_options(self, meal, options = {}):
         if meal == "breakfast":
