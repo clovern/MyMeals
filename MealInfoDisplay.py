@@ -48,14 +48,6 @@ class MealInfoDisplay(PlanPage):
         meal_label.grid(column=3, row=index)
         self.create_reroll_button(mealday, meal, meal_label)
         self.create_details_button(mealday, meal)
-    
-    def set_meal_index(self, meal):
-        index = 0
-        if meal.lower() == "lunch":
-            index = 1
-        elif meal.lower() == "dinner":
-            index = 2
-        return index
 
     def set_meal_label(self, mealday, meal):
         text_value = "B"
@@ -86,20 +78,14 @@ class MealInfoDisplay(PlanPage):
     def show_meal_details(self, mealday, meal):
         # open a message box that shows the ingredients and the recipe
 
-        # FIXME
-        print("TEST 1")
-        print(mealday.breakfast_choice.ingredients)
-        
-        meal_index = self.set_meal_index(meal)
+        meal_choice = mealday.get_choice(meal)
+        ingredients_list = meal_choice.ingredients_to_string_list()
 
-        meal_ingredients_dict = mealday.breakfast_choice.ingredients
+        information = "Ingredients: \n\n"
 
-        information = meal.title() + ": \n"
-        information += "Ingredients: \n"
-
-        for ingr in meal_ingredients_dict.keys():
-            information += ingr + " \n"
-        messagebox.showinfo("showinfo", information)
+        for ingredient in ingredients_list:
+            information += ingredient + "\n"
+        messagebox.showinfo("Details for " + meal_choice.name.title(), information)
 
     def reroll_meal(self, mealday, meal, label):
         self.meal_creator.select_meal(mealday, meal)

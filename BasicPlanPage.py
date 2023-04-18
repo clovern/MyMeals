@@ -36,9 +36,7 @@ class BasicPlanPage(PlanPage):
         self.meal_question_label = ttk.Label(self.question_frame, text=meal_question, font=("Arial", 15))
         self.create_number_dropdown()
 
-        index = 0
-        if (meal == "lunches"): index = 1
-        elif (meal == "dinners"): index = 2
+        index = self.set_meal_index(meal)
 
         self.meal_question_label.grid(column=0, row=0, columnspan=3, sticky='E')
         (self.dropdown_list[-1]).grid(column=2, row=1, sticky='E', pady= (2,2))
