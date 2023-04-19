@@ -163,7 +163,7 @@
             "white onion" : [".5", "unit(s)"],
             "sausage" : ["1", "package(s)"]
         },
-    "recipe": "Cook ground breakfast sausage.\n Cook shredded hash browns in oil.\n Slice up bell pepper and onion. Heat a drizzle of oil in a pan on medium high heat. Add sliced pepper and onion and cook until softened.\n With the pepper and onion still in the pan, add 4 eggs and scramble while cooking, incorporating with the vegatables. When the eggs are almost done, add breakfast sausage.\n Heat up tortilla in microwave for 15 seconds. Add egg mixture, shredded cheese, and hash browns into tortilla.\n Wrap up and secure with toothpicks. Enjoy!"
+    "recipe": "Cook ground breakfast sausage.\n\nCook shredded hash browns in oil.\n\nSlice up bell pepper and onion. Heat a drizzle of oil in a pan on medium high heat. Add sliced pepper and onion and cook until softened.\n\nWith the pepper and onion still in the pan, add 4 eggs and scramble while cooking, incorporating with the vegatables. When the eggs are almost done, add breakfast sausage.\n\nHeat up tortilla in microwave for 15 seconds. Add egg mixture, shredded cheese, and hash browns into tortilla.\n\nWrap up and secure with toothpicks. Enjoy!"
 },
 
 {
@@ -217,7 +217,8 @@
     "meal_type": "breakfast",
     "ingredients":
         {
-            "cereal": [".25", "package(s)"]
+            "cereal": [".25", "package(s)"],
+            "milk": ["1.5", "cup(s)"]
         }
 },
 
@@ -281,7 +282,7 @@
             "olive oil": [".25", "cup(s)"],
             "plain greek yogurt": ["4", "Tbsp(s)"]
         },
-    "recipe": "Serves 2.\n 1. Cook ground beef in pan, drain fat, and then mix in taco seasoning and water, following instructions on the taco seasoning packet. Transfer cooked taco meat to a bowl \n 2. Dice avocado, jalapeno, and roma tomatoes. \n 3. Heat additional olive oil in the same pan where you cooked the beef. Place 6 corn tortillas (this can be done in 2 sets as needed). \n 4. Spread chipotle mayo, cheese, beef, jalapenos, avocado, and tomatoes on quesadillas. Place another corn tortilla on top. Flip after about 3 minutes, or once down side is crispy. \n 5. Optionally serve with greek yogurt as a sour cream replacement. Enjoy!"
+    "recipe": "Serves 2.\n\n1. Cook ground beef in pan, drain fat, and then mix in taco seasoning and water, following instructions on the taco seasoning packet. Transfer cooked taco meat to a bowl \n\n2. Dice avocado, jalapeno, and roma tomatoes. \n\n3. Heat additional olive oil in the same pan where you cooked the beef. Place 6 corn tortillas (this can be done in 2 sets as needed). \n\n4. Spread chipotle mayo, cheese, beef, jalapenos, avocado, and tomatoes on quesadillas. Place another corn tortilla on top. Flip after about 3 minutes, or once down side is crispy. \n\n5. Optionally serve with greek yogurt as a sour cream replacement. Enjoy!"
 },
 
 {
@@ -300,7 +301,7 @@
             "olive oil": [".25", "cup(s)"],
             "canned jalapenos": [".125", "package(s)"]
         },
-    "recipe": "Serves 2.\n Heat oil in a pan. Place 6 corn tortillas (can do 2 sets of 3 as needed). Spread with cheese, avocado, tomato, and jalapeno. Place another corn tortilla on top. Flip after about 3 minutes, or when the bottom side is crispy and browned. Enjoy!"
+    "recipe": "Serves 2.\n\nHeat oil in a pan. Place 6 corn tortillas (can do 2 sets of 3 as needed). Spread with cheese, avocado, tomato, and jalapeno. Place another corn tortilla on top. Flip after about 3 minutes, or when the bottom side is crispy and browned. Enjoy!"
 },
 
 {
@@ -319,7 +320,7 @@
             "eggs": ["2", "unit(s)"],
             "feta cheese": ["3", "oz(s)"]
         },
-    "recipe": "Serves 2. \n Medium boil 2 eggs. Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Slice egg into slices. Top each salad with feta cheese and 1 sliced egg. Enjoy!"
+    "recipe": "Serves 2. \n\nMedium boil 2 eggs. Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Slice egg into slices. Top each salad with feta cheese and 1 sliced egg. Enjoy!"
 },
 
 {
@@ -338,7 +339,7 @@
             "greek dressing": ["4", "Tbsp(s)"],
             "vegan feta cheese": ["3", "oz(s)"]
         },
-    "recipe": "Serves 2. \n Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Top each salad with feta cheese. Enjoy!"
+    "recipe": "Serves 2. \n\nSlice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Top each salad with feta cheese. Enjoy!"
 },
 
 {
@@ -398,7 +399,7 @@
             "rosemary": ["1", "Tbsp"],
             "balsalmic reduction": ["1", "Tbsp"]
         },
-    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n Add pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n Make a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n Bake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
+    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n\nAdd pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n\nMake a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n\nBake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
 },
 
 {
@@ -419,7 +420,7 @@
             "rosemary": ["1", "Tbsp"],
             "balsalmic reduction": ["1", "Tbsp"]
         },
-    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n Add pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n Make a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n Bake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
+    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n\nAdd pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n\nMake a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n\nBake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
 },
 
 {
@@ -618,7 +619,7 @@
             "cucumbers": [".5", "unit(s)"],
             "provolone cheese": [".25", "package"]
         },
-    "recipe": "Turn oven on to a low broil. Place ham, salami, and provolone cheese onto an open sub bun. Bake on a low broil for 2 minutes, until cheese is melted. \n Add banana peppers, cucumber slices, lettuce, and a drizzle of italian dressing. Enjoy!"
+    "recipe": "Turn oven on to a low broil. Place ham, salami, and provolone cheese onto an open sub bun. Bake on a low broil for 2 minutes, until cheese is melted. \n\nAdd banana peppers, cucumber slices, lettuce, and a drizzle of italian dressing. Enjoy!"
 },
 
 {
@@ -663,7 +664,7 @@
             "pepper": [".25", "tsp(s)"],
             "corn": ["1", "can(s)"]
         },
-    "recipe": "1. Toss the cubed chicken breasts in flour that has been generously seasoned with salt and pepper, until all pieces are lightly coated.\n 2. With the cooker's lid off, heat oil on HIGH or brown, until sizzling. \n 3. Place the ocated chicken in the cooker and saute until lightly browned, about 5 minutes.\n 4. Add the onion, carrots, bell pepper, and jalapeno pepper, and stir well, sauteing 1 additional minute. 5. Add the chicken stock, cilantro, cumin, salt, and pepper to the chicken mixture. Securely lock the pressure cooker's lid and set for 7 minutes on HIGH. \n 6. Perform a quick release to release the cooker's pressure. Stir in corn kernels and tortilla strips before serving. "
+    "recipe": "1. Toss the cubed chicken breasts in flour that has been generously seasoned with salt and pepper, until all pieces are lightly coated.\n\n2. With the cooker's lid off, heat oil on HIGH or brown, until sizzling. \n\n3. Place the ocated chicken in the cooker and saute until lightly browned, about 5 minutes.\n\n4. Add the onion, carrots, bell pepper, and jalapeno pepper, and stir well, sauteing 1 additional minute. 5. Add the chicken stock, cilantro, cumin, salt, and pepper to the chicken mixture. Securely lock the pressure cooker's lid and set for 7 minutes on HIGH. \n\n6. Perform a quick release to release the cooker's pressure. Stir in corn kernels and tortilla strips before serving. "
 },
 
 {
@@ -687,7 +688,7 @@
             "shredded cheddar cheese": ["1.25", "cup(s)"],
             "pepper": [".25", "tsp(s)"]
         },
-    "recipe" : "1. With your slow cooker's lid off, heat button on HIGH or brown, until melted and sizzling. \n 2. Place onion in cooker and saute until translucent, 4-5 minutes. \n 3. Add broccoli florets, caroots, chicken stock, garlic powder, and onion powder. Securely lock the pressure cooker's lid and set for 4 minutes on HIGH.\n 4. Perform a quick release to release the cooker's pressure. \n 5. Stir in heavy cream and Cheddar cheese, and then add salt and pepper to taste before serving."
+    "recipe" : "1. With your slow cooker's lid off, heat button on HIGH or brown, until melted and sizzling. \n\n2. Place onion in cooker and saute until translucent, 4-5 minutes. \n\n3. Add broccoli florets, caroots, chicken stock, garlic powder, and onion powder. Securely lock the pressure cooker's lid and set for 4 minutes on HIGH.\n\n4. Perform a quick release to release the cooker's pressure. \n\n5. Stir in heavy cream and Cheddar cheese, and then add salt and pepper to taste before serving."
 },
 
 {
@@ -754,7 +755,7 @@
             "milk" : ["1", "cup"],
             "paprika" : ["1", "tsp"]
         },
-    "recipe": "Prepare rice. Prepare the batter at https://www.spendwithpennies.com/crispy-fried-dill-pickles/, leaving out the dill. \n Slice up cauliflower into bite sized pieces, and cover in batter, then panko bread crumbs. \n Place in air fryer at 400 degrees for 8 minutes, or until outside is golden brown and crispy.\n Remove from air fryer and place in a container with a lid. Put your favorite stir fry sauce in the container and shake cauliflower and stir fry sauce together gently, until cauliflower is covered. \n Heat up mixed vegetables in the microwave. Serve vegetables and coated cauliflower over rice. Enjoy!"
+    "recipe": "Prepare rice. Prepare the batter at https://www.spendwithpennies.com/crispy-fried-dill-pickles/, leaving out the dill. \n\nSlice up cauliflower into bite sized pieces, and cover in batter, then panko bread crumbs. \n\nPlace in air fryer at 400 degrees for 8 minutes, or until outside is golden brown and crispy.\n\nRemove from air fryer and place in a container with a lid. Put your favorite stir fry sauce in the container and shake cauliflower and stir fry sauce together gently, until cauliflower is covered. \n\nHeat up mixed vegetables in the microwave. Serve vegetables and coated cauliflower over rice. Enjoy!"
 },
 
 {
@@ -879,7 +880,7 @@
             "hash browns": [".5", "package(s)"],
             "olive oil": ["4", "Tbsp(s)"]
         },
-    "recipe": "1. Heat a generous amount of oil in a pan on high heat. Place shredded hash browns in the oil and cook until golden brown, about 10 minutes. 2. Form ground chuck into burger shapes, season with salt and pepper to taste, and place on a pan on medium heat. Cook to taste, about 4-5 minutes per side recommended.\n 3. Slice up poblano peppers into long strips. Heat a drizzle of oil on medium high heat in a pan, and add the pepper slices. Cook until slightly charred, about 5 minutes.\n 4. De-seed dates and add into blender with 2 Tbsp water. Blend, and continue to add water 1 tsp at a time and blend until a thick but spreadable paste is formed. \n. 5. Toast burger buns. Once toasted, spread about 1.5 Tbsp Date Spread and 3 Tbsp goat cheese on each bun. Place 4-5 poblano slices on top of the goat cheese on each. Place burger on bun. Server with hash browns and enjoy!"
+    "recipe": "1. Heat a generous amount of oil in a pan on high heat. Place shredded hash browns in the oil and cook until golden brown, about 10 minutes. 2. Form ground chuck into burger shapes, season with salt and pepper to taste, and place on a pan on medium heat. Cook to taste, about 4-5 minutes per side recommended.\n\n3. Slice up poblano peppers into long strips. Heat a drizzle of oil on medium high heat in a pan, and add the pepper slices. Cook until slightly charred, about 5 minutes.\n\n4. De-seed dates and add into blender with 2 Tbsp water. Blend, and continue to add water 1 tsp at a time and blend until a thick but spreadable paste is formed. \n. 5. Toast burger buns. Once toasted, spread about 1.5 Tbsp Date Spread and 3 Tbsp goat cheese on each bun. Place 4-5 poblano slices on top of the goat cheese on each. Place burger on bun. Server with hash browns and enjoy!"
 },
 
 {
@@ -1243,7 +1244,7 @@
             "mozzarella cheese": [".25", "lb(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         },
-    "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n 2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n 3. Prepare pasta of your choice.\n 4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
+    "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n\n2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n\n3. Prepare pasta of your choice.\n\n4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
     
 },
 
