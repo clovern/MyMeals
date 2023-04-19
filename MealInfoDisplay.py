@@ -6,6 +6,7 @@ from PIL import ImageTk
 from SpecialOptionsDropdown import SpecialOptionsDropdown
 from MealCreator import MealCreator
 from PlanPage import PlanPage
+import webbrowser
 
 class MealInfoDisplay(PlanPage):
     def __init__(self, outer, mealcreator):
@@ -85,7 +86,35 @@ class MealInfoDisplay(PlanPage):
 
         for ingredient in ingredients_list:
             information += ingredient + "\n"
+        
+        if meal_choice.link != None:
+            information += "\n\nRecipe Link: \n\n"
+            # information += meal_choice.link
+            # information += "\n"
+            self.details_popup= Toplevel()
+            self.details_popup.geometry("500x400")
+            self.details_popup.title("Details for " + meal_choice.name.title())
+            Label(self.details_popup, text= information).pack()
+            self.create_hyperlink(meal_choice.link)
+            return
+        
+        if meal_choice.recipe != None:
+            information += "\n\nRecipe: \n\n"
+            information += meal_choice.recipe
+            information += "\n"
+
         messagebox.showinfo("Details for " + meal_choice.name.title(), information)
+    
+    def open_hyperlink(self, url):
+        webbrowser.open_new_tab(url)
+
+    #Create a Label to display the link
+    def create_hyperlink(self, link_text):
+        link = Label(self.details_popup, text=link_text, fg="blue", cursor="hand2")
+        link.bind("<Button-1>", lambda e:
+        self.open_hyperlink(link_text))
+        link.pack()
+
 
     def reroll_meal(self, mealday, meal, label):
         self.meal_creator.select_meal(mealday, meal)
