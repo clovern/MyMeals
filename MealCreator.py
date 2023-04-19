@@ -74,12 +74,7 @@ class MealCreator:
         return None
     
     def get_meal_selection(self, mealday, meal):
-        if meal.lower() == "breakfast":
-            return mealday.breakfast_choice
-        elif meal.lower() == "lunch":
-            return mealday.lunch_choice
-        elif meal.lower() == "dinner":
-            return mealday.dinner_choice
+        return mealday.get_choice(meal)
     
     def set_daily_preferences(self, weekly_preferences):
         breakfastindex = 0

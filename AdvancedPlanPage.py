@@ -30,11 +30,7 @@ class AdvancedPlanPage(PlanPage):
     def create_single_meal_panel(self, meal, day):
         self.meal_label = ttk.Label(self.day_frame, text=meal, padding=(20,2,20,2))
 
-        index = 0
-        if meal == "Lunch":
-            index = 1
-        elif meal == "Dinner":
-            index = 2
+        index = self.set_meal_index(meal)
 
         self.meal_label.grid(column=1, row=index)
         self.create_special_options_dropdown(day)

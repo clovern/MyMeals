@@ -31,6 +31,22 @@ class MealDay:
         else:
             print("\n\nInvalid meal input type. Options are breakfast, lunch, dinner. You input" + str(meal))
         pass
+
+    def get_choice(self, meal):
+        if meal.lower() == "breakfast":
+            return self.breakfast_choice
+        elif meal.lower() == "lunch":
+            return self.lunch_choice
+        elif meal.lower() == "dinner":
+            return self.dinner_choice
+    
+    def set_choice(self, meal, choice):
+        if meal.lower() == "breakfast":
+            self.breakfast_choice = choice
+        elif meal.lower() == "lunch":
+            self.lunch_choice = choice
+        elif meal.lower() == "dinner":
+            self.dinner_choice = choice
     
 
 

@@ -29,6 +29,14 @@ class PlanPage(Page):
         self.dayFlag = ttk.Label(self.day_frame, text=day, width=10, font=("Arial", 15))
         self.dayFlag.grid(column=0, row=0)
     
+    def set_meal_index(self, meal):
+        index = 0
+        if "lunch" in meal.lower():
+            index = 1
+        elif "dinner" in meal.lower():
+            index = 2
+        return index
+    
     def create_day_panel(self, day, index):
         if (index < 4):
             self.day_frame= ttk.Frame(self.lower_left_content)
