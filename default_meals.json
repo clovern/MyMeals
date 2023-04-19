@@ -18,6 +18,23 @@
 },
 
 {
+    "meal_name": "vegan blueberry waffles",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "vegan waffle mix": ["1", "cup(s)"],
+            "blueberries": [".5", "cup(s)"],
+            "syrup": ["1/4", "cup(s)"]
+        },
+    "recipe": "Follow instructions on waffle mix. Add blueberries and syrup to taste. Enjoy!"
+    
+},
+
+{
     "meal_name": "chocolate chip waffles",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -33,6 +50,35 @@
             "syrup": ["1/4", "cup(s)"]
         },
     "recipe": "Follow instructions on kodiak cakes box. Add chocolate chips and syrup to taste."
+},
+
+{
+    "meal_name": "yogurt parfait",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "yogurt": ["1", "cup(s)"],
+            "granola": ["3", "Tbsp(s)"],
+            "berries": [".25", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "vegan yogurt parfait",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "vegan yogurt": ["1", "cup(s)"],
+            "vegan granola": ["3", "Tbsp(s)"],
+            "berries": [".25", "package(s)"]
+        }
 },
 
 {
@@ -67,6 +113,22 @@
             "strawberries": ["1", "package"]
         },
         "recipe": "Follow instructions on kodiak cakes box for pancakes. Slice up fresh strawberries, or heat up frozen strawberries, then place them on pancakes as topping."
+},
+
+{
+    "meal_name": "vegan pancakes with strawberries and nutella",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "vegan pancake mix": ["1", "cup"],
+            "strawberries": ["1", "package"],
+            "nutella": ["1", "package"]
+        },
+        "recipe": "Follow instructions on pancake mix for pancakes. Spread nutella on pancakes. Slice up fresh strawberries, or heat up frozen strawberries, then place them on pancakes as topping."
 },
 
 {
@@ -189,6 +251,137 @@
 },
 
 {
+    "meal_name": "Costco premade turkey wraps",
+    "meat_type": "turkey",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Costco premade turkey wraps": [".25", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "quesadillas",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "avocado": [".5", "unit(s)"],
+            "corn tortillas": ["6", "unit(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "taco seasoning": ["2", "Tbsp(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "canned jalapenos": [".125", "package(s)"],
+            "ground beef": ["6", "oz(s)"],
+            "sour cream": ["3", "Tbsp(s)"],
+            "olive oil": [".25", "cup(s)"],
+            "plain greek yogurt": ["4", "Tbsp(s)"]
+        },
+    "recipe": "Serves 2.\n 1. Cook ground beef in pan, drain fat, and then mix in taco seasoning and water, following instructions on the taco seasoning packet. Transfer cooked taco meat to a bowl \n 2. Dice avocado, jalapeno, and roma tomatoes. \n 3. Heat additional olive oil in the same pan where you cooked the beef. Place 6 corn tortillas (this can be done in 2 sets as needed). \n 4. Spread chipotle mayo, cheese, beef, jalapenos, avocado, and tomatoes on quesadillas. Place another corn tortilla on top. Flip after about 3 minutes, or once down side is crispy. \n 5. Optionally serve with greek yogurt as a sour cream replacement. Enjoy!"
+},
+
+{
+    "meal_name": "vegan quesadillas",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "avocado": [".5", "unit(s)"],
+            "corn tortillas": ["6", "unit(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "shredded vegan mexican blend cheese": [".25", "package(s)"],
+            "olive oil": [".25", "cup(s)"],
+            "canned jalapenos": [".125", "package(s)"]
+        },
+    "recipe": "Serves 2.\n Heat oil in a pan. Place 6 corn tortillas (can do 2 sets of 3 as needed). Spread with cheese, avocado, tomato, and jalapeno. Place another corn tortilla on top. Flip after about 3 minutes, or when the bottom side is crispy and browned. Enjoy!"
+},
+
+{
+    "meal_name": "greek salad",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "iceburg lettuce": [".5", "unit(s)"],
+            "cucumber": ["1", "unit(s)"],
+            "grape tomatoes": [".25", "package(s)"],
+            "canned banana peppers": [".125", "package(s)"],
+            "greek dressing": ["4", "Tbsp(s)"],
+            "eggs": ["2", "unit(s)"],
+            "feta cheese": ["3", "oz(s)"]
+        },
+    "recipe": "Serves 2. \n Medium boil 2 eggs. Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Slice egg into slices. Top each salad with feta cheese and 1 sliced egg. Enjoy!"
+},
+
+{
+    "meal_name": "vegan greek salad",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "iceburg lettuce": [".5", "unit(s)"],
+            "cucumber": ["1", "unit(s)"],
+            "grape tomatoes": [".25", "package(s)"],
+            "canned banana peppers": [".125", "package(s)"],
+            "greek dressing": ["4", "Tbsp(s)"],
+            "vegan feta cheese": ["3", "oz(s)"]
+        },
+    "recipe": "Serves 2. \n Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Top each salad with feta cheese. Enjoy!"
+},
+
+{
+    "meal_name": "Pasta Salad",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "cucumbers": ["1", "unit(s)"],
+            "grape tomatoes": ["1", "package(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "pasta": [".5", "package(s)"],
+            "pepperoni": ["1", "package(s)"],
+            "mozzarella cheese blocks": ["2", "unit(s)"],
+            "italian dressing": [".25", "package(s)"]
+        },
+    "recipe": "1. Cook the pasta. 2. Slice all the vegetables into bite size pieces (halve the grape tomatoes). Cut the pepperonis into strips and the mozzarella into 1cm cubes. 3. Mix vegetables, cheese, pepperoni, and pasta. Add italian dressing when serving. Enjoy!"
+
+},
+
+{
+    "meal_name": "Vegan Pasta Salad",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "cucumbers": ["1", "unit(s)"],
+            "grape tomatoes": ["1", "package(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "pasta": [".5", "package(s)"],
+            "vegan cheese blocks": ["2", "unit(s)"],
+            "italian dressing": [".25", "package(s)"]
+        },
+    "recipe": "1. Cook the pasta. 2. Slice all the vegetables into bite size pieces (halve the grape tomatoes). Cut the mozzarella into 1cm cubes. 3. Mix vegetables, cheese, and pasta. Add italian dressing when serving. Enjoy!"
+
+},
+
+{
     "meal_name": "margherita pita pizza",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -206,6 +399,207 @@
             "balsalmic reduction": ["1", "Tbsp"]
         },
     "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n Add pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n Make a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n Bake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
+},
+
+{
+    "meal_name": "vegan margherita pita pizza",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "pitas": [".25", "package(s)"],
+            "tomatoes": ["4", "unit(s)"],
+            "vegan mozzarella cheese":  [".25", "package(s)"],
+            "pizza sauce": [".25", "jar(s)"],
+            "basil leaves": ["20", "unit(s)"],
+            "minced garlic": ["2", "tsp"],
+            "rosemary": ["1", "Tbsp"],
+            "balsalmic reduction": ["1", "Tbsp"]
+        },
+    "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n Add pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n Make a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n Bake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
+},
+
+{
+    "meal_name": "berry smoothie",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "frozen mixed fruit": ["1.5", "cup(s)"],
+            "greek yogurt": ["1", "cup(s)"],
+            "protein powder":  ["4", "Tbsp(s)"],
+            "milk": ["1", "cup(s)"]
+        },
+    "recipe": "Mix all ingredients in blender. Add additional milk as needed until it has a frozen but smooth consistency. Enjoy!"
+},
+
+{
+    "meal_name": "vegan berry smoothie",
+    "meat_type": "vegan",
+    "vegan_only": "true",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "frozen mixed fruit": ["1.5", "cup(s)"],
+            "vegan yogurt": ["1", "cup(s)"],
+            "vegan protein powder":  ["4", "Tbsp(s)"],
+            "vegan milk alternative": ["1", "cup(s)"]
+        },
+    "recipe": "Mix all ingredients in blender. Add additional milk alternative as needed until it has a frozen but smooth consistency. Enjoy!"
+},
+
+{
+    "meal_name": "Stacy's Organic Lentil Soup",
+    "meat_type": "vegan",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Stacy's Organic Lentil Soup": ["1", "can(s)"]
+        }
+},
+
+{
+    "meal_name": "Gordon's Frozen Fish sticks & cucumbers",
+    "meat_type": "seafood",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Gordon's Frozen Fish Sticks": [".5", "package(s)"],
+            "cucumbers": ["1", "unit(s)"]
+        }
+},
+
+{
+    "meal_name": "Morning star chicken nuggets with Honey Mustard and Carrots",
+    "meat_type": "vegan",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Morning Star vegan Chick'n Nuggets": [".5", "package(s)"],
+            "honey mustard dipping sauce": ["4", "Tbsp(s)"],
+            "baby carrots": [".25", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Smoked Salmon Bagel",
+    "meat_type": "seafood",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Smoked Salmon Slices": [".125", "package(s)"],
+            "cream cheese": [".25", "Tbsp(s)"],
+            "green onions": [".25", "package(s)"],
+            "bagels": [".25", "package(s)"]
+        },
+    "recipe" : "Spread cream cheese on bagel. Place smoked salmon slices and sliced green onions on top. Enjoy!"
+},
+
+{
+    "meal_name": "Rxbar, Greek Yogurt, and Fruit",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "Rxbar": ["1", "unit(s)"],
+            "greek yogurt": ["1", "cup(s)"],
+            "fruit": [".5", "cup(s)"]
+        }
+},
+
+{
+    "meal_name": "Bagel with Cream Cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "bagels": ["1", "unit(s)"],
+            "cream cheese": ["3", "Tbsp(s)"]
+        }
+},
+
+{
+    "meal_name": "premade broccoli cheddar soup and sourdough bread",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "premade broccoli cheddar soup": [".25", "package(s)"],
+            "sourdough bread": [".25", "unit(s)"]
+        },
+    "recipe" : "Heat up broccoli cheddar soup in a pan. Bake sourdough bread in oven. Dip bread in soup. Enjoy!"
+},
+
+{
+    "meal_name": "Garlic Tomato Bagel with Cream Cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "bagels": ["1", "unit(s)"],
+            "cream cheese": ["3", "Tbsp(s)"], 
+            "grape tomatoes": [".25", "package(s)"], 
+            "minced garlic": ["1", "tsp(s)"], 
+            "olive oil": ["2", "Tbsp(s)"] 
+        },
+    "recipe" : "1. Heat olive oil in a pan on medium high heat. Put grape tomatoes in pan with oil and saute for 5 minutes, until softened and lightly charred. Add minced garlic and cook for 1 minute more. Toast bagel and spread both side with cream cheese. Place roasted garlic tomatoes and remaining olive oil from pan on top of the bagel. Enjoy!"
+},
+
+{
+    "meal_name": "Bagel with Salami, Ham, and Sliced Cucumber",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "bagels": ["1", "unit(s)"],
+            "salami": [".125", "lb(s)"], 
+            "ham": [".125", "lb(s)"], 
+            "cucumber": ["1", "unit(s)"]
+        }
+},
+
+{
+    "meal_name": "Spinach Quiche",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "minced garlic": ["1", "tsp(s)"],
+            "yellow onions": ["2", "unit(s)"], 
+            "spinach": ["10", "oz(s)"], 
+            "red pepper flakes": [".25", "tsp(s)"], 
+            "olive oil": ["2", "Tbsp(s)"],
+            "heavy cream": [".25", "cup(s)"],
+            "shredded mozzarella cheese": ["1.5", "cup(s)"],
+            "eggs": ["6", "unit(s)"]
+        }
 },
 
 {
@@ -561,7 +955,7 @@
             "corn": ["1", "can(s)"],
             "flour": ["1", "Tbsp(s)"],
             "milk": ["3", "cup(s)"],
-            "vegetable broth cube": ["1", "unit(s)"],
+            "vegetable broth cubes": ["1", "unit(s)"],
             "old bay seasoning": ["2", "Tbsp(s)"],
             "cream cheese": ["2", "Tbsp(s)"],
             "french bread": ["1", "unit(s)"],
@@ -1025,7 +1419,108 @@
         },
     "link": "https://www.hellofresh.com/recipes/steak-with-mushroom-cream-sauce-6231f2c98cae5f6cde4c6187"
 
+},
+
+{
+    "meal_name": "Street Cart Style Chickpea Bowls",
+    "meat_type": "vegan",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "turmeric": ["1", "tsp(s)"],
+            "rice": [".75", "cup(s)"],
+            "veggie broth cubes": ["3", "unit(s)"],
+            "lemon": ["1", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "cucumbers": ["1", "unit(s)"],
+            "garlic powder": ["2", "tsp(s)"],
+            "shawarma spice spend": ["1", "package(s)"],
+            "chickpeas": ["1", "Tbsp(s)"],
+            "whole wheat pitas": [".25", "package(s)"],
+            "sliced almonds": [".5", "oz(s)"],
+            "hot sauce": ["2", "tsp(s)"],
+            "hummus": ["4", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/vegan-streetcart-style-chickpea-bowls-633333e8876397b2f10a5fbb"
+
+},
+
+{
+    "meal_name": "Shawarma Spiced Chickpea Bowls",
+    "meat_type": "vegan",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "red onions": ["1", "unit(s)"],
+            "minced garlic": [".5", "tsp(s)"],
+            "pistachios": [".5", "oz(s)"],
+            "chickpeas": ["1", "package(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "lemon": ["1", "unit(s)"],
+            "shawarma spice spend": ["1", "Tbsp(s)"],
+            "grape tomatoes": [".5", "package(s)"],
+            "rice": [".5", "cup(s)"],
+            "veggie broth cubes": ["1", "unit(s)"],
+            "sour cream": ["3", "Tbsp(s)"],
+            "hot sauce": ["1", "tsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/middle-eastern-chickpea-bowls-5eb082c2ff8d2876ce4bf9a2"
+
+}, 
+
+{
+    "meal_name": "Shawarma Spiced Grilling Cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "grilling cheese": ["1", "package(s)"],
+            "rice": [".5", "cup(s)"],
+            "shawarma spice spend": ["1", "Tbsp(s)"],
+            "vegetable broth cubes": ["1", "cube(s)"],
+            "pistachios": [".5", "oz(s)"],
+            "lemon": ["1", "unit(s)"],
+            "sour cream": ["1.5", "Tbsp(s)"],
+            "minced garlic": [".5", "tsp(s)"],
+            "shallot": ["1", "unit(s)"],
+            "cucumber": ["1", "unit(s)"],
+            "hot sauce": ["1", "tsp(s)"],
+            "grape tomatoes": [".5", "package(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/shawarma-spiced-halloumi-6239d858457d6e66121a17e0"
+
+}, 
+
+{
+    "meal_name": "Harissa Chicken Bulgur Bowls",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "cucumbers": ["1", "unit(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "lemon": ["1", "unit(s)"],
+            "bulgur wheat": [".5", "cup(s)"],
+            "harissa powder": ["1", "Tbsp(s)"],
+            "sour cream": ["1.5", "Tbsp(s)"],
+            "feta cheese": ["1.5", "Tbsp(s)"],
+            "chicken breast": ["10", "oz(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
+
 }
+
 
 
 
