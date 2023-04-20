@@ -1,5 +1,5 @@
 class Meal: 
-    def __init__(self, name, meat_type, reheats_well, price_range, meal_type, recipe, link, ingredients = {}):
+    def __init__(self, name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients = {}):
         self.name = name
         self.meat_type = meat_type
         self.reheats_well = reheats_well
@@ -8,6 +8,7 @@ class Meal:
         self.ingredients = ingredients
         self.recipe = recipe
         self.link = link
+        self.vegan_only = vegan_only
 
     def add_ingredient(self, ingredient, amount):
         self.ingredients[ingredient] = str(amount)   

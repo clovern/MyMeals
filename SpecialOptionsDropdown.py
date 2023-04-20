@@ -80,7 +80,21 @@ class SpecialOptionsDropdown():
                 return selected_final
             
             if value.lower() in ["vegan", "vegetarian", "chicken", "pork", "beef", "turkey", "seafood"]:
-                meat_types.append(value.lower())
+                #vegan meals not specified as vegan_only should be included when someone selects vegetarian.
+                if value.lower() == "vegetarian":
+                    selected_final["vegan_only"] = "false"
+                    if "vegan" not in meat_types:
+                        meat_types.append("vegan")
+
+                if value.lower() == "vegan":
+                    if "Vegetarian" not in selected_initial:
+                        selected_final["vegan_only"] = "true"
+
+                if value.lower() != "vegan":
+                    meat_types.append(value.lower())
+                elif "vegan" not in meat_types:
+                    meat_types.append("vegan")
+
             elif value in ["$", "$$", "$$$"]:
                 if (value == "$"):
                     price_types.append("cheap")
