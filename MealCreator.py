@@ -32,7 +32,8 @@ class MealCreator:
         for recipe in default_data:
             recipe_instructions = recipe['recipe'] if 'recipe' in recipe else None
             link = recipe['link'] if 'link' in recipe else None
-            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], recipe['reheats_well'], recipe['price_range'], recipe['meal_type'], recipe_instructions, link, recipe['ingredients'])
+            vegan_only = recipe['vegan_only'] if 'vegan_only' in recipe else "false"
+            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], recipe['reheats_well'], recipe['price_range'], recipe['meal_type'], recipe_instructions, link, vegan_only, recipe['ingredients'])
             self.add_meal(temp_meal)
         default_file.close()
 
