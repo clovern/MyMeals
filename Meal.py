@@ -23,6 +23,15 @@ class Meal:
             ingredients_list.append(ingredient_string)
         
         return ingredients_list
+    
+    def format_meal_ingredients(self):
+        ingredients_list = self.ingredients_to_string_list()
+        information = "Ingredients: \n\n"
+
+        for ingredient in ingredients_list:
+            information += ingredient + "\n"
+        
+        return information
 
     def __repr__(self):
         return self.name
