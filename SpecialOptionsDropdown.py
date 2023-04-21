@@ -37,25 +37,50 @@ class SpecialOptionsDropdown():
 
     def create_special_options_dropdown(self):
         self.menu_button_text = "           \u2193"
-        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white")
+        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white", wraplength = 100)
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
 
         for index in range(len(self.dropdown_opts)):
-            self.display.menu.add_checkbutton (label=self.dropdown_opts[index],
-            variable=self.dropdown_vars[index] , command = lambda: self.display_option(self.display))
+            label_text = self.dropdown_opts[index]
+            self.display.menu.add_checkbutton (label=label_text,
+            variable=self.dropdown_vars[index] , command = self.display_option)
     
-    def display_option(self, menu_button):
-        # FIXME
-        self.menu_button_text = "testText\u2193"
-        menu_button.configure(text = self.menu_button_text)
+    def display_option(self):
+
+        label_text = " \u2193"
+
+        len_labels = 0
+
+        exclude = False 
+
+        for i in range(len(self.dropdown_vars)):
+            if self.dropdown_vars[i].get() == 1:
+                len_labels += 1
+                if self.dropdown_opts[i] == "Exclude this Meal":
+                    exclude = True
+                    break
+                if len_labels > 0:
+                    label_text = ", " + label_text
+                label_text = self.dropdown_opts[i] + label_text
+        
+        if exclude == True:
+            label_text = "Exclude this Meal \u2193"
+            for var in self.dropdown_vars:
+                var.set(0)
+            self.exclude_bool.set(1)
+        if len_labels == 0:
+            label_text = "           \u2193"
+        
+        self.display.configure(text = label_text)
+        
 
     def make_advanced(self):
         self.dropdown_opts.insert(0, "Exclude this Meal")
         self.exclude_bool = IntVar()
         self.dropdown_vars.insert(0, self.exclude_bool)
         self.display.menu.add_checkbutton ( label=self.dropdown_opts[0],
-            variable=self.dropdown_vars[0] )
+            variable=self.dropdown_vars[0], command = self.display_option )
 
     def get_selection(self): 
         selected_initial = []

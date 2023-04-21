@@ -1,12 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
-from PIL import Image
-from PIL import ImageTk
-from SpecialOptionsDropdown import SpecialOptionsDropdown
-from MealCreator import MealCreator
 from PlanPage import PlanPage
 import webbrowser
+from MealFileSaver import MealFileSaver
 
 class MealInfoDisplay(PlanPage):
     def __init__(self, outer, mealcreator):
@@ -80,17 +77,11 @@ class MealInfoDisplay(PlanPage):
         # open a message box that shows the ingredients and the recipe
 
         meal_choice = mealday.get_choice(meal)
-        ingredients_list = meal_choice.ingredients_to_string_list()
 
-        information = "Ingredients: \n\n"
-
-        for ingredient in ingredients_list:
-            information += ingredient + "\n"
+        information = meal_choice.format_meal_ingredients()
         
         if meal_choice.link != None:
             information += "\n\nRecipe Link: \n\n"
-            # information += meal_choice.link
-            # information += "\n"
             self.details_popup= Toplevel()
             self.details_popup.geometry("500x400")
             self.details_popup.title("Details for " + meal_choice.name.title())
@@ -104,7 +95,7 @@ class MealInfoDisplay(PlanPage):
             information += "\n"
 
         messagebox.showinfo("Details for " + meal_choice.name.title(), information)
-    
+
     def open_hyperlink(self, url):
         webbrowser.open_new_tab(url)
 
@@ -129,4 +120,6 @@ class MealInfoDisplay(PlanPage):
         self.save_button.pack()
 
     def save_meals(self):
-        pass
+
+        meal_plan = self.meal_creator.mealdays_dict
+        MealFileSaver.save_meal_plan(meal_plan)
