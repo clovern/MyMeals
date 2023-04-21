@@ -36,13 +36,19 @@ class SpecialOptionsDropdown():
         self.create_special_options_dropdown()
 
     def create_special_options_dropdown(self):
-        self.display= Menubutton (self.frame, text="            \u2193", relief=RAISED, background="white")
+        self.menu_button_text = "           \u2193"
+        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white")
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
 
         for index in range(len(self.dropdown_opts)):
-            self.display.menu.add_checkbutton ( label=self.dropdown_opts[index],
-            variable=self.dropdown_vars[index] )
+            self.display.menu.add_checkbutton (label=self.dropdown_opts[index],
+            variable=self.dropdown_vars[index] , command = lambda: self.display_option(self.display))
+    
+    def display_option(self, menu_button):
+        # FIXME
+        self.menu_button_text = "testText\u2193"
+        menu_button.configure(text = self.menu_button_text)
 
     def make_advanced(self):
         self.dropdown_opts.insert(0, "Exclude this Meal")
