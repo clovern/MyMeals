@@ -33,6 +33,34 @@ class Meal:
         
         return information
 
+    def format_link_or_recipe_text(self):
+
+        output = ""
+        line_length = 75
+
+        if self.link != None:
+            output += "Recipe Link: \n\n"
+            link_wrapped_array = [(self.link[i: i+line_length]) for i in range(0, len(self.link), line_length)]
+            
+            for line in link_wrapped_array:
+                output = output + line + "\n" 
+
+        elif self.recipe != None:
+            output += "Recipe Instructions: \n\n"
+
+            paragraphs_array = self.recipe.split('\n')
+            
+            for paragraph in paragraphs_array:
+                recipe_lines_array = [(self.recipe[i: i+line_length]) for i in range(0, len(self.recipe), line_length)]
+
+                for line in recipe_lines_array:
+                    output = output + line + "\n" 
+            
+        else:
+            output = "Recipe: \n\nNo recipe or link provided"
+        
+        return output
+
     def __repr__(self):
         return self.name
 
