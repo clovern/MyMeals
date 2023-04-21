@@ -1,5 +1,6 @@
 from tkinter import filedialog
 import os
+from datetime import date, timedelta
 
 class MealFileSaver():
 
@@ -9,6 +10,11 @@ class MealFileSaver():
     def save_meal_plan(meal_plan):
         file = MealFileSaver.save_file()
         if file:
+
+            start_date = date.today()
+            end_date = start_date + timedelta(days=7)
+
+            file.write("Meal plan for " + str(start_date) + " - " + str(end_date))
             for day in meal_plan:
                 mealday = meal_plan[day]
 
