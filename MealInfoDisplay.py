@@ -4,6 +4,7 @@ from tkinter import ttk
 from PlanPage import PlanPage
 import webbrowser
 from MealFileSaver import MealFileSaver
+from idlelib.tooltip import Hovertip
 
 class MealInfoDisplay(PlanPage):
     def __init__(self, outer, mealcreator):
@@ -15,19 +16,14 @@ class MealInfoDisplay(PlanPage):
     def createMealDisplay(self):
         self.create_lower_left_frame()
         self.create_lower_right_frame()
-        self.create_footer_frame()
-        self.lowercontent["height"] = 500
+        self.lowercontent["height"] = 600
         self.create_title("You're all set!")
         self.create_all_days()
         self.create_footer_options()
     
-    def create_footer_frame(self):
-        self.footercontent = ttk.Frame(self.outer, height=100, width=800)
-        self.footercontent.grid(column=0, row=2)
-        self.footercontent.grid_propagate(0)
-    
     def create_day_panel(self, day, index):
         super().create_day_panel(day, index)
+        self.day_frame['width'] = 400
         self.create_meal_display_panel("Breakfast", day)
         self.create_meal_display_panel("Lunch", day)
         self.create_meal_display_panel("Dinner", day)
@@ -42,8 +38,8 @@ class MealInfoDisplay(PlanPage):
         text_value= self.set_meal_label(mealday, meal)
         index = self.set_meal_index(meal)
 
-        meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2))
-        meal_label.grid(column=3, row=index)
+        meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2), wraplength = 125)
+        meal_label.grid(column=3, row=index, sticky='W')
         self.create_reroll_button(mealday, meal, meal_label)
         self.create_details_button(mealday, meal)
 
@@ -65,13 +61,15 @@ class MealInfoDisplay(PlanPage):
     
     def create_details_button(self, mealday, meal):
         index = self.set_meal_index(meal)
-        self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 4, default="active", command=lambda: self.show_meal_details(mealday, meal))
-        self.details_button.grid(row=index, column=2)
+        self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 3, default="active", command=lambda: self.show_meal_details(mealday, meal))
+        self.details_button.grid(row=index, column=2, sticky='E')
+        details_tip = Hovertip(self.details_button, "Details")
 
     def create_reroll_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 4, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
-        self.reroll_button.grid(row=index, column=1)
+        self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 3, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
+        self.reroll_button.grid(row=index, column=1, sticky='E')
+        reroll_tip = Hovertip(self.reroll_button, "Re-Roll")
 
     def show_meal_details(self, mealday, meal):
         # open a message box that shows the ingredients and the recipe
@@ -116,8 +114,8 @@ class MealInfoDisplay(PlanPage):
         label["text"] = text_value
 
     def create_footer_options(self):
-        self.save_button = ttk.Button(self.footercontent, text="save to file", default="active", command=self.save_meals)
-        self.save_button.pack()
+        self.save_button = ttk.Button(self.lowercontent, text="save to file", default="active", command=self.save_meals)
+        self.save_button.grid(column=0, columnspan=3, row=1)
 
     def save_meals(self):
 
