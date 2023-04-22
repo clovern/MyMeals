@@ -38,12 +38,14 @@ class PlanPage(Page):
         return index
     
     def create_day_panel(self, day, index):
+        # s = ttk.Style()
+        # s.configure('Testing.TFrame', background='green')
         if (index < 4):
-            self.day_frame= ttk.Frame(self.lower_left_content)
+            self.day_frame= ttk.Frame(self.lower_left_content, style='Testing.TFrame')
         else:
-            self.day_frame= ttk.Frame(self.lower_right_content)
+            self.day_frame= ttk.Frame(self.lower_right_content, style='Testing.TFrame')
             index -= 4
-        
+
         self.day_frame['padding'] = (10, 10, 10, 10)
-        self.day_frame.grid(column=0, row=index)
+        self.day_frame.grid(column=0, row=index, sticky='W')
         self.create_day_flag(day)
