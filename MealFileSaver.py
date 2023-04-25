@@ -40,7 +40,8 @@ class MealFileSaver():
                 file.write("\n")
                 MealFileSaver.write_meal_to_file(file, mealday.dinner_choice)
         
-        MealFileSaver.open_file(file)
+        if file:
+            MealFileSaver.open_file(file)
 
     @staticmethod
     def save_file():
