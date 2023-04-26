@@ -19,6 +19,7 @@ class AdvancedPlanPage(PlanPage):
         self.create_lower_right_frame()
         self.create_title("Advanced Plan Creator")
         self.create_all_days()
+        self.create_quick_exclude_options()
         self.create_submit_button()
 
     def create_day_panel(self, day, index):
@@ -37,9 +38,30 @@ class AdvancedPlanPage(PlanPage):
         (self.dropdown_dict[day][-1].display).grid(column=2, row=index)
     
     def create_special_options_dropdown(self, day):
-            super().create_special_options_dropdown(self.day_frame)
-            self.special_dropdown.make_advanced()
+            super().create_special_options_dropdown(self.day_frame, "advanced")
             self.dropdown_dict[day].append(self.special_dropdown)
+    
+    def create_quick_exclude_options(self):
+        self.lower_options_frame= ttk.Frame(self.lower_left_content)
+        self.lower_options_frame.grid(column=0, row=5, sticky='W')
+        self.create_quick_exclude_button("breakfast")
+        self.create_quick_exclude_button("lunch")
+        self.create_quick_exclude_button("dinner")
+    
+    def create_quick_exclude_button(self, meal):
+        index = self.set_meal_index(meal)
+        text = "Exclude all "
+        if meal == "breakfast" or meal == "dinner":
+            text += meal.title() + 's'
+        else: 
+            text += meal.title() + "es"
+        self.exclude_button = ttk.Button(self.lower_options_frame, text=text, default="active", width = 20, padding = 3, command=lambda: self.exclude_all(meal))
+        self.exclude_button.grid(column = 0, row = index, padx = (17, 0), pady=(10,0))
+    
+    def exclude_all(self, meal):
+        index = self.set_meal_index(meal)
+        for day in self.dropdown_dict:
+            self.dropdown_dict[day][index].set_exclude()
     
     def create_submit_button(self):
         super().create_submit_button()

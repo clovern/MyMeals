@@ -68,7 +68,7 @@ class BasicPlanPage(PlanPage):
         self.question_frame['padding'] = (15, 15, 15, 15)
 
         self.meal_question_label = ttk.Label(self.question_frame, text="Special options?", font=("Arial", 15))
-        self.create_special_options_dropdown(self.question_frame)
+        self.create_special_options_dropdown(self.question_frame, "basic")
 
         self.meal_question_label.grid(column=0, row=0, columnspan = 3, sticky='E')
         self.special_dropdown.display.grid(column=2, row=1, pady = (2, 2))
