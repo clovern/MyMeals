@@ -11,10 +11,10 @@ class PlanPage(Page):
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
     def create_submit_button(self):
-        self.submit_button = ttk.Button(self.lowercontent, text="Create Plan", default="active", command=self.generate_plan)
+        self.submit_button = ttk.Button(self.lowercontent, padding = 3, text="Create Plan", default="active", command=self.generate_plan)
 
-    def create_special_options_dropdown(self, frame):
-        self.special_dropdown = SpecialOptionsDropdown(frame)
+    def create_special_options_dropdown(self, frame, type):
+        self.special_dropdown = SpecialOptionsDropdown(frame, type)
 
     def generate_plan(self):
         self.meal_creator = MealCreator()
@@ -38,12 +38,10 @@ class PlanPage(Page):
         return index
     
     def create_day_panel(self, day, index):
-        # s = ttk.Style()
-        # s.configure('Testing.TFrame', background='green')
         if (index < 4):
-            self.day_frame= ttk.Frame(self.lower_left_content, style='Testing.TFrame')
+            self.day_frame= ttk.Frame(self.lower_left_content)
         else:
-            self.day_frame= ttk.Frame(self.lower_right_content, style='Testing.TFrame')
+            self.day_frame= ttk.Frame(self.lower_right_content)
             index -= 4
 
         self.day_frame['padding'] = (10, 10, 10, 10)

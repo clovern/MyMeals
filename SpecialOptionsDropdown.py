@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 
 class SpecialOptionsDropdown():
-    def __init__(self, frame):
+    def __init__(self, frame, type):
 
         self.frame = frame
 
@@ -33,42 +33,44 @@ class SpecialOptionsDropdown():
                     '$$',
                     '$$$']
         
-        self.create_special_options_dropdown()
+        self.create_special_options_dropdown(type)
 
-    def create_special_options_dropdown(self):
+    def create_special_options_dropdown(self, type):
         self.menu_button_text = "           \u2193"
-        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white", wraplength = 100)
+        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white", wraplength = 120)
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
+
+        if type == "advanced":
+            self.make_advanced()
 
         for index in range(len(self.dropdown_opts)):
             label_text = self.dropdown_opts[index]
             self.display.menu.add_checkbutton (label=label_text,
-            variable=self.dropdown_vars[index] , command = self.display_option)
+            variable=self.dropdown_vars[index] , command = lambda index = index: self.display_option(index))
     
-    def display_option(self):
+    def display_option(self, index):
 
         label_text = " \u2193"
 
         len_labels = 0
 
-        exclude = False 
-
-        for i in range(len(self.dropdown_vars)):
-            if self.dropdown_vars[i].get() == 1:
-                len_labels += 1
-                if self.dropdown_opts[i] == "Exclude this Meal":
-                    exclude = True
-                    break
-                if len_labels > 0:
-                    label_text = ", " + label_text
-                label_text = self.dropdown_opts[i] + label_text
-        
-        if exclude == True:
+        if self.dropdown_opts[index] == "Exclude this Meal":
             label_text = "Exclude this Meal \u2193"
             for var in self.dropdown_vars:
                 var.set(0)
+            len_labels += 1
             self.exclude_bool.set(1)
+
+        else:
+            for i in range(len(self.dropdown_vars)):
+                self.exclude_bool.set(0)
+                if self.dropdown_vars[i].get() == 1:
+                    len_labels += 1
+                    if len_labels > 0:
+                        label_text = ", " + label_text
+                    label_text = self.dropdown_opts[i] + label_text
+        
         if len_labels == 0:
             label_text = "           \u2193"
         
@@ -79,8 +81,10 @@ class SpecialOptionsDropdown():
         self.dropdown_opts.insert(0, "Exclude this Meal")
         self.exclude_bool = IntVar()
         self.dropdown_vars.insert(0, self.exclude_bool)
-        self.display.menu.add_checkbutton ( label=self.dropdown_opts[0],
-            variable=self.dropdown_vars[0], command = self.display_option )
+
+    def set_exclude(self):
+        self.exclude_bool.set(1)
+        self.display.configure(text = "Exclude this Meal \u2193")
 
     def get_selection(self): 
         selected_initial = []
