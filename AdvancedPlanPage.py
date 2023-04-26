@@ -8,6 +8,7 @@ from MealSearcherPopup import MealSearcherPopup
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
+        self.root = root
         self.outer = outer
         super().__init__()
         self.dropdown_dict = {"Monday": [], "Tuesday": [], "Wednesday": [], "Thursday": [],
@@ -34,17 +35,21 @@ class AdvancedPlanPage(PlanPage):
         index = self.set_meal_index(meal)
 
         self.meal_label.grid(column=1, row=index)
-        self.create_meal_search_button(index)
+        self.create_meal_search_button(index, meal, day)
         self.create_special_options_dropdown(day)
         (self.dropdown_dict[day][-1].display).grid(column=2, row=index)
     
-    def create_meal_search_button(self, index):
-        self.search_button = ttk.Button(self.day_frame, text=u"\U0001F50D", width = 3, command=lambda: self.search_meals())
+    def create_meal_search_button(self, index, meal, day):
+        self.search_button = ttk.Button(self.day_frame, text=u"\U0001F50D", width = 3, command=lambda: self.search_meals(self, meal, day))
         self.search_button.grid(row=index, column=3, sticky='W', padx = (5, 0))
         serach_tip = Hovertip(self.search_button, "Search for Meal by Name")
     
-    def search_meals(self):
-        MealSearcherPopup()
+    def search_meals(self, advanced_plan_page, meal, day):
+        MealSearcherPopup(advanced_plan_page, meal, day)
+    
+    def update_meal_for_search(self, meal_selection, meal, day):
+        # FIXME
+        print("MADE IT INTO UPDATE MEAL")
     
     def create_special_options_dropdown(self, day):
             super().create_special_options_dropdown(self.day_frame, "advanced")

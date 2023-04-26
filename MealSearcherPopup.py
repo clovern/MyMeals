@@ -11,10 +11,10 @@ from MealSearcher import MealSearcher
 class MealSearcherPopup:
 
     # def __init__(self, mealday, meal, label):
-    def __init__(self):
-        # self.mealday = mealday
-        # self.meal = meal
-        # self.label = label
+    def __init__(self, advanced_plan_page, meal, day):
+        self.advanced_plan_page = advanced_plan_page
+        self.meal = meal
+        self.day = day
         self.build_link_popup()
 
     def build_link_popup(self):
@@ -22,10 +22,6 @@ class MealSearcherPopup:
         text = "\n\nSearch for Meal by Name:\n"
         self.search_popup= Toplevel(bg="white")
         self.search_popup.title("Search for Meal by Name")
-        
-        # bottom_frame = Frame(self.search_popup, bg="gray95")
-        # bottom_frame.pack(side=BOTTOM, fill=X)
-        # ttk.Button(bottom_frame, text="Select this meal", width=20, default="active", command=self.choose_meal).pack(anchor='se', pady = 10, padx = 15)
         
         left_frame = Frame(self.search_popup, width = 40, bg="white")
         left_frame.pack(side=LEFT, fill=Y, padx=(15, 15))
@@ -68,9 +64,8 @@ class MealSearcherPopup:
         choose_button.grid(column = 1, row = index)
         Hovertip(choose_button, "Select this Meal")
     
-    def select_meal(self, meal):
-        # FIXME
-        print("SELECTED " + meal.name)
+    def select_meal(self, meal_selection):
+        self.advanced_plan_page.update_meal_for_search(meal_selection, self.meal, self.day)
     
     def get_search_results(self):
         search_val = self.search_text.get()
