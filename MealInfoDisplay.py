@@ -39,9 +39,10 @@ class MealInfoDisplay(PlanPage):
         index = self.set_meal_index(meal)
 
         meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2), wraplength = 125)
-        meal_label.grid(column=3, row=index, sticky='W')
+        meal_label.grid(column=4, row=index, sticky='W')
         self.create_reroll_button(mealday, meal, meal_label)
         self.create_details_button(mealday, meal)
+        self.create_remove_button(mealday, meal, meal_label)
 
     def set_meal_label(self, mealday, meal):
         text_value = "B"
@@ -59,6 +60,13 @@ class MealInfoDisplay(PlanPage):
         
         return text_value
     
+    def create_remove_button(self, mealday, meal, label):
+        index = self.set_meal_index(meal)
+        self.details_button = ttk.Button(self.day_frame, text="\u2718", width = 3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
+        self.details_button.grid(row=index, column=3, sticky='E')
+        details_tip = Hovertip(self.details_button, "Remove Meal")
+
+    
     def create_details_button(self, mealday, meal):
         index = self.set_meal_index(meal)
         self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 3, default="active", command=lambda: self.show_meal_details(mealday, meal))
@@ -70,6 +78,10 @@ class MealInfoDisplay(PlanPage):
         self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 3, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
         self.reroll_button.grid(row=index, column=1, sticky='E')
         reroll_tip = Hovertip(self.reroll_button, "Re-Roll")
+    
+    def remove_meal(self, mealday, meal, label):
+        mealday.set_choice(meal, None)
+        self.update_meal_display(mealday, meal, label)
 
     def show_meal_details(self, mealday, meal):
         MealDetailPopup(mealday, meal)

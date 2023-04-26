@@ -27,10 +27,6 @@ class Page(ABC):
         self.lower_right_content.grid(column=1, row=0)
         self.lower_right_content.grid_propagate(0) 
 
-    # FIXME implement
-    def create_nav_bar(self):
-        pass
-
     def create_title(self, title_text):
 
         self.logo_image = Image.open("./my_meals_logo.png")
