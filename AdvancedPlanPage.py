@@ -1,10 +1,10 @@
 from tkinter import *
 from tkinter import ttk
-from PIL import Image
-from PIL import ImageTk
 from PlanPage import PlanPage
 from MealInfoDisplay import MealInfoDisplay
 from DropdownTranslator import DropdownTranslator
+from idlelib.tooltip import Hovertip
+from MealSearcherPopup import MealSearcherPopup
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer):
@@ -34,13 +34,22 @@ class AdvancedPlanPage(PlanPage):
         index = self.set_meal_index(meal)
 
         self.meal_label.grid(column=1, row=index)
+        self.create_meal_search_button(index)
         self.create_special_options_dropdown(day)
         (self.dropdown_dict[day][-1].display).grid(column=2, row=index)
+    
+    def create_meal_search_button(self, index):
+        self.search_button = ttk.Button(self.day_frame, text=u"\U0001F50D", width = 3, command=lambda: self.search_meals())
+        self.search_button.grid(row=index, column=3, sticky='W', padx = (5, 0))
+        serach_tip = Hovertip(self.search_button, "Search for Meal by Name")
+    
+    def search_meals(self):
+        MealSearcherPopup()
     
     def create_special_options_dropdown(self, day):
             super().create_special_options_dropdown(self.day_frame, "advanced")
             self.dropdown_dict[day].append(self.special_dropdown)
-    
+
     def create_quick_exclude_options(self):
         self.lower_options_frame= ttk.Frame(self.lower_left_content)
         self.lower_options_frame.grid(column=0, row=5, sticky='W')
