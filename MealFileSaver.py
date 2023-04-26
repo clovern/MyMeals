@@ -1,6 +1,7 @@
 from tkinter import filedialog
 import os
 from datetime import date, timedelta
+from Meal import Meal
 
 class MealFileSaver():
 
@@ -23,23 +24,26 @@ class MealFileSaver():
                 file.write(mealday.day)
                 file.write(": \n\n")
 
-                file.write("\n")
-                file.write("Breakfast:\n")
-                file.write("\n")
-                MealFileSaver.write_meal_to_file(file, mealday.breakfast_choice)
+                if isinstance(mealday.breakfast_choice, Meal):
+                    file.write("\n")
+                    file.write("Breakfast:\n")
+                    file.write("\n")
+                    MealFileSaver.write_meal_to_file(file, mealday.breakfast_choice)
                 
-                file.write("\n")
-                file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
-                file.write("Lunch:\n")
-                file.write("\n")
-                MealFileSaver.write_meal_to_file(file, mealday.lunch_choice)
+                if isinstance(mealday.lunch_choice, Meal):
+                    file.write("\n")
+                    file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
+                    file.write("Lunch:\n")
+                    file.write("\n")
+                    MealFileSaver.write_meal_to_file(file, mealday.lunch_choice)
                 
-                file.write("\n")
-                file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
-                file.write("Dinner:\n")
-                file.write("\n")
-                MealFileSaver.write_meal_to_file(file, mealday.dinner_choice)
-        
+                if isinstance(mealday.dinner_choice, Meal):
+                    file.write("\n")
+                    file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
+                    file.write("Dinner:\n")
+                    file.write("\n")
+                    MealFileSaver.write_meal_to_file(file, mealday.dinner_choice)
+            
         if file:
             MealFileSaver.open_file(file)
 
