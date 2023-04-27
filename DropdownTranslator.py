@@ -8,13 +8,16 @@ class DropdownTranslator():
         self.weekly_preferences = {"Monday": [{}, {}, {}], "Tuesday": [{}, {}, {}], "Wednesday": [{}, {}, {}], "Thursday": [{}, {}, {}],
                             "Friday": [{}, {}, {}], "Saturday": [{}, {}, {}], "Sunday": [{}, {}, {}]}
 
+
     def set_weekly_preferences_advanced(self, dropdown_dict):
 
         #add selected options from each day to weekly_preferences, as an array
         for day in self.days:
-            for index in range(3):
-                dropdown = dropdown_dict[day][index]
+            index = 0
+            for meal in ["breakfast", "lunch", "dinner"]:
+                dropdown = dropdown_dict[day][meal]
                 self.weekly_preferences[day][index] = (dropdown.get_selection())
+                index += 1
 
         return self.weekly_preferences
     

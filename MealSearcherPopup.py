@@ -11,10 +11,11 @@ from MealSearcher import MealSearcher
 class MealSearcherPopup:
 
     # def __init__(self, mealday, meal, label):
-    def __init__(self, advanced_plan_page, meal, day):
+    def __init__(self, advanced_plan_page, meal, day, frame):
         self.advanced_plan_page = advanced_plan_page
         self.meal = meal
         self.day = day
+        self.frame = frame
         self.build_link_popup()
 
     def build_link_popup(self):
@@ -45,7 +46,6 @@ class MealSearcherPopup:
         
         matches = self.get_search_results()
 
-
         self.found_frame = ttk.Frame(self.search_frame)
         self.found_frame.grid(column = 0, row = 1, columnspan = 2)
 
@@ -65,7 +65,8 @@ class MealSearcherPopup:
         Hovertip(choose_button, "Select this Meal")
     
     def select_meal(self, meal_selection):
-        self.advanced_plan_page.update_meal_for_search(meal_selection, self.meal, self.day)
+        self.search_popup.destroy()
+        self.advanced_plan_page.update_meal_for_search(meal_selection)
     
     def get_search_results(self):
         search_val = self.search_text.get()

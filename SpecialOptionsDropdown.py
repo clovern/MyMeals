@@ -5,6 +5,7 @@ class SpecialOptionsDropdown():
     def __init__(self, frame, type):
 
         self.frame = frame
+        self.advanced = True if type == "advanced" else False
 
         self.vegan_bool = IntVar()
         self.vegetarian_bool = IntVar()
@@ -64,7 +65,8 @@ class SpecialOptionsDropdown():
 
         else:
             for i in range(len(self.dropdown_vars)):
-                self.exclude_bool.set(0)
+                if self.advanced == True:
+                    self.exclude_bool.set(0)
                 if self.dropdown_vars[i].get() == 1:
                     len_labels += 1
                     if len_labels > 0:

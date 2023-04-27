@@ -84,7 +84,8 @@ class MealInfoDisplay(PlanPage):
         self.update_meal_display(mealday, meal, label)
 
     def show_meal_details(self, mealday, meal):
-        MealDetailPopup(mealday, meal)
+        if mealday.get_choice(meal) != None:
+            MealDetailPopup(mealday, meal)
 
     def reroll_meal(self, mealday, meal, label):
         self.meal_creator.select_meal(mealday, meal)

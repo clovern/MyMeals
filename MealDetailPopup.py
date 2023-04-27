@@ -29,7 +29,6 @@ class MealDetailPopup:
             information += "\n"
 
         messagebox.showinfo("Details for " + meal_choice.name.title(), information)
-
     def open_hyperlink(self, url):
         webbrowser.open_new_tab(url)
 
