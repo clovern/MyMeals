@@ -7,9 +7,10 @@ from idlelib.tooltip import Hovertip
 from MealSearcherPopup import MealSearcherPopup
 
 class AdvancedPlanPage(PlanPage):
-    def __init__(self, root, outer):
+    def __init__(self, root, outer, previous):
         self.root = root
         self.outer = outer
+        self.previous = previous
         super().__init__()
         self.dropdown_dict = {"Monday": {"breakfast": None, "lunch": None, "dinner": None}, "Tuesday": {"breakfast": None, "lunch": None, "dinner": None}, "Wednesday": {"breakfast": None, "lunch": None, "dinner": None}, "Thursday": {"breakfast": None, "lunch": None, "dinner": None},
                         "Friday": {"breakfast": None, "lunch": None, "dinner": None}, "Saturday": {"breakfast": None, "lunch": None, "dinner": None}, "Sunday": {"breakfast": None, "lunch": None, "dinner": None}}
@@ -22,6 +23,7 @@ class AdvancedPlanPage(PlanPage):
     def create_advanced_plan_display(self):
         self.create_lower_left_frame()
         self.create_lower_right_frame()
+        self.create_back_button()
         self.create_title("Advanced Plan Creator")
         self.create_all_days()
         self.create_quick_exclude_options()
@@ -128,8 +130,10 @@ class AdvancedPlanPage(PlanPage):
         self.meal_creator.set_chosen_meals(self.chosen_meals_dict)
 
         self.clear_page()
-        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)
+        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.content)
 
-
+    def return_to_last_page(self):
+        self.content.grid_forget()
+        self.previous.grid(column=0, row=0)
 
 

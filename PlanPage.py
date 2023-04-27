@@ -6,6 +6,8 @@ from Page import Page
 
 class PlanPage(Page):
     def __init__(self):
+        super().__init__()
+        self.create_header_frame()
         self.create_upper_frame()
         self.create_lower_frame()
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -36,6 +38,7 @@ class PlanPage(Page):
         elif "dinner" in meal.lower():
             index = 2
         return index
+
     
     def create_day_panel(self, day, index):
         if (index < 4):
