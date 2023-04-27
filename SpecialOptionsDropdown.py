@@ -125,7 +125,7 @@ class SpecialOptionsDropdown():
 
                 if value.lower() == "vegan":
                     if "Vegetarian" not in selected_initial:
-                        selected_final["vegan_only"] = "true"
+                        selected_final["vegan_only"] = ["true", "false"]
 
                 if value.lower() != "vegan":
                     meat_types.append(value.lower())
