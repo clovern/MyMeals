@@ -89,8 +89,8 @@ class BasicPlanPage(PlanPage):
         self.meal_creator.create_meal_plan(weekly_preferences)
 
         self.clear_page()
-        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.hide_frame)
+        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.content)
         
     def return_to_last_page(self):
-        self.hide_frame.grid_forget()
+        self.content.grid_forget()
         self.previous.grid(column=0, row=0)

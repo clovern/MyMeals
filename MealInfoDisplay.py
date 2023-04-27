@@ -107,5 +107,5 @@ class MealInfoDisplay(PlanPage):
         MealFileSaver.save_meal_plan(meal_plan)
 
     def return_to_last_page(self):
-        self.hide_frame.grid_forget()
+        self.content.grid_forget()
         self.previous.grid(row = 0, column = 0)
