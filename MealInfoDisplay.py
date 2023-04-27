@@ -18,6 +18,7 @@ class MealInfoDisplay(PlanPage):
         self.create_lower_right_frame()
         self.lowercontent["height"] = 600
         self.create_title("You're all set!")
+        self.create_back_button()
         self.create_all_days()
         self.create_footer_options()
     

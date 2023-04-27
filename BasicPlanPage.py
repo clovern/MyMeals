@@ -18,6 +18,7 @@ class BasicPlanPage(PlanPage):
         self.create_upper_frame()
         self.create_lower_frame()
         self.center_in_frame()
+        self.create_back_button()
         self.create_title("Basic Plan Creator")
         self.add_questions()
         self.create_submit_button()
