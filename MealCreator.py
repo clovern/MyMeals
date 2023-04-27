@@ -104,6 +104,7 @@ class MealCreator:
         return
 
     def create_meal_plan(self, weekly_preferences):
+
         self.set_daily_preferences(weekly_preferences)
 
         # for mealday in self.mealdays_array:
