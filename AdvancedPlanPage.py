@@ -61,6 +61,8 @@ class AdvancedPlanPage(PlanPage):
         index = self.set_meal_index(meal)
         if self.dropdown_dict[day][meal.lower()] != None:
             self.dropdown_dict[day][meal.lower()].display.destroy()
+        for widget in self.search_widgets[day][index]:
+            widget.destroy()
         self.dropdown_dict[day][meal.lower()] = None
         self.chosen_meals_dict[day][meal.lower()] = meal_selection
 
@@ -121,8 +123,9 @@ class AdvancedPlanPage(PlanPage):
 
         super().generate_plan()
         dropdown_translator = DropdownTranslator()
-        weekly_preferences = dropdown_translator.set_weekly_preferences_advanced(self.dropdown_dict)
+        weekly_preferences = dropdown_translator.set_weekly_preferences_advanced(self.dropdown_dict, self.chosen_meals_dict)
         self.meal_creator.create_meal_plan(weekly_preferences)
+        self.meal_creator.set_chosen_meals(self.chosen_meals_dict)
 
         self.clear_page()
         display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)

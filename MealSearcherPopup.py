@@ -58,6 +58,12 @@ class MealSearcherPopup:
             found.grid(column = 0, row = num_shown)
             self.create_select_button(match, num_shown)
             num_shown = num_shown + 1
+        
+        if num_shown == 0:
+            found = ttk.Label(self.found_frame, text = "No Matches Found")
+            found.grid(column = 0, row = num_shown)
+        
+        
     
     def create_select_button(self, meal, index):
         choose_button = ttk.Button(self.found_frame, text = "\u2714", width = 3, command = lambda: self.select_meal(meal))
