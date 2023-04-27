@@ -8,17 +8,27 @@ class DropdownTranslator():
         self.weekly_preferences = {"Monday": [{}, {}, {}], "Tuesday": [{}, {}, {}], "Wednesday": [{}, {}, {}], "Thursday": [{}, {}, {}],
                             "Friday": [{}, {}, {}], "Saturday": [{}, {}, {}], "Sunday": [{}, {}, {}]}
 
-    def set_weekly_preferences_advanced(self, dropdown_dict):
+
+    def set_weekly_preferences_advanced(self, dropdown_dict, chosen_meals_dict):
 
         #add selected options from each day to weekly_preferences, as an array
         for day in self.days:
-            for index in range(3):
-                dropdown = dropdown_dict[day][index]
-                self.weekly_preferences[day][index] = (dropdown.get_selection())
+            index = 0
+            for meal in ["breakfast", "lunch", "dinner"]:
+                dropdown = dropdown_dict[day][meal]
+
+                if dropdown != None:
+                    self.weekly_preferences[day][index] = (dropdown.get_selection())
+                else:
+                    selected_final = {"exclude": "true"}
+                    self.weekly_preferences[day][index] = selected_final
+                    
+                index += 1
 
         return self.weekly_preferences
     
     def set_weekly_preferences_basic(self, dropdown_list, special_dropdown):
+
 
         preferences = special_dropdown.get_selection()
         breakfast_num = int(dropdown_list[0].get())

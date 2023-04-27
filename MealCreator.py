@@ -49,6 +49,7 @@ class MealCreator:
     def set_meal_preference(self, day, meal, preferences):
         mealday = self.mealdays_dict[day]
         mealday.add_options(meal, preferences)
+
     
     def select_meal(self, mealday, meal):
         base_array = []
@@ -78,6 +79,16 @@ class MealCreator:
     
     def get_meal_selection(self, mealday, meal):
         return mealday.get_choice(meal)
+
+    def set_chosen_meals(self, meal_selections):
+        for day in meal_selections.keys():
+            if meal_selections[day]["breakfast"] != None:
+                self.mealdays_dict[day].set_choice("breakfast", meal_selections[day]["breakfast"])
+            if meal_selections[day]["lunch"] != None:
+                self.mealdays_dict[day].set_choice("lunch", meal_selections[day]["lunch"])
+            if meal_selections[day]["dinner"] != None:
+                self.mealdays_dict[day].set_choice("dinner", meal_selections[day]["dinner"])
+
     
     def set_daily_preferences(self, weekly_preferences):
         breakfastindex = 0
