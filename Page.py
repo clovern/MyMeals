@@ -5,20 +5,21 @@ from PIL import ImageTk
 from abc import ABC, abstractmethod
 
 class Page(ABC):
-    def __init__(self, root):
-        root.title("MyMeals")
+    def __init__(self):
+        self.hide_frame = ttk.Frame(self.outer)
+        self.hide_frame.grid(column = 0, row = 0)
     
     def create_header_frame(self):
-        self.headercontent = ttk.Frame(self.outer, width=800, height = 30)
+        self.headercontent = ttk.Frame(self.hide_frame, width=800, height = 30)
         self.headercontent.grid_propagate(0)
         self.headercontent.grid(column=0, row=0)
 
     def create_upper_frame(self):
-        self.uppercontent= ttk.Frame(self.outer)
+        self.uppercontent= ttk.Frame(self.hide_frame)
         self.uppercontent.grid(column=0, row=1)
     
     def create_lower_frame(self):
-        self.lowercontent = ttk.Frame(self.outer, height=600, width=800)
+        self.lowercontent = ttk.Frame(self.hide_frame, height=600, width=800)
         self.lowercontent.grid(column=0, row=2, pady = (10, 0))
         self.lowercontent.grid_propagate(0)
     
@@ -52,5 +53,4 @@ class Page(ABC):
         self.back_button.grid(column=0, row=0, sticky = NW, padx = (15, 0), pady = (5, 0))
     
     def clear_page(self):
-        self.uppercontent.destroy()
-        self.lowercontent.destroy()
+        self.hide_frame.grid_forget()

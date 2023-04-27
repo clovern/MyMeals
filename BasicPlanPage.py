@@ -7,8 +7,9 @@ from MealInfoDisplay import MealInfoDisplay
 from DropdownTranslator import DropdownTranslator
 
 class BasicPlanPage(PlanPage):
-    def __init__(self, root, outer):
+    def __init__(self, root, outer, previous):
         self.outer = outer
+        self.previous = previous
         super().__init__()
         self.dropdown_list = []
 
@@ -88,6 +89,8 @@ class BasicPlanPage(PlanPage):
         self.meal_creator.create_meal_plan(weekly_preferences)
 
         self.clear_page()
-        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)
+        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.hide_frame)
         
-
+    def return_to_last_page(self):
+        self.hide_frame.grid_forget()
+        self.previous.grid(column=0, row=0)

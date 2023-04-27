@@ -7,9 +7,10 @@ from idlelib.tooltip import Hovertip
 from MealDetailPopup import MealDetailPopup
 
 class MealInfoDisplay(PlanPage):
-    def __init__(self, outer, mealcreator):
+    def __init__(self, outer, mealcreator, previous):
         self.outer = outer
         self.meal_creator = mealcreator
+        self.previous = previous
         super().__init__()
         self.createMealDisplay()
     
@@ -104,3 +105,7 @@ class MealInfoDisplay(PlanPage):
 
         meal_plan = self.meal_creator.mealdays_dict
         MealFileSaver.save_meal_plan(meal_plan)
+
+    def return_to_last_page(self):
+        self.hide_frame.grid_forget()
+        self.previous.grid(row = 0, column = 0)

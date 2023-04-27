@@ -46,7 +46,7 @@ class HomePage:
 
     def basic_plan(self):
         self.clear_page()
-        basic_plan_page = BasicPlanPage(root, self.outer)
+        basic_plan_page = BasicPlanPage(root, self.outer, self.content)
         return
     
     def advanced_plan(self):

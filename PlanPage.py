@@ -6,6 +6,7 @@ from Page import Page
 
 class PlanPage(Page):
     def __init__(self):
+        super().__init__()
         self.create_header_frame()
         self.create_upper_frame()
         self.create_lower_frame()

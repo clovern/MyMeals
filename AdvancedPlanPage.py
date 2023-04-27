@@ -130,12 +130,10 @@ class AdvancedPlanPage(PlanPage):
         self.meal_creator.set_chosen_meals(self.chosen_meals_dict)
 
         self.clear_page()
-        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator)
+        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.hide_frame)
 
     def return_to_last_page(self):
-        self.uppercontent.grid_forget()
-        self.lowercontent.grid_forget()
-        self.headercontent.grid_forget()
+        self.hide_frame.grid_forget()
         self.previous.grid(column=0, row=0)
 
 
