@@ -1,7 +1,7 @@
 
 
 # turns a dict of dropdown menus from the GUI into a dictionary of weekly preferences that can 
-# be passed into MealCreator
+# be passed into MealPlanCreator
 class DropdownTranslator():
     def __init__(self):
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

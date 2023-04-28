@@ -108,7 +108,7 @@ class SpecialOptionsDropdown():
         
         selected_final = {}
         # If multiple values are selected for meat type or price, these selections are put into arrays.
-        # This allows us to search for meals which match 1 or more of these options in MealCreator. 
+        # This allows us to search for meals which match 1 or more of these options in MealPlanCreator. 
         meat_types = []
         price_types = []
         for value in selected_initial:

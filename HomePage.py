@@ -55,7 +55,6 @@ class HomePage:
         return
     
     def clear_page(self):
-        # self.content.destroy()
         self.content.grid_forget()
 
 def start_GUI():
