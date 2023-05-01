@@ -1,15 +1,15 @@
 from tkinter import *
-from tkinter import messagebox
 from tkinter import ttk
 from PlanPage import PlanPage
 from MealFileSaver import MealFileSaver
+from GroceryListFileSaver import GroceryListFileSaver
 from idlelib.tooltip import Hovertip
 from MealDetailPopup import MealDetailPopup
 
 class MealInfoDisplay(PlanPage):
-    def __init__(self, outer, mealcreator, previous):
+    def __init__(self, outer, MealPlanCreator, previous):
         self.outer = outer
-        self.meal_creator = mealcreator
+        self.meal_creator = MealPlanCreator
         self.previous = previous
         super().__init__()
         self.createMealDisplay()
@@ -98,13 +98,25 @@ class MealInfoDisplay(PlanPage):
         label["text"] = text_value
 
     def create_footer_options(self):
-        self.save_button = ttk.Button(self.lowercontent, text="save to file", default="active", command=self.save_meals)
-        self.save_button.grid(column=0, columnspan=3, row=1)
+        self.buttonframe = ttk.Frame(self.lowercontent)
+        self.buttonframe.grid(column=0, columnspan=3, row=1)
+        self.save_button = ttk.Button(self.buttonframe, text="Save Meals", default="active", command=self.save_meals)
+        self.save_button.grid(column=0, row=0, padx = (0, 15))
+        
+        self.grocerylist_button = ttk.Button(self.buttonframe, text="Save Grocery List", default="active", command=self.save_grocery_list)
+        self.grocerylist_button.grid(column=1, row=0, padx = (15, 0))
 
     def save_meals(self):
 
         meal_plan = self.meal_creator.mealdays_dict
-        MealFileSaver.save_meal_plan(meal_plan)
+        file_saver = MealFileSaver()
+        file_saver.save_text_to_file(file_saver.generate_file_text(meal_plan))
+    
+    def save_grocery_list(self):
+
+        meal_plan = self.meal_creator.mealdays_dict
+        file_saver = GroceryListFileSaver()
+        file_saver.save_text_to_file(file_saver.generate_file_text(meal_plan))
 
     def return_to_last_page(self):
         self.content.grid_forget()

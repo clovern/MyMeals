@@ -1,9 +1,9 @@
-from MealCreator import MealCreator
+from MealPlanCreator import MealPlanCreator
 
 class MealSearcher:
 
     def __init__(self):
-        self.meal_creator = MealCreator()
+        self.meal_creator = MealPlanCreator()
     
     def search_for_meals(self, search_text):
         self.meals_found = []

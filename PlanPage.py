@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from SpecialOptionsDropdown import SpecialOptionsDropdown
-from MealCreator import MealCreator
+from MealPlanCreator import MealPlanCreator
 from Page import Page
 
 class PlanPage(Page):
@@ -19,7 +19,7 @@ class PlanPage(Page):
         self.special_dropdown = SpecialOptionsDropdown(frame, type)
 
     def generate_plan(self):
-        self.meal_creator = MealCreator()
+        self.meal_creator = MealPlanCreator()
     
     def create_all_days(self):
         index = 0

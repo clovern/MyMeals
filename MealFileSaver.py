@@ -2,65 +2,54 @@ from tkinter import filedialog
 import os
 from datetime import date, timedelta
 from Meal import Meal
+from FileSaver import FileSaver
 
-class MealFileSaver():
+class MealFileSaver(FileSaver):
 
+    def __init__(self):
+        self.meal_text = "" 
 
-    #meal_plan should be a dictionary of MealDays, as created in MealCreator
-    @staticmethod
-    def save_meal_plan(meal_plan):
-        file = MealFileSaver.save_file()
-        if file:
+    #meal_plan should be a dictionary of MealDays, as created in MealPlanCreator
+    def generate_file_text(self, meal_plan):
 
-            start_date = date.today()
-            end_date = start_date + timedelta(days=7)
+        start_date = date.today()
+        end_date = start_date + timedelta(days=7)
 
-            file.write("Meal plan for " + str(start_date) + " - " + str(end_date))
-            for day in meal_plan:
-                mealday = meal_plan[day]
+        self.meal_text +="Meal plan for " + str(start_date) + " - " + str(end_date)
+        for day in meal_plan:
+            mealday = meal_plan[day]
 
-                file.write("\n\n")
-                file.write("_____________________________________________________________________________________\n")
-                file.write(mealday.day)
-                file.write(": \n\n")
+            self.meal_text +="\n\n"
+            self.meal_text +="_____________________________________________________________________________________\n"
+            self.meal_text +=mealday.day
+            self.meal_text +=": \n\n"
 
-                if isinstance(mealday.breakfast_choice, Meal):
-                    file.write("\n")
-                    file.write("Breakfast:\n")
-                    file.write("\n")
-                    MealFileSaver.write_meal_to_file(file, mealday.breakfast_choice)
-                
-                if isinstance(mealday.lunch_choice, Meal):
-                    file.write("\n")
-                    file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
-                    file.write("Lunch:\n")
-                    file.write("\n")
-                    MealFileSaver.write_meal_to_file(file, mealday.lunch_choice)
-                
-                if isinstance(mealday.dinner_choice, Meal):
-                    file.write("\n")
-                    file.write(".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n")
-                    file.write("Dinner:\n")
-                    file.write("\n")
-                    MealFileSaver.write_meal_to_file(file, mealday.dinner_choice)
+            if isinstance(mealday.breakfast_choice, Meal):
+                self.meal_text +="\n"
+                self.meal_text +="Breakfast:\n"
+                self.meal_text +="\n"
+                self.write_meal_to_string(mealday.breakfast_choice)
             
-        if file:
-            MealFileSaver.open_file(file)
+            if isinstance(mealday.lunch_choice, Meal):
+                self.meal_text +="\n"
+                self.meal_text +=".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n"
+                self.meal_text +="Lunch:\n"
+                self.meal_text +="\n"
+                self.write_meal_to_string(mealday.lunch_choice)
+            
+            if isinstance(mealday.dinner_choice, Meal):
+                self.meal_text +="\n"
+                self.meal_text +=".   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .\n"
+                self.meal_text +="Dinner:\n"
+                self.meal_text +="\n"
+                self.write_meal_to_string(mealday.dinner_choice)
 
-    @staticmethod
-    def save_file():
-        file = filedialog.asksaveasfile(defaultextension ='.txt', filetypes = [("Text file", ".txt")])
-        return file
-
-    @staticmethod
-    def write_meal_to_file(file, meal):
-        file.write(meal.name)
-        file.write("\n")
+        return self.meal_text
+        
+    def write_meal_to_string(self, meal):
+        self.meal_text +=meal.name
+        self.meal_text +="\n"
         ingredients = meal.format_meal_ingredients()
-        file.write("\n" + ingredients)
+        self.meal_text +="\n" + ingredients
         recipe_or_link = meal.format_link_or_recipe_text()
-        file.write("\n" + recipe_or_link)
-
-    @staticmethod
-    def open_file(file):
-        os.startfile(file.name)
+        self.meal_text +="\n" + recipe_or_link

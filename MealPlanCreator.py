@@ -4,7 +4,7 @@ from Meal import Meal
 from MealDay import MealDay
 
 
-class MealCreator: 
+class MealPlanCreator: 
 
     def __init__(self):
         self.all_meals = []
@@ -89,6 +89,8 @@ class MealCreator:
             if meal_selections[day]["dinner"] != None:
                 self.mealdays_dict[day].set_choice("dinner", meal_selections[day]["dinner"])
 
+    def get_mealdays_dict(self):
+        return self.mealdays_dict
     
     def set_daily_preferences(self, weekly_preferences):
         breakfastindex = 0

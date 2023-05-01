@@ -51,7 +51,11 @@ class Meal:
             paragraphs_array = self.recipe.split('\n')
             
             for paragraph in paragraphs_array:
-                recipe_lines_array = [(self.recipe[i: i+line_length]) for i in range(0, len(self.recipe), line_length)]
+
+                temp_length = min(len(paragraph), line_length)
+                if temp_length == 0:
+                    temp_length = 1
+                recipe_lines_array = [(paragraph[i: i+temp_length]) for i in range(0, len(paragraph), temp_length)]
 
                 for line in recipe_lines_array:
                     output = output + line + "\n" 
