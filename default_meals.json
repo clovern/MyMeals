@@ -11,7 +11,7 @@
             "oil": ["2", "Tbsp"],
             "milk": [".75", "cup(s)"],
             "blueberries": [".5", "cup(s)"],
-            "syrup": ["1/4", "cup(s)"]
+            "syrup": [".25", "cup(s)"]
         },
     "recipe": "Follow instructions on kodiak cakes box. Add blueberries and syrup to taste."
     
@@ -28,7 +28,7 @@
         {
             "vegan waffle mix": ["1", "cup(s)"],
             "blueberries": [".5", "cup(s)"],
-            "syrup": ["1/4", "cup(s)"]
+            "syrup": [".25", "cup(s)"]
         },
     "recipe": "Follow instructions on waffle mix. Add blueberries and syrup to taste. Enjoy!"
     
@@ -47,7 +47,7 @@
             "oil": ["2", "Tbsp"],
             "milk": [".75", "cup(s)"],
             "chocolate chips": [".5", "cup(s)"],
-            "syrup": ["1/4", "cup(s)"]
+            "syrup": [".25", "cup(s)"]
         },
     "recipe": "Follow instructions on kodiak cakes box. Add chocolate chips and syrup to taste."
 },
@@ -94,7 +94,7 @@
             "oil": ["2", "tbsp(s)"],
             "milk": [".75", "cup(s)"],
             "cinnamon": ["1", "Tbsp"],
-            "syrup": ["1/4", "cup"]
+            "syrup": [".25", "cup"]
         },
     "recipe": "Follow instructions on kodiak cakes box. Add 1 Tbsp cinnamon and 1 tsp vanilla per 1 cup of mix used. Add syrup to taste."
 },
@@ -1178,7 +1178,7 @@
             "lime": ["1", "unit(s)"],
             "cilantro": [".25", "oz(s)"],
             "rice": [".5", "cup(s)"],
-            "peanuts": ["1/2", "oz(s)"],
+            "peanuts": [".5", "oz(s)"],
             "ground pork": ["10", "oz(s)"],
             "sweet soy glaze": ["3", "Tbsp(s)"],
             "sweet thai chili sauce": ["1.5", "Tbsp(s)"]
