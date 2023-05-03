@@ -57,11 +57,12 @@ class SpecialOptionsDropdown():
         len_labels = 0
 
         if self.dropdown_opts[index] == "Exclude this Meal":
-            label_text = "Exclude this Meal \u2193"
-            for var in self.dropdown_vars:
-                var.set(0)
-            len_labels += 1
-            self.exclude_bool.set(1)
+            if (self.exclude_bool.get() != 0):
+                label_text = "Exclude this Meal \u2193"
+                for var in self.dropdown_vars:
+                    var.set(0)
+                len_labels += 1
+                self.exclude_bool.set(1)
 
         else:
             for i in range(len(self.dropdown_vars)):
