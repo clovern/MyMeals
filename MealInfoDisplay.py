@@ -117,7 +117,3 @@ class MealInfoDisplay(PlanPage):
         meal_plan = self.meal_creator.mealdays_dict
         file_saver = GroceryListFileSaver()
         file_saver.save_text_to_file(file_saver.generate_file_text(meal_plan))
-
-    def return_to_last_page(self):
-        self.content.grid_forget()
-        self.previous.grid(row = 0, column = 0)

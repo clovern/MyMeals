@@ -132,8 +132,4 @@ class AdvancedPlanPage(PlanPage):
         self.clear_page()
         display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.content)
 
-    def return_to_last_page(self):
-        self.content.grid_forget()
-        self.previous.grid(column=0, row=0)
-
 

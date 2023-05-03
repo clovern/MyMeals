@@ -1,22 +1,15 @@
 from tkinter import *
 from tkinter import ttk
-from SpecialOptionsDropdown import SpecialOptionsDropdown
 from MealPlanCreator import MealPlanCreator
 from Page import Page
 
 class PlanPage(Page):
     def __init__(self):
         super().__init__()
-        self.create_header_frame()
-        self.create_upper_frame()
-        self.create_lower_frame()
         self.days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
     def create_submit_button(self):
         self.submit_button = ttk.Button(self.lowercontent, padding = 3, text="Create Plan", default="active", command=self.generate_plan)
-
-    def create_special_options_dropdown(self, frame, type):
-        self.special_dropdown = SpecialOptionsDropdown(frame, type)
 
     def generate_plan(self):
         self.meal_creator = MealPlanCreator()
@@ -38,7 +31,6 @@ class PlanPage(Page):
         elif "dinner" in meal.lower():
             index = 2
         return index
-
     
     def create_day_panel(self, day, index):
         if (index < 4):

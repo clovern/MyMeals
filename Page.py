@@ -1,13 +1,17 @@
 from tkinter import *
 from tkinter import ttk
 from PIL import Image
+from SpecialOptionsDropdown import SpecialOptionsDropdown
 from PIL import ImageTk
-from abc import ABC, abstractmethod
+from abc import ABC
 
 class Page(ABC):
     def __init__(self):
         self.content = ttk.Frame(self.outer)
         self.content.grid(column = 0, row = 0)
+        self.create_header_frame()
+        self.create_upper_frame()
+        self.create_lower_frame()
     
     def create_header_frame(self):
         self.headercontent = ttk.Frame(self.content, width=800, height = 30)
@@ -17,6 +21,9 @@ class Page(ABC):
     def create_upper_frame(self):
         self.uppercontent= ttk.Frame(self.content)
         self.uppercontent.grid(column=0, row=1)
+    
+    def create_special_options_dropdown(self, frame, type):
+        self.special_dropdown = SpecialOptionsDropdown(frame, type)
     
     def create_lower_frame(self):
         self.lowercontent = ttk.Frame(self.content, height=600, width=800)
@@ -54,3 +61,7 @@ class Page(ABC):
     
     def clear_page(self):
         self.content.grid_forget()
+
+    def return_to_last_page(self):
+        self.content.grid_forget()
+        self.previous.grid(row = 0, column = 0)
