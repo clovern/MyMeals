@@ -2,10 +2,11 @@ from tkinter import *
 from tkinter import ttk
 
 class SpecialOptionsDropdown():
-    def __init__(self, frame, type):
+    def __init__(self, frame, type, base_page = None):
 
         self.frame = frame
         self.type = type
+        self.base_page = base_page
 
         self.vegan_bool = IntVar()
         self.vegetarian_bool = IntVar()
@@ -86,6 +87,13 @@ class SpecialOptionsDropdown():
             label_text = self.get_dropdown_default_text()
         
         self.display.configure(text = label_text)
+
+        if self.type == "filter":
+            self.update_base_page()
+    
+    def update_base_page(self):
+
+        self.base_page.update_results_for_filter(self.get_selection())
     
     def get_dropdown_default_text(self):
         default_label = " \u2193"
@@ -142,6 +150,8 @@ class SpecialOptionsDropdown():
         # This allows us to search for meals which match 1 or more of these options in MealPlanCreator. 
         meat_types = []
         price_types = []
+        meal_types = []
+
         for value in selected_initial:
             if value.lower() == "exclude this meal":
                 selected_final["exclude"] = "true"
@@ -170,6 +180,10 @@ class SpecialOptionsDropdown():
                     price_types.append("medium")
                 elif (value == "$$$"):
                     price_types.append("expensive")
+
+            elif value.lower() in ["breakfast", "lunch", "dinner"]:
+                meal_types.append(value.lower())
+
             else:
                 if (value.lower() == "reheats-well"):
                     selected_final["reheats_well"] = "true"
@@ -185,5 +199,11 @@ class SpecialOptionsDropdown():
                 selected_final["price_range"] = price_types[0]
             else:
                 selected_final["price_range"] = price_types
+        
+        if (len(meal_types) > 0):
+            if (len(meal_types) == 1):
+                selected_final["meal_type"] = meal_types[0]
+            else:
+                selected_final["meal_type"] = meal_types
         
         return selected_final

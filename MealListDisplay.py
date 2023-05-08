@@ -30,8 +30,8 @@ class MealListDisplay(PlanPage):
 
     def upload_meals(self):
         # FIXME should fix how this is done later
-        meal_plan_creator = MealPlanCreator()
-        self.all_meals = meal_plan_creator.all_meals
+        self.meal_plan_creator = MealPlanCreator()
+        self.all_meals = self.meal_plan_creator.all_meals
     
     def display_upper_buttons(self):
         self.upperbuttons_frame = ttk.Frame(self.lowercontent, height = 75, width=800)
@@ -55,7 +55,7 @@ class MealListDisplay(PlanPage):
         pass
 
     def create_filter_dropdown(self):
-        self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter")
+        self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
         self.filter.display["width"] = 15
         self.filter.display["wraplength"] = 100
         self.filter.display.pack(anchor = E, padx = (20, 20), pady = (0, 10))
@@ -66,16 +66,20 @@ class MealListDisplay(PlanPage):
         self.populate_meals()
     
     def populate_meals(self):
-        index = 0
+        if len(self.all_meals) == 0:
+            self.display_meal(None)
         end_index = min(len(self.all_meals), self.display_start + 11)
         for meal in self.all_meals[self.display_start : end_index]:
             self.display_meal(meal)
     
     def display_meal(self, meal):
         self.meal_frame = ttk.Frame(self.displaymeals_frame, borderwidth=1, relief="solid")
-        self.create_remove_button(meal)
-        self.create_meal_label(meal)
-        self.create_details_button(meal)
+        if meal != None:
+            self.create_remove_button(meal)
+            self.create_meal_label(meal)
+            self.create_details_button(meal)
+        else:
+            self.create_meal_label(None)
         self.meal_frame.pack(pady = (5, 5))
     
     def create_remove_button(self, meal):
@@ -87,7 +91,10 @@ class MealListDisplay(PlanPage):
         pass
 
     def create_meal_label(self, meal):
-        meal_label = Label(self.meal_frame, text=meal.name, justify = CENTER, width = 90, wraplength = 600)
+        label_text = "No meals match the criteria"
+        if meal != None:
+            label_text = meal.name
+        meal_label = Label(self.meal_frame, text=label_text, justify = CENTER, width = 90, wraplength = 600)
         meal_label.grid(column = 1, row = 0)
         pass
 
@@ -110,7 +117,6 @@ class MealListDisplay(PlanPage):
         self.create_scroll_down_button()
         self.create_scroll_up_button()
         self.scrollbuttons_frame.pack(anchor = E, padx = (0, 20), pady= (5, 0))
-        
     
     def create_scroll_down_button(self):
         self.downarrow_image = Image.open("./down_arrow.jpg")
@@ -145,3 +151,8 @@ class MealListDisplay(PlanPage):
         else: 
             self.displaymeals_frame.destroy()
             self.display_meals_body()
+    
+    def update_results_for_filter(self, selection):
+        self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
+        self.displaymeals_frame.destroy()
+        self.display_meals_body()
