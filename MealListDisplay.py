@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from tkinter import ttk
 from PlanPage import PlanPage
 from idlelib.tooltip import Hovertip
@@ -66,7 +67,8 @@ class MealListDisplay(PlanPage):
     
     def populate_meals(self):
         index = 0
-        for meal in self.all_meals[self.display_start:self.display_start + 11]:
+        end_index = min(len(self.all_meals), self.display_start + 11)
+        for meal in self.all_meals[self.display_start : end_index]:
             self.display_meal(meal)
     
     def display_meal(self, meal):
@@ -79,6 +81,7 @@ class MealListDisplay(PlanPage):
     def create_remove_button(self, meal):
         self.remove_button = ttk.Button(self.meal_frame, text="\u2796", width = 3, default="active", command=lambda: self.remove_meal(meal))
         self.remove_button.grid(column = 0, row = 0)
+        Hovertip(self.remove_button, "Remove this meal")
     
     def remove_meal(self, meal):
         pass
@@ -91,6 +94,7 @@ class MealListDisplay(PlanPage):
     def create_details_button(self, meal):
         self.details_button = ttk.Button(self.meal_frame, text=u"\U0001F441", width = 3, default="active", command=lambda: self.show_meal_details(meal))
         self.details_button.grid(column = 2, row = 0)
+        Hovertip(self.details_button, "Details")
     
     def show_meal_details(self, meal):
         pass
@@ -102,11 +106,42 @@ class MealListDisplay(PlanPage):
         self.create_lower_buttons()
     
     def create_lower_buttons(self):
-        self.create_scroll_button()
+        self.scrollbuttons_frame = ttk.Frame(self.lowerbuttons_frame)
+        self.create_scroll_down_button()
+        self.create_scroll_up_button()
+        self.scrollbuttons_frame.pack(anchor = E, padx = (0, 20), pady= (5, 0))
+        
     
-    def create_scroll_button(self):
+    def create_scroll_down_button(self):
         self.downarrow_image = Image.open("./down_arrow.jpg")
         self.downarrow_image = (self.downarrow_image).resize((30,30))
         self.downarrow_image = ImageTk.PhotoImage(self.downarrow_image)
-        self.show_more_button = ttk.Button(self.lowerbuttons_frame, image=self.downarrow_image, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_next_meals())
-        self.show_more_button.pack(anchor = E, pady= (5, 0), padx= (10, 10))
+        self.show_next_button = ttk.Button(self.scrollbuttons_frame, image=self.downarrow_image, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_next_meals())
+        self.show_next_button.grid(column=1, row=0)
+        Hovertip(self.show_next_button, "View next meals")
+    
+    def show_next_meals(self):
+        self.display_start = self.display_start + 11
+        if self.display_start >= len(self.all_meals):
+            self.display_start = self.display_start - 11
+            messagebox.showinfo("", "You have reached the end of the Recipe Book.")
+        else: 
+            self.displaymeals_frame.destroy()
+            self.display_meals_body()
+
+    def create_scroll_up_button(self):
+        self.uparrow_image = Image.open("./up_arrow.jpg")
+        self.uparrow_image = (self.uparrow_image).resize((30,30))
+        self.uparrow_image = ImageTk.PhotoImage(self.uparrow_image)
+        self.show_previous_button = ttk.Button(self.scrollbuttons_frame, image=self.uparrow_image, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_previous_meals())
+        self.show_previous_button.grid(column=0, row=0)
+        Hovertip(self.show_previous_button, "View previous meals")
+    
+    def show_previous_meals(self):
+        self.display_start = self.display_start - 11
+        if self.display_start < 0:
+            self.display_start = self.display_start + 11
+            messagebox.showinfo("", "You have reached the beginning of the Recipe Book.")
+        else: 
+            self.displaymeals_frame.destroy()
+            self.display_meals_body()
