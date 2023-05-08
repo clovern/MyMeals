@@ -64,7 +64,7 @@ class MealInfoDisplay(PlanPage):
     
     def create_remove_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.details_button = ttk.Button(self.day_frame, text="\u2718", width = 3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
+        self.lowerbuttons_frame
         self.details_button.grid(row=index, column=3, sticky='E')
         details_tip = Hovertip(self.details_button, "Remove Meal")
 
@@ -117,7 +117,3 @@ class MealInfoDisplay(PlanPage):
         meal_plan = self.meal_creator.mealdays_dict
         file_saver = GroceryListFileSaver()
         file_saver.save_text_to_file(file_saver.generate_file_text(meal_plan))
-
-    def return_to_last_page(self):
-        self.content.grid_forget()
-        self.previous.grid(row = 0, column = 0)
