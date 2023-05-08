@@ -5,7 +5,7 @@ class SpecialOptionsDropdown():
     def __init__(self, frame, type):
 
         self.frame = frame
-        self.advanced = True if type == "advanced" else False
+        self.type = type
 
         self.vegan_bool = IntVar()
         self.vegetarian_bool = IntVar()
@@ -37,13 +37,16 @@ class SpecialOptionsDropdown():
         self.create_special_options_dropdown(type)
 
     def create_special_options_dropdown(self, type):
-        self.menu_button_text = "           \u2193"
+        self.menu_button_text = self.get_dropdown_default_text()
         self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white", wraplength = 120)
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
 
-        if type == "advanced":
+        if self.type == "advanced":
             self.make_advanced()
+        
+        if self.type == "filter":
+            self.make_filter()
 
         for index in range(len(self.dropdown_opts)):
             label_text = self.dropdown_opts[index]
@@ -52,7 +55,7 @@ class SpecialOptionsDropdown():
     
     def display_option(self, index):
 
-        label_text = " \u2193"
+        label_text = ""
 
         len_labels = 0
 
@@ -66,24 +69,51 @@ class SpecialOptionsDropdown():
 
         else:
             for i in range(len(self.dropdown_vars)):
-                if self.advanced == True:
+                if self.type == "advanced":
                     self.exclude_bool.set(0)
                 if self.dropdown_vars[i].get() == 1:
                     len_labels += 1
                     if len_labels > 0:
                         label_text = ", " + label_text
                     label_text = self.dropdown_opts[i] + label_text
+                    if self.type == "filter":
+                        if len_labels >= 2:
+                            label_text = label_text + " ..."
+                            break
+            label_text += " \u2193"
         
         if len_labels == 0:
-            label_text = "           \u2193"
+            label_text = self.get_dropdown_default_text()
         
         self.display.configure(text = label_text)
-        
+    
+    def get_dropdown_default_text(self):
+        default_label = " \u2193"
+        if self.type == "filter":
+            default_label = " \u23DA    Filter    " + default_label
+        else: 
+            default_label = "          " + default_label
+        return default_label
 
     def make_advanced(self):
         self.dropdown_opts.insert(0, "Exclude this Meal")
         self.exclude_bool = IntVar()
         self.dropdown_vars.insert(0, self.exclude_bool)
+    
+    def make_filter(self):
+
+        self.dropdown_opts.insert(0, "Dinner")
+        self.dinner_bool = IntVar()
+        self.dropdown_vars.insert(0, self.dinner_bool)
+
+        self.dropdown_opts.insert(0, "Lunch")
+        self.lunch_bool = IntVar()
+        self.dropdown_vars.insert(0, self.lunch_bool)
+
+        self.dropdown_opts.insert(0, "Breakfast")
+        self.breakfast_bool = IntVar()
+        self.dropdown_vars.insert(0, self.breakfast_bool)
+
 
     def set_exclude(self):
         self.exclude_bool.set(1)

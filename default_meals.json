@@ -18,6 +18,18 @@
 },
 
 {
+    "meal_name": "whole wheat frozen waffles",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "whole wheat frozen waffles": [".25", "package(s)"]
+        }
+},
+
+{
     "meal_name": "vegan blueberry waffles",
     "meat_type": "vegan",
     "vegan_only": "true",
@@ -31,6 +43,63 @@
             "syrup": [".25", "cup(s)"]
         },
     "recipe": "Follow instructions on waffle mix. Add blueberries and syrup to taste. Enjoy!"
+    
+},
+
+{
+    "meal_name": "romanian style pizza",
+    "meat_type": "vegetarian",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "instant yeast": ["7", "gram(s)"],
+            "bread flour": ["4.8", "cup(s)"],
+            "salt": ["2", "tsp(s)"],
+            "olive oil": ["2", "Tbsp(s)"],
+            "pizza toppings of choice": ["1", "package(s)"]
+        },
+    "recipe": "Heat 1.82 cups water to 95 degrees F and add the yeast. Whisk together and wait for it to bloom. Mix dry ingredients using a whisk. Once the yeast is blooming, combine it with the dry ingredients, and add the oil.\nMix dough until shaggy. Rest dough for 15-20 minutes and then knead using the fold and plop method. Repeat the rest and knead cycle once more.\nOil dough ball and a bowl, cover, and rest dough for 4-6 hours in a warm space. (Alternatively, you may keep this in the fridge for 14-16 hours). Punch down the dough and spread on oiled 11X22in cookie sheet with walls. Proof for 2 hours covered and wrapped.\nPreheat oven to 500 degrees F. Add sauce, cheese, and toppings, going all the way up to the edges of the dough. Cook 20-25 minutes or until the cheese is carmelized a deep brown."
+    
+},
+
+{
+    "meal_name": "chili",
+    "meat_type": "beef",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "tomato paste": ["6", "oz(s)"],
+            "can small diced tomatoes": ["16", "oz(s)"],
+            "can hot chili beans": ["16", "oz(s)"],
+            "can red beans": ["16", "oz(s)"],
+            "can corn": ["16", "oz(s)"],
+            "ground beef": ["1", "lb(s)"],
+            "chili powder": ["1.5", "Tbsp(s)"],
+            "cumin": ["1", "tsp(s)"]
+        },
+    "recipe": "Combine all ingredients in a slow cooker. Drain the liquid from the red benas, but keep the liquid from all other cans. Cook on low for 4-6 hours, or high for 2-3 hours. Enjoy!"
+    
+},
+
+{
+    "meal_name": "costco rotisserie chicken and brussels sprouts",
+    "meat_type": "chicken",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "costco rotisserie chicken": ["1", "unit(s)"],
+            "fresh brussels sprouts": [".5", "package(s)"]
+        },
+    "recipe": "Slice brussels sprouts into halves, cover with olive oil, salt, and pepper, and cook at 450 degrees for about 15 minutes, or until cripsy. Prepare rotisserie chicken to serve while brussels are cooking. Enjoy!"
     
 },
 
@@ -553,6 +622,35 @@
 },
 
 {
+    "meal_name": "costco chicken alfredo sauce with broccoli",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "premade costco alfredo sauce": [".25", "package(s)"],
+            "fresh broccoli": [".25", "package(s)"]
+        },
+    "recipe" : "Season broccoli with oil, salt, and pepper, and cook broccoli in oven at 400 degrees for about 10-12 minutes. Cook the alfredo sauce according to instructions on packaging. Enjoy!"
+},
+
+{
+    "meal_name": "costco beef pot stickers with ramen noodles",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "costco beef pot stickers": [".25", "package(s)"],
+            "ramen noodles": ["1", "package(s)"],
+            "green onions": [".25", "package(s)"]
+        },
+    "recipe" : "Prepare pot stickers and ramen noodles according to instructions on packaging. Top with soy sauce, or your favorite stir fry topping sauce. Slice up green onions and top with these as well. Enjoy!"
+},
+
+{
     "meal_name": "Garlic Tomato Bagel with Cream Cheese",
     "meat_type": "vegetarian",
     "reheats_well": "false",
@@ -712,7 +810,7 @@
     "meat_type": "chicken",
     "reheats_well": "true",
     "price_range": "medium",
-    "meal_type": "lunch",
+    "meal_type": "dinner",
     "ingredients":
         {
             "rice": ["1", "cup(s)"],
@@ -724,7 +822,7 @@
 },
 
 {
-    "meal_name": "barbeque chicken tenders and fries",
+    "meal_name": "chicken tenders and tater tots",
     "meat_type": "chicken",
     "reheats_well": "true",
     "price_range": "medium",
@@ -733,8 +831,44 @@
         {
             "frozen chicken tenders": [".25", "package(s)"],
             "barbeque sauce": [".25", "bottle(s)"],
-            "frozen french fries":  [".5", "package(s)"]
+            "frozen tater tots":  [".5", "package(s)"]
         }
+},
+
+{
+    "meal_name": "brie raspberry grilled cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "sourdough bread": [".25", "package(s)"],
+            "raspberry jelly": [".25", "package(s)"],
+            "brie":  [".5", "package(s)"]
+        },
+    "recipe": "Place slices of brie and raspberry jelly on bread. Butter both sides and cook in pan on medium heat until cheese is melted and both sides are golden brown."
+},
+
+{
+    "meal_name": "air fried cauliflower stir fry",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "rice": ["1", "cup(s)"],
+            "stir fry sauce": [".25", "bottle(s)"],
+            "cauliflower crowns":  ["1", "unit(s)"],
+            "eggs": ["1", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "baking powder" : ["1", "tsp(s)"],
+            "flour" : ["1", "cup"],
+            "milk" : ["1", "cup"],
+            "paprika" : ["1", "tsp"]
+        },
+    "recipe": "Prepare rice. Prepare the batter at https://www.spendwithpennies.com/crispy-fried-dill-pickles/, leaving out the dill. \n\nSlice up cauliflower into bite sized pieces, and cover in batter, then panko bread crumbs. \n\nPlace in air fryer at 400 degrees for 8 minutes, or until outside is golden brown and crispy.\n\nRemove from air fryer and place in a container with a lid. Put your favorite stir fry sauce in the container and shake cauliflower and stir fry sauce together gently, until cauliflower is covered. \n\nHeat up mixed vegetables in the microwave. Serve vegetables and coated cauliflower over rice. Enjoy!"
 },
 
 {
@@ -920,7 +1054,7 @@
 },
 
 {
-    "meal_name": "Lemony Spaghetti with Brussels Sprouts",
+    "meal_name": "lemonsy Spaghetti with Brussels Sprouts",
     "meat_type": "vegetarian",
     "reheats_well": "false",
     "price_range": "cheap",
@@ -938,7 +1072,7 @@
             "butter": ["2", "Tbsp(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         },
-    "link" : "https://www.hellofresh.com/recipes/lemony-spaghetti-with-brussels-sprouts-620bf6b6f147ed78702a4cd4"
+    "link" : "https://www.hellofresh.com/recipes/lemonsy-spaghetti-with-brussels-sprouts-620bf6b6f147ed78702a4cd4"
     
 },
 
@@ -998,7 +1132,7 @@
         {
             "rice": [".5", "cup(s)"],
             "green beans": [".5", "package(s)"],
-            "scallions": [".5", "package(s)"],
+            "green onions": [".5", "package(s)"],
             "fresh ginger": ["1", "unit(s)"],
             "hoisin sauce": ["4", "Tbsp(s)"],
             "honey": ["2", "tsp(s)"],
@@ -1114,7 +1248,7 @@
             "red bell peppers": ["1", "unit(s)"],
             "chicken broth cubes": ["2", "unit(s)"],
             "lemons": ["1", "unit(s)"],
-            "breakfast sausage": ["1", "packages(s)"],
+            "brats": ["1", "packages(s)"],
             "italian seasoning": ["1", "Tbsp(s)"],
             "rice": [".75", "cup(s)"],
             "parmesan cheese": [".25", "cup(s)"]
@@ -1293,50 +1427,6 @@
 },
 
 {
-    "meal_name": "Soy-Glazed meatballs",
-    "meat_type": "beef",
-    "reheats_well": "false",
-    "price_range": "cheap",
-    "meal_type": "dinner",
-    "ingredients":
-        {
-            "green onions": ["1", "package(s)"],
-            "ginger": ["1", "Tbsp(s)"],
-            "red bell peppers": ["1", "unit(s)"],
-            "ground beef": ["10", "oz(s)"],
-            "panko bread crumbs": [".25", "cup(s)"],
-            "green beans": ["6", "oz(s)"],
-            "ponzu sauce": ["12", "ml(s)"],
-            "sesame seeds": ["1", "Tbsp(s)"],
-            "sweet soy glaze": ["3", "Tbsp(s)"],
-            "sweet thai chili sauce": ["1.5", "Tbsp(s)"],
-            "shredded carrots": ["4", "oz(s)"]
-        },
-    "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
-    
-},
-
-{
-    "meal_name": "Tempura Battered Chicken Fingers",
-    "meat_type": "chicken",
-    "reheats_well": "false",
-    "price_range": "medium",
-    "meal_type": "dinner",
-    "ingredients":
-        {
-            "lime": ["1", "unit(s)"],
-            "tempura mix": [".25", "package(s)"],
-            "rice": [".5", "cup(s)"],
-            "sriracha": ["1", "tsp(s)"],
-            "broccoli crowns": ["1", "unit(s)"],
-            "chicken breasts": ["10", "oz(s)"],
-            "sweet soy glaze": ["3", "Tbsp(s)"]
-        },
-    "link": "https://www.hellofresh.com/recipes/tempura-chicken-fingers-dipping-sauce-5f4d5fb78cbc28156118f6e8"
-
-},
-
-{
     "meal_name": "Tempura Battered Chicken Fingers",
     "meat_type": "chicken",
     "reheats_well": "false",
@@ -1433,7 +1523,7 @@
             "turmeric": ["1", "tsp(s)"],
             "rice": [".75", "cup(s)"],
             "veggie broth cubes": ["3", "unit(s)"],
-            "lemon": ["1", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
             "green onions": [".5", "package(s)"],
             "roma tomatoes": ["1", "unit(s)"],
             "cucumbers": ["1", "unit(s)"],
@@ -1462,7 +1552,7 @@
             "pistachios": [".5", "oz(s)"],
             "chickpeas": ["1", "package(s)"],
             "cilantro": [".25", "oz(s)"],
-            "lemon": ["1", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
             "shawarma spice spend": ["1", "Tbsp(s)"],
             "grape tomatoes": [".5", "package(s)"],
             "rice": [".5", "cup(s)"],
@@ -1487,7 +1577,7 @@
             "shawarma spice spend": ["1", "Tbsp(s)"],
             "vegetable broth cubes": ["1", "cube(s)"],
             "pistachios": [".5", "oz(s)"],
-            "lemon": ["1", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
             "sour cream": ["1.5", "Tbsp(s)"],
             "minced garlic": [".5", "tsp(s)"],
             "shallot": ["1", "unit(s)"],
@@ -1511,12 +1601,12 @@
             "roma tomatoes": ["1", "unit(s)"],
             "green onions": [".5", "package(s)"],
             "cilantro": [".25", "oz(s)"],
-            "lemon": ["1", "unit(s)"],
+            "lemons": ["1", "unit(s)"],
             "bulgur wheat": [".5", "cup(s)"],
             "harissa powder": ["1", "Tbsp(s)"],
             "sour cream": ["1.5", "Tbsp(s)"],
             "feta cheese": ["1.5", "Tbsp(s)"],
-            "chicken breast": ["10", "oz(s)"]
+            "chicken breasts": ["10", "oz(s)"]
         },
     "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
 

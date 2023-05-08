@@ -80,6 +80,7 @@ class HomePage:
         return
 
     def view_recipes(self):
+        self.clear_page()
         MealListDisplay(self.outer, self.content)
     
     def clear_page(self):

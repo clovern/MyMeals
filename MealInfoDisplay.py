@@ -64,7 +64,7 @@ class MealInfoDisplay(PlanPage):
     
     def create_remove_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.details_button = ttk.Button(self.day_frame, text="\u2718", width = 3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
+        self.lowerbuttons_frame
         self.details_button.grid(row=index, column=3, sticky='E')
         details_tip = Hovertip(self.details_button, "Remove Meal")
 
