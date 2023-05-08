@@ -8,6 +8,7 @@ from Meal import Meal
 from MealPlanCreator import MealPlanCreator
 from PIL import Image
 from PIL import ImageTk
+from MealDetailPopup import MealDetailPopup
 
 class MealListDisplay(PlanPage):
 
@@ -51,8 +52,8 @@ class MealListDisplay(PlanPage):
         self.addmeals_button = ttk.Button(self.upperbuttons_frame, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_meal_details(mealday, meal))
         self.addmeals_button.pack(anchor = E, padx = (20, 20), pady = (0, 10))
     
-    def show_meal_details(self, mealday, meal):
-        pass
+    def show_meal_details(self, meal):
+        MealDetailPopup(meal)
 
     def create_filter_dropdown(self):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
@@ -102,9 +103,6 @@ class MealListDisplay(PlanPage):
         self.details_button = ttk.Button(self.meal_frame, text=u"\U0001F441", width = 3, default="active", command=lambda: self.show_meal_details(meal))
         self.details_button.grid(column = 2, row = 0)
         Hovertip(self.details_button, "Details")
-    
-    def show_meal_details(self, meal):
-        pass
 
     def display_lower_buttons(self):
         self.lowerbuttons_frame = ttk.Frame(self.lowercontent, width = 800, height = 50)

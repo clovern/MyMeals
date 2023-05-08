@@ -10,25 +10,28 @@ class MealDetailPopup:
     def __init__(self, mealday, meal):
         self.mealday = mealday
         self.meal = meal
+        self.meal_choice = self.mealday.get_choice(self.meal)
+        self.show_meal_details()
+    
+    def __init__(self, meal):
+        self.meal_choice = meal
         self.show_meal_details()
 
     def show_meal_details(self):
         # open a message box that shows the ingredients and the recipe
 
-        meal_choice = self.mealday.get_choice(self.meal)
-
-        information = meal_choice.format_meal_ingredients()
+        information = self.meal_choice.format_meal_ingredients()
         
-        if meal_choice.link != None:
-            self.build_link_popup(information, meal_choice)
+        if self.meal_choice.link != None:
+            self.build_link_popup(information)
             return
         
-        if meal_choice.recipe != None:
+        if self.meal_choice.recipe != None:
             information += "\n\nRecipe: \n\n"
-            information += meal_choice.recipe
+            information += self.meal_choice.recipe
             information += "\n"
 
-        messagebox.showinfo("Details for " + meal_choice.name.title(), information)
+        messagebox.showinfo("Details for " + self.meal_choice.name.title(), information)
     def open_hyperlink(self, url):
         webbrowser.open_new_tab(url)
 
@@ -39,10 +42,10 @@ class MealDetailPopup:
         self.open_hyperlink(link_text))
         link.pack(pady = (0, 15), padx=(0,20))
 
-    def build_link_popup(self, information, meal_choice):
+    def build_link_popup(self, information):
         information += "\n\nRecipe Link:\n"
         self.details_popup= Toplevel(bg="white")
-        self.details_popup.title("Details for " + meal_choice.name.title())
+        self.details_popup.title("Details for " + self.meal_choice.name.title())
         
         bottom_frame = Frame(self.details_popup, bg="gray95")
         bottom_frame.pack(side=BOTTOM, fill=X)
@@ -57,5 +60,5 @@ class MealDetailPopup:
         self.info_icon_label.pack(anchor='n')
 
         Label(self.details_popup, text= information, justify = LEFT, bg="white", wraplength=300).pack(anchor = "w", padx=(0, 20), pady=(15,0))
-        self.create_hyperlink(meal_choice.link)
+        self.create_hyperlink(self.meal_choice.link)
         return
