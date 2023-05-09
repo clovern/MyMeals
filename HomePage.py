@@ -7,6 +7,7 @@ from BasicPlanPage import BasicPlanPage
 from MealListDisplay import MealListDisplay
 # FIXME
 from MealDatabaseEditor import MealDatabaseEditor
+from Meal import Meal
 
 class HomePage:
     def __init__(self, root):
@@ -91,8 +92,5 @@ class HomePage:
 def start_GUI():
     global root 
     root = Tk()
-    # FIXME
-    MealDatabaseEditor.populate_default_meals()
-    MealDatabaseEditor.remove_meal("vegan blueberry waffles")
     homepage = HomePage(root)
     root.mainloop()

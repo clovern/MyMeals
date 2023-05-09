@@ -10,9 +10,6 @@ class Meal:
         self.link = link
         self.vegan_only = vegan_only
 
-    def add_ingredient(self, ingredient, amount):
-        self.ingredients[ingredient] = str(amount)   
-
     def ingredients_to_string_list(self):
         ingredients_list = []
         for ingredient in self.ingredients.keys():
