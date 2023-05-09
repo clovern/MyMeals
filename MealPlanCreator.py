@@ -2,6 +2,7 @@ import random
 import json
 from Meal import Meal
 from MealDay import MealDay
+from MealDatabaseEditor import MealDatabaseEditor
 
 
 class MealPlanCreator: 
@@ -25,26 +26,18 @@ class MealPlanCreator:
         self.ingredients = {}       #a dictionary of ingredients, to build a grocery list
 
     def populate_default_meals(self): 
-        default_file = open('default_meals.json')
-        default_data = json.load(default_file)
+        MealDatabaseEditor.populate_default_meals()
+        self.all_meals = MealDatabaseEditor.get_all_meals()
+        self.separate_meals_by_type()
 
-        #create a meal object for each meal read
-        for recipe in default_data:
-            recipe_instructions = recipe['recipe'] if 'recipe' in recipe else None
-            link = recipe['link'] if 'link' in recipe else None
-            vegan_only = recipe['vegan_only'] if 'vegan_only' in recipe else "false"
-            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], recipe['reheats_well'], recipe['price_range'], recipe['meal_type'], recipe_instructions, link, vegan_only, recipe['ingredients'])
-            self.add_meal(temp_meal)
-        default_file.close()
-
-    def add_meal(self, meal):
-        self.all_meals.append(meal)
-        if meal.meal_type.lower() == "breakfast":
-            self.breakfast_meals.append(meal)
-        elif meal.meal_type.lower() == "lunch":
-            self.lunch_meals.append(meal)
-        elif meal.meal_type.lower() == "dinner":
-            self.dinner_meals.append(meal)
+    def separate_meals_by_type(self):
+        for meal in self.all_meals:
+            if meal.meal_type.lower() == "breakfast":
+                self.breakfast_meals.append(meal)
+            elif meal.meal_type.lower() == "lunch":
+                self.lunch_meals.append(meal)
+            elif meal.meal_type.lower() == "dinner":
+                self.dinner_meals.append(meal)
     
     def set_meal_preference(self, day, meal, preferences):
         mealday = self.mealdays_dict[day]
