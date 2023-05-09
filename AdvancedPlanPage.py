@@ -7,8 +7,7 @@ from idlelib.tooltip import Hovertip
 from MealSearcherPopup import MealSearcherPopup
 
 class AdvancedPlanPage(PlanPage):
-    def __init__(self, root, outer, previous):
-        self.root = root
+    def __init__(self, outer, previous, meals_array):
         self.outer = outer
         self.previous = previous
         super().__init__()
@@ -18,6 +17,7 @@ class AdvancedPlanPage(PlanPage):
                         "Friday": {"breakfast": None, "lunch": None, "dinner": None}, "Saturday": {"breakfast": None, "lunch": None, "dinner": None}, "Sunday": {"breakfast": None, "lunch": None, "dinner": None}}
         self.search_widgets = {"Monday": [[], [], []], "Tuesday": [[], [], []], "Wednesday": [[], [], []], "Thursday": [[], [], []],
                         "Friday": [[], [], []], "Saturday": [[], [], []], "Sunday": [[], [], []]}
+        self.meals_array = meals_array
         self.create_advanced_plan_display()
     
     def create_advanced_plan_display(self):

@@ -10,14 +10,14 @@ from PIL import Image
 from PIL import ImageTk
 from MealDetailPopup import MealDetailPopup
 
-class MealListDisplay(PlanPage):
+class RecipeBook(PlanPage):
 
-    def __init__(self, outer, previous):
+    def __init__(self, outer, previous, json_reader):
         self.outer = outer
         self.previous = previous
         super().__init__()
-        self.all_meals = []
-        self.upload_meals()
+        self.json_reader = json_reader
+        self.all_meals = json_reader.get_all_meals
         self.display_start = 0
         self.create_meal_display()
     
@@ -28,11 +28,6 @@ class MealListDisplay(PlanPage):
         self.display_upper_buttons()
         self.display_lower_buttons()
         self.display_meals_body()
-
-    def upload_meals(self):
-        # FIXME should fix how this is done later
-        self.meal_plan_creator = MealPlanCreator()
-        self.all_meals = self.meal_plan_creator.all_meals
     
     def display_upper_buttons(self):
         self.upperbuttons_frame = ttk.Frame(self.lowercontent, height = 75, width=800)
@@ -151,6 +146,7 @@ class MealListDisplay(PlanPage):
             self.display_meals_body()
     
     def update_results_for_filter(self, selection):
+        self.meal_plan_creator = MealPlanCreator(self.all_meals)
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
         self.displaymeals_frame.destroy()
         self.display_meals_body()

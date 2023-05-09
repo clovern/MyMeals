@@ -7,11 +7,12 @@ from MealInfoDisplay import MealInfoDisplay
 from DropdownTranslator import DropdownTranslator
 
 class BasicPlanPage(PlanPage):
-    def __init__(self, root, outer, previous):
+    def __init__(self, outer, previous, meals_array):
         self.outer = outer
         self.previous = previous
         super().__init__()
         self.dropdown_list = []
+        self.meals_array = meals_array
 
         self.create_basic_plan_display()
     

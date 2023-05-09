@@ -4,7 +4,8 @@ from PIL import Image
 from PIL import ImageTk
 from AdvancedPlanPage import AdvancedPlanPage
 from BasicPlanPage import BasicPlanPage
-from MealListDisplay import MealListDisplay
+from RecipeBook import RecipeBook
+from MealJSONReader import MealJSONReader
 
 class HomePage:
     def __init__(self, root):
@@ -12,6 +13,12 @@ class HomePage:
         self.create_outer_frame()
         self.create_inner_frame()
         self.populate_widgets()
+        self.read_meal_json()
+    
+    def read_meal_json(self):
+        self.json_reader = MealJSONReader
+        self.json_reader.populate_default_meals()
+        self.meals_array = self.clear_pagejson_reader.get_all_meals()
 
     def create_outer_frame(self):
         self.outer = ttk.Frame(root, height=800, width=800)
@@ -71,17 +78,17 @@ class HomePage:
 
     def basic_plan(self):
         self.clear_page()
-        basic_plan_page = BasicPlanPage(root, self.outer, self.content)
+        basic_plan_page = BasicPlanPage(self.outer, self.content, self.meals_array)
         return
     
     def advanced_plan(self):
         self.clear_page()
-        advanced_plan_page = AdvancedPlanPage(root, self.outer, self.content)
+        advanced_plan_page = AdvancedPlanPage(self.outer, self.content, self.meals_array)
         return
 
     def view_recipes(self):
         self.clear_page()
-        MealListDisplay(self.outer, self.content)
+        RecipeBook(self.outer, self.content, self.json_reader)
     
     def clear_page(self):
         self.content.grid_forget()
