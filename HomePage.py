@@ -5,6 +5,9 @@ from PIL import ImageTk
 from AdvancedPlanPage import AdvancedPlanPage
 from BasicPlanPage import BasicPlanPage
 from MealListDisplay import MealListDisplay
+# FIXME
+from MealDatabaseEditor import MealDatabaseEditor
+from Meal import Meal
 
 class HomePage:
     def __init__(self, root):
