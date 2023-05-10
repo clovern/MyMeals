@@ -10,7 +10,6 @@ from MealSearcher import MealSearcher
 
 class MealSearcherPopup:
 
-    # def __init__(self, mealday, meal, label):
     def __init__(self, advanced_plan_page, meal, day, frame):
         self.advanced_plan_page = advanced_plan_page
         self.meal = meal

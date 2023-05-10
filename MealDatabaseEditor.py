@@ -33,12 +33,21 @@ class MealDatabaseEditor:
         # make this back into a json
         with open('default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
+        
+
+        # update the all_meals array for change
+        MealDatabaseEditor.all_meals.clear()
+        MealDatabaseEditor.populate_default_meals()
     
     def add_meal(meal):
         newmeal_object = MealDatabaseEditor.json_format_meal(meal)
         MealDatabaseEditor.default_data.append(newmeal_object)
         with open('default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
+        
+        # update the all_meals array for change
+        MealDatabaseEditor.all_meals.clear()
+        MealDatabaseEditor.populate_default_meals()
 
     def json_format_meal(meal):
         newmeal_object = {}
