@@ -5,6 +5,7 @@ class MultiCheckDropdown:
     def __init__(self, frame, options_list):
         self.frame = frame
         self.dropdown_opts = options_list
+        self.create_dropdown_vars()
         self.create_dropdown()
     
     def create_dropdown_vars(self):
@@ -13,9 +14,9 @@ class MultiCheckDropdown:
             newVar = IntVar()
             self.dropdown_vars.append(newVar)
     
-    def create_drodown(self):
-        self.menu_button_text = "      \u2193"
-        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=RAISED, background="white", wraplength = 120)
+    def create_dropdown(self):
+        self.menu_button_text = "           \u2193"
+        self.display= Menubutton (self.frame, text= self.menu_button_text, relief=SUNKEN, background="white", width = 10, wraplength = 120)
         self.display.menu = Menu ( self.display, tearoff = 0, background="white")
         self.display["menu"] = self.display.menu
 

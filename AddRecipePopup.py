@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
-from SpecialOptionsDropdown import SpecialOptionsDropdown
+from MultiCheckDropdown import MultiCheckDropdown
 
 class AddRecipePopup:
 
@@ -35,18 +35,34 @@ class AddRecipePopup:
 
     def add_meal_name(self):
         Label(self.right_frame, text= "Meal Name:", justify = LEFT, bg="white").pack(anchor = "n")
-        self.add_input_bar("name", self.right_frame)
-        self.search_box.pack()
+        
+        self.name_frame = Frame(self.right_frame, bg = "white")
+
+        self.add_input_bar("name", self.name_frame)
+        self.search_box.grid(column = 0, row = 0)
+
+        self.create_saveoption_button(self.name_frame)
+        self.saveoption_button.grid(column = 1, row = 0, padx = (8, 0))
+
+        self.name_frame.pack()
     
     def add_ingredients(self):
+        
         Label(self.right_frame, text= "Meal Ingredients: ", bg="white").pack(anchor = "n")
+        
         self.ingredients_frame = Frame(self.right_frame, bg="white")
         self.ingredients_frame.pack()
+        
         self.add_input_bar("ingredient_names", self.ingredients_frame, "ingredients", 30)
-        self.search_box.grid(column = 0, row = 0, padx = (2,2))
+        self.search_box.grid(column = 0, row = 0, padx = (0,19))
+        
         self.add_input_bar("ingredient_amounts", self.ingredients_frame, "amount", 10)
-        self.search_box.grid(column = 1, row = 0, padx = (2,2))
+        self.search_box.grid(column = 1, row = 0, padx = (19,19))
+
         self.create_units_dropdown()
+
+        self.create_saveoption_button(self.ingredients_frame)
+        self.saveoption_button.grid(column = 3, row = 0, padx = (8, 0))
     
     def create_units_dropdown(self):
         ingred_unit = StringVar()
@@ -63,27 +79,60 @@ class AddRecipePopup:
         self.tags_frame.pack()
 
         Label(self.tags_frame, text= "Tags:", bg="white").grid(column = 0, row = 0)
-        self.add_input_bar("tags", self.tags_frame, width = 10)
-        self.search_box.grid(column = 0, row = 1, padx = (2,2))
+        self.add_tag_dropdown()
+        self.tag_dropdown.grid(column = 0, row = 1)
 
         Label(self.tags_frame, text= "Price Range:", bg="white").grid(column = 1, row = 0)
-        self.add_input_bar("price_range", self.tags_frame, width = 10)
-        self.search_box.grid(column = 1, row = 1, padx = (2,2))
+        self.add_pricerange_dropdown()
+        self.pricerange_dropdown.grid(column = 1, row = 1, padx = (40,40))
 
         Label(self.tags_frame, text= "Meal Type:", bg="white").grid(column = 2, row = 0)
-        self.add_input_bar("meal_type", self.tags_frame, width = 10)
-        self.search_box.grid(column = 2, row = 1, padx = (2,2))
+        self.add_mealtype_dropdown()
+        self.mealtype_dropdown.grid(column = 2, row = 1)
+    
+    def create_saveoption_button(self, frame):
+        self.saveoption_button = ttk.Button(frame, text="\u2795", width = 3, default="active", command= lambda: self.save_option())
+    
+    def save_option(self):
+        pass
+    
+    def add_tag_dropdown(self):
+        dropdown_options = ["Reheats well"]
+        self.tag_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
+    
+    def add_pricerange_dropdown(self):
+        dropdown_options = ["$", "$$", "$$$"]
+        self.pricerange_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
+
+    def add_mealtype_dropdown(self):
+        dropdown_options = ["Breakfast", "Lunch", "Dinner"]
+        self.mealtype_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
 
     def add_link(self):
         Label(self.right_frame, text= "Link", justify = LEFT, bg="white").pack(anchor = "n")
-        self.add_input_bar("link", self.right_frame)
-        self.search_box.pack()
+        
+        self.link_frame = Frame(self.right_frame, bg="white")
+        
+        self.add_input_bar("link", self.link_frame)
+        self.search_box.grid(column = 0, row = 0)
+
+        self.create_saveoption_button(self.link_frame)
+        self.saveoption_button.grid(column = 1, row = 0, padx = (5, 0))
+
+        self.link_frame.pack()
 
     def add_recipe(self):
         Label(self.right_frame, text= "Recipe", justify = LEFT, bg="white").pack(anchor = "n")
-        self.recipe_text = Text(self.right_frame, height = 10, width = 50, relief = RIDGE, bg = "gray99").pack()
+        self.recipe_frame = Frame(self.right_frame, bg="white")
+        
+        self.recipe_text = Text(self.recipe_frame, height = 10, width = 49, relief = RIDGE, bg = "gray99").grid(column=0, row=0)
 
-    def add_input_bar(self, input_tag, frame, default_text = None, width = 50):
+        self.create_saveoption_button(self.recipe_frame)
+        self.saveoption_button.grid(column = 1, row = 0, padx = (3, 0))
+
+        self.recipe_frame.pack()
+
+    def add_input_bar(self, input_tag, frame, default_text = None, width = 65):
         search_text = StringVar()
         if input_tag in ["ingredient_names", "ingredient_amounts", "ingredient_units"]:
             self.input_vars[input_tag].append(search_text)
