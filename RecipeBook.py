@@ -11,6 +11,7 @@ from PIL import ImageTk
 from MealDetailPopup import MealDetailPopup
 from MealDatabaseEditor import MealDatabaseEditor
 from ConfirmDeletePopup import ConfirmDeletePopup
+from AddRecipePopup import AddRecipePopup
 
 class RecipeBook(PlanPage):
 
@@ -49,11 +50,14 @@ class RecipeBook(PlanPage):
         mealday = None
         meal = None
 
-        self.addmeals_button = ttk.Button(self.upperbuttons_frame, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_meal_details(mealday, meal))
+        self.addmeals_button = ttk.Button(self.upperbuttons_frame, text="\u2795 Add Meals", width = 15, default="active", command= self.create_addmeals_popup)
         self.addmeals_button.pack(anchor = E, padx = (20, 20), pady = (0, 10))
     
     def show_meal_details(self, meal):
         MealDetailPopup(meal)
+    
+    def create_addmeals_popup(self):
+        self.addmeals_popup = AddRecipePopup(self)
 
     def create_filter_dropdown(self):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
@@ -130,7 +134,7 @@ class RecipeBook(PlanPage):
         self.downarrow_image = Image.open("./down_arrow.jpg")
         self.downarrow_image = (self.downarrow_image).resize((30,30))
         self.downarrow_image = ImageTk.PhotoImage(self.downarrow_image)
-        self.show_next_button = ttk.Button(self.scrollbuttons_frame, image=self.downarrow_image, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_next_meals())
+        self.show_next_button = ttk.Button(self.scrollbuttons_frame, image=self.downarrow_image, width = 15, default="active", command=lambda: self.show_next_meals())
         self.show_next_button.grid(column=1, row=0)
         Hovertip(self.show_next_button, "View next meals")
     
@@ -147,7 +151,7 @@ class RecipeBook(PlanPage):
         self.uparrow_image = Image.open("./up_arrow.jpg")
         self.uparrow_image = (self.uparrow_image).resize((30,30))
         self.uparrow_image = ImageTk.PhotoImage(self.uparrow_image)
-        self.show_previous_button = ttk.Button(self.scrollbuttons_frame, image=self.uparrow_image, text="\u2795 Add Meals", width = 15, default="active", command=lambda: self.show_previous_meals())
+        self.show_previous_button = ttk.Button(self.scrollbuttons_frame, image=self.uparrow_image, width = 15, default="active", command=lambda: self.show_previous_meals())
         self.show_previous_button.grid(column=0, row=0)
         Hovertip(self.show_previous_button, "View previous meals")
     
