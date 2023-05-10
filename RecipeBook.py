@@ -9,8 +9,10 @@ from MealPlanCreator import MealPlanCreator
 from PIL import Image
 from PIL import ImageTk
 from MealDetailPopup import MealDetailPopup
+from MealDatabaseEditor import MealDatabaseEditor
+from ConfirmDeletePopup import ConfirmDeletePopup
 
-class MealListDisplay(PlanPage):
+class RecipeBook(PlanPage):
 
     def __init__(self, outer, previous):
         self.outer = outer
@@ -30,7 +32,6 @@ class MealListDisplay(PlanPage):
         self.display_meals_body()
 
     def upload_meals(self):
-        # FIXME should fix how this is done later
         self.meal_plan_creator = MealPlanCreator()
         self.all_meals = self.meal_plan_creator.all_meals
     
@@ -45,7 +46,6 @@ class MealListDisplay(PlanPage):
         self.create_filter_dropdown()
 
     def create_addmeals_button(self):
-        # FIXME
         mealday = None
         meal = None
 
@@ -84,12 +84,22 @@ class MealListDisplay(PlanPage):
         self.meal_frame.pack(pady = (5, 5))
     
     def create_remove_button(self, meal):
-        self.remove_button = ttk.Button(self.meal_frame, text="\u2796", width = 3, default="active", command=lambda: self.remove_meal(meal))
+        self.remove_button = ttk.Button(self.meal_frame, text="\u2796", width = 3, default="active", command=lambda: self.remove_meal_popup(meal))
         self.remove_button.grid(column = 0, row = 0)
         Hovertip(self.remove_button, "Remove this meal")
     
+    def remove_meal_popup(self, meal):
+        self.confirm_remove_popup = ConfirmDeletePopup(meal, self)
+    
     def remove_meal(self, meal):
-        pass
+        MealDatabaseEditor.remove_meal(meal.name)
+        self.displaymeals_frame.destroy()
+        self.update_meals_from_database()
+        self.display_meals_body()
+    
+    def update_meals_from_database(self):
+        self.meal_plan_creator.populate_default_meals()
+        self.all_meals = self.meal_plan_creator.all_meals
 
     def create_meal_label(self, meal):
         label_text = "No meals match the criteria"

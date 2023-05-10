@@ -53,7 +53,7 @@ class AdvancedPlanPage(PlanPage):
     
     def search_meals(self, advanced_plan_page, meal, day, frame):
         self.meal_search = MealSearcherPopup(advanced_plan_page, meal, day, frame)
-    
+
     def update_meal_for_search(self, meal_selection):
 
         day = self.meal_search.day

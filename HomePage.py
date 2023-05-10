@@ -4,10 +4,7 @@ from PIL import Image
 from PIL import ImageTk
 from AdvancedPlanPage import AdvancedPlanPage
 from BasicPlanPage import BasicPlanPage
-from MealListDisplay import MealListDisplay
-# FIXME
-from MealDatabaseEditor import MealDatabaseEditor
-from Meal import Meal
+from RecipeBook import RecipeBook
 
 class HomePage:
     def __init__(self, root):
@@ -84,7 +81,7 @@ class HomePage:
 
     def view_recipes(self):
         self.clear_page()
-        MealListDisplay(self.outer, self.content)
+        RecipeBook(self.outer, self.content)
     
     def clear_page(self):
         self.content.grid_forget()
