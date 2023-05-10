@@ -45,12 +45,28 @@ class RecipeBook(PlanPage):
     def create_upper_buttons(self):
         self.create_addmeals_button()
         self.create_filter_dropdown()
+        self.create_restoreall_button()
+        self.create_removeall_button()
+    
+    def create_restoreall_button(self):
+        self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15, command= self.restore_all)
+        self.restoreall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
+
+    def create_removeall_button(self):
+        self.removeall_button = ttk.Button(self.upperbuttons_frame, text="Remove All", width = 15, command= self.remove_all)
+        self.removeall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
+
+    def restore_all(self):
+        pass
+
+    def remove_all(self):
+        pass
 
     def create_addmeals_button(self):
         mealday = None
         meal = None
 
-        self.addmeals_button = ttk.Button(self.upperbuttons_frame, text="\u2795 Add Meals", width = 15, default="active", command= self.create_addmeals_popup)
+        self.addmeals_button = ttk.Button(self.upperbuttons_frame, text="\u2795 Add Meals", width = 15, command= self.create_addmeals_popup)
         self.addmeals_button.pack(anchor = E, padx = (20, 20), pady = (0, 10))
     
     def show_meal_details(self, meal):
@@ -63,7 +79,9 @@ class RecipeBook(PlanPage):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
         self.filter.display["width"] = 15
         self.filter.display["wraplength"] = 100
-        self.filter.display.pack(anchor = E, padx = (20, 20), pady = (0, 10))
+        self.filter.display["background"] = "gray90"
+        self.filter.display["relief"] = RIDGE
+        self.filter.display.pack(side = RIGHT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def display_meals_body(self):
         self.displaymeals_frame = ttk.Frame(self.lowercontent, height = 600, width=800)
