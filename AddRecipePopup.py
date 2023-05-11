@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from tkinter import messagebox
 from PIL import Image
 from PIL import ImageTk
 from MultiCheckDropdown import MultiCheckDropdown
@@ -77,10 +78,26 @@ class AddRecipePopup:
         ingred_name = self.input_vars["ingredient_names"].get()
         ingred_amount = self.input_vars["ingredient_amounts"].get()
         ingred_unit = self.units_dropdown.get()
-        self.ingred_dict[ingred_name] = [ingred_amount , ingred_unit]
+        if ingred_name == "ingredients":
+            messagebox.showinfo(title="Error: Invalid Ingredients", message="Please enter a valid value for ingredient name.")
+        elif ingred_name in self.ingred_dict:
+            messagebox.showinfo(title="Error: Invalid Ingredients", message=ingred_name.title() + " has already been added to your ingredients list. \n\nPlease remove this from your ingredient list first, if you want to change the amount or units.")
+        elif ingred_amount == "amount":
+            messagebox.showinfo(title="Error: Invalid Ingredients", message="Please enter a valid value for ingredient amount.")
+        elif ingred_unit == "units":
+            messagebox.showinfo(title="Error: Invalid Ingredients", message="Please select a value for the ingredient units from the dropdown menu.")
+        else: 
+            self.ingred_dict[ingred_name] = [ingred_amount , ingred_unit]
+            display_ingred_frame = Frame(self.ingred_list_frame, bg="white")
+            display_ingred_frame.pack()
+            self.ingred_label = Label(display_ingred_frame, text= ingred_name + ": " + ingred_amount + " " + ingred_unit, bg="white", borderwidth = 1, relief = SOLID, width = 50)
+            self.ingred_label.pack(side = LEFT)
+            self.remove_ingred_button = ttk.Button(display_ingred_frame, text="\u2796", width = 3, default="active", command = lambda: self.remove_ingredient(display_ingred_frame, ingred_name))
+            self.remove_ingred_button.pack(side = LEFT)
 
-        Label(self.ingred_list_frame, text= ingred_name + ": " + ingred_amount + " " + ingred_unit, bg="white", borderwidth = 1, relief = SOLID, width = 50).pack(anchor = CENTER, padx = (0, 25))
-        
+    def remove_ingredient(self, ingred_frame, ingred_name):
+        ingred_frame.destroy()
+        del self.ingred_dict[ingred_name]
 
     def create_units_dropdown(self):
         ingred_unit = StringVar()
