@@ -4,6 +4,8 @@ from tkinter import messagebox
 from PIL import Image
 from PIL import ImageTk
 from MultiCheckDropdown import MultiCheckDropdown
+from Meal import Meal
+from MealDatabaseEditor import MealDatabaseEditor
 
 class AddRecipePopup:
 
@@ -115,30 +117,47 @@ class AddRecipePopup:
 
         Label(self.tags_frame, text= "Tags:", bg="white").grid(column = 0, row = 0)
         self.add_tag_dropdown()
-        self.tag_dropdown.grid(column = 0, row = 1)
+        self.tag_dropdown.display.grid(column = 0, row = 1)
 
         Label(self.tags_frame, text= "Price Range:", bg="white").grid(column = 1, row = 0)
         self.add_pricerange_dropdown()
-        self.pricerange_dropdown.grid(column = 1, row = 1, padx = (40,40))
+        self.pricerange_dropdown.grid(column = 1, row = 1, padx = (20,20))
 
-        Label(self.tags_frame, text= "Meal Type:", bg="white").grid(column = 2, row = 0)
+        Label(self.tags_frame, text= "Meal Type:", bg="white").grid(column = 2, row = 0, padx = (0, 20))
         self.add_mealtype_dropdown()
-        self.mealtype_dropdown.grid(column = 2, row = 1)
+        self.mealtype_dropdown.grid(column = 2, row = 1, padx = (0, 20))
+
+        Label(self.tags_frame, text= "Meat Type:", bg="white").grid(column = 3, row = 0)
+        self.add_meattype_dropdown()
+        self.meattype_dropdown.grid(column = 3, row = 1)
     
     def create_saveoption_button(self, frame):
         self.saveoption_button = ttk.Button(frame, text="\u2795", width = 3, default="active")
     
     def add_tag_dropdown(self):
         dropdown_options = ["Reheats well"]
-        self.tag_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
+        self.tag_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options)
     
     def add_pricerange_dropdown(self):
-        dropdown_options = ["$", "$$", "$$$"]
-        self.pricerange_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
 
+        pricerange_unit = StringVar()
+        self.pricerange_dropdown = ttk.Combobox(self.tags_frame, width = 10, textvariable = pricerange_unit)
+        
+        self.pricerange_dropdown['values'] = ("$", "$$", "$$$")
+
+    def add_meattype_dropdown(self):
+
+        meattype_unit = StringVar()
+        self.meattype_dropdown = ttk.Combobox(self.tags_frame, width = 10, textvariable = meattype_unit)
+        
+        self.meattype_dropdown['values'] = ("Vegan", "Vegetarian", "Chicken", "Pork", "Beef", "Turkey", "Seafood")
+    
     def add_mealtype_dropdown(self):
-        dropdown_options = ["Breakfast", "Lunch", "Dinner"]
-        self.mealtype_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options).display
+
+        mealtype_unit = StringVar()
+        self.mealtype_dropdown = ttk.Combobox(self.tags_frame, width = 10, textvariable = mealtype_unit)
+        
+        self.mealtype_dropdown['values'] = ("Breakfast", "Lunch", "Dinner")
 
     def add_link(self):
         Label(self.right_frame, text= "Link", justify = LEFT, bg="white").pack(anchor = "n")
@@ -154,7 +173,8 @@ class AddRecipePopup:
         Label(self.right_frame, text= "Recipe", justify = LEFT, bg="white").pack(anchor = "n")
         self.recipe_frame = Frame(self.right_frame, bg="white")
         
-        self.recipe_text = Text(self.recipe_frame, height = 10, width = 49, relief = RIDGE, bg = "gray99").grid(column=0, row=0)
+        self.recipe_text = Text(self.recipe_frame, height = 10, width = 49, relief = RIDGE, bg = "gray99")
+        self.recipe_text.grid(column=0, row=0)
 
         self.recipe_frame.pack(padx = (0, 25))
 
@@ -169,4 +189,20 @@ class AddRecipePopup:
         self.addrecipe_popup.destroy()
 
     def save_recipe(self):
-        pass
+        # create a meal object
+        # def __init__(self, name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients = {})
+        # get the name from 
+        name = self.input_vars["name"].get()
+        meat_type = self.meattype_dropdown.get()
+        reheats_well = "true" if "Reheats well" in self.tag_dropdown.get_selected_opts() else "false"
+        # reheats well - figure this one out in a minute. 
+        price_range = self.pricerange_dropdown.get()
+        meal_type = self.mealtype_dropdown.get()
+        recipe = self.recipe_text.get("1.0",'end-1c')
+        link = self.input_vars["link"].get()
+        vegan_only = "false"
+        ingredients = self.ingred_dict
+
+        newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients)
+        MealDatabaseEditor.add_meal(newmeal)
+        

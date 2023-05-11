@@ -27,6 +27,14 @@ class MultiCheckDropdown:
         
     def handle_select(self, index):
         self.display.configure(text = self.dropdown_opts[index])
+    
+    def get_selected_opts(self):
+        selected_opts = []
+        for index in range(len(self.dropdown_vars)):
+            if self.dropdown_vars[index].get() == 1:
+                selected_opts.append(self.dropdown_opts[index])
+        return selected_opts
+
 
 
 
