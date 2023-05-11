@@ -26,7 +26,8 @@ class MultiCheckDropdown:
             variable=self.dropdown_vars[index] , command = lambda index = index: self.handle_select(index))
         
     def handle_select(self, index):
-        # FIXME
-        print("IN HANDLESELECT")
+        self.display.configure(text = self.dropdown_opts[index])
+
+
 
     
