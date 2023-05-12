@@ -64,9 +64,9 @@ class MealInfoDisplay(PlanPage):
     
     def create_remove_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.details_button.grid(row=index, column=3, sticky='E')
-        details_tip = Hovertip(self.details_button, "Remove Meal")
-
+        self.remove_button = ttk.Button(self.day_frame, text="\u2718", width = 3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
+        self.remove_button.grid(row=index, column=3, sticky='E')
+        remove_tip = Hovertip(self.remove_button, "Remove Meal")
     
     def create_details_button(self, mealday, meal):
         index = self.set_meal_index(meal)
@@ -86,7 +86,7 @@ class MealInfoDisplay(PlanPage):
 
     def show_meal_details(self, mealday, meal):
         if mealday.get_choice(meal) != None:
-            MealDetailPopup(mealday, meal)
+            MealDetailPopup(meal, mealday)
 
     def reroll_meal(self, mealday, meal, label):
         self.meal_creator.select_meal(mealday, meal)

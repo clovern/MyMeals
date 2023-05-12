@@ -3130,5 +3130,14 @@
             "meal_type": "Dinner",
             "ingredients": {},
             "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test no ingred",
+            "meat_type": "Pork",
+            "reheats_well": "false",
+            "price_range": "",
+            "meal_type": "Lunch",
+            "ingredients": {},
+            "vegan_only": "false"
       }
 ]
