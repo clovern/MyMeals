@@ -3135,37 +3135,5 @@
             "recipe": "test recipe",
             "link": "testlink",
             "vegan_only": "false"
-      },
-      {
-            "meal_name": "Test recipe 4",
-            "meat_type": "",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "",
-            "ingredients": {
-                  "beef": [
-                        "2",
-                        "lb(s)"
-                  ]
-            },
-            "recipe": "test recipe",
-            "link": "testlink",
-            "vegan_only": "false"
-      },
-      {
-            "meal_name": "Test recipe 6",
-            "meat_type": "Pork",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "Lunch",
-            "ingredients": {
-                  "beef": [
-                        "2",
-                        "package(s)"
-                  ]
-            },
-            "recipe": "testrecipe",
-            "link": "testlink",
-            "vegan_only": "false"
       }
 ]
