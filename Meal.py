@@ -25,6 +25,9 @@ class Meal:
         ingredients_list = self.ingredients_to_string_list()
         information = "Ingredients: \n\n"
 
+        if len(ingredients_list) == 0:
+            information += "No ingredients list provided \n"
+
         for ingredient in ingredients_list:
             information += ingredient + "\n"
         

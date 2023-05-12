@@ -88,10 +88,6 @@ class AdvancedPlanPage(PlanPage):
         self.dropdown_dict[day][meal.lower()] = self.special_dropdown
         (self.dropdown_dict[day][meal.lower()].display).grid(column=2, row=index)
 
-
-    def delete_search(self, meal, day, frame):
-        pass
-
     def create_special_options_dropdown(self, day, meal, frame):
             super().create_special_options_dropdown(frame, "advanced")
             self.dropdown_dict[day][meal.lower()] = (self.special_dropdown)

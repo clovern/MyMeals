@@ -7,15 +7,15 @@ from PIL import ImageTk
 
 class MealDetailPopup:
 
-    def __init__(self, mealday, meal):
-        self.mealday = mealday
-        self.meal = meal
-        self.meal_choice = self.mealday.get_choice(self.meal)
-        self.show_meal_details()
-    
-    def __init__(self, meal):
-        self.meal_choice = meal
-        self.show_meal_details()
+    def __init__(self, meal, mealday = None):
+        if mealday == None:
+            self.meal_choice = meal
+            self.show_meal_details()
+        else:
+            self.mealday = mealday
+            self.meal = meal
+            self.meal_choice = self.mealday.get_choice(self.meal)
+            self.show_meal_details()
 
     def show_meal_details(self):
         # open a message box that shows the ingredients and the recipe

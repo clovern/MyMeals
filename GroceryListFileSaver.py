@@ -35,6 +35,9 @@ class GroceryListFileSaver(FileSaver):
         return self.meal_text + self.grocery_list_string
     
     def write_ingredients_to_dict(self, meal):
+        if len(meal.ingredients) == 0:
+            self.ingredients_dict[meal.name] = "No ingredients list"
+        
         for ingredient in meal.ingredients.keys():
 
             if ingredient in self.ingredients_dict:
@@ -54,14 +57,20 @@ class GroceryListFileSaver(FileSaver):
     def write_dict_to_string(self):
 
         for ingredient in self.ingredients_dict:
-            ingredient_string = ingredient + ", " 
-            ingredient_amounts_list = self.ingredients_dict[ingredient]
+            ingredient_string = ""
+            # This indicates that there were no ingredients listed for a meal, which should be indicated on grocery list
+            if self.ingredients_dict[ingredient] == "No ingredients list":
+                mealname = ingredient
+                ingredient_string += "No ingredients listed for " + mealname + ". Add manually as needed."
+            else:
+                ingredient_string = ingredient + ", " 
+                ingredient_amounts_list = self.ingredients_dict[ingredient]
 
-            counter = 0
-            # adds each ingredient to grocery list. Adds a + between ingredient measurements of different units. 
-            for val in ingredient_amounts_list:
-                if counter > 2 & (counter % 2 != 0):
-                    ingredient_string += "+"
-                ingredient_string += " " + val
+                counter = 0
+                # adds each ingredient to grocery list. Adds a + between ingredient measurements of different units. 
+                for val in ingredient_amounts_list:
+                    if counter > 2 & (counter % 2 != 0):
+                        ingredient_string += "+"
+                    ingredient_string += " " + val
 
             self.grocery_list_string += ingredient_string + "\n"
