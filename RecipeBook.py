@@ -57,7 +57,8 @@ class RecipeBook(PlanPage):
         self.removeall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def restore_all(self):
-        pass
+        MealDatabaseEditor.restore_all_meals()
+        self.update_meal_display(True)
 
     def remove_all(self):
         pass
@@ -74,6 +75,10 @@ class RecipeBook(PlanPage):
     
     def create_addmeals_popup(self):
         self.addmeals_popup = AddRecipePopup(self)
+    
+    def add_meal(self, meal):
+        MealDatabaseEditor.add_meal(meal)
+        self.update_meal_display(True)
 
     def create_filter_dropdown(self):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
@@ -91,9 +96,10 @@ class RecipeBook(PlanPage):
     def populate_meals(self):
         if len(self.all_meals) == 0:
             self.display_meal(None)
-        end_index = min(len(self.all_meals), self.display_start + 11)
-        for meal in self.all_meals[self.display_start : end_index]:
-            self.display_meal(meal)
+        else:
+            end_index = min(len(self.all_meals), self.display_start + 11)
+            for meal in self.all_meals[self.display_start : end_index]:
+                self.display_meal(meal)
     
     def display_meal(self, meal):
         self.meal_frame = ttk.Frame(self.displaymeals_frame, borderwidth=1, relief="solid")
@@ -115,9 +121,7 @@ class RecipeBook(PlanPage):
     
     def remove_meal(self, meal):
         MealDatabaseEditor.remove_meal(meal.name)
-        self.displaymeals_frame.destroy()
-        self.update_meals_from_database()
-        self.display_meals_body()
+        self.update_meal_display(True)
     
     def update_meals_from_database(self):
         self.meal_plan_creator.populate_default_meals()
@@ -162,8 +166,7 @@ class RecipeBook(PlanPage):
             self.display_start = self.display_start - 11
             messagebox.showinfo("", "You have reached the end of the Recipe Book.")
         else: 
-            self.displaymeals_frame.destroy()
-            self.display_meals_body()
+            self.update_meal_display()
 
     def create_scroll_up_button(self):
         self.uparrow_image = Image.open("./up_arrow.jpg")
@@ -179,10 +182,19 @@ class RecipeBook(PlanPage):
             self.display_start = self.display_start + 11
             messagebox.showinfo("", "You have reached the beginning of the Recipe Book.")
         else: 
-            self.displaymeals_frame.destroy()
-            self.display_meals_body()
+            self.update_meal_display()
     
     def update_results_for_filter(self, selection):
+        self.display_start = 0
+        self.meal_plan_creator.populate_default_meals
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
+        self.update_meal_display()
+    
+    def update_meal_display(self, database_updated = False):
         self.displaymeals_frame.destroy()
+        if database_updated == True:
+            self.update_meals_from_database()
+            self.update_results_for_filter(self.filter.get_selection())
         self.display_meals_body()
+    
+    

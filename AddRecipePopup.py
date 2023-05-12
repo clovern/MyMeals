@@ -209,7 +209,7 @@ class AddRecipePopup:
         ingredients = self.ingred_dict
 
         newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients)
-        MealDatabaseEditor.add_meal(newmeal)
+        self.recipe_book.add_meal(newmeal)
         messagebox.showinfo(title="Meal Successfully Added", message= name.title() + " has been successfully added to your recipe list!")
         self.addrecipe_popup.destroy()
 
