@@ -195,7 +195,7 @@ class SpecialOptionsDropdown():
                 selected_final["meat_type"] = meat_types
         
         if (len(price_types) > 0):
-            if (len(meat_types) == 1):
+            if (len(price_types) == 1):
                 selected_final["price_range"] = price_types[0]
             else:
                 selected_final["price_range"] = price_types

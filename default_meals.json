@@ -1386,32 +1386,6 @@
             "recipe": "Heat up your favorite brand of canned tomato basil soup. Make a grilled cheese. Enjoy!"
       },
       {
-            "meal_name": "chicken stir fry",
-            "meat_type": "chicken",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "dinner",
-            "ingredients": {
-                  "rice": [
-                        "1",
-                        "cup(s)"
-                  ],
-                  "stir fry sauce": [
-                        ".25",
-                        "bottle(s)"
-                  ],
-                  "frozen chicken tenders": [
-                        ".25",
-                        "package(s)"
-                  ],
-                  "frozen mixed vegetables": [
-                        ".5",
-                        "package(s)"
-                  ]
-            },
-            "recipe": "Cook rice by following instructions on bag. Cook frozen chicken tenders in the air fryer at 400 for 10 minutes (or follow instructions on bag, if available). Steam frozen mixed vegetables in microwave. Top with your favorite stir fry sauce."
-      },
-      {
             "meal_name": "chicken tenders and tater tots",
             "meat_type": "chicken",
             "reheats_well": "true",
@@ -2569,44 +2543,6 @@
             "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n\n2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n\n3. Prepare pasta of your choice.\n\n4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
       },
       {
-            "meal_name": "Nutmeg and Thyme Chicken Thighs with Carrots and Potatoes",
-            "meat_type": "chicken",
-            "reheats_well": "false",
-            "price_range": "cheap",
-            "meal_type": "dinner",
-            "ingredients": {
-                  "olive oil": [
-                        "3",
-                        "Tbsp(s)"
-                  ],
-                  "chicken thighs": [
-                        "3",
-                        "unit(s)"
-                  ],
-                  "dried thyme": [
-                        "2",
-                        "tsp(s)"
-                  ],
-                  "ground nutmeg": [
-                        ".25",
-                        "tsp(s)"
-                  ],
-                  "yukon gold potatoes": [
-                        "2",
-                        "lb(s)"
-                  ],
-                  "carrots": [
-                        "2",
-                        "lb(s)"
-                  ],
-                  "fresh chives": [
-                        "3",
-                        "Tbsp(s)"
-                  ]
-            },
-            "link": "https://www.epicurious.com/recipes/food/views/oven-roasted-chicken-thighs-with-carrots-and-yukon-gold-potatoes-351711"
-      },
-      {
             "meal_name": "Soy-Glazed meatballs",
             "meat_type": "beef",
             "reheats_well": "false",
@@ -2659,44 +2595,6 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
-      },
-      {
-            "meal_name": "Tempura Battered Chicken Fingers",
-            "meat_type": "chicken",
-            "reheats_well": "false",
-            "price_range": "medium",
-            "meal_type": "dinner",
-            "ingredients": {
-                  "lime": [
-                        "1",
-                        "unit(s)"
-                  ],
-                  "tempura mix": [
-                        ".25",
-                        "package(s)"
-                  ],
-                  "rice": [
-                        ".5",
-                        "cup(s)"
-                  ],
-                  "sriracha": [
-                        "1",
-                        "tsp(s)"
-                  ],
-                  "broccoli crowns": [
-                        "1",
-                        "unit(s)"
-                  ],
-                  "chicken breasts": [
-                        "10",
-                        "oz(s)"
-                  ],
-                  "sweet soy glaze": [
-                        "3",
-                        "Tbsp(s)"
-                  ]
-            },
-            "link": "https://www.hellofresh.com/recipes/tempura-chicken-fingers-dipping-sauce-5f4d5fb78cbc28156118f6e8"
       },
       {
             "meal_name": "White Cheddar Wonderburgers",
@@ -3017,55 +2915,5 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/shawarma-spiced-halloumi-6239d858457d6e66121a17e0"
-      },
-      {
-            "meal_name": "Harissa Chicken Bulgur Bowls",
-            "meat_type": "chicken",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "dinner",
-            "ingredients": {
-                  "cucumbers": [
-                        "1",
-                        "unit(s)"
-                  ],
-                  "roma tomatoes": [
-                        "1",
-                        "unit(s)"
-                  ],
-                  "green onions": [
-                        ".5",
-                        "package(s)"
-                  ],
-                  "cilantro": [
-                        ".25",
-                        "oz(s)"
-                  ],
-                  "lemons": [
-                        "1",
-                        "unit(s)"
-                  ],
-                  "bulgur wheat": [
-                        ".5",
-                        "cup(s)"
-                  ],
-                  "harissa powder": [
-                        "1",
-                        "Tbsp(s)"
-                  ],
-                  "sour cream": [
-                        "1.5",
-                        "Tbsp(s)"
-                  ],
-                  "feta cheese": [
-                        "1.5",
-                        "Tbsp(s)"
-                  ],
-                  "chicken breasts": [
-                        "10",
-                        "oz(s)"
-                  ]
-            },
-            "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
       }
 ]

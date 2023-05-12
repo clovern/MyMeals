@@ -58,9 +58,7 @@ class RecipeBook(PlanPage):
 
     def restore_all(self):
         MealDatabaseEditor.restore_all_meals()
-        self.displaymeals_frame.destroy()
-        self.update_meals_from_database()
-        self.display_meals_body()
+        self.update_meal_display(True)
 
     def remove_all(self):
         pass
@@ -80,9 +78,7 @@ class RecipeBook(PlanPage):
     
     def add_meal(self, meal):
         MealDatabaseEditor.add_meal(meal)
-        self.displaymeals_frame.destroy()
-        self.update_meals_from_database()
-        self.display_meals_body()
+        self.update_meal_display(True)
 
     def create_filter_dropdown(self):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
@@ -125,9 +121,7 @@ class RecipeBook(PlanPage):
     
     def remove_meal(self, meal):
         MealDatabaseEditor.remove_meal(meal.name)
-        self.displaymeals_frame.destroy()
-        self.update_meals_from_database()
-        self.display_meals_body()
+        self.update_meal_display(True)
     
     def update_meals_from_database(self):
         self.meal_plan_creator.populate_default_meals()
@@ -172,8 +166,7 @@ class RecipeBook(PlanPage):
             self.display_start = self.display_start - 11
             messagebox.showinfo("", "You have reached the end of the Recipe Book.")
         else: 
-            self.displaymeals_frame.destroy()
-            self.display_meals_body()
+            self.update_meal_display()
 
     def create_scroll_up_button(self):
         self.uparrow_image = Image.open("./up_arrow.jpg")
@@ -189,14 +182,19 @@ class RecipeBook(PlanPage):
             self.display_start = self.display_start + 11
             messagebox.showinfo("", "You have reached the beginning of the Recipe Book.")
         else: 
-            self.displaymeals_frame.destroy()
-            self.display_meals_body()
+            self.update_meal_display()
     
     def update_results_for_filter(self, selection):
         self.display_start = 0
         self.meal_plan_creator.populate_default_meals
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
+        self.update_meal_display()
+    
+    def update_meal_display(self, database_updated = False):
         self.displaymeals_frame.destroy()
+        if database_updated == True:
+            self.update_meals_from_database()
+            self.update_results_for_filter(self.filter.get_selection())
         self.display_meals_body()
     
     
