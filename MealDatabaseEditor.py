@@ -3,13 +3,15 @@ from Meal import Meal
 
 class MealDatabaseEditor:
     all_meals = []
+
+    # indicates if the information needs to be updated in resources that use all_meals from this. 
     updated = True
     default_data = None
 
     @staticmethod
-    def populate_default_meals(): 
+    def populate_default_meals(file = 'default_meals.json'): 
         MealDatabaseEditor.all_meals = []
-        default_file = open('default_meals.json')
+        default_file = open(file)
         MealDatabaseEditor.default_data = json.load(default_file)
 
         #create a meal object for each meal read
@@ -69,6 +71,13 @@ class MealDatabaseEditor:
 
         return newmeal_object
 
+    def restore_all_meals():
+        MealDatabaseEditor.populate_default_meals('default_meals_backup.json')
+        # read in all the meals from default_meals_copy
+        with open('default_meals.json', "w") as f:
+            json.dump(MealDatabaseEditor.default_data, f, indent = 6)
+        
+        MealDatabaseEditor.updated = True
 
     def get_all_meals():
         return MealDatabaseEditor.all_meals

@@ -57,7 +57,10 @@ class RecipeBook(PlanPage):
         self.removeall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def restore_all(self):
-        pass
+        MealDatabaseEditor.restore_all_meals()
+        self.displaymeals_frame.destroy()
+        self.update_meals_from_database()
+        self.display_meals_body()
 
     def remove_all(self):
         pass
@@ -74,6 +77,12 @@ class RecipeBook(PlanPage):
     
     def create_addmeals_popup(self):
         self.addmeals_popup = AddRecipePopup(self)
+    
+    def add_meal(self, meal):
+        MealDatabaseEditor.add_meal(meal)
+        self.displaymeals_frame.destroy()
+        self.update_meals_from_database()
+        self.display_meals_body()
 
     def create_filter_dropdown(self):
         self.filter = SpecialOptionsDropdown(self.upperbuttons_frame, "filter", self)
@@ -122,6 +131,10 @@ class RecipeBook(PlanPage):
     def update_meals_from_database(self):
         self.meal_plan_creator.populate_default_meals()
         self.all_meals = self.meal_plan_creator.all_meals
+        # # FIXME
+        # print("ALL MEALS AFTER ADD")
+        # print(self.all_meals)
+
 
     def create_meal_label(self, meal):
         label_text = "No meals match the criteria"
@@ -183,6 +196,9 @@ class RecipeBook(PlanPage):
             self.display_meals_body()
     
     def update_results_for_filter(self, selection):
+        self.meal_plan_creator.populate_default_meals
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
         self.displaymeals_frame.destroy()
         self.display_meals_body()
+    
+    
