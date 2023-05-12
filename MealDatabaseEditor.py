@@ -72,11 +72,20 @@ class MealDatabaseEditor:
         return newmeal_object
 
     def restore_all_meals():
+
         MealDatabaseEditor.populate_default_meals('default_meals_backup.json')
         # read in all the meals from default_meals_copy
         with open('default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
-        
+
+        MealDatabaseEditor.updated = True
+    
+    def remove_all_meals():
+        with open('default_meals.json', "w") as f:
+            json.dump([], f)
+   
+        MealDatabaseEditor.all_meals.clear()
+        MealDatabaseEditor.populate_default_meals()
         MealDatabaseEditor.updated = True
 
     def get_all_meals():
