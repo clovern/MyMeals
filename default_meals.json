@@ -1,5 +1,305 @@
 [
       {
+            "meal_name": "blueberry waffles",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "kodiak cakes mix": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "eggs": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "oil": [
+                        "2",
+                        "Tbsp"
+                  ],
+                  "milk": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "blueberries": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "syrup": [
+                        ".25",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on kodiak cakes box. Add blueberries and syrup to taste."
+      },
+      {
+            "meal_name": "whole wheat frozen waffles",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "whole wheat frozen waffles": [
+                        ".25",
+                        "package(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "vegan blueberry waffles",
+            "meat_type": "vegan",
+            "vegan_only": "true",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "vegan waffle mix": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "blueberries": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "syrup": [
+                        ".25",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on waffle mix. Add blueberries and syrup to taste. Enjoy!"
+      },
+      {
+            "meal_name": "romanian style pizza",
+            "meat_type": "vegetarian",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "instant yeast": [
+                        "7",
+                        "gram(s)"
+                  ],
+                  "bread flour": [
+                        "4.8",
+                        "cup(s)"
+                  ],
+                  "salt": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "olive oil": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "pizza toppings of choice": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Heat 1.82 cups water to 95 degrees F and add the yeast. Whisk together and wait for it to bloom. Mix dry ingredients using a whisk. Once the yeast is blooming, combine it with the dry ingredients, and add the oil.\nMix dough until shaggy. Rest dough for 15-20 minutes and then knead using the fold and plop method. Repeat the rest and knead cycle once more.\nOil dough ball and a bowl, cover, and rest dough for 4-6 hours in a warm space. (Alternatively, you may keep this in the fridge for 14-16 hours). Punch down the dough and spread on oiled 11X22in cookie sheet with walls. Proof for 2 hours covered and wrapped.\nPreheat oven to 500 degrees F. Add sauce, cheese, and toppings, going all the way up to the edges of the dough. Cook 20-25 minutes or until the cheese is carmelized a deep brown."
+      },
+      {
+            "meal_name": "chili",
+            "meat_type": "beef",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "tomato paste": [
+                        "6",
+                        "oz(s)"
+                  ],
+                  "can small diced tomatoes": [
+                        "16",
+                        "oz(s)"
+                  ],
+                  "can hot chili beans": [
+                        "16",
+                        "oz(s)"
+                  ],
+                  "can red beans": [
+                        "16",
+                        "oz(s)"
+                  ],
+                  "can corn": [
+                        "16",
+                        "oz(s)"
+                  ],
+                  "ground beef": [
+                        "1",
+                        "lb(s)"
+                  ],
+                  "chili powder": [
+                        "1.5",
+                        "Tbsp(s)"
+                  ],
+                  "cumin": [
+                        "1",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "Combine all ingredients in a slow cooker. Drain the liquid from the red benas, but keep the liquid from all other cans. Cook on low for 4-6 hours, or high for 2-3 hours. Enjoy!"
+      },
+      {
+            "meal_name": "costco rotisserie chicken and brussels sprouts",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "costco rotisserie chicken": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "fresh brussels sprouts": [
+                        ".5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Slice brussels sprouts into halves, cover with olive oil, salt, and pepper, and cook at 450 degrees for about 15 minutes, or until cripsy. Prepare rotisserie chicken to serve while brussels are cooking. Enjoy!"
+      },
+      {
+            "meal_name": "chocolate chip waffles",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "kodiak cakes mix": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "eggs": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "oil": [
+                        "2",
+                        "Tbsp"
+                  ],
+                  "milk": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "chocolate chips": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "syrup": [
+                        ".25",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on kodiak cakes box. Add chocolate chips and syrup to taste."
+      },
+      {
+            "meal_name": "yogurt parfait",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "yogurt": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "granola": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "berries": [
+                        ".25",
+                        "package(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "vegan yogurt parfait",
+            "meat_type": "vegan",
+            "vegan_only": "true",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "vegan yogurt": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "vegan granola": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "berries": [
+                        ".25",
+                        "package(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "cinnamon waffles",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "kodiak cakes mix": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "eggs": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "oil": [
+                        "2",
+                        "tbsp(s)"
+                  ],
+                  "milk": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "cinnamon": [
+                        "1",
+                        "Tbsp"
+                  ],
+                  "syrup": [
+                        ".25",
+                        "cup"
+                  ]
+            },
+            "recipe": "Follow instructions on kodiak cakes box. Add 1 Tbsp cinnamon and 1 tsp vanilla per 1 cup of mix used. Add syrup to taste."
+      },
+      {
+            "meal_name": "pancakes with strawberries",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "kodiak cakes mix": [
+                        "1",
+                        "cup"
+                  ],
+                  "eggs": [
+                        "1",
+                        "unit"
+                  ],
+                  "milk": [
+                        ".75",
+                        "cup"
+                  ],
+                  "strawberries": [
+                        "1",
+                        "package"
+                  ]
+            },
+            "recipe": "Follow instructions on kodiak cakes box for pancakes. Slice up fresh strawberries, or heat up frozen strawberries, then place them on pancakes as topping."
+      },
+      {
             "meal_name": "vegan pancakes with strawberries and nutella",
             "meat_type": "vegan",
             "vegan_only": "true",
@@ -47,6 +347,44 @@
                   ]
             },
             "recipe": "Cook sausages as large patties. Cook eggs over medium, breaking and spreading the yolk during cooking. While egg is cooking, slice and toast onion bagel. Place 1 slice cheddar cheese on onion bagel. Place cooked egg onto cheese, then sausage on top of egg. Enjoy!"
+      },
+      {
+            "meal_name": "breakfast burrito",
+            "meat_type": "pork",
+            "reheats_well": "false",
+            "price_range": "medium",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "tortillas": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "eggs": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "hash browns": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "cheddar cheese": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "green bell peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "white onion": [
+                        ".5",
+                        "unit(s)"
+                  ],
+                  "sausage": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Cook ground breakfast sausage.\n\nCook shredded hash browns in oil.\n\nSlice up bell pepper and onion. Heat a drizzle of oil in a pan on medium high heat. Add sliced pepper and onion and cook until softened.\n\nWith the pepper and onion still in the pan, add 4 eggs and scramble while cooking, incorporating with the vegatables. When the eggs are almost done, add breakfast sausage.\n\nHeat up tortilla in microwave for 15 seconds. Add egg mixture, shredded cheese, and hash browns into tortilla.\n\nWrap up and secure with toothpicks. Enjoy!"
       },
       {
             "meal_name": "biscuits and gravy",
@@ -105,6 +443,23 @@
                   ]
             },
             "recipe": "Slice croissant and heat for 2 minutes on low broil. Spread nutella on croissant. Enjoy!"
+      },
+      {
+            "meal_name": "cereal",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "cereal": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "milk": [
+                        "1.5",
+                        "cup(s)"
+                  ]
+            }
       },
       {
             "meal_name": "bacon, hash browns, fruit, and eggs",
@@ -1496,7 +1851,7 @@
             "recipe": "Prepare rice. Heat a drizzle of oil in a pan on medium high heat. Drain a can of chickpeas, and add to pain with oil, cooking until lightly browned (about 3-5 minutes). Add a can of Lai's Thai coconut curry, found here: https://www.yaisthai.com/products/thai-coconut-curry-yellow to the same pan, and simmar for a few minutes. Serve chickpea curry over rice. Enjoy! "
       },
       {
-            "meal_name": "lemonsy Spaghetti with Brussels Sprouts",
+            "meal_name": "lemony Spaghetti with Brussels Sprouts",
             "meat_type": "vegetarian",
             "reheats_well": "false",
             "price_range": "cheap",
@@ -2712,5 +3067,105 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
+      },
+      {
+            "meal_name": "Test recipe",
+            "meat_type": "Beef",
+            "reheats_well": "false",
+            "price_range": "$$$",
+            "meal_type": "Dinner",
+            "ingredients": {
+                  "beef": [
+                        "2",
+                        "lb(s)"
+                  ],
+                  "special sauce": [
+                        "2",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "",
+            "link": "testlink",
+            "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test meal 2",
+            "meat_type": "",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "",
+            "ingredients": {
+                  "gushers": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "a recipe",
+            "link": "alink",
+            "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test meal 2",
+            "meat_type": "",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "",
+            "ingredients": {
+                  "gushers": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "a recipe",
+            "link": "alink",
+            "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test recipe 3",
+            "meat_type": "",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "",
+            "ingredients": {
+                  "beef ": [
+                        "2",
+                        "lb(s)"
+                  ]
+            },
+            "recipe": "test recipe",
+            "link": "testlink",
+            "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test recipe 4",
+            "meat_type": "",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "",
+            "ingredients": {
+                  "beef": [
+                        "2",
+                        "lb(s)"
+                  ]
+            },
+            "recipe": "test recipe",
+            "link": "testlink",
+            "vegan_only": "false"
+      },
+      {
+            "meal_name": "Test recipe 6",
+            "meat_type": "Pork",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "Lunch",
+            "ingredients": {
+                  "beef": [
+                        "2",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "testrecipe",
+            "link": "testlink",
+            "vegan_only": "false"
       }
 ]
