@@ -49,11 +49,12 @@ class RecipeBook(PlanPage):
         self.create_removeall_button()
     
     def create_restoreall_button(self):
-        self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15, command= self.restore_all)
+        self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15)
+        self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15, command= lambda: self.restore_all())
         self.restoreall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def create_removeall_button(self):
-        self.removeall_button = ttk.Button(self.upperbuttons_frame, text="Remove All", width = 15, command= self.remove_all)
+        self.removeall_button = ttk.Button(self.upperbuttons_frame, text="Remove All", width = 15, command= lambda:self.remove_all())
         self.removeall_button.pack(side = LEFT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def restore_all(self):
@@ -61,7 +62,8 @@ class RecipeBook(PlanPage):
         self.update_meal_display(True)
 
     def remove_all(self):
-        pass
+        MealDatabaseEditor.remove_all_meals()
+        self.update_meal_display(True)
 
     def create_addmeals_button(self):
         mealday = None
@@ -122,10 +124,6 @@ class RecipeBook(PlanPage):
     def remove_meal(self, meal):
         MealDatabaseEditor.remove_meal(meal.name)
         self.update_meal_display(True)
-    
-    def update_meals_from_database(self):
-        self.meal_plan_creator.populate_default_meals()
-        self.all_meals = self.meal_plan_creator.all_meals
 
     def create_meal_label(self, meal):
         label_text = "No meals match the criteria"
@@ -184,9 +182,12 @@ class RecipeBook(PlanPage):
         else: 
             self.update_meal_display()
     
+    def update_meals_from_database(self):
+        self.meal_plan_creator.populate_default_meals()
+        self.all_meals = self.meal_plan_creator.all_meals
+    
     def update_results_for_filter(self, selection):
         self.display_start = 0
-        self.meal_plan_creator.populate_default_meals
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
         self.update_meal_display()
     
@@ -195,6 +196,7 @@ class RecipeBook(PlanPage):
         if database_updated == True:
             self.update_meals_from_database()
             self.update_results_for_filter(self.filter.get_selection())
+            return
         self.display_meals_body()
     
     
