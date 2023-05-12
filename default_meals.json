@@ -794,6 +794,49 @@
             "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n\nAdd pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n\nMake a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n\nBake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
       },
       {
+            "meal_name": "vegan margherita pita pizza",
+            "meat_type": "vegan",
+            "vegan_only": "true",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "pitas": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "tomatoes": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "vegan mozzarella cheese": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "pizza sauce": [
+                        ".25",
+                        "jar(s)"
+                  ],
+                  "basil leaves": [
+                        "20",
+                        "unit(s)"
+                  ],
+                  "minced garlic": [
+                        "2",
+                        "tsp"
+                  ],
+                  "rosemary": [
+                        "1",
+                        "Tbsp"
+                  ],
+                  "balsalmic reduction": [
+                        "1",
+                        "Tbsp"
+                  ]
+            },
+            "recipe": "Preheat oven to 450 degrees F. Spread olive oil on the bottom of each pita and place on a metal pan.\n\nAdd pizza sauce and mozzarella cheese on top of each pita, to taste. Thiny slice tomato and add about 3 slices per pizza. Add fresh basil leaves between tomatoes to taste. \n\nMake a mixture of olive oil, minced minced garlic, and rosemary. Drizzle over pizza.\n\nBake for 10-12 minutes, until browned and crispy on bottom of pita. Optionally top with a drizzle of balsmic reduction and eat. Enjoy!"
+      },
+      {
             "meal_name": "berry smoothie",
             "meat_type": "vegetarian",
             "reheats_well": "false",
@@ -3024,48 +3067,5 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
-      },
-      {
-            "meal_name": "Test meal 1",
-            "meat_type": "Vegetarian",
-            "reheats_well": "false",
-            "price_range": "expensive",
-            "meal_type": "Lunch",
-            "ingredients": {
-                  "beef": [
-                        "1",
-                        "tsp(s)"
-                  ]
-            },
-            "recipe": "something",
-            "link": "link",
-            "vegan_only": "false"
-      },
-      {
-            "meal_name": "test meal 15",
-            "meat_type": "Turkey",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "Dinner",
-            "ingredients": {},
-            "recipe": "recipe",
-            "link": "link",
-            "vegan_only": "false"
-      },
-      {
-            "meal_name": "test",
-            "meat_type": "Vegan",
-            "reheats_well": "true",
-            "price_range": "medium",
-            "meal_type": "Dinner",
-            "ingredients": {
-                  "chickpea": [
-                        "4",
-                        "Tbsp(s)"
-                  ]
-            },
-            "recipe": "",
-            "link": "link",
-            "vegan_only": "false"
       }
 ]

@@ -100,9 +100,10 @@ class RecipeBook(PlanPage):
     def populate_meals(self):
         if len(self.all_meals) == 0:
             self.display_meal(None)
-        end_index = min(len(self.all_meals), self.display_start + 11)
-        for meal in self.all_meals[self.display_start : end_index]:
-            self.display_meal(meal)
+        else:
+            end_index = min(len(self.all_meals), self.display_start + 11)
+            for meal in self.all_meals[self.display_start : end_index]:
+                self.display_meal(meal)
     
     def display_meal(self, meal):
         self.meal_frame = ttk.Frame(self.displaymeals_frame, borderwidth=1, relief="solid")
@@ -131,10 +132,6 @@ class RecipeBook(PlanPage):
     def update_meals_from_database(self):
         self.meal_plan_creator.populate_default_meals()
         self.all_meals = self.meal_plan_creator.all_meals
-        # # FIXME
-        # print("ALL MEALS AFTER ADD")
-        # print(self.all_meals)
-
 
     def create_meal_label(self, meal):
         label_text = "No meals match the criteria"
@@ -196,6 +193,7 @@ class RecipeBook(PlanPage):
             self.display_meals_body()
     
     def update_results_for_filter(self, selection):
+        self.display_start = 0
         self.meal_plan_creator.populate_default_meals
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
         self.displaymeals_frame.destroy()
