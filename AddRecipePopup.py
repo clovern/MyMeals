@@ -190,27 +190,36 @@ class AddRecipePopup:
 
     def save_recipe(self):
         name = self.input_vars["name"].get()
-        if name == "":
-            self.show_error_message("Meal name is required. Please add a name, then save your recipe")
-            return 
         meat_type = self.meattype_dropdown.get()
-        if meat_type == None or meat_type == "":
-            self.show_error_message("Meat type is required. Please add a meat type, then save your recipe")
-            return 
         reheats_well = "true" if "Reheats well" in self.tag_dropdown.get_selected_opts() else "false"
         price_range = self.get_price_range()
         meal_type = self.mealtype_dropdown.get()
-        if meal_type == None or meal_type == "":
-            self.show_error_message("Meal type is required. Please add a meal type, then save your recipe")
-            return 
         recipe = self.recipe_text.get("1.0",'end-1c')
+        if recipe == "":
+            recipe = None
         link = self.input_vars["link"].get()
-        vegan_only = "false"
+        if link == "":
+            link = None
         ingredients = self.ingred_dict
+        vegan_only = "false"
+        
+        meal_vars = {
+            "name": name,
+            "meat_type": meat_type,
+            "meal_type": meal_type,
+            "recipe": recipe,
+            "link": link,
+            "ingredients": ingredients
+        }
+
+        if self.verify_meal(meal_vars) == False:
+            self.addrecipe_popup.lift()
+            return
 
         newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients)
         self.recipe_book.add_meal(newmeal)
         messagebox.showinfo(title="Meal Successfully Added", message= name.title() + " has been successfully added to your recipe list!")
+        self.addrecipe_popup.lift()
         self.addrecipe_popup.destroy()
 
     def show_error_message(self, message):
@@ -225,3 +234,28 @@ class AddRecipePopup:
         elif price_range == "$$$":
             price_range = "expensive"
         return price_range
+    
+    def verify_meal(self, meal_vars):
+        if meal_vars["name"] == "":
+            self.show_error_message("Meal name is required. Please add a name, then save your recipe")
+            return False
+
+        if meal_vars["meat_type"] == None or meal_vars["meat_type"] == "":
+            self.show_error_message("Meat type is required. Please add a meat type, then save your recipe")
+            return False
+        
+        if meal_vars["meal_type"] == None or meal_vars["meal_type"] == "":
+            self.show_error_message("Meal type is required. Please add a meal type, then save your recipe")
+            return False
+
+        if meal_vars["link"] == None and meal_vars["recipe"] == None:
+            norecipe_response = messagebox.askyesno(title="Verify", message="This meal does not have a recipe or a recipe link added. Are you sure you want to save it without any recipe information?")
+
+            if norecipe_response == False:
+                return False
+        if len(meal_vars["ingredients"]) == 0:
+            ingred_response = messagebox.askyesno(title="Verify", message="This meal does not have any added ingredients. Are you sure you want to save it without ingredients?")
+            if ingred_response ==False:
+                return False
+        
+        return True
