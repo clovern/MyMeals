@@ -3,10 +3,12 @@ from Meal import Meal
 
 class MealDatabaseEditor:
     all_meals = []
+    updated = True
     default_data = None
 
     @staticmethod
     def populate_default_meals(): 
+        MealDatabaseEditor.all_meals = []
         default_file = open('default_meals.json')
         MealDatabaseEditor.default_data = json.load(default_file)
 
@@ -38,6 +40,7 @@ class MealDatabaseEditor:
         # update the all_meals array for change
         MealDatabaseEditor.all_meals.clear()
         MealDatabaseEditor.populate_default_meals()
+        MealDatabaseEditor.updated = True
     
     def add_meal(meal):
         newmeal_object = MealDatabaseEditor.json_format_meal(meal)
@@ -48,6 +51,7 @@ class MealDatabaseEditor:
         # update the all_meals array for change
         MealDatabaseEditor.all_meals.clear()
         MealDatabaseEditor.populate_default_meals()
+        MealDatabaseEditor.updated = True
 
     def json_format_meal(meal):
         newmeal_object = {}

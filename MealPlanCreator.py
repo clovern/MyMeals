@@ -24,9 +24,12 @@ class MealPlanCreator:
         self.dinner_meal_plan = []
 
         self.ingredients = {}       #a dictionary of ingredients, to build a grocery list
-
+    
     def populate_default_meals(self): 
-        MealDatabaseEditor.populate_default_meals()
+        if MealDatabaseEditor.updated == True:
+            MealDatabaseEditor.populate_default_meals()
+            self.all_meals = MealDatabaseEditor.get_all_meals()
+            MealDatabaseEditor.updated = False
         self.all_meals = MealDatabaseEditor.get_all_meals()
         self.separate_meals_by_type()
 
