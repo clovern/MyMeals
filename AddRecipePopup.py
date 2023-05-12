@@ -189,15 +189,20 @@ class AddRecipePopup:
         self.addrecipe_popup.destroy()
 
     def save_recipe(self):
-        # create a meal object
-        # def __init__(self, name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients = {})
-        # get the name from 
         name = self.input_vars["name"].get()
+        if name == "":
+            self.show_error_message("Meal name is required. Please add a name, then save your recipe")
+            return 
         meat_type = self.meattype_dropdown.get()
+        if meat_type == None or meat_type == "":
+            self.show_error_message("Meat type is required. Please add a meat type, then save your recipe")
+            return 
         reheats_well = "true" if "Reheats well" in self.tag_dropdown.get_selected_opts() else "false"
-        # reheats well - figure this one out in a minute. 
-        price_range = self.pricerange_dropdown.get()
+        price_range = self.get_price_range()
         meal_type = self.mealtype_dropdown.get()
+        if meal_type == None or meal_type == "":
+            self.show_error_message("Meal type is required. Please add a meal type, then save your recipe")
+            return 
         recipe = self.recipe_text.get("1.0",'end-1c')
         link = self.input_vars["link"].get()
         vegan_only = "false"
@@ -205,4 +210,18 @@ class AddRecipePopup:
 
         newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients)
         MealDatabaseEditor.add_meal(newmeal)
-        
+        messagebox.showinfo(title="Meal Successfully Added", message= name.title() + " has been successfully added to your recipe list!")
+        self.addrecipe_popup.destroy()
+
+    def show_error_message(self, message):
+        messagebox.showinfo(title="Error", message=message)
+    
+    def get_price_range(self):
+        price_range = self.pricerange_dropdown.get()
+        if price_range == "$" or price_range == None:
+            price_range = "cheap"
+        elif price_range == "$$":
+            price_range = "medium"
+        elif price_range == "$$$":
+            price_range = "expensive"
+        return price_range
