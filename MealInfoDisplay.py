@@ -5,9 +5,11 @@ from MealFileSaver import MealFileSaver
 from GroceryListFileSaver import GroceryListFileSaver
 from idlelib.tooltip import Hovertip
 from MealDetailPopup import MealDetailPopup
+from MealSearcherPopup import MealSearcherPopup
 
 class MealInfoDisplay(PlanPage):
-    def __init__(self, outer, MealPlanCreator, previous):
+    def __init__(self, root, outer, MealPlanCreator, previous):
+        self.root = root
         self.outer = outer
         self.meal_creator = MealPlanCreator
         self.previous = previous
@@ -41,10 +43,27 @@ class MealInfoDisplay(PlanPage):
         index = self.set_meal_index(meal)
 
         meal_label = ttk.Label(self.day_frame, text=text_value, padding=(20,2,20,2), wraplength = 125)
-        meal_label.grid(column=4, row=index, sticky='W')
+        meal_label.grid(column=5, row=index, sticky='W')
         self.create_reroll_button(mealday, meal, meal_label)
         self.create_details_button(mealday, meal)
         self.create_remove_button(mealday, meal, meal_label)
+        self.create_search_button(mealday, meal, meal_label)
+    
+    def create_search_button(self, mealday, meal, meal_label):
+        index = self.set_meal_index(meal)
+        self.search_button = ttk.Button(self.day_frame, text=u"\U0001F50D", default = "active", width = 2.3, command=lambda: self.search_meals(mealday, meal, meal_label))
+        self.search_button.grid(row=index, column=3, sticky='E')
+        search_tip = Hovertip(self.search_button, "Search for Meal by Name")
+    
+    def search_meals(self, mealday, meal, meal_label):
+        self.meal_search = MealSearcherPopup(self)
+        self.root.wait_window(self.meal_search.search_popup)
+        mealday.set_choice(meal, self.meal_selection)
+        self.update_meal_display(mealday, meal, meal_label)
+    
+    def set_meal_selection(self, meal_selection):
+        self.meal_selection = meal_selection
+        print(self.meal_selection)
 
     def set_meal_label(self, mealday, meal):
         text_value = "B"
@@ -64,19 +83,19 @@ class MealInfoDisplay(PlanPage):
     
     def create_remove_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.remove_button = ttk.Button(self.day_frame, text="\u2718", width = 3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
-        self.remove_button.grid(row=index, column=3, sticky='E')
+        self.remove_button = ttk.Button(self.day_frame, text="\u2718", width = 2.3, default="active", command=lambda: self.remove_meal(mealday, meal, label))
+        self.remove_button.grid(row=index, column=4, sticky='E')
         remove_tip = Hovertip(self.remove_button, "Remove Meal")
     
     def create_details_button(self, mealday, meal):
         index = self.set_meal_index(meal)
-        self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 3, default="active", command=lambda: self.show_meal_details(mealday, meal))
+        self.details_button = ttk.Button(self.day_frame, text=u"\U0001F441", width = 2.3, default="active", command=lambda: self.show_meal_details(mealday, meal))
         self.details_button.grid(row=index, column=2, sticky='E')
         details_tip = Hovertip(self.details_button, "Details")
 
     def create_reroll_button(self, mealday, meal, label):
         index = self.set_meal_index(meal)
-        self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 3, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
+        self.reroll_button = ttk.Button(self.day_frame, text="\u27f3", width = 2.3, default="active", command=lambda: self.reroll_meal(mealday, meal, label))
         self.reroll_button.grid(row=index, column=1, sticky='E')
         reroll_tip = Hovertip(self.reroll_button, "Re-Roll")
     

@@ -47,6 +47,29 @@
             }
       },
       {
+            "meal_name": "vegan blueberry waffles",
+            "meat_type": "vegan",
+            "vegan_only": "true",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "vegan waffle mix": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "blueberries": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "syrup": [
+                        ".25",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on waffle mix. Add blueberries and syrup to taste. Enjoy!"
+      },
+      {
             "meal_name": "romanian style pizza",
             "meat_type": "vegetarian",
             "vegan_only": "false",
@@ -3044,19 +3067,5 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
-      },
-      {
-            "meal_name": "Krabby Patties",
-            "meat_type": "Beef",
-            "reheats_well": "false",
-            "price_range": "medium",
-            "meal_type": "Dinner",
-            "ingredients": {
-                  "love": [
-                        "4",
-                        "cup(s)"
-                  ]
-            },
-            "vegan_only": "false"
       }
 ]
