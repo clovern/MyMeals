@@ -42,7 +42,7 @@ class Page(ABC):
 
     def create_title(self, title_text):
 
-        self.logo_image = Image.open("./my_meals_logo.png")
+        self.logo_image = Image.open("./images/my_meals_logo.png")
         self.logo_image = (self.logo_image).resize((150,150))
         self.logo_image = ImageTk.PhotoImage(self.logo_image)
         self.logo_image_label = ttk.Label(self.uppercontent, image=self.logo_image)

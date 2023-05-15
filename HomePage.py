@@ -30,7 +30,7 @@ class HomePage:
         self.create_instruction_label()
         self.create_option_buttons()
 
-        self.logo_image = Image.open("./my_meals_logo.png")
+        self.logo_image = Image.open("./images/my_meals_logo.png")
         self.logo_image = (self.logo_image).resize((500,500))
         self.logo_image = ImageTk.PhotoImage(self.logo_image)
         self.logo_image_label = ttk.Label(self.content, image=self.logo_image)

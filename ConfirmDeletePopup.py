@@ -23,7 +23,7 @@ class ConfirmDeletePopup:
 
         left_frame = Frame(self.delete_popup, width = 40, bg="white")
         left_frame.pack(side=LEFT, fill=Y, padx=(15, 15))
-        self.info_icon = Image.open("./delete_icon.png")
+        self.info_icon = Image.open("./images/delete_icon.png")
         self.info_icon = (self.info_icon).resize((50,50))
         self.info_icon = ImageTk.PhotoImage(self.info_icon)
         self.info_icon_label = Label(left_frame, image=self.info_icon, bg="white")

@@ -168,7 +168,7 @@ class RecipeBook(PlanPage):
         self.scrollbuttons_frame.pack(anchor = E, padx = (0, 20), pady= (5, 0))
     
     def create_scroll_down_button(self):
-        self.downarrow_image = Image.open("./down_arrow.jpg")
+        self.downarrow_image = Image.open("./images/down_arrow.jpg")
         self.downarrow_image = (self.downarrow_image).resize((30,30))
         self.downarrow_image = ImageTk.PhotoImage(self.downarrow_image)
         self.show_next_button = ttk.Button(self.scrollbuttons_frame, image=self.downarrow_image, width = 15, default="active", command=lambda: self.show_next_meals())
@@ -184,7 +184,7 @@ class RecipeBook(PlanPage):
             self.update_meal_display()
 
     def create_scroll_up_button(self):
-        self.uparrow_image = Image.open("./up_arrow.jpg")
+        self.uparrow_image = Image.open("./images/up_arrow.jpg")
         self.uparrow_image = (self.uparrow_image).resize((30,30))
         self.uparrow_image = ImageTk.PhotoImage(self.uparrow_image)
         self.show_previous_button = ttk.Button(self.scrollbuttons_frame, image=self.uparrow_image, width = 15, default="active", command=lambda: self.show_previous_meals())
