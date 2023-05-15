@@ -90,6 +90,7 @@ class AdvancedPlanPage(PlanPage):
         self.create_special_options_dropdown(day, meal, frame)
         self.dropdown_dict[day][meal.lower()] = self.special_dropdown
         (self.dropdown_dict[day][meal.lower()].display).grid(column=2, row=index)
+        self.chosen_meals_dict[day][meal.lower()] = None
 
     def create_special_options_dropdown(self, day, meal, frame):
             super().create_special_options_dropdown(frame, "advanced")
