@@ -12,6 +12,7 @@ from MealDetailPopup import MealDetailPopup
 from MealDatabaseEditor import MealDatabaseEditor
 from ConfirmDeletePopup import ConfirmDeletePopup
 from AddRecipePopup import AddRecipePopup
+from MealSearcher import MealSearcher
 
 class RecipeBook(PlanPage):
 
@@ -45,9 +46,25 @@ class RecipeBook(PlanPage):
     def create_upper_buttons(self):
         self.create_addmeals_button()
         self.create_filter_dropdown()
+        self.create_search_button()
         self.create_restoreall_button()
         self.create_removeall_button()
     
+    def create_search_button(self):
+        self.search_text = StringVar()
+        self.search_box = ttk.Entry(self.upperbuttons_frame, width = 20, textvariable=self.search_text)
+        self.search_box.pack(side = RIGHT, anchor = E, pady = (0, 10))
+        self.search_button = ttk.Button(self.upperbuttons_frame, text=u"\U0001F50D", width = 3, command=lambda: self.search())
+        self.search_button.pack(side = RIGHT, anchor = E, padx = (20, 0), pady = (0, 10))
+        search_tip = Hovertip(self.search_button, "Search")
+    
+    def search(self):
+        search_val = self.search_text.get()
+        searcher = MealSearcher()
+        matches = searcher.search_for_meals(search_val)
+        self.all_meals = matches
+        self.update_meal_display()
+
     def create_restoreall_button(self):
         self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15)
         self.restoreall_button = ttk.Button(self.upperbuttons_frame, text="Restore All", width = 15, command= lambda: self.restore_all())
