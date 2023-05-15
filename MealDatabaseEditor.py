@@ -9,7 +9,7 @@ class MealDatabaseEditor:
     default_data = None
 
     @staticmethod
-    def populate_default_meals(file = 'default_meals.json'): 
+    def populate_default_meals(file = './Database/default_meals.json'): 
         MealDatabaseEditor.all_meals = []
         default_file = open(file)
         MealDatabaseEditor.default_data = json.load(default_file)
@@ -35,7 +35,7 @@ class MealDatabaseEditor:
                 MealDatabaseEditor.default_data.pop(i)
                 break
         # make this back into a json
-        with open('default_meals.json', "w") as f:
+        with open('./Database/default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
         
 
@@ -47,7 +47,7 @@ class MealDatabaseEditor:
     def add_meal(meal):
         newmeal_object = MealDatabaseEditor.json_format_meal(meal)
         MealDatabaseEditor.default_data.append(newmeal_object)
-        with open('default_meals.json', "w") as f:
+        with open('./Database/default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
         
         # update the all_meals array for change
@@ -73,15 +73,15 @@ class MealDatabaseEditor:
 
     def restore_all_meals():
 
-        MealDatabaseEditor.populate_default_meals('default_meals_backup.json')
+        MealDatabaseEditor.populate_default_meals('./Database/default_meals_backup.json')
         # read in all the meals from default_meals_copy
-        with open('default_meals.json', "w") as f:
+        with open('./Database/default_meals.json', "w") as f:
             json.dump(MealDatabaseEditor.default_data, f, indent = 6)
 
         MealDatabaseEditor.updated = True
     
     def remove_all_meals():
-        with open('default_meals.json', "w") as f:
+        with open('./Database/default_meals.json', "w") as f:
             json.dump([], f)
    
         MealDatabaseEditor.all_meals.clear()
