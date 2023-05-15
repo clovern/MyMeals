@@ -1,4 +1,4 @@
-from HomePage import start_GUI
+from GUI.HomePage import start_GUI
 
 def main():
     start_GUI()
