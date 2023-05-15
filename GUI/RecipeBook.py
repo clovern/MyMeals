@@ -3,15 +3,15 @@ from tkinter import messagebox
 from tkinter import ttk
 from GUI.PlanPage import PlanPage
 from idlelib.tooltip import Hovertip
-from GUI.SpecialOptionsDropdown import SpecialOptionsDropdown
+from GUI.CustomDropdowns.SpecialOptionsDropdown import SpecialOptionsDropdown
 from Implementation.Meal import Meal
 from Implementation.MealPlanCreator import MealPlanCreator
 from PIL import Image
 from PIL import ImageTk
-from GUI.MealDetailPopup import MealDetailPopup
+from GUI.CustomPopups.MealDetailPopup import MealDetailPopup
 from Implementation.MealDatabaseEditor import MealDatabaseEditor
-from GUI.ConfirmDeletePopup import ConfirmDeletePopup
-from GUI.AddRecipePopup import AddRecipePopup
+from GUI.CustomPopups.ConfirmDeletePopup import ConfirmDeletePopup
+from GUI.CustomPopups.AddRecipePopup import AddRecipePopup
 from Implementation.MealSearcher import MealSearcher
 
 class RecipeBook(PlanPage):

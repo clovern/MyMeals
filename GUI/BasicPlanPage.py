@@ -4,7 +4,7 @@ from PIL import Image
 from PIL import ImageTk
 from GUI.PlanPage import PlanPage
 from GUI.MealInfoDisplay import MealInfoDisplay
-from GUI.DropdownTranslator import DropdownTranslator
+from GUI.CustomDropdowns.DropdownTranslator import DropdownTranslator
 
 class BasicPlanPage(PlanPage):
     def __init__(self, root, outer, previous):

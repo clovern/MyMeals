@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from PIL import Image
-from GUI.SpecialOptionsDropdown import SpecialOptionsDropdown
+from GUI.CustomDropdowns.SpecialOptionsDropdown import SpecialOptionsDropdown
 from PIL import ImageTk
 from abc import ABC
 

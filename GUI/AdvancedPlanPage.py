@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import ttk
 from GUI.PlanPage import PlanPage
 from GUI.MealInfoDisplay import MealInfoDisplay
-from GUI.DropdownTranslator import DropdownTranslator
+from GUI.CustomDropdowns.DropdownTranslator import DropdownTranslator
 from idlelib.tooltip import Hovertip
-from GUI.MealSearcherPopup import MealSearcherPopup
+from GUI.CustomPopups.MealSearcherPopup import MealSearcherPopup
 
 class AdvancedPlanPage(PlanPage):
     def __init__(self, root, outer, previous):

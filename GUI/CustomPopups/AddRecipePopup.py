@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from PIL import Image
 from PIL import ImageTk
-from GUI.MultiCheckDropdown import MultiCheckDropdown
+from GUI.CustomDropdowns.MultiCheckDropdown import MultiCheckDropdown
 from Implementation.Meal import Meal
 from Implementation.MealDatabaseEditor import MealDatabaseEditor
 

@@ -2,10 +2,10 @@ from tkinter import *
 from tkinter import ttk
 from GUI.PlanPage import PlanPage
 from Implementation.MealFileSaver import MealFileSaver
-from GUI.GroceryListFileSaver import GroceryListFileSaver
+from GUI.FileSavers.GroceryListFileSaver import GroceryListFileSaver
 from idlelib.tooltip import Hovertip
-from GUI.MealDetailPopup import MealDetailPopup
-from GUI.MealSearcherPopup import MealSearcherPopup
+from GUI.CustomPopups.MealDetailPopup import MealDetailPopup
+from GUI.CustomPopups.MealSearcherPopup import MealSearcherPopup
 
 class MealInfoDisplay(PlanPage):
     def __init__(self, root, outer, MealPlanCreator, previous):
@@ -56,14 +56,15 @@ class MealInfoDisplay(PlanPage):
         search_tip = Hovertip(self.search_button, "Search for Meal by Name")
     
     def search_meals(self, mealday, meal, meal_label):
+        self.meal_selection = None
         self.meal_search = MealSearcherPopup(self)
         self.root.wait_window(self.meal_search.search_popup)
-        mealday.set_choice(meal, self.meal_selection)
-        self.update_meal_display(mealday, meal, meal_label)
+        if self.meal_selection != None:
+            mealday.set_choice(meal, self.meal_selection)
+            self.update_meal_display(mealday, meal, meal_label)
     
     def set_meal_selection(self, meal_selection):
         self.meal_selection = meal_selection
-        print(self.meal_selection)
 
     def set_meal_label(self, mealday, meal):
         text_value = "B"
