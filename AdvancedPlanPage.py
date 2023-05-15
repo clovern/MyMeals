@@ -52,7 +52,10 @@ class AdvancedPlanPage(PlanPage):
         serach_tip = Hovertip(self.search_button, "Search for Meal by Name")
     
     def search_meals(self, advanced_plan_page, meal, day, frame):
-        self.meal_search = MealSearcherPopup(advanced_plan_page, meal, day, frame)
+        advanced_opts = {"meal" : meal,
+                         "day" : day,
+                         "frame": frame}
+        self.meal_search = MealSearcherPopup(advanced_plan_page, advanced_opts)
 
     def update_meal_for_search(self, meal_selection):
 
@@ -126,6 +129,6 @@ class AdvancedPlanPage(PlanPage):
         self.meal_creator.set_chosen_meals(self.chosen_meals_dict)
 
         self.clear_page()
-        display_meal_page = MealInfoDisplay(self.outer, self.meal_creator, self.content)
+        display_meal_page = MealInfoDisplay(self.root, self.outer, self.meal_creator, self.content)
 
 

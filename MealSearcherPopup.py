@@ -10,11 +10,15 @@ from MealSearcher import MealSearcher
 
 class MealSearcherPopup:
 
-    def __init__(self, advanced_plan_page, meal, day, frame):
-        self.advanced_plan_page = advanced_plan_page
-        self.meal = meal
-        self.day = day
-        self.frame = frame
+    def __init__(self, base_page, advanced_opts = None):
+        self.base_page = base_page
+        if advanced_opts != None:
+            self.meal = advanced_opts["meal"]
+            self.day = advanced_opts["day"]
+            self.frame = advanced_opts["frame"]
+            self.advanced_page = True
+        else:
+            self.advanced_page = False
         self.build_link_popup()
 
     def build_link_popup(self):
@@ -68,8 +72,11 @@ class MealSearcherPopup:
         Hovertip(choose_button, "Select this Meal")
     
     def select_meal(self, meal_selection):
+        if self.advanced_page == True:
+            self.base_page.update_meal_for_search(meal_selection)
+        else:
+            self.base_page.set_meal_selection(meal_selection)
         self.search_popup.destroy()
-        self.advanced_plan_page.update_meal_for_search(meal_selection)
     
     def get_search_results(self):
         search_val = self.search_text.get()
