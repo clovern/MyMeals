@@ -4,15 +4,15 @@ from tkinter import ttk
 from GUI.PlanPage import PlanPage
 from idlelib.tooltip import Hovertip
 from GUI.SpecialOptionsDropdown import SpecialOptionsDropdown
-from Meal import Meal
-from MealPlanCreator import MealPlanCreator
+from Implementation.Meal import Meal
+from Implementation.MealPlanCreator import MealPlanCreator
 from PIL import Image
 from PIL import ImageTk
 from GUI.MealDetailPopup import MealDetailPopup
-from MealDatabaseEditor import MealDatabaseEditor
+from Implementation.MealDatabaseEditor import MealDatabaseEditor
 from GUI.ConfirmDeletePopup import ConfirmDeletePopup
 from GUI.AddRecipePopup import AddRecipePopup
-from MealSearcher import MealSearcher
+from Implementation.MealSearcher import MealSearcher
 
 class RecipeBook(PlanPage):
 

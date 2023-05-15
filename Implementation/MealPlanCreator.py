@@ -1,8 +1,8 @@
 import random
 import json
-from Meal import Meal
-from MealDay import MealDay
-from MealDatabaseEditor import MealDatabaseEditor
+from Implementation.Meal import Meal
+from Implementation.MealDay import MealDay
+from Implementation.MealDatabaseEditor import MealDatabaseEditor
 
 
 class MealPlanCreator: 

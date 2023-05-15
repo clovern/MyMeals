@@ -1,4 +1,4 @@
-from MealPlanCreator import MealPlanCreator
+from Implementation.MealPlanCreator import MealPlanCreator
 
 class MealSearcher:
 

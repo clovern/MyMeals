@@ -1,5 +1,5 @@
 import json
-from Meal import Meal
+from Implementation.Meal import Meal
 
 class MealDatabaseEditor:
     all_meals = []

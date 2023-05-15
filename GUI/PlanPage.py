@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from MealPlanCreator import MealPlanCreator
+from Implementation.MealPlanCreator import MealPlanCreator
 from GUI.Page import Page
 
 class PlanPage(Page):

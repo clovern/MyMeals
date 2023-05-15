@@ -6,7 +6,7 @@ import webbrowser
 from PIL import Image
 from PIL import ImageTk
 from idlelib.tooltip import Hovertip
-from MealSearcher import MealSearcher
+from Implementation.MealSearcher import MealSearcher
 
 class MealSearcherPopup:
 
