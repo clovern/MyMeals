@@ -1,11 +1,11 @@
 from tkinter import *
 from tkinter import ttk
-from PlanPage import PlanPage
+from GUI.PlanPage import PlanPage
 from MealFileSaver import MealFileSaver
-from GroceryListFileSaver import GroceryListFileSaver
+from GUI.GroceryListFileSaver import GroceryListFileSaver
 from idlelib.tooltip import Hovertip
-from MealDetailPopup import MealDetailPopup
-from MealSearcherPopup import MealSearcherPopup
+from GUI.MealDetailPopup import MealDetailPopup
+from GUI.MealSearcherPopup import MealSearcherPopup
 
 class MealInfoDisplay(PlanPage):
     def __init__(self, root, outer, MealPlanCreator, previous):

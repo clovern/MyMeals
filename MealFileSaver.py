@@ -2,7 +2,7 @@ from tkinter import filedialog
 import os
 from datetime import date, timedelta
 from Meal import Meal
-from FileSaver import FileSaver
+from GUI.FileSaver import FileSaver
 
 class MealFileSaver(FileSaver):
 

@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
-from AdvancedPlanPage import AdvancedPlanPage
-from BasicPlanPage import BasicPlanPage
-from RecipeBook import RecipeBook
+from GUI.AdvancedPlanPage import AdvancedPlanPage
+from GUI.BasicPlanPage import BasicPlanPage
+from GUI.RecipeBook import RecipeBook
 
 class HomePage:
     def __init__(self, root):

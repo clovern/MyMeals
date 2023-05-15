@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
-from PlanPage import PlanPage
-from MealInfoDisplay import MealInfoDisplay
-from DropdownTranslator import DropdownTranslator
+from GUI.PlanPage import PlanPage
+from GUI.MealInfoDisplay import MealInfoDisplay
+from GUI.DropdownTranslator import DropdownTranslator
 
 class BasicPlanPage(PlanPage):
     def __init__(self, root, outer, previous):

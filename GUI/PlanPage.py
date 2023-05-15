@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from MealPlanCreator import MealPlanCreator
-from Page import Page
+from GUI.Page import Page
 
 class PlanPage(Page):
     def __init__(self):
