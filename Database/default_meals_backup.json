@@ -25,7 +25,30 @@
     "meal_type": "breakfast",
     "ingredients":
         {
-            "whole wheat frozen waffles": [".25", "package(s)"]
+            "butter": ["5", "Tbsp(s)"],
+            "sugar": [".33", "cup(s)"],
+            "vanilla": ["1", "tsp(s)"],
+            "eggs": ["2", "unit(s)"],
+            "greek yogurt": [".5", "cup(s)"],
+            "milk": [".25", "cup(s)"],
+            "cinnamon": ["1", "tsp(s)"],
+            "olive oil": ["1", "Tbsp(s)"],
+            "flour": ["1", "cup(s)"],
+            "baking powder": ["1", "tsp(s)"],
+            "salt": [".25", "tsp(s)"]
+        },
+    "recipe": "Mix all ingredients and cook in a waffle iron. Add slightly more milk if it appears too thick."
+},
+
+{
+    "meal_name": "German Cinnamon Waffles",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "": [".25", "package(s)"]
         }
 },
 
@@ -88,6 +111,86 @@
 },
 
 {
+    "meal_name": "Crock Pot Cordon Bleu with side of potatoes",
+    "meat_type": "Chicken",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["2", "unit(s)"],
+            "ham": [".5", "package(s)"],
+            "swiss cheese": [".25", "package(s)"],
+            "flour": [".25", "cup(s)"],
+            "white mushrooms": [".25", "package(s)"],
+            "chicken broth cubes": [".5", "cube(s)"],
+            "white wine or vinegar": [".25", "cup(s)"],
+            "parmesan": [".125", "cup(s)"],
+            "cornstarch": ["1", "tsp(s)"],
+            "Kitchen Bouquet Browning Sauce": [".5", "Tbsp(s)"],
+            "sugar": [".5", "tsp(s)"],
+            "potatoes": [".5", "package(s)"],
+            "rosemary": [".25", "tsp(s)"]
+        },
+    "recipe": "1. Place chicken pieces between 2 pieces of wax paper and pound until slightly flattened. Place 1-2 slices ham and 1 slice swiss on each breast and roll up. Secure with toothpicks and roll in flour.\n\n 2. Put muchrooms in the slow cooker and place chicken rolls on top of mushrooms. In a separate bowl, mix 1/4 cup chicken stock, cup white wine or vinegat/water substite, and rosemary together and pour over chicken. Sprinkle with parmesan.\n\n 3.Set cooker on low heat and cook for 4 hours, or until chicken is cooked through.\n\n4.Just before serving, mix cornstarch, water, and Kitchen Bouquet together. Remove chiken, add cornstarch mixture and stir until thickened.\n\n 5.Add salt, pepper, and sugar as desired. Pour sauce over chicken and serve.\n\nMashed potatoes recommended as side. \n\nNote: Recipe serves two."
+    
+},
+
+{
+    "meal_name": "Chicken Pot Pie",
+    "meat_type": "Chicken",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients":
+        {
+            "butter": [".33", "cup(s)"],
+            "white onion": [".33", "cup(s)"],
+            "flour": [".33", "cup(s)"],
+            "salt": [".5", "tsp(s)"],
+            "pepper": [".25", "tsp(s)"],
+            "refrigerated pie crusts two pack": ["1", "package(s)"],
+            "chicken broth cubes": ["2", "cube(s)"],
+            "milk": [".5", "cup(s)"],
+            "shredded chicken or leftover rotisserie chicken": ["2", "cup(s)"],
+            "frozen mixed vegetables (corn, green beans, carrots ...)": ["2", "cup(s)"]
+        },
+    "recipe": "1. Heat oven to 425. Spread one pie crust on bottom of a casserole dish or pie pan.\n\n 2. In a medium saucepan, melt butter over medium heat. Add onion. cook 2 minutes. Stir in flour, salt, pepper, 1.75 cups chicken broth, and milk. Cook, stirring regularly, until bubbly and thickened.\n\n 3. Stir in chicken and mixed vegetables. Remove from heat. Spoon chicken mixture into crust-lined pan. Top with second crust and seal. Cut slits in several places in the top crust.\n\n 4.Bake 30-40 minutes or until crust is golden brown. During last 15 - 20 minutes, cover crust edge with strips of foil to prevent excessive browning. Let stand 5 minutes before serving. Enjoy!"
+    
+},
+
+{
+    "meal_name": "Creamy Tomato Spinach Tortellini",
+    "meat_type": "vegetarian",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "tortellini": ["1", "package(s)"],
+            "butter": ["2", "Tbsp(s)"],
+            "minced garlic": ["1", "tsp(s)"],
+            "flour": ["3", "Tbsp(s)"],
+            "onion powder": ["1", "tsp(s)"],
+            "milk": ["1.25", "cup(s)"],
+            "heavy cream": [".5", "cup(s)"],
+            "spinach": ["1.5", "cup(s)"],
+            "basil": [".5", "Tbsp(s)"],
+            "parmesan": ["6", "Tbsp(s)"],
+            "red pepper flakes": [".5", "tsp(s)"],
+            "salt": [".25", "tsp(s)"],
+            "pepper": [".25", "tsp(s)"],
+            "oregano": ["1", "tsp(s)"]
+        },
+    "recipe": "1. Cook tortellini according to directions listed on package.\n\n 2. Meanwhile, in a large saurcepan, melt butter over medium heat. Add garlic and saute 30 seconds. Add flour and onion powder and cook 1 minute, stirring constantly. While whisking, slowly pour in milk and cream, then whisk until smooth. Cook, stirring, until mixture begins to simmer.\n\n3. Then add tomatoes, spinach, basil, and organo. Season with salt and pepper to taste. Cook several minutes longer until sauce has thickened and spinach has wilted. Add parmesan cheese and stir until melted.\n\n4. Add drained tortellini and serve. Enjoy!"
+    
+},
+
+{
     "meal_name": "costco rotisserie chicken and brussels sprouts",
     "meat_type": "chicken",
     "vegan_only": "false",
@@ -101,6 +204,26 @@
         },
     "recipe": "Slice brussels sprouts into halves, cover with olive oil, salt, and pepper, and cook at 450 degrees for about 15 minutes, or until cripsy. Prepare rotisserie chicken to serve while brussels are cooking. Enjoy!"
     
+},
+
+{
+    "meal_name": "Prosciutto and Mozzarella Sammies",
+    "meat_type": "pork",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "lunch",
+    "quick": "true",
+    "ingredients":
+        {
+            "roma tomatoes": ["1", "unit(s)"],
+            "fresh mozzarella": ["4", "oz(s)"],
+            "balsalmic glaze": ["1", "package(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "prosciutto": ["3", "oz(s)"],
+            "ciabbatta rolls": ["2", "unit(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/prosciutto-mozzarella-sandwiches-643ee1259d83e260f8084987"  
 },
 
 {
@@ -977,6 +1100,30 @@
 },
 
 {
+    "meal_name": "tofu spring rolls",
+    "meat_type": "vegan",
+    "reheats_well": "false",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "rice paper": ["1", "package(s)"],
+            "tofu": [".5", "lb(s)"],
+            "green onions": [".5", "package(s)"],
+            "carrots": ["2", "unit(s)"],
+            "habanero peppers": ["2", "unit(s)"],
+            "soy sauce": ["1", "Tbsp(s)"],
+            "vegan oyster sauce": ["1", "Tbsp(s)"],
+            "sugar": ["1", "Tbsp(s)"],
+            "Mirin": ["1", "Tbsp(s)"],
+            "minced garlic": ["1", "Tbsp(s)"],
+            "sesame oil": ["1", "tsp(s)"],
+            "pepper": ["1", "tsp(s)"]
+        },
+    "recipe": "marinade tofu in the marinade at: https://aaronandclaire.com/4-ways-to-enjoy-rice-paper-recipe/, or your favorite alternative sauce. Then cover in corn starch and salt, and fry in oil. Serve in spring rolls, with fresh veggies."
+},
+
+{
     "meal_name": "pecan crusted chicken",
     "meat_type": "chicken",
     "reheats_well": "false",
@@ -1190,6 +1337,86 @@
 },
 
 {
+    "meal_name": "Butter Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients": {
+          "Patak's Butter Chicken Sauce": [
+                "1",
+                "package(s)"
+          ],
+          "rice": [
+                "1",
+                "cup(s)"
+          ],
+          "chicken breasts": [
+            "2",
+            "unit(s)"
+      ]
+    },
+    "recipe": "Prepare rice. Cube chicken breasts. Pan fry until edges are browned. Add Patak's sauce to pan with chicken. Place lid on and simmer on medium-low heat for 6-7 minutes. Serve completed sauce over rice."
+},
+
+{
+    "meal_name": "Butter Chicken with Naan Bread",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients": {
+          "Patak's Butter Chicken Sauce": [
+                "1",
+                "package(s)"
+          ],
+          "rice": [
+                "1",
+                "cup(s)"
+          ],
+          "chicken breasts": [
+            "2",
+            "unit(s)"
+      ],
+      "King Arthur 1-1 gluten free flour blend": [
+        "1.25",
+        "cup(s)"
+  ],
+  "xanthan gum": [
+    ".75",
+    "tsp(s)"
+],
+"cream of tartar": [
+    ".25",
+    "tsp(s)"
+],
+"sugar": [
+    "2",
+    "tsp(s)"
+],
+"instant yeast": [
+    "2",
+    "tsp(s)"
+],
+"plain yogurt": [
+    ".33",
+    "cup(s)"
+],
+"butter": [
+    "3",
+    "Tbsp(s)"
+],
+"eggs": [
+    "2",
+    "unit(s)"
+]
+    },
+    "recipe": "Prepare rice. Cube chicken breasts. Pan fry until edges are browned. Add Patak's sauce to pan with chicken. Place lid on and simmer on medium-low heat for 6-7 minutes. Serve completed sauce over rice.\n\n For naan bread follow the link here: https://glutenfreeonashoestring.com/naan-bread/",
+    "link": "https://glutenfreeonashoestring.com/naan-bread/"
+},
+
+{
     "meal_name": "Spicy Peruvian Chicken",
     "meat_type": "chicken",
     "reheats_well": "true",
@@ -1234,6 +1461,51 @@
             "green beans": [".5", "package(s)"]
         },
     "link" : "https://www.hellofresh.com/recipes/firecracker-meatballs-5ea70fe14c4efb3fb12140f1"
+},
+
+{
+    "meal_name": "Chicken and Bow Ties",
+    "meat_type": "Chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["2", "unit(s)"],
+            "olive oil": ["2", "Tbsp(s)"],
+            "minced garlic": ["1", "tsp(s)"],
+            "basil": ["1", "tsp(s)"],
+            "red pepper flakes": ["1", "tsp(s)"],
+            "bow tie pasta": ["1", "package(s)"],
+            "sundried tomatoes": [".25", "package(s)"],
+            "chicken broth cubes": ["2", "unit(s)"],
+            "white wine or vinegar": [".25", "cup(s)"],
+            "heavy cream": [".5", "cup(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "recipe" : "1. In a large skillet, heat oil over medium heat. Add garlic and cook about 3 minutes. Add chicken, basil, salt, and crushed red pepper. Cook, stirring often, until chicken is cooked (10-15 mins).\n\n 2.Cook pasta according to package directions.\n\n 3. While pasta is cooking, mince the tomatoes. Add tomatoes, broth, and wine to chicken. Reduce heat to medium low and simmer about 5 minutes, or until starts to thicken. Stir in whipping cream and cheese and simmer for 2 minutes more.\n\n 4. Place drained pasta in pan with chicken. Mix and serve, with additional parmesan cheese as desired. Enjoy!"
+},
+
+{
+    "meal_name": "Golden Chicken Schnitzel",
+    "meat_type": "Chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "potatoes": [".5", "package(s)"],
+            "garlic powder": ["1", "Tbsp(s)"],
+            "onion powder": ["1", "Tbsp(s)"],
+            "paprika": ["1", "Tbsp(s)"],
+            "lemons": ["1", "unit(s)"],
+            "breadcrumbs": [".5", "cup(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "sour cream": ["4", "Tbsp(s)"],
+            "honey mustard dipping sauce": ["5", "Tbsp(s)"]
+        },
+    "link" : "https://www.hellofresh.com/recipes/golden-chicken-schnitzel-5fa57a339e08b575096f8e26"
 },
 
 {
@@ -1328,6 +1600,7 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
+    "quick": "true",
     "ingredients":
         {
             "beef toast": ["1", "lb(s)"],
@@ -1377,9 +1650,53 @@
             "chicken breasts": ["2", "unit(s)"],
             "spaghetti sauce": ["1.5", "package(s)"],
             "mozzarella cheese": [".25", "lb(s)"],
+            "pasta": [".5", "package(s)"],
             "parmesan cheese": [".25", "cup(s)"]
         },
     "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n\n2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n\n3. Prepare pasta of your choice.\n\n4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
+    
+},
+
+{
+    "meal_name": "Lazy Chicken Parmigiana",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "eggs": ["2", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "Chicken Tenders or Chicken Patties": [".25", "package(s)"],
+            "spaghetti sauce": ["1.5", "package(s)"],
+            "mozzarella cheese": [".25", "lb(s)"],
+            "pasta": [".5", "package(s)"],
+            "parmesan cheese": [".25", "cup(s)"]
+        },
+    "recipe": "1. Preheat oven to 350 degrees F. 2. Prepare pasta of your choice.\n\n3. Pour half of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken tenders or chicken patties over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and bake for 20 minutes. Serve over pasta and enjoy!"
+    
+},
+
+{
+    "meal_name": "Che Buono Chicken Spaghetti",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "grape tomatoes": ["4", "oz(s)"],
+            "green onions": [".5", "package(s)"],
+            "minced garlic": ["1", "tsp(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "italian seasoning": [".5", "package(s)"],
+            "Mrs. Dash Garlic and Herb Seasoning": [".5", "tsp(s)"],
+            "cream cheese": ["4", "oz(s)"],
+            "butter": [".25", "cup(s)"],
+            "milk": [".75", "cup(s)"],
+            "parmesan": ["1/4 + 1/8", "cup(s)"]
+        },
+    "recipe": "Start spaghetti. Season chicken with italian seasoning, salt, and pepper and cook in a pan until cooked through.\n\n Cut grape tomatoes into halves and cook in olive oil with scallion whites and garlic for ~3-4 minutes.\n\n Meanwhile, combine cream cheese, parmesan, butter, and milk (start with .75 cup and progress to 1 cup of milk as needed) in a pan, whisking until combined and then simmering until thickened. Add Mrs. Dash Garlic and Herb Seasoning, to taste. Add pepper and salt to taste. \n\nCombine alfredo sauce with tomatoes and chciken ,and serve over pasta. Top with green onion greens. Enjoy!"
     
 },
 
@@ -1514,6 +1831,99 @@
 },
 
 {
+    "meal_name": "Creamy Cilantro Steak Bowls",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "poblano peppers": ["1", "unit(s)"],
+            "red onions": ["1", "unit(s)"],
+            "cilantro": [".5", "package(s)"],
+            "minced garlic": [".5", "tsp(s)"],
+            "lime": ["1", "unit(s)"],
+            "jalapenos": ["1", "unit(s)"],
+            "rice": ["1", "cup(s)"],
+            "cumin": ["1", "tsp(s)"],
+            "steak": ["2", "unit(s)"],
+            "sour cream": ["1.5", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/creamy-cilantro-steak-bowls-608024f5c51b92575d1134cd"
+
+},
+
+{
+    "meal_name": "Basic Stroganoff",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "egg noodles": [".5", "package(s)"],
+            "cream of mushroom soup": ["1", "can(s)"],
+            "ground beef": ["1", "lb(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "milk": [".25", "cup(s)"],
+            "worchestershire sauce": [".5", "tsp(s)"],
+            "white onion": [".5", "unit(s)"],
+            "eggs": ["1", "unit(s)"]
+        },
+    "recipe": "1. Prepare meatballs according to the recipe here: https://www.bettycrocker.com/recipes/classic-meatballs/2959910f-1b27-438a-9085-d40b1950db20. Cook egg noodles. Heat up cream of mushroom soup and serve with meatballs over noodles. Enjoy!",
+    "link": "https://www.bettycrocker.com/recipes/classic-meatballs/2959910f-1b27-438a-9085-d40b1950db20"
+
+},
+
+{
+    "meal_name": "Creamy Cilantro Steak Bowls",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "poblano peppers": ["1", "unit(s)"],
+            "red onions": ["1", "unit(s)"],
+            "cilantro": [".5", "package(s)"],
+            "minced garlic": [".5", "tsp(s)"],
+            "lime": ["1", "unit(s)"],
+            "jalapenos": ["1", "unit(s)"],
+            "rice": ["1", "cup(s)"],
+            "cumin": ["1", "tsp(s)"],
+            "steak": ["2", "unit(s)"],
+            "sour cream": ["1.5", "Tbsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/creamy-cilantro-steak-bowls-608024f5c51b92575d1134cd"
+
+},
+
+{
+    "meal_name": "Al Sugo Bianco",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "bacon": ["1", "lb(s)"],
+            "minced garlic": ["1.5", "tsp(s)"],
+            "red onion": [".5", "unit(s)"],
+            "green onions": ["1", "package(s)"],
+            "chicken breasts": ["2", "unit(s)"],
+            "olive oil": ["2", "Tbsp(s)"],
+            "milk": ["2", "cup(s)"],
+            "heavy cream": ["1", "cup(s)"],
+            "asiago cheese": ["1", "cup(s)"],
+            "red pepper flakes": ["1", "tsp(s)"],
+            "parmesan": [".25", "cup(s)"],
+            "bowtie pasta": ["1", "package(s)"],
+            "sour cream": ["", "Tbsp(s)"]
+        },
+    "recipe": "1. Cook pasta. Cook bacon and put to side.\n\n Cut up red onion and combine 1/4 of the red onion, half the minced garlic, red pepper flakes, and 2 Tbsp olive oil in a pan. Season chicken breasts with salt and pepper, and cook on medium heat. Remove from heat and put to side when complete.\n\n 3.After the chicken is removed, add green onion whites and remaining 1/4 of red onion. Cook on medium heat for 1-2 minutes. Reduce heat. Then add heavy cream and milk, starting with just 75% of the milk and increasing to 100% as needed. Add asiago cheese and simmer until somewhat thickened (2-3 minutes).\n\n 4.Put chicken back in and simmer for another 1-2 minutes. Add a pinch of salt (1/4 tsp for 2 people) as needed. Take off heat, top with green onion greens and bacon, and serve with optional parmesan"
+},
+
+{
     "meal_name": "Street Cart Style Chickpea Bowls",
     "meat_type": "vegan",
     "reheats_well": "false",
@@ -1562,6 +1972,31 @@
             "hot sauce": ["1", "tsp(s)"]
         },
     "link": "https://www.hellofresh.com/recipes/middle-eastern-chickpea-bowls-5eb082c2ff8d2876ce4bf9a2"
+
+}, 
+
+{
+    "meal_name": "Sheet Pan Sausage and Veggies",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients":
+        {
+            "smoked sausauge or kielbasa": ["1", "unit(s)"],
+            "orange bell peppers": ["1", "unit(s)"],
+            "grape tomatoes": [".5", "package(s)"],
+            "zucchini": ["1", "unit(s)"],
+            "olive oil": ["3", "Tbsp(s)"],
+            "onion powder": ["1", "Tbsp(s)"],
+            "paprika": ["1", "Tbsp(s)"],
+            "parsley": ["1", "Tbsp(s)"],
+            "oregano": ["1", "Tbsp(s)"],
+            "rice": ["1", "cup(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "link": "https://www.averiecooks.com/sheet-pan-sausage-vegetables/"
 
 }, 
 
