@@ -41,18 +41,6 @@
 },
 
 {
-    "meal_name": "German Cinnamon Waffles",
-    "meat_type": "vegetarian",
-    "reheats_well": "true",
-    "price_range": "cheap",
-    "meal_type": "breakfast",
-    "ingredients":
-        {
-            "": [".25", "package(s)"]
-        }
-},
-
-{
     "meal_name": "vegan blueberry waffles",
     "meat_type": "vegan",
     "vegan_only": "true",
@@ -191,6 +179,49 @@
 },
 
 {
+    "meal_name": "Costco Premade Tacos",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "quick": "true",
+    "servings": "6",
+    "ingredients":
+        {
+            "costco premade tacos": ["1", "package(s)"]
+        }
+}, 
+
+{
+    "meal_name": "Costco Stuffed Peppers",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "quick": "true",
+    "servings": "4",
+    "ingredients":
+        {
+            "costco stuffed peppers": ["1", "package(s)"]
+        }
+}, 
+
+{
+    "meal_name": "Costco Tikka Masala",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "quick": "true",
+    "servings": "4",
+    "ingredients":
+        {
+            "costco tikka masala": ["1", "package(s)"],
+            "rice": ["1", "package(s)"]
+        }
+}, 
+
+{
     "meal_name": "costco rotisserie chicken and brussels sprouts",
     "meat_type": "chicken",
     "vegan_only": "false",
@@ -212,7 +243,7 @@
     "vegan_only": "false",
     "reheats_well": "true",
     "price_range": "expensive",
-    "meal_type": "dinner",
+    "meal_type": "lunch",
     "quick": "true",
     "ingredients":
         {
@@ -975,11 +1006,26 @@
 },
 
 {
+    "meal_name": "brie raspberry grilled cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sourdough bread": [".25", "package(s)"],
+            "raspberry jelly": [".25", "package(s)"],
+            "brie":  [".5", "package(s)"]
+        },
+    "recipe": "Place slices of brie and raspberry jelly on bread. Butter both sides and cook in pan on medium heat until cheese is melted and both sides are golden brown."
+},
+
+{
     "meal_name": "air fried cauliflower stir fry",
     "meat_type": "vegetarian",
     "reheats_well": "true",
     "price_range": "medium",
-    "meal_type": "lunch",
+    "meal_type": "dinner",
     "ingredients":
         {
             "rice": ["1", "cup(s)"],
@@ -2024,6 +2070,106 @@
     "link": "https://www.hellofresh.com/recipes/shawarma-spiced-halloumi-6239d858457d6e66121a17e0"
 
 }, 
+
+{
+    "meal_name": "Crispy Kickin Cayenne Chicken Cutlets w/ Broccoli",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["10", "oz(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "scallions": [".5", "package(s)"],
+            "Frank's seasoning blend": ["1.5", "Tbsp(s)"],
+            "panko bread crumbs": [".25", "cup(s)"],
+            "monterey jack cheese": [".25", "cup(s)"],
+            "potatoes": ["12", "oz(s)"],
+            "honey": ["2", "tsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/crispy-kickin-cayenne-chicken-cutlets-647f3e3302d358ae80bae3c4"
+}, 
+
+{
+    "meal_name": "Sweet Chili Pork & Cabbage Stir Fry",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "rice": ["1", "cup(s)"],
+            "green onions": [".5", "package(s)"],
+            "sweet thai chili sauce": ["1.5", "Tbsp(s)"],
+            "sweet soy glaze": ["3", "Tbsp(s)"],
+            "rice wine vinegar": ["2.5", "tsp(s)"],
+            "shredded cabbage and carrot mix": [".25", "package(s)"],
+            "ground pork": ["10", "oz(s)"],
+            "garlic powder": ["1", "tsp(s)"],
+            "crispy fried onions": [".5", "package(s)"],
+            "ponzu sauce": [".5", "tsp(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sweet-chili-pork-cabbage-stir-fry-6488828e8b1fa4d79c4450d6"
+}, 
+
+{
+    "meal_name": "Loaded Baked Potatoes",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients":
+        {
+            "russet potatoes": ["4", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "plain greek yogurt": ["8", "Tbsp(s)"],
+            "bacon": [".33", "package(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "butter": ["4", "Tbsp(s)"]
+        },
+    "recipe": "Wash potatoes, poke holes in each with a fork, and bake for 20 minutes at 450. Then cover in olive oil and some salt, and put in oven at 450 for 20-30 more minutes, depending on potato size. Serve with desired toppings "
+}, 
+
+{
+    "meal_name": "Loaded Baked Potatoes",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "quick": "true",
+    "ingredients":
+        {
+            "russet potatoes": ["4", "unit(s)"],
+            "green onions": [".5", "package(s)"],
+            "plain greek yogurt": ["8", "Tbsp(s)"],
+            "bacon": [".33", "package(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "butter": ["4", "Tbsp(s)"]
+        },
+    "recipe": "Wash potatoes, poke holes in each with a fork, and bake for 20 minutes at 450. Then cover in olive oil and some salt, and put in oven at 450 for 20-30 more minutes, depending on potato size. Serve with desired toppings "
+}, 
+
+{
+    "meal_name": "Costco Tamales & Corn",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients":
+        {
+            "costco tamales": [".125", "package(s)"],
+            "green onions": [".25", "package(s)"],
+            "red enchilada sauce": ["1", "can(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "corn (on the cob preferred)": ["2", "unit(s)"]
+        },
+    "recipe": "Boil corn for 6-7 minutes. Steam tamales for 9 minutes. Melt on cheese and top with optional red enchilada sauce and green onion greens. Enjoy!"
+}, 
+
+
 
 {
     "meal_name": "Harissa Chicken Bulgur Bowls",
