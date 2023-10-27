@@ -837,6 +837,7 @@
             "salami": [".25", "lb(s)"],
             "banana peppers":  [".1", "jar(s)"],
             "iceburg lettuce": [".25", "unit(s)"],
+            "sub buns": ["1", "unit(s)"],
             "italian dressing": [".1", "package(s)"],
             "cucumbers": [".5", "unit(s)"],
             "provolone cheese": [".25", "package"]
