@@ -155,7 +155,7 @@
             "refrigerated pie crusts two pack": ["1", "package(s)"],
             "chicken broth cubes": ["2", "cube(s)"],
             "milk": [".5", "cup(s)"],
-            "shredded chicken or leftover rotisserie chicken": ["2", "cup(s)"],
+            "shredded chicken or leftover rotisserie chicken": ["2.25", "cup(s)"],
             "frozen mixed vegetables (corn, green beans, carrots ...)": ["2", "cup(s)"]
         },
     "recipe": "1. Heat oven to 425. Spread one pie crust on bottom of a casserole dish or pie pan.\n\n 2. In a medium saucepan, melt butter over medium heat. Add onion. cook 2 minutes. Stir in flour, salt, pepper, 1.75 cups chicken broth, and milk. Cook, stirring regularly, until bubbly and thickened.\n\n 3. Stir in chicken and mixed vegetables. Remove from heat. Spoon chicken mixture into crust-lined pan. Top with second crust and seal. Cut slits in several places in the top crust.\n\n 4.Bake 30-40 minutes or until crust is golden brown. During last 15 - 20 minutes, cover crust edge with strips of foil to prevent excessive browning. Let stand 5 minutes before serving. Enjoy!"
@@ -368,12 +368,28 @@
     "ingredients":
         {
             "biscuits": ["1", "package(s)"],
-            "flour": ["1", "cup(s)"],
-            "sausage": [".5", "package(s)"],
-            "milk": ["2", "cup(s)"]
+            "flour": [".25", "cup(s)"],
+            "sausage": ["1", "package(s)"],
+            "milk": ["2.5", "cup(s)"],
+            "butter": ["1", "Tbsp(s)"]
         },
-    "link": "https://www.allrecipes.com/recipe/216391/easy-sausage-gravy-and-biscuits/"
+    "link": "cook sausage and biscuits. Mix flour and butter in with sausage on medium heat. Slowly add milk about 1 cup at a time and let thicken, stirring occasionally. Add salt and pepper to taste (about 1/4 tsp salt, 1/8 tsp pepper?)."
 }, 
+
+{
+    "meal_name": "crepes",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "flour": ["1", "cup(s)"],
+            "eggs": ["2", "unit(s)"],
+            "milk": ["1.5", "cup(s)"]
+        },
+    "link": "Mix ingredients in blender. Let sit for 30 minutes + in the fridge. Put a thin layer in a pan on medium heat, and flip after about a minute. Top with butter and cinnamon sugar, or other toppings to taste. "
+},
 
 {
     "meal_name": "fruit and cream oatmeal",
