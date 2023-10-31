@@ -1968,6 +1968,26 @@
 },
 
 {
+    "meal_name": "Gnocchi with Burst Tomatoes and Mozzarella",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "olive oil": ["2", "Tbsp(s)"],
+            "gnocchi (12-18oz each)": ["2", "packages"],
+            "unsalted butter": [".25", "cup(s)"],
+            "minced garlic": ["2", "tsp(s)"],
+            "red pepper flakes": [".25", "tsp(s)"],
+            "grape tomatoes": ["2", "pint(s)"],
+            "basil leaves": [".5", "cup(s)"],
+            "fresh mozzarella": ["8", "oz(s)"]
+        },
+    "recipe": "1. Heat the broiler with a rack about 6 inches from the heat source. \n\n2. In a large *12 inch) skillet on the stovertop heat enough olive oil to lightly coat the bottom of the pan (about 1 Tablespoon) over medium high. Add half the gnocchi to the pan, breaking up any that are stuck together. Cover with a lid or baking sheet and cook, undisturbed, until golden brown on one side, 2 to 4 minutes. Transfer to a medium bowl. Repeat with the remaining gnocchi and olive oil. \n\n3. Add the butter to the skillet and cook over medium-high, stirrin goften, util golden-brown and tasty, 1-2 minutes. Add the gralic, red pepper flakes, 1.5tsp salt, and a few grinds of pepper, reducing the heat slightly if nececssary to avoid scorching. Add the tomatoes and 3 Tbsp water and cook, shaking hte pan occcasionally, until the tomatoes have softened and the liquid has slightly thickened, 4-6 minutes. Smash the tomatoes as they burst to help them along. \n\n4. Add the seared gnocchi and .25 cup basil (if using). Stir to coat, then shake into an even layer. Top with mozzarella, cut or torn into .5 inch pieces, and drizzle lightly with olive oil. Broil until the cheese is melted and browned in spots, 2-4 minutes. Top with more basil, red pepper flakes, and black pepper if desired."
+},
+
+{
     "meal_name": "Shawarma Spiced Chickpea Bowls",
     "meat_type": "vegan",
     "reheats_well": "true",
