@@ -2038,6 +2038,43 @@
 }, 
 
 {
+    "meal_name": "Loaded Baked potatoes",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": ["1", "package(s)"],
+            "sour cream": [".5", "package(s)"],
+            "bacon": [".5", "package(s)"],
+            "russet potatoes": ["6", "unit(s)"],
+            "green onions": [".5", "package(s)"]
+        },
+    "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
+
+}, 
+
+{
+    "meal_name": "Loaded Baked potatoes",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": ["1", "package(s)"],
+            "sour cream": [".5", "package(s)"],
+            "russet potatoes": ["6", "unit(s)"],
+            "green onions": [".5", "package(s)"]
+        },
+    "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
+
+}, 
+
+
+
+{
     "meal_name": "Shawarma Spiced Grilling Cheese",
     "meat_type": "vegetarian",
     "reheats_well": "true",
