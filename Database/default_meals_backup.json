@@ -360,6 +360,92 @@
 },
 
 {
+    "meal_name": "Ham and Egg Hash",
+    "meat_type": "pork",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".5", "package(s)"],
+            "frozen cubed potatoes": [".5", "package(s)"],
+            "eggs": ["4", "unit(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "white onion": [".5", "unit(s)"],
+            "ham cubes": [".5", "lb(s)"],
+            "green onions": [".5", "package(s)"]
+        },
+    "recipe": "Heat olive oil in a skillet on medium high heat. Add sliced bell peppers, onion, and ham (if not vegetarian version) and saute until lightly charred. Put off to side in a bowl. Cook hash brown potatoes in oil. When the potatoes are almost done, cook 4 eggs (2 each skillet) in a separate pan, over easy, and mix onions and peppers back in. Season generously with salt and pepper, finish cooking potato mixture, then transfer to a plate. Immediately top with mexican cheese, and place eggs on top of cheese. Top with sliced green onions."
+
+
+},
+
+
+{
+    "meal_name": "Ham and Egg Hash",
+    "meat_type": "pork",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".5", "package(s)"],
+            "frozen cubed potatoes": [".5", "package(s)"],
+            "eggs": ["4", "unit(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "white onion": [".5", "unit(s)"],
+            "ham cubes": [".5", "lb(s)"],
+            "green onions": [".5", "package(s)"]
+        },
+    "recipe": "Heat olive oil in a skillet on medium high heat. Add sliced bell peppers, onion, and ham (if not vegetarian version) and saute until lightly charred. Put off to side in a bowl. Cook hash brown potatoes in oil. When the potatoes are almost done, cook 4 eggs (2 each skillet) in a separate pan, over easy, and mix onions and peppers back in. Season generously with salt and pepper, finish cooking potato mixture, then transfer to a plate. Immediately top with mexican cheese, and place eggs on top of cheese. Top with sliced green onions."
+
+
+},
+
+
+{
+    "meal_name": "Ham and Egg Hash",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".5", "package(s)"],
+            "frozen cubed potatoes": [".5", "package(s)"],
+            "eggs": ["4", "unit(s)"],
+            "red bell peppers": ["1", "unit(s)"],
+            "white onion": [".5", "unit(s)"],
+            "green onions": [".5", "package(s)"]
+        },
+    "recipe": "Heat olive oil in a skillet on medium high heat. Add sliced bell peppers, onion, and ham (if not vegetarian version) and saute until lightly charred. Put off to side in a bowl. Cook hash brown potatoes in oil. When the potatoes are almost done, cook 4 eggs (2 each skillet) in a separate pan, over easy, and mix onions and peppers back in. Season generously with salt and pepper, finish cooking potato mixture, then transfer to a plate. Immediately top with mexican cheese, and place eggs on top of cheese. Top with sliced green onions."
+
+
+},
+
+{
+    "meal_name": "Laker Bowls",
+    "meat_type": "chicken",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken gravy": ["1", "can(s)"],
+            "canned corn": ["1", "can(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "instant mashed potatoes": ["1", "package(s)"],
+            "milk": ["1", "cup(s)"],
+            "butter": ["4", "Tbsp(s)"],
+            "chicken tenders": ["4", "unit(s)"]
+        },
+    "recipe": "Prepare instant mashed potatoes. Top with gravy, corn, and chicken gravy, and 2 chicken tenders each. Enjoy!"
+   
+},
+
+
+{
     "meal_name": "biscuits and gravy",
     "meat_type": "pork",
     "reheats_well": "true",
