@@ -1202,6 +1202,51 @@
     "link": "https://aaronandclaire.com/4-ways-to-enjoy-rice-paper-recipe/"
 },
 
+    {
+    "meal_name": "sun-dried tomato and basil spaghetti",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sundried tomatoes": ["1.5", "oz(s)"],
+            "garlic": ["1", "clove(s)"],
+            "basil": [".5", "oz(s)"],
+            "grape tomatoes": ["4", "oz(s)"],
+            "spaghetti": ["6", "oz(s)"],
+            "almonds": [".5", "oz(s)"],
+            "veggie stock concentrate": ["1", "unit(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sun-dried-tomato-basil-spaghetti-5f44056b12fdc62b843db2d5",
+    "notes": "saute the cherry tomatoes early, add pasta sauce, and leave out the almonds"
+},
+
+{
+    "meal_name": "sun-dried tomato and basil spaghetti w/ Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sundried tomatoes": ["1.5", "oz(s)"],
+            "garlic": ["1", "clove(s)"],
+            "basil": [".5", "oz(s)"],
+            "grape tomatoes": ["4", "oz(s)"],
+            "spaghetti": ["6", "oz(s)"],
+            "almonds": [".5", "oz(s)"],
+            "veggie stock concentrate": ["1", "unit(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "chicken breast(s)": ["1", "unit(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sun-dried-tomato-basil-spaghetti-5f44056b12fdc62b843db2d5",
+    "notes": "saute the cherry tomatoes early, add pasta sauce, and leave out the almonds"
+},
+    
 {
     "meal_name": "tofu spring rolls",
     "meat_type": "vegan",
