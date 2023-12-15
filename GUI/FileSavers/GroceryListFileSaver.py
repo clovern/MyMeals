@@ -41,7 +41,7 @@ class GroceryListFileSaver(FileSaver):
         for ingredient in meal.ingredients.keys():
 
             if ingredient in self.ingredients_dict:
-                ingred_array = meal.ingredients[ingredient]
+                ingred_array = list(meal.ingredients[ingredient])
                 # checks if the unit of measurement already exists for the measurement. If so, adds the amount together. 
                 try:
                     match_index = self.ingredients_dict[ingredient].index(ingred_array[1])
@@ -52,7 +52,7 @@ class GroceryListFileSaver(FileSaver):
                     self.ingredients_dict[ingredient].append(ingred_array[0])
                     self.ingredients_dict[ingredient].append(ingred_array[1])
             else:
-                self.ingredients_dict[ingredient] = meal.ingredients[ingredient]
+                self.ingredients_dict[ingredient] = list(meal.ingredients[ingredient])
         
     def write_dict_to_string(self):
 
