@@ -19,7 +19,7 @@ class MealInfoDisplay(PlanPage):
     def createMealDisplay(self):
         self.create_lower_left_frame()
         self.create_lower_right_frame()
-        self.lowercontent["height"] = 600
+        self.lowercontent["height"] = (.85 * .66 * self.root.winfo_screenheight())
         self.create_title("You're all set!")
         self.create_back_button()
         self.create_all_days()
@@ -27,7 +27,7 @@ class MealInfoDisplay(PlanPage):
     
     def create_day_panel(self, day, index):
         super().create_day_panel(day, index)
-        self.day_frame['width'] = 400
+        self.day_frame['width'] = (.5 * .5 * self.root.winfo_screenwidth())
         self.create_meal_display_panel("Breakfast", day)
         self.create_meal_display_panel("Lunch", day)
         self.create_meal_display_panel("Dinner", day)

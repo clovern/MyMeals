@@ -67,7 +67,7 @@ class BasicPlanPage(PlanPage):
         self.lowercontent.grid_columnconfigure(0, weight=1)
     
     def special_options_prompt(self):
-        self.question_frame= ttk.Frame(self.lowercontent, width=600)
+        self.question_frame= ttk.Frame(self.lowercontent, width=(.5 * .6 * self.content.winfo_screenwidth()))
         self.question_frame['padding'] = (15, 15, 15, 15)
 
         self.meal_question_label = ttk.Label(self.question_frame, text="Special options?", font=("Arial", 15))

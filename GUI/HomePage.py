@@ -9,12 +9,13 @@ from GUI.RecipeBook import RecipeBook
 class HomePage:
     def __init__(self, root):
         root.title("MyMeals")
+        self.root = root
         self.create_outer_frame()
         self.create_inner_frame()
         self.populate_widgets()
 
     def create_outer_frame(self):
-        self.outer = ttk.Frame(root, height=800, width=800)
+        self.outer = ttk.Frame(root, height=(.85 * self.root.winfo_screenheight()), width=(.5 * self.root.winfo_screenwidth()))
         self.outer.grid_propagate(0)
         self.outer.grid(column=0, row=0)
 

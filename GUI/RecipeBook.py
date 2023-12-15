@@ -26,7 +26,7 @@ class RecipeBook(PlanPage):
         self.create_meal_display()
     
     def create_meal_display(self):
-        self.lowercontent["height"] = 600
+        self.lowercontent["height"] = (.85 * (.66) * self.outer.winfo_screenheight())
         self.create_title("Meal List")
         self.create_back_button()
         self.display_upper_buttons()
@@ -38,7 +38,7 @@ class RecipeBook(PlanPage):
         self.all_meals = self.meal_plan_creator.all_meals
     
     def display_upper_buttons(self):
-        self.upperbuttons_frame = ttk.Frame(self.lowercontent, height = 75, width=800)
+        self.upperbuttons_frame = ttk.Frame(self.lowercontent, height = 75, width=(.5 * self.outer.winfo_screenwidth()))
         self.upperbuttons_frame.pack_propagate(0)
         self.upperbuttons_frame.grid(column = 0, row =0)
         self.create_upper_buttons()
@@ -108,7 +108,7 @@ class RecipeBook(PlanPage):
         self.filter.display.pack(side = RIGHT, anchor = E, padx = (20, 20), pady = (0, 10))
 
     def display_meals_body(self):
-        self.displaymeals_frame = ttk.Frame(self.lowercontent, height = 600, width=800)
+        self.displaymeals_frame = ttk.Frame(self.lowercontent, height = (.85 *.66 * self.content.winfo_screenheight()), width=(.5 * self.content.winfo_screenwidth()))
         self.displaymeals_frame.grid(column = 0, row =1)
         self.populate_meals()
     
@@ -156,7 +156,7 @@ class RecipeBook(PlanPage):
         Hovertip(self.details_button, "Details")
 
     def display_lower_buttons(self):
-        self.lowerbuttons_frame = ttk.Frame(self.lowercontent, width = 800, height = 50)
+        self.lowerbuttons_frame = ttk.Frame(self.lowercontent, width = (.5 * self.content.winfo_screenwidth()), height = 50)
         self.lowerbuttons_frame.pack_propagate(0)
         self.lowerbuttons_frame.grid(column = 0, row = 2, pady = (20, 0))
         self.create_lower_buttons()
