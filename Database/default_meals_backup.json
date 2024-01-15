@@ -1506,6 +1506,79 @@
 },
 
 {
+    "meal_name": "smoked cheddar sausages and veggie",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Johnsonville smoked cheddar sausages": ["1", "package(s)"],
+            "hot dog buns": [".25", "package(s)"],
+            "dinner veggie of choice": [".5", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "California Kitchen BBQ Chicken Pizza",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "California Kitchen BBQ Chicken Pizza": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Red Baron Three Cheese Pizza",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Red Baron Three Cheese Pizza": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Chicken Bryan with green beans",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breast(s)": ["2", "unit(s)"],
+            "goat cheese": ["2", "oz(s)"],
+            "sundried tomatoes": [".25", "package(s)"],
+            "basil": [".5", "Tbsp(s)"],
+            "butter": ["7", "Tbsp(s)"],
+            "yellow onion": [".3", "cup(s)"],
+            "minced garlic": ["2", "tsp(s)"],
+            "flour": [".5", "Tbsp(s)"],
+            "olive oil": [".25", "cup(s)"],
+            "red wine vinegar (or red wine)": ["1/8", "cup(s)"],
+            "lemon juice": ["2.5", "Tbsp(s)"],
+            "dijon mustard": [".5", "Tbsp(s)"],
+            "sugar": [".75", "Tbsp(s)"],
+            "parsley": ["1", "Tbsp(s)"],
+            "salt": [".25", "cup(s)"],
+            "pepper": ["1", "Tbsp(s)"],
+            "garlic powder": [".75", "tsp(s)"],
+            "onion powder": [".75", "tsp(s)"],
+            "oregano": [".75", "tsp(s)"],
+            "red pepper flakes": ["1/8", "tsp(s)"],
+            "green beans": [".5", "package(s)"],
+            "dry white wine": ["1/6", "cup(s)"]
+        },
+
+        "recipe": "1. Combine .25 cup kosher salt, 1 Tbsp black pepper, .75 tsp garlic powder, .75 tsp onion powder, .75 tsp oregano, and 1/8 tsp red pepper flakes to make grill seasoning. \n\n\n2.Prepare the lemon butter sauce: \n(For 4 servings, cut in half for 1). Add 1 Tbsp butter, 2 Tbsp finely chopped yellow onion, and 1 tsp minced garlic to a skillet. Saute for about 3 minutes, then add 1/3 cup white wine and 3 Tbsp lemon joice. Boil until the liquid is reduced to about 1/4 cup - 3-5 minutes. \n\n\n3. Preheat oven to 425 and throw in green beans with salt, pepper, oil. \n\n\n4.  Prepare the grill baste: (for 4 servings amount). Combine 2 Tbsp butter and 1/2 cup finely chopped yellow onion, and saute about 2-3 minutes. Add 1 tsp garlic, and saute for 2-3 minutes. Add 1 Tbsp flour and brown for 2 minutes. Whisk in 1/4 cup red wine vinegar (or red wine), 2 Tbsp lemon juice, and 1 Tbsp Dijon mustard, 1.5 Tbsp sugar, and .5 Tbsp parsley. Cook for 5 minutes on medium low, whisking intermittently. \n\n\n.5. Butterfly chicken breasts. Season with grill seasoning, brush with grill baste, and put on grill or pan. Cook for about 5 minutes on each side, adding grill baste once in middle. In last minute, top each chicken with goat cheese, and top with lemon butter sauce. "
+},
+
+{
     "meal_name": "spaghetti",
     "meat_type": "beef",
     "reheats_well": "true",
@@ -2519,6 +2592,24 @@
             "green onions": [".5", "package(s)"]
         },
     "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
+
+}, 
+
+{
+    "meal_name": "tacos and broccoli",
+    "meat_type": "turkey",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "lettuce": [".25", "unit(s)"],
+            "tortillas or hard taco shells": ["1", "package(s)"],
+            "McCormick Taco Seasoning": ["2", "Tbsp(s)"],
+            "ground turkey (or beef)": [".5", "lb(s)"]
+        }
 
 }, 
 
