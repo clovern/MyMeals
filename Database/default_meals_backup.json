@@ -658,6 +658,68 @@
 },
 
 {
+    "meal_name": "Vegan Curried Roasted Chickpea Bowls",
+    "meat_type": "vegan",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chickpeas": ["1", "can(s)"],
+            "carrots": ["12", "oz(s)"], 
+            "red onion": ["1", "unit(s)"], 
+            "ginger": ["1", "unit(s)"], 
+            "curry powder": ["1", "Tbsp(s)"],
+            "garlic powder": ["1", "tsp(s)"],
+            "garam masala": ["1", "tsp(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "red pepper jam": ["2", "Tbsp(s)"],
+            "white wine vinegar": ["5", "tsp(s)"],
+            "vegan mayonnaise": ["4", "Tbsp(s)"],
+            "peas": ["1", "can(s)"],
+            "veggie stock concentrate": ["2", "unit(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/vegan-curried-roasted-chickpea-bowls-64ca5415d1320bb7c7146b22"
+},
+
+{
+    "meal_name": "Puff Pastry Chicken and brussels sprouts",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["2", "unit(s)"],
+            "brussels sprouts": ["1", "package(s)"], 
+            "puff pasty": ["1", "package(s)"], 
+            "bourskin garlic and herb cheese": ["1", "package(s)"], 
+            "butter": ["1", "Tbsp(s)"],
+            "eggs": ["1", "unit(s)"],
+            "parsley": ["1", "Tbsp(s)"]
+        },
+    "recipe": "1. Season chicken with salt and pepper. Melt butter in skillet. Add chicken and cook until browned. /n/n 2.Preheat oven to 400 degrees. Roll out pastry sheet and put 1/4 chicken breast and about 2 tbsp bourskin cheese in the center. Pinch edges shut. /n/n3. Mix 1 egg and 1tsp butter. Place chicken packets seam side up on a baking sheet. Brush with egg wash, top with dried parsley, and bake for about 25 minutes (but check early). Enjoy! "
+},
+
+{
+    "meal_name": "Mongolian beef (or chicken)",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "steak or chicken breasts": ["12", "oz(s)"],
+            "mongolian beef seasoning mix": ["1", "package(s)"], 
+            "rice": ["1", "cup(s)"], 
+            "soy sauce": [".25", "cup(s)"], 
+            "olive oil": ["2", "Tbsp(s)"],
+            "green onions": ["1", "package(s)"]
+        },
+    "recipe": "Follow instructions on Mongolian beef seasoning packet."
+},
+
+{
     "meal_name": "Costco premade turkey wraps",
     "meat_type": "turkey",
     "reheats_well": "true",
@@ -1606,6 +1668,22 @@
             "hot dog buns": [".5", "package(s)"],
             "russet potatoes": ["3", "unit(s)"]
         }
+},
+
+{
+    "meal_name": "cheddar brats and peas and carrots",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Johnsonville cheddar brats": ["1", "package(s)"],
+            "hot dog buns": [".5", "package(s)"],
+            "large carrots": [".5", "package(s)"],
+            "peas": ["1", "package(s)"]
+        },
+    "recipe": "heat up brats according to package instructions. For peas and carrots - bake carrots at 425 for 15 minutes with oil, salt and pepper. Boil peas. Then combine, and add 1 Tbsp butter or margarine and about 2 tsp honey, + salt and pepper. Enjoy!"
 },
 
 {

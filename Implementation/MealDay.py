@@ -1,4 +1,3 @@
-from click import launch
 
 
 class MealDay:

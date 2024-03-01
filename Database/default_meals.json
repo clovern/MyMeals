@@ -1,3 +1,4 @@
+
 [{
     "meal_name": "blueberry waffles",
     "meat_type": "vegetarian",
@@ -25,19 +26,8 @@
     "meal_type": "breakfast",
     "ingredients":
         {
-            "butter": ["5", "Tbsp(s)"],
-            "sugar": [".33", "cup(s)"],
-            "vanilla": ["1", "tsp(s)"],
-            "eggs": ["2", "unit(s)"],
-            "greek yogurt": [".5", "cup(s)"],
-            "milk": [".25", "cup(s)"],
-            "cinnamon": ["1", "tsp(s)"],
-            "olive oil": ["1", "Tbsp(s)"],
-            "flour": ["1", "cup(s)"],
-            "baking powder": ["1", "tsp(s)"],
-            "salt": [".25", "tsp(s)"]
-        },
-    "recipe": "Mix all ingredients and cook in a waffle iron. Add slightly more milk if it appears too thick."
+            "whole wheat frozen waffles": ["1", "package(s)"]
+        }
 },
 
 {
@@ -70,12 +60,29 @@
 },
 
 {
+    "meal_name": "Jambalaya",
+    "meat_type": "pork",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "cheesy jambalaya rice mix": ["1", "package(s)"],
+            "smoked sausauge or kielbasa": ["1", "package(s)"],
+            "red pepper": ["1", "unit(s)"]
+        },
+    "recipe": "Make jambalaya rice. Add in seared red peppers and heated kielbasa, and serve. Enjoy!"
+    
+},
+
+{
     "meal_name": "romanian style pizza",
     "meat_type": "vegetarian",
     "vegan_only": "false",
     "reheats_well": "true",
     "price_range": "cheap",
-    "meal_type": "lunch",
+    "meal_type": "dinner",
     "ingredients":
         {
             "instant yeast": ["7", "gram(s)"],
@@ -95,6 +102,28 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "dinner",
+    "ingredients":
+        {
+            "tomato paste": ["6", "oz(s)"],
+            "can small diced tomatoes": ["16", "oz(s)"],
+            "can hot chili beans": ["16", "oz(s)"],
+            "can red beans": ["16", "oz(s)"],
+            "can corn": ["16", "oz(s)"],
+            "ground beef": ["1", "lb(s)"],
+            "chili powder": ["1.5", "Tbsp(s)"],
+            "cumin": ["1", "tsp(s)"]
+        },
+    "recipe": "Combine all ingredients in a slow cooker. Drain the liquid from the red benas, but keep the liquid from all other cans. Cook on low for 4-6 hours, or high for 2-3 hours. Enjoy!"
+    
+},
+
+{
+    "meal_name": "chili",
+    "meat_type": "beef",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
     "ingredients":
         {
             "tomato paste": ["6", "oz(s)"],
@@ -228,6 +257,26 @@
 },
 
 {
+    "meal_name": "Prosciutto and Mozzarella Sammies",
+    "meat_type": "pork",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "quick": "true",
+    "ingredients":
+        {
+            "roma tomatoes": ["1", "unit(s)"],
+            "fresh mozzarella": ["4", "oz(s)"],
+            "balsalmic glaze": ["1", "package(s)"],
+            "mayonnaise": ["2", "Tbsp(s)"],
+            "prosciutto": ["3", "oz(s)"],
+            "ciabbatta rolls": ["2", "unit(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/prosciutto-mozzarella-sandwiches-643ee1259d83e260f8084987"  
+},
+
+{
     "meal_name": "chocolate chip waffles",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -251,6 +300,20 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "breakfast",
+    "ingredients":
+        {
+            "yogurt": ["1", "cup(s)"],
+            "granola": ["3", "Tbsp(s)"],
+            "berries": [".25", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "yogurt parfait",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
     "ingredients":
         {
             "yogurt": ["1", "cup(s)"],
@@ -346,6 +409,25 @@
     "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "breakfast",
+    "ingredients":
+        {
+            "tortillas": [".25", "package(s)"],
+            "eggs": ["2", "unit(s)"],
+            "hash browns": [".25", "package(s)"],
+            "cheddar cheese": [".25", "package(s)"], 
+            "green bell peppers": ["1", "unit(s)"],
+            "white onion" : [".5", "unit(s)"],
+            "sausage" : ["1", "package(s)"]
+        },
+    "recipe": "Cook ground breakfast sausage.\n\nCook shredded hash browns in oil.\n\nSlice up bell pepper and onion. Heat a drizzle of oil in a pan on medium high heat. Add sliced pepper and onion and cook until softened.\n\nWith the pepper and onion still in the pan, add 4 eggs and scramble while cooking, incorporating with the vegatables. When the eggs are almost done, add breakfast sausage.\n\nHeat up tortilla in microwave for 15 seconds. Add egg mixture, shredded cheese, and hash browns into tortilla.\n\nWrap up and secure with toothpicks. Enjoy!"
+},
+
+{
+    "meal_name": "breakfast burrito",
+    "meat_type": "pork",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
     "ingredients":
         {
             "tortillas": [".25", "package(s)"],
@@ -463,6 +545,23 @@
 }, 
 
 {
+    "meal_name": "biscuits and gravy",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "biscuits": ["1", "package(s)"],
+            "flour": [".25", "cup(s)"],
+            "sausage": ["1", "package(s)"],
+            "milk": ["2.5", "cup(s)"],
+            "butter": ["1", "Tbsp(s)"]
+        },
+    "link": "cook sausage and biscuits. Mix flour and butter in with sausage on medium heat. Slowly add milk about 1 cup at a time and let thicken, stirring occasionally. Add salt and pepper to taste (about 1/4 tsp salt, 1/8 tsp pepper?)."
+}, 
+
+{
     "meal_name": "crepes",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -559,11 +658,107 @@
 },
 
 {
+    "meal_name": "Vegan Curried Roasted Chickpea Bowls",
+    "meat_type": "vegan",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chickpeas": ["1", "can(s)"],
+            "carrots": ["12", "oz(s)"], 
+            "red onion": ["1", "unit(s)"], 
+            "ginger": ["1", "unit(s)"], 
+            "curry powder": ["1", "Tbsp(s)"],
+            "garlic powder": ["1", "tsp(s)"],
+            "garam masala": ["1", "tsp(s)"],
+            "cilantro": [".25", "oz(s)"],
+            "red pepper jam": ["2", "Tbsp(s)"],
+            "white wine vinegar": ["5", "tsp(s)"],
+            "vegan mayonnaise": ["4", "Tbsp(s)"],
+            "peas": ["1", "can(s)"],
+            "veggie stock concentrate": ["2", "unit(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/vegan-curried-roasted-chickpea-bowls-64ca5415d1320bb7c7146b22"
+},
+
+{
+    "meal_name": "Puff Pastry Chicken and brussels sprouts",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["2", "unit(s)"],
+            "brussels sprouts": ["1", "package(s)"], 
+            "puff pasty": ["1", "package(s)"], 
+            "bourskin garlic and herb cheese": ["1", "package(s)"], 
+            "butter": ["1", "Tbsp(s)"],
+            "eggs": ["1", "unit(s)"],
+            "parsley": ["1", "Tbsp(s)"]
+        },
+    "recipe": "1. Season chicken with salt and pepper. Melt butter in skillet. Add chicken and cook until browned. /n/n 2.Preheat oven to 400 degrees. Roll out pastry sheet and put 1/4 chicken breast and about 2 tbsp bourskin cheese in the center. Pinch edges shut. /n/n3. Mix 1 egg and 1tsp butter. Place chicken packets seam side up on a baking sheet. Brush with egg wash, top with dried parsley, and bake for about 25 minutes (but check early). Enjoy! "
+},
+
+{
+    "meal_name": "Mongolian beef (or chicken)",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "steak or chicken breasts": ["12", "oz(s)"],
+            "mongolian beef seasoning mix": ["1", "package(s)"], 
+            "rice": ["1", "cup(s)"], 
+            "soy sauce": [".25", "cup(s)"], 
+            "olive oil": ["2", "Tbsp(s)"],
+            "green onions": ["1", "package(s)"]
+        },
+    "recipe": "Follow instructions on Mongolian beef seasoning packet."
+},
+
+{
+    "meal_name": "Costco premade turkey wraps",
+    "meat_type": "turkey",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Costco premade turkey wraps": [".25", "package(s)"]
+        }
+},
+
+{
     "meal_name": "quesadillas",
     "meat_type": "beef",
     "reheats_well": "false",
     "price_range": "medium",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "avocado": [".5", "unit(s)"],
+            "corn tortillas": ["6", "unit(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "taco seasoning": ["2", "Tbsp(s)"],
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "canned jalapenos": [".125", "package(s)"],
+            "ground beef": ["6", "oz(s)"],
+            "sour cream": ["3", "Tbsp(s)"],
+            "olive oil": [".25", "cup(s)"],
+            "plain greek yogurt": ["4", "Tbsp(s)"]
+        },
+    "recipe": "Serves 2.\n\n1. Cook ground beef in pan, drain fat, and then mix in taco seasoning and water, following instructions on the taco seasoning packet. Transfer cooked taco meat to a bowl \n\n2. Dice avocado, jalapeno, and roma tomatoes. \n\n3. Heat additional olive oil in the same pan where you cooked the beef. Place 6 corn tortillas (this can be done in 2 sets as needed). \n\n4. Spread chipotle mayo, cheese, beef, jalapenos, avocado, and tomatoes on quesadillas. Place another corn tortilla on top. Flip after about 3 minutes, or once down side is crispy. \n\n5. Optionally serve with greek yogurt as a sour cream replacement. Enjoy!"
+},
+
+{
+    "meal_name": "quesadillas",
+    "meat_type": "beef",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
     "ingredients":
         {
             "avocado": [".5", "unit(s)"],
@@ -619,6 +814,44 @@
 },
 
 {
+    "meal_name": "greek salad",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "iceburg lettuce": [".5", "unit(s)"],
+            "cucumber": ["1", "unit(s)"],
+            "grape tomatoes": [".25", "package(s)"],
+            "canned banana peppers": [".125", "package(s)"],
+            "greek dressing": ["4", "Tbsp(s)"],
+            "eggs": ["2", "unit(s)"],
+            "feta cheese": ["3", "oz(s)"]
+        },
+    "recipe": "Serves 2. \n\nMedium boil 2 eggs. Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Slice egg into slices. Top each salad with feta cheese and 1 sliced egg. Enjoy!"
+},
+
+{
+    "meal_name": "Chicken Caesar Salad and Garlic Bread",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "iceburg lettuce or spring mix": [".5", "package(s)"],
+            "cucumber": ["1", "unit(s)"],
+            "caesar salad dressing": [".25", "package(s)"],
+            "chicken breast(s)": ["1", "lb(s)"],
+            "greek seasoning": [".25", "package(s)"],
+            "frozen garlic bread": [".5", "package(s)"],
+            "parmesan": [".125", "cup(s)"]
+        },
+    "recipe": "Serves 2. \n\nMedium boil 2 eggs. Slice lettuce, cucumber, and grape tomatoes. Mix together lettuce, cucumber, tomato, banana peppers, and dressing to taste. Slice egg into slices. Top each salad with feta cheese and 1 sliced egg. Enjoy!"
+},
+
+{
     "meal_name": "vegan greek salad",
     "meat_type": "vegan",
     "vegan_only": "true",
@@ -643,6 +876,26 @@
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "cucumbers": ["1", "unit(s)"],
+            "grape tomatoes": ["1", "package(s)"],
+            "broccoli crowns": ["1", "unit(s)"],
+            "pasta": [".5", "package(s)"],
+            "pepperoni": ["1", "package(s)"],
+            "mozzarella cheese blocks": ["2", "unit(s)"],
+            "italian dressing": [".25", "package(s)"]
+        },
+    "recipe": "1. Cook the pasta. 2. Slice all the vegetables into bite size pieces (halve the grape tomatoes). Cut the pepperonis into strips and the mozzarella into 1cm cubes. 3. Mix vegetables, cheese, pepperoni, and pasta. Add italian dressing when serving. Enjoy!"
+
+},
+
+{
+    "meal_name": "Pasta Salad",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
     "ingredients":
         {
             "cucumbers": ["1", "unit(s)"],
@@ -807,6 +1060,22 @@
 },
 
 {
+    "meal_name": "Smoked Salmon Bagel",
+    "meat_type": "seafood",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Smoked Salmon Slices": [".125", "package(s)"],
+            "cream cheese": [".25", "Tbsp(s)"],
+            "green onions": [".25", "package(s)"],
+            "bagels": [".25", "package(s)"]
+        },
+    "recipe" : "Spread cream cheese on bagel. Place smoked salmon slices and sliced green onions on top. Enjoy!"
+},
+
+{
     "meal_name": "Rxbar, Greek Yogurt, and Fruit",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -839,6 +1108,20 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "premade broccoli cheddar soup": [".25", "package(s)"],
+            "sourdough bread": [".25", "unit(s)"]
+        },
+    "recipe" : "Heat up broccoli cheddar soup in a pan. Bake sourdough bread in oven. Dip bread in soup. Enjoy!"
+},
+
+{
+    "meal_name": "premade broccoli cheddar soup and sourdough bread",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
     "ingredients":
         {
             "premade broccoli cheddar soup": [".25", "package(s)"],
@@ -909,11 +1192,46 @@
 },
 
 {
+    "meal_name": "Bagel with Salami, Ham, and Sliced Cucumber",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "bagels": ["1", "unit(s)"],
+            "salami": [".125", "lb(s)"], 
+            "ham": [".125", "lb(s)"], 
+            "cucumber": ["1", "unit(s)"]
+        }
+},
+
+{
     "meal_name": "Spinach Quiche",
     "meat_type": "vegetarian",
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "minced garlic": ["1", "tsp(s)"],
+            "yellow onions": ["2", "unit(s)"], 
+            "spinach": ["10", "oz(s)"], 
+            "red pepper flakes": [".25", "tsp(s)"], 
+            "olive oil": ["2", "Tbsp(s)"],
+            "heavy cream": [".25", "cup(s)"],
+            "shredded mozzarella cheese": ["1.5", "cup(s)"],
+            "eggs": ["6", "unit(s)"]
+        },
+    "link": "https://www.thelittlepine.com/crustless-spinach-quiche/"
+},
+
+{
+    "meal_name": "Spinach Quiche",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
     "ingredients":
         {
             "minced garlic": ["1", "tsp(s)"],
@@ -993,6 +1311,31 @@
 },
 
 {
+    "meal_name": "chicken tortilla soup",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breasts": ["1", "lb(s)"],
+            "flour": [".16", "cup(s)"],
+            "olive oil":  ["2", "Tbsp(s)"],
+            "red onions": ["1", "unit(s)"],
+            "carrots": ["2", "unit(s)"],
+            "red bell peppers": ["2", "unit(s)"],
+            "jalapenos": ["1", "unit(s)"],
+            "chicken broth cubes": ["5", "unit(s)"],
+            "fresh cilantro": [".25", "package(s)"],
+            "cumin": ["/25", "tsp(s)"],
+            "salt": [".5", "tsp(s)"],
+            "pepper": [".25", "tsp(s)"],
+            "corn": ["1", "can(s)"]
+        },
+    "recipe": "1. Toss the cubed chicken breasts in flour that has been generously seasoned with salt and pepper, until all pieces are lightly coated.\n\n2. With the cooker's lid off, heat oil on HIGH or brown, until sizzling. \n\n3. Place the ocated chicken in the cooker and saute until lightly browned, about 5 minutes.\n\n4. Add the onion, carrots, bell pepper, and jalapeno pepper, and stir well, sauteing 1 additional minute. 5. Add the chicken stock, cilantro, cumin, salt, and pepper to the chicken mixture. Securely lock the pressure cooker's lid and set for 7 minutes on HIGH. \n\n6. Perform a quick release to release the cooker's pressure. Stir in corn kernels and tortilla strips before serving. "
+},
+
+{
     "meal_name": "broccoli cheddar soup",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -1017,11 +1360,51 @@
 },
 
 {
+    "meal_name": "broccoli cheddar soup",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "butter": ["2", "Tbsp(s)"],
+            "yellow onions": ["1", "unit(s)"],
+            "broccoli crowns":  ["1", "unit(s)"],
+            "carrots": ["1", "package(s)"],
+            "chicken broth cubes": ["4", "unit(s)"],
+            "garlic powder": [".25", "tsp(s)"],
+            "onion powder": [".25", "unit(s)"],
+            "heavy cream": ["1", "cup(s)"],
+            "fresh cilantro": [".25", "package(s)"],
+            "cumin": ["/25", "tsp(s)"],
+            "shredded cheddar cheese": ["1.25", "cup(s)"],
+            "pepper": [".25", "tsp(s)"]
+        },
+    "recipe" : "1. With your slow cooker's lid off, heat button on HIGH or brown, until melted and sizzling. \n\n2. Place onion in cooker and saute until translucent, 4-5 minutes. \n\n3. Add broccoli florets, caroots, chicken stock, garlic powder, and onion powder. Securely lock the pressure cooker's lid and set for 4 minutes on HIGH.\n\n4. Perform a quick release to release the cooker's pressure. \n\n5. Stir in heavy cream and Cheddar cheese, and then add salt and pepper to taste before serving."
+},
+
+{
     "meal_name": "grilled cheese with tomato basil soup",
     "meat_type": "vegetarian",
     "reheats_well": "true",
     "price_range": "cheap",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "sourdough bread": [".25", "loave(s)"],
+            "cheese": [".25", "package(s)"],
+            "butter":  ["4", "Tbsp(s)"],
+            "tomato basil soup": ["1", "can(s)"]
+        },
+    "recipe" : "Heat up your favorite brand of canned tomato basil soup. Make a grilled cheese. Enjoy!"
+},
+
+{
+    "meal_name": "grilled cheese with tomato basil soup",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
     "ingredients":
         {
             "sourdough bread": [".25", "loave(s)"],
@@ -1078,11 +1461,47 @@
 },
 
 {
+    "meal_name": "brie raspberry grilled cheese",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sourdough bread": [".25", "package(s)"],
+            "raspberry jelly": [".25", "package(s)"],
+            "brie":  [".5", "package(s)"]
+        },
+    "recipe": "Place slices of brie and raspberry jelly on bread. Butter both sides and cook in pan on medium heat until cheese is melted and both sides are golden brown."
+},
+
+{
     "meal_name": "air fried cauliflower stir fry",
     "meat_type": "vegetarian",
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
+    "ingredients":
+        {
+            "rice": ["1", "cup(s)"],
+            "stir fry sauce": [".25", "bottle(s)"],
+            "cauliflower crowns":  ["1", "unit(s)"],
+            "eggs": ["1", "unit(s)"],
+            "panko bread crumbs": ["1", "cup(s)"],
+            "baking powder" : ["1", "tsp(s)"],
+            "flour" : ["1", "cup"],
+            "milk" : ["1", "cup"],
+            "paprika" : ["1", "tsp"]
+        },
+    "recipe": "Prepare rice. Prepare the batter at https://www.spendwithpennies.com/crispy-fried-dill-pickles/, leaving out the dill. \n\nSlice up cauliflower into bite sized pieces, and cover in batter, then panko bread crumbs. \n\nPlace in air fryer at 400 degrees for 8 minutes, or until outside is golden brown and crispy.\n\nRemove from air fryer and place in a container with a lid. Put your favorite stir fry sauce in the container and shake cauliflower and stir fry sauce together gently, until cauliflower is covered. \n\nHeat up mixed vegetables in the microwave. Serve vegetables and coated cauliflower over rice. Enjoy!"
+},
+
+{
+    "meal_name": "air fried cauliflower stir fry",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
     "ingredients":
         {
             "rice": ["1", "cup(s)"],
@@ -1149,6 +1568,79 @@
 },
 
 {
+    "meal_name": "smoked cheddar sausages and veggie",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Johnsonville smoked cheddar sausages": ["1", "package(s)"],
+            "hot dog buns": [".25", "package(s)"],
+            "dinner veggie of choice": [".5", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "California Kitchen BBQ Chicken Pizza",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "California Kitchen BBQ Chicken Pizza": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Red Baron Three Cheese Pizza",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Red Baron Three Cheese Pizza": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Chicken Bryan with green beans",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breast(s)": ["2", "unit(s)"],
+            "goat cheese": ["2", "oz(s)"],
+            "sundried tomatoes": [".25", "package(s)"],
+            "basil": [".5", "Tbsp(s)"],
+            "butter": ["7", "Tbsp(s)"],
+            "yellow onion": [".3", "cup(s)"],
+            "minced garlic": ["2", "tsp(s)"],
+            "flour": [".5", "Tbsp(s)"],
+            "olive oil": [".25", "cup(s)"],
+            "red wine vinegar (or red wine)": ["1/8", "cup(s)"],
+            "lemon juice": ["2.5", "Tbsp(s)"],
+            "dijon mustard": [".5", "Tbsp(s)"],
+            "sugar": [".75", "Tbsp(s)"],
+            "parsley": ["1", "Tbsp(s)"],
+            "salt": [".25", "cup(s)"],
+            "pepper": ["1", "Tbsp(s)"],
+            "garlic powder": [".75", "tsp(s)"],
+            "onion powder": [".75", "tsp(s)"],
+            "oregano": [".75", "tsp(s)"],
+            "red pepper flakes": ["1/8", "tsp(s)"],
+            "green beans": [".5", "package(s)"],
+            "dry white wine": ["1/6", "cup(s)"]
+        },
+
+        "recipe": "1. Combine .25 cup kosher salt, 1 Tbsp black pepper, .75 tsp garlic powder, .75 tsp onion powder, .75 tsp oregano, and 1/8 tsp red pepper flakes to make grill seasoning. \n\n\n2.Prepare the lemon butter sauce: \n(For 4 servings, cut in half for 1). Add 1 Tbsp butter, 2 Tbsp finely chopped yellow onion, and 1 tsp minced garlic to a skillet. Saute for about 3 minutes, then add 1/3 cup white wine and 3 Tbsp lemon joice. Boil until the liquid is reduced to about 1/4 cup - 3-5 minutes. \n\n\n3. Preheat oven to 425 and throw in green beans with salt, pepper, oil. \n\n\n4.  Prepare the grill baste: (for 4 servings amount). Combine 2 Tbsp butter and 1/2 cup finely chopped yellow onion, and saute about 2-3 minutes. Add 1 tsp garlic, and saute for 2-3 minutes. Add 1 Tbsp flour and brown for 2 minutes. Whisk in 1/4 cup red wine vinegar (or red wine), 2 Tbsp lemon juice, and 1 Tbsp Dijon mustard, 1.5 Tbsp sugar, and .5 Tbsp parsley. Cook for 5 minutes on medium low, whisking intermittently. \n\n\n.5. Butterfly chicken breasts. Season with grill seasoning, brush with grill baste, and put on grill or pan. Cook for about 5 minutes on each side, adding grill baste once in middle. In last minute, top each chicken with goat cheese, and top with lemon butter sauce. "
+},
+
+{
     "meal_name": "spaghetti",
     "meat_type": "beef",
     "reheats_well": "true",
@@ -1179,6 +1671,22 @@
 },
 
 {
+    "meal_name": "cheddar brats and peas and carrots",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Johnsonville cheddar brats": ["1", "package(s)"],
+            "hot dog buns": [".5", "package(s)"],
+            "large carrots": [".5", "package(s)"],
+            "peas": ["1", "package(s)"]
+        },
+    "recipe": "heat up brats according to package instructions. For peas and carrots - bake carrots at 425 for 15 minutes with oil, salt and pepper. Boil peas. Then combine, and add 1 Tbsp butter or margarine and about 2 tsp honey, + salt and pepper. Enjoy!"
+},
+
+{
     "meal_name": "bulgogi spring rolls",
     "meat_type": "beef",
     "reheats_well": "false",
@@ -1202,6 +1710,51 @@
     "link": "https://aaronandclaire.com/4-ways-to-enjoy-rice-paper-recipe/"
 },
 
+    {
+    "meal_name": "sun-dried tomato and basil spaghetti",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sundried tomatoes": ["1.5", "oz(s)"],
+            "garlic": ["1", "clove(s)"],
+            "basil": [".5", "oz(s)"],
+            "grape tomatoes": ["4", "oz(s)"],
+            "spaghetti": ["6", "oz(s)"],
+            "almonds": [".5", "oz(s)"],
+            "veggie stock concentrate": ["1", "unit(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sun-dried-tomato-basil-spaghetti-5f44056b12fdc62b843db2d5",
+    "notes": "saute the cherry tomatoes early, add pasta sauce, and leave out the almonds"
+},
+
+{
+    "meal_name": "sun-dried tomato and basil spaghetti w/ Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "sundried tomatoes": ["1.5", "oz(s)"],
+            "garlic": ["1", "clove(s)"],
+            "basil": [".5", "oz(s)"],
+            "grape tomatoes": ["4", "oz(s)"],
+            "spaghetti": ["6", "oz(s)"],
+            "almonds": [".5", "oz(s)"],
+            "veggie stock concentrate": ["1", "unit(s)"],
+            "cream cheese": ["2", "Tbsp(s)"],
+            "chicken breast(s)": ["1", "unit(s)"],
+            "parmesan": [".25", "cup(s)"]
+        },
+    "link": "https://www.hellofresh.com/recipes/sun-dried-tomato-basil-spaghetti-5f44056b12fdc62b843db2d5",
+    "notes": "saute the cherry tomatoes early, add pasta sauce, and leave out the almonds"
+},
+    
 {
     "meal_name": "tofu spring rolls",
     "meat_type": "vegan",
@@ -1752,9 +2305,9 @@
             "panko bread crumbs": ["1", "cup(s)"],
             "chicken breasts": ["2", "unit(s)"],
             "spaghetti sauce": ["1.5", "package(s)"],
-            "mozzarella cheese": [".25", "lb(s)"],
+            "mozzarella cheese": [".5", "lb(s)"],
             "pasta": [".5", "package(s)"],
-            "parmesan cheese": [".25", "cup(s)"]
+            "parmesan cheese": [".5", "cup(s)"]
         },
     "recipe": "1. Preheat oven to 350 degrees F. Lightly grease a medium baking sheet.\n\n2. Pour egg into a small shallow bowl. Place bread crumbs in a separate shallow bowl. Butterfly chicken breasts, then dip chicken into egg, then into the bread crumbs. Place coated chicken on the prepared baking sheet and bake in the preheated oven for 20 minutes, or until not longer pink and juices run clear.\n\n3. Prepare pasta of your choice.\n\n4.. Pour .5 of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and return to the preheated oven for 20 minutes. Serve over pasta and enjoy!"
     
@@ -1772,9 +2325,9 @@
             "panko bread crumbs": ["1", "cup(s)"],
             "Chicken Tenders or Chicken Patties": [".25", "package(s)"],
             "spaghetti sauce": ["1.5", "package(s)"],
-            "mozzarella cheese": [".25", "lb(s)"],
+            "mozzarella cheese": [".5", "lb(s)"],
             "pasta": [".5", "package(s)"],
-            "parmesan cheese": [".25", "cup(s)"]
+            "parmesan cheese": [".5", "cup(s)"]
         },
     "recipe": "1. Preheat oven to 350 degrees F. 2. Prepare pasta of your choice.\n\n3. Pour half of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken tenders or chicken patties over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and bake for 20 minutes. Serve over pasta and enjoy!"
     
@@ -1845,26 +2398,6 @@
         },
     "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
     
-},
-
-{
-    "meal_name": "Tempura Battered Chicken Fingers",
-    "meat_type": "chicken",
-    "reheats_well": "false",
-    "price_range": "medium",
-    "meal_type": "dinner",
-    "ingredients":
-        {
-            "lime": ["1", "unit(s)"],
-            "tempura mix": [".25", "package(s)"],
-            "rice": [".5", "cup(s)"],
-            "sriracha": ["1", "tsp(s)"],
-            "broccoli crowns": ["1", "unit(s)"],
-            "chicken breasts": ["10", "oz(s)"],
-            "sweet soy glaze": ["3", "Tbsp(s)"]
-        },
-    "link": "https://www.hellofresh.com/recipes/tempura-chicken-fingers-dipping-sauce-5f4d5fb78cbc28156118f6e8"
-
 },
 
 {
@@ -2125,24 +2658,6 @@
 
 {
     "meal_name": "Loaded Baked potatoes",
-    "meat_type": "pork",
-    "reheats_well": "true",
-    "price_range": "medium",
-    "meal_type": "dinner",
-    "ingredients":
-        {
-            "shredded mexican blend cheese": ["1", "package(s)"],
-            "sour cream": [".5", "package(s)"],
-            "bacon": [".5", "package(s)"],
-            "russet potatoes": ["6", "unit(s)"],
-            "green onions": [".5", "package(s)"]
-        },
-    "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
-
-}, 
-
-{
-    "meal_name": "Loaded Baked potatoes",
     "meat_type": "vegetarian",
     "reheats_well": "true",
     "price_range": "medium",
@@ -2155,6 +2670,24 @@
             "green onions": [".5", "package(s)"]
         },
     "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
+
+}, 
+
+{
+    "meal_name": "tacos and broccoli",
+    "meat_type": "turkey",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "lettuce": [".25", "unit(s)"],
+            "tortillas or hard taco shells": ["1", "package(s)"],
+            "McCormick Taco Seasoning": ["2", "Tbsp(s)"],
+            "ground turkey (or beef)": [".5", "lb(s)"]
+        }
 
 }, 
 
@@ -2207,6 +2740,8 @@
     "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
 
 }
+
+
 
 
 
