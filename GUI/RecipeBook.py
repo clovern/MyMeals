@@ -63,6 +63,7 @@ class RecipeBook(PlanPage):
         searcher = MealSearcher()
         matches = searcher.search_for_meals(search_val)
         self.all_meals = matches
+        self.filter.clear_all_selections()
         self.update_meal_display()
 
     def create_restoreall_button(self):
@@ -204,6 +205,8 @@ class RecipeBook(PlanPage):
         self.all_meals = self.meal_plan_creator.all_meals
     
     def update_results_for_filter(self, selection):
+        # FIXME
+        self.search_text.set("")
         self.display_start = 0
         self.all_meals = self.meal_plan_creator.filter_meal_array(self.meal_plan_creator.all_meals, **selection)
         self.update_meal_display()
