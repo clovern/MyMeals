@@ -124,6 +124,8 @@ class SpecialOptionsDropdown():
 
 
     def set_exclude(self):
+        for var in self.dropdown_vars:
+            var.set(0)
         self.exclude_bool.set(1)
         self.display.configure(text = "Exclude this Meal \u2193")
 
@@ -142,6 +144,11 @@ class SpecialOptionsDropdown():
         selected_final = self.format_selection(selected_initial)
                 
         return selected_final
+
+    def clear_all_selections(self):
+        for var in self.dropdown_vars:
+            var.set(0)
+        self.display.configure(text = self.get_dropdown_default_text())
     
     def format_selection(self, selected_initial):
         
