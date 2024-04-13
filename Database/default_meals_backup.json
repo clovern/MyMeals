@@ -31,6 +31,23 @@
 },
 
 {
+    "meal_name": "Biscuits and Gravy (N Parents Style)",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "breakfast",
+    "ingredients":
+    {
+        "butter": ["1/8", "cup(s)"],
+        "flour": ["3", "Tbsp(s)"],
+        "milk": ["1/5", "cup(s)"],
+        "ham": ["1", "package(s)"]
+    },
+    "recipe": "melt butter in a pan. Add flour and combine. Then slowly add milk and whisk as you go until thickened. Then add ham (can also use Buddig beef instead)."
+    
+},
+
+{
     "meal_name": "German Cinnamon Waffles",
     "meat_type": "vegetarian",
     "reheats_well": "true",
@@ -1145,6 +1162,57 @@
 },
 
 {
+    "meal_name": "costco chicken tacos",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "costco chicken tacos (premade)": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "costco tamales & corn",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "costco tamales": [".16", "package(s)"],
+            "corn": ["1", "can(s)"],
+            "red enchilada sauce": ["1", "package(s)"],
+            "shredded mexican blend cheese": [".16", "cup(s)"]
+        }
+},
+
+{
+    "meal_name": "costco chicken tacos",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "costco chicken tacos (premade)": ["1", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "costco stuffed peppers",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "costco stuffed peppers (premade)": ["1", "package(s)"]
+        }
+},
+
+{
     "meal_name": "costco beef pot stickers with ramen noodles",
     "meat_type": "beef",
     "reheats_well": "true",
@@ -1177,6 +1245,30 @@
 },
 
 {
+    "meal_name": "Chicken gnocchi soup",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "chicken breast(s)": ["2", "unit(s)"],
+            "black pepper": [".5", "tsp(s)"], 
+            "salted butter": ["3", "Tbsp(s)"], 
+            "celery": [".75", "cup(s)"], 
+            "yellow onion": [".75", "cup(s)"],
+            "chicken broth": ["2.5", "cup(s)"], 
+            "thyme": [".5", "tsp(s)"], 
+            "half and half": ["3", "cup(s)"], 
+            "shredded carrots": ["1", "cup(s)"],
+            "gnocchi": ["1", "package(s)"], 
+            "spinach": ["1.75", "cup(s)"], 
+            "parmesan": [".5", "cup(s)"] 
+        },
+    "link" : "https://myorganizedchaos.net/instant-pot-chicken-gnocchi-soup?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=484557606_17164840_191238#mv-creation-56-jtr"
+},
+
+{
     "meal_name": "Bagel with Salami, Ham, and Sliced Cucumber",
     "meat_type": "pork",
     "reheats_well": "true",
@@ -1189,6 +1281,178 @@
             "ham": [".125", "lb(s)"], 
             "cucumber": ["1", "unit(s)"]
         }
+},
+
+{
+    "meal_name": "Greek Chicken and Veggies with Rice",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "rice pilaf": ["1", "package(s)"],
+            "chicken breast(s)": ["1", "lb(s)"], 
+            "bell peppers (red or orange)": ["2", "unit(s)"], 
+            "white onion": ["1", "unit(s)"],
+            "italian dressing": [".25", "cup(s)"], 
+            "wooden skewers": [".25", "package(s)"]
+        }
+},
+
+{
+    "meal_name": "Stuffed Peppers (Scratch)",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "bell peppers (red or orange preferred)": ["4", "unit(s)"],
+            "ground beef": ["1", "lb(s)"], 
+            "white onion": ["2", "Tbsp(s)"], 
+            "rice": ["1", "cup(s)"],
+            "spaghetti sauce": ["1", "package(s)"], 
+            "mozzarella cheese": [".75", "cup(s)"], 
+            "salt": ["1", "tsp(s)"], 
+            "garlic": ["1", "clove(s)"]
+        },
+        "recipe": "1. Prepare peppers. \n\n 2. Cook rice \n\n 3. Mix together all ingredients aside from bell peppers. Fill bell peppers with ingredients. \n\n4. Heat oven to about 350 degrees and cook for 34-45 minutes (until meat is cooked through - internal temp should reach 160 F). Other options: cook in crock pot for 4 hours on low, or cook beef and peppers beforehand and then just cook all together for 15 minutes."
+},
+
+{
+    "meal_name": "Stuffed Peppers (Vegetarian)",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "bell peppers (red or orange preferred)": ["4", "unit(s)"],
+            "black beans": ["1", "lb(s)"], 
+            "white onion": ["2", "Tbsp(s)"], 
+            "rice": ["1", "cup(s)"],
+            "spaghetti sauce": ["1", "package(s)"], 
+            "mozzarella cheese": [".75", "cup(s)"], 
+            "olive oil": [".25", "cup(s)"], 
+            "salt": ["1", "tsp(s)"], 
+            "garlic": ["1", "clove(s)"]
+        },
+        "recipe": "1. Prepare peppers. \n\n 2. Cook rice \n\n 3. Mix together all ingredients aside from bell peppers. Fill bell peppers with ingredients. \n\n4. Heat oven to about 350 degrees and cook for 34-45 minutes. Other options: cook in crock pot for 4 hours on low."
+},
+
+{
+    "meal_name": "Crunch Wrap Supreme",
+    "meat_type": "beef",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "beef": ["1", "lb(s)"],
+            "McCormick Taco Seasoning": ["2", "Tbsp(s)"], 
+            "queso": [".5", "package(s)"], 
+            "avocado": ["1", "unit(s)"],
+            "roma tomatoes": ["4", "unit(s)"], 
+            "cheddar cheese": ["1", "cup(s)"], 
+            "lettuce": [".25", "package(s)"], 
+            "large tortillas": [".5", "Tbsp(s)"], 
+            "sour cream": ["1", "package(s)"], 
+            "flat hard taco shell": ["1", "package(s)"]
+        },
+        "recipe": "1. Prepare beef. \n\n2. Layer queso, then beef, then hard taco shell, then sour cream, then lettuce, tomato (and avocado if wanted), then cheese. Then fold. Cook in pan & serve."
+},
+
+{
+    "meal_name": "Lentils and Hot Dogs",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "lentils": [".25", "package(s)"],
+            "beef broth": ["2", "cup(s)"], 
+            "hot dogs": [".5", "package(s)"]
+        },
+        "recipe": "Prepare lentils in beef broth. Add in hot dogs and serve."
+},
+
+{
+    "meal_name": "Fajitas (chicken, pork, steak, or portobello) and asparagus",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "fajita seasoning": ["1", "package(s)"],
+            "chicken, pork, steak, or portobello mushrooms": ["1", "lb(s)"], 
+            "white onion": [".5", "unit(s)"],
+            "bell peppers": ["2", "unit(s)"], 
+            "asparagus": [".5", "package(s)"], 
+            "tortillas": [".5", "package(s)"]
+        },
+        "recipe": "Prepare meat of choice, seasoning with fajita seasoning. \n\nCook peppers and onions in oil, then mix in with fajita seasoning and meat for flavor. Put in tortilla and serve."
+},
+
+{
+    "meal_name": "Vegan Lentil Meatballs + peas & carrots, baked beans",
+    "meat_type": "vegan",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "olive oil": ["2", "tsp(s)"],
+        "onion": [".5", "unit(s)"],
+        "mushrooms": ["2", "cup(s)"],
+        "cooked lentils": ["2", "cup(s)"],
+        "cooked brown rice": ["1", "cup(s)"],
+        "sea salt": [".5", "tsp(s)"],
+        "garlic powder": [".25", "tsp(s)"],
+        "dried basil": ["1", "tsp(s)"],
+        "instant oats": [".67", "cup(s)"],
+        "breadcrumbs": [".5", "cup(s)"],
+        "parsley and cilantro": ["1", "package(s)"],
+        "vegan Worcestershire": ["2", "Tbsp(s)"],
+        "vegan BBQ sauce": [".25", "cup(s)"],
+        "liquid smoke": [".5", "tsp(s)"],
+        "peas": [".5", "package(s)"],
+        "large carrots": [".5", "package(s)"],
+        "honey": ["2", "tsp(s)"],
+        "baked beans": ["1", "can(s)"],
+        "extra vegan BBQ sauce": [".5 - 1", "cup(s)"]
+    },
+        "link": "https://veganwithcurves.com/bbq-lentil-balls/"
+},
+
+{
+    "meal_name": "Green Curry Buddha Bowl",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "expensive",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "rice": ["2", "cup(s)"],
+            "broccoli": [".5", "cup(s)"], 
+            "shredded carrots": [".25", "package(s)"],
+            "white mushrooms": [".5", "cup(s)"], 
+            "sliced purple cabbage": [".25", "package(s)"],
+            "cilantro (and parsley)": [".25", "package(s)"], 
+            "chicken breast(s) - (optional)": [".5", "lb(s)"],
+            "olive oil": ["2", "tsp(s)"], 
+            "lime": ["1", "unit(s)"],
+            "cashews": ["1", "cup(s)"],
+            "green curry paste": ["2", "Tbsp(s)"], 
+            "coconut cream": ["1", "can(s)"],
+            "lime juice": ["1", "Tbsp(s)"],
+            "fish sauce": ["2", "tsp(s)"],
+            "brown sugar": ["1-2", "tsp(s)"], 
+            "salt": [".5", "tsp(s)"]
+        },
+        "link": "https://themodernproper.com/green-curry-buddha-bowl"
 },
 
 {
@@ -1219,6 +1483,7 @@
             "spinach": ["10", "oz(s)"], 
             "red pepper flakes": [".25", "tsp(s)"], 
             "olive oil": ["2", "Tbsp(s)"],
+            "pie crust": ["1", "package(s)"],
             "heavy cream": [".25", "cup(s)"],
             "shredded mozzarella cheese": ["1.5", "cup(s)"],
             "eggs": ["6", "unit(s)"]
@@ -1239,6 +1504,8 @@
             "spinach": ["10", "oz(s)"], 
             "red pepper flakes": [".25", "tsp(s)"], 
             "olive oil": ["2", "Tbsp(s)"],
+
+            "pie crust": ["1", "package(s)"],
             "heavy cream": [".25", "cup(s)"],
             "shredded mozzarella cheese": ["1.5", "cup(s)"],
             "eggs": ["6", "unit(s)"]
@@ -1283,6 +1550,67 @@
             "rye bread": [".25", "loave(s)"]
         },
     "link": "https://triedandtasty.com/copycat-panera-turkey-apple-cheddar-sandwich/"
+},
+
+{
+    "meal_name": "Costco ramen",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Costco Tonkotsu ramen": ["1", "unit(s)"]
+        }
+},
+
+{
+    "meal_name": "Costco Spinach Ravioli",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Costco Spinach Ravioli": ["1", "unit(s)"]
+        }
+},
+
+{
+    "meal_name": "Costco Tikka Masala (premade)",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "Costco Tikka Masala (premade)": ["1", "unit(s)"]
+        }
+},
+
+{
+    "meal_name": "Spicy Baked Peanut Tofu",
+    "meat_type": "vegetarian",
+    "reheats_well": "false",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "firm tofu": ["14", "ounces"],
+        "cornstarch": ["1.5", "Tbsp(s)"],
+        "peanut butter": ["3", "Tbsp(s)"],
+        "tamari or soy sauce": ["4", "Tbsp(s)"],
+        "sriracha": ["1", "Tbsp(s)"],
+        "black vinegar or rice wine vinegar/lime juice": ["1", "Tbsp(s)"],
+        "brown sugar": ["1-2", "Tbsp(s)"],
+        "ginger": ["1", "tsp(s)"],
+        "water": ["1-2", "Tbsp(s)"],
+        "diced scallions": ["2-3", "unit(s)"],
+        "rice noodles": ["1", "package(s)"],
+        "crushed peanuts": ["1-2", "Tbsp(s)"]
+    }, 
+    "link": "https://shortgirltallorder.com/baked-tofu-with-spicy-peanut-sauce#recipe"
+    
 },
 
 {
@@ -1432,6 +1760,28 @@
 },
 
 {
+    "meal_name": "Grilled Kielbasa Pineapple Kebabs",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "Kielbasas": ["3", "14 oz (each)"],
+        "Yellow peppers": ["2", "unit(s)"],
+        "Red peppers": ["2", "unit(s)"],
+        "Pineapple": ["1", "unit(s)"],
+        "Honey": ["½", "cup(s)"],
+        "Balsamic Vinegar": ["⅓", "cup(s)"],
+        "Fresh ground pepper": ["¼", "tsp(s)"],
+        "brown rice": ["1", "cup(s)"],
+        "Salt": ["¼", "tsp(s)"]
+    },
+    
+    "link": "https://www.foxvalleyfoodie.com/grilled-kielbasa-kabobs-with-balsamic-honey-glaze/"
+},
+
+{
     "meal_name": "chicken tenders and tater tots",
     "meat_type": "chicken",
     "reheats_well": "true",
@@ -1443,6 +1793,107 @@
             "barbeque sauce": [".25", "bottle(s)"],
             "frozen tater tots":  [".5", "package(s)"]
         }
+},
+
+{
+    "meal_name": "Char Siu Pork and Chinese Broccoli",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "brown sugar": ["1 1/2", "Tbsp(s)"],
+        "honey": ["1/4", "cup(s)"],
+        "hoisin sauce": ["1/4", "cup(s)"],
+        "light soy sauce": ["2", "Tbsp(s)"],
+        "soy sauce": ["1", "Tbsp(s)"],
+        "chinese five spice powder": ["1", "tsp(s)"],
+        "oil": ["1", "Tbsp(s)"],
+        "red food colouring": ["2", "tsp(s)"],
+        "pork loin": ["1.2 - 1.5", "kg / 2.4 - 3", "lb(s)"],
+        "chinese broccoli": ["1", "unit(s)"]
+    },
+    "link": "https://www.recipetineats.com/chinese-barbecue-pork-char-siu/#wprm-recipe-container-21409"
+},
+
+{
+    "meal_name": "Laker Bowls",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "shredded cheddar cheese": ["1", "cup(s)"],
+        "chicken tenders": ["0.25", "package(s)"],
+        "chicken gravy": ["1", "can(s)"],
+        "instant potatoes": ["1", "can(s)"],
+        "corn": ["1", "can(s)"]
+    }
+},
+
+{
+    "meal_name": "Chicken and Biscuits",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "chicken breasts": ["2", "unit(s)"],
+        "chicken or turkey gravy": [".5", "cup(s)"],
+        "half and half": ["1", "Tbsp(s)"],
+        "dried sage": ["1/4", "tsp(s)"],
+        "black pepper": ["1/4", "tsp(s)"],
+        "refrigerated biscuits": [".5", "package(s)"]
+    },
+    "recipe": "Preheat oven to 350 F. \n\nCombine gravy, half and half, and spices in a small bowl, and pour over chicken in a casserole dish. \n\nTop with biscuits and bake for 20-25 minutes, until cooked through. \n\n Then cook biscuits separately according to instructions. Place on top of chicken and serve. "
+},
+
+{
+    "meal_name": "Crispy Kickin Cayenne Chicken Cutlets",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "Carrots": ["12", "oz(s)"],
+        "Scallions": ["2", "unit(s)"],
+        "Sour Cream": ["3", "Tbsp(s)"],
+        "Frank's Seasoning Blend": ["¼", "oz(s)"],
+        "Panko Breadcrumbs": ["¼", "cup(s)"],
+        "Monterey Jack Cheese": ["¼", "cup(s)"],
+        "Chicken Cutlets": ["10", "oz(s)"],
+        "Potatoes": ["12", "oz(s)"],
+        "Honey": ["2", "tsp(s)"]
+    },
+    
+    "link": "https://www.hellofresh.com/recipes/crispy-kickin-cayenne-chicken-cutlets-647f3e3302d358ae80bae3c4"
+},
+
+{
+    "meal_name": "Honey Pepper Chicken Tenders with Peas",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "meal_name": "chicken tenders and tater tots",
+        "meat_type": "chicken",
+        "reheats_well": "true",
+        "price_range": "medium",
+        "meal_type": "lunch",
+        "ingredients":
+            {
+                "frozen chicken tenders": [".25", "package(s)"],
+                "barbeque sauce": [".25", "bottle(s)"],
+                "frozen tater tots":  [".5", "package(s)"]
+            }
+    },
+    "link": "https://blogchef.net/honey-pepper-chicken-strips-recipe/"
 },
 
 {
@@ -1814,7 +2265,7 @@
             "goat cheese": ["1", "package(s)"],
             "poblano peppers": ["1", "unit(s)"],
             "dried dates": [".5", "unit(s)"],
-            "hamburger buns": ["2", "unit(s)"],
+            "bacon (optional)": [".5", "package(s)"],
             "hash browns": [".5", "package(s)"],
             "olive oil": ["4", "Tbsp(s)"]
         },
@@ -1905,6 +2356,32 @@
 },
 
 {
+    "meal_name": "Vegan Thai Ginger Curry",
+    "meat_type": "vegan",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "Jasmine Rice": ["½", "cup(s)"],
+        "Bell Pepper": ["1", "unit(s)"],
+        "Green Beans": ["6", "oz(s)"],
+        "Shallot": ["1", "unit(s)"],
+        "Ginger": ["1", "thumb"],
+        "Lime": ["1", "unit(s)"],
+        "Cilantro": ["¼", "oz(s)"],
+        "Curry Powder": ["1", "Tbsp(s)"],
+        "Coconut Milk": ["1", "unit(s)"],
+        "Sweet Thai Chili Sauce": ["1", "oz(s)"],
+        "Veggie Stock Concentrate": ["1", "unit(s)"],
+        "Peanuts": ["½", "oz(s)"]
+    },
+    
+        "link" : "https://www.hellofresh.com/recipes/vegan-thai-ginger-curry-6464650f8ab1333a8ca2506e"
+    
+},
+
+{
     "meal_name": "Edamame Stir Fry Noodle Bowl",
     "meat_type": "vegan",
     "reheats_well": "true",
@@ -1923,6 +2400,30 @@
             "sesame seeds": ["1", "Tbsp(s)"]
         },
         "link" : "https://www.hellofresh.com/recipes/edamame-stir-fry-noodle-bowls-60f82b8040ec771948112c6b"
+    
+},
+
+{
+    "meal_name": "Sweet Chili Pork and Cabbage Stir Fry",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "Jasmine Rice": ["½", "cup(s)"],
+        "Sweet Soy Glaze": ["4", "Tbsp(s)"],
+        "Sweet Thai Chili Sauce": ["1", "oz(s)"],
+        "Ponzu Sauce": ["12", "ml"],
+        "Rice Wine Vinegar": ["5", "tsp(s)"],
+        "Ground Pork": ["10", "oz(s)"],
+        "Garlic Powder": ["1", "tsp(s)"],
+        "Red Cabbage and Carrot Mix": ["4", "oz(s)"],
+        "Crispy Fried Onions": ["1", "unit(s)"],
+        "Cilantro": ["¼", "oz(s)"]
+    },
+    
+        "link" : "https://www.hellofresh.com/recipes/sweet-chili-pork-cabbage-stir-fry-61f982ea8f5a8314a3756b5f"
     
 },
 
@@ -1947,6 +2448,48 @@
         }, 
     "link" : "https://www.hellofresh.com/recipes/hoisin-honey-chicken-61f98807dc87845a6a01df6c"
 },
+
+{
+    "meal_name": "Sweet Ginger Pork Chops",
+    "meat_type": "Pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "Ginger": ["1", "unit(s)"],
+        "Chili Pepper": ["1", "unit(s)"],
+        "Jasmine Rice": ["½", "unit(s)"],
+        "Broccoli Florets": ["8", "unit(s)"],
+        "Pork Chops": ["12", "unit(s)"],
+        "Apricot Jam": ["1", "unit(s)"],
+        "Chicken Stock Concentrate": ["1", "unit(s)"]
+    },    
+    "link" : "https://www.hellofresh.com/recipes/sweet-ginger-pork-chops-61b8b57839e675135c75e4b4"
+},
+
+{
+    "meal_name": "Figgy Balsalmic Pork",
+    "meat_type": "Pork",
+    "reheats_well": "true",
+    "price_range": "medium",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "white onion": ["1", "unit(s)"],
+        "rosemary": ["¼", "oz(s)"],
+        "potatoes": ["12", "oz(s)"],
+        "pork tenderloin": ["12", "oz(s)"],
+        "green beans": ["6", "oz(s)"],
+        "fig jam": ["2", "Tbsp(s)"],
+        "chicken broth cubes": ["1", "unit(s)"],
+        "balsamic vinegar": ["5", "tsp(s)"]
+    },
+      
+    "link" : "https://www.hellofresh.com/recipes/figgy-balsamic-pork-5d2ca414bd9e790012044046"
+},
+
+
 
 {
     "meal_name": "Honey Miso Broccoli and Sweet Potato Donburi",
@@ -2117,6 +2660,27 @@
             "green beans": [".5", "package(s)"]
         },
     "link" : "https://www.hellofresh.com/recipes/firecracker-meatballs-5ea70fe14c4efb3fb12140f1"
+},
+
+{
+    "meal_name": "Sheet Pan Dijon Onion Crunch Chicken",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "white onion": ["1", "unit(s)"],
+        "rosemary": ["¼", "oz(s)"],
+        "potatoes": ["12", "oz(s)"],
+        "pork tenderloin": ["12", "oz(s)"],
+        "green beans": ["6", "oz(s)"],
+        "fig jam": ["2", "Tbsp(s)"],
+        "chicken broth cubes": ["1", "unit(s)"],
+        "balsamic vinegar": ["5", "tsp(s)"]
+    },
+    
+    "link" : "https://www.hellofresh.com/recipes/sheet-pan-dijon-onion-crunch-chicken-621e7f79fda2615c364c54b2"
 },
 
 {
@@ -2294,6 +2858,27 @@
 },
 
 {
+    "meal_name": "Sweet Soy Glazed Pork",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "carrots": ["9", "oz(s)"],
+        "broccoli florets": ["8", "oz(s)"],
+        "green onions": ["2", "unit(s)"],
+        "korean chili flakes": ["1", "tsp(s)"],
+        "pork chops": ["10", "oz(s)"],
+        "garlic powder": ["1", "tsp(s)"],
+        "sweet soy glaze": ["4", "Tbsp(s)"]
+    },
+    
+    "link": "https://www.hellofresh.com/recipes/pan-seared-sweet-soy-glazed-pork-6434f015e8a33b89a50870a9"
+    
+},
+
+{
     "meal_name": "Chicken parmigiana",
     "meat_type": "chicken",
     "reheats_well": "true",
@@ -2331,6 +2916,25 @@
         },
     "recipe": "1. Preheat oven to 350 degrees F. 2. Prepare pasta of your choice.\n\n3. Pour half of the spaghetti sauce into a 7 x 11 inch baking dish. Place chicken tenders or chicken patties over sauce, and cover with remaining sauce. Sprinkle mozzarella and parmesan cheeses on top and bake for 20 minutes. Serve over pasta and enjoy!"
     
+},
+
+{
+    "meal_name": "Pulled Pork and Asparagus",
+    "meat_type": "pork",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+    {
+        "pork loin": ["1", "lb(s)"],
+        "coleslaw": [".5", "cup(s)"],
+        "hamburger buns": [".25", "package(s)"],
+        "barbeque sauce": ["1", "cup(s)"],
+        "beef stock": ["1", "can(s)"],
+        "asparagus": [".5", "package(s)"],
+        "pickles": ["10", "unit(s)"]
+    }
+
 },
 
 {
@@ -2464,6 +3068,26 @@
         },
     "link": "https://www.hellofresh.com/recipes/steak-with-mushroom-cream-sauce-6231f2c98cae5f6cde4c6187"
 
+},
+
+{
+    "meal_name": "Fancy Mac",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "boxed mac and cheese": ["1", "package(s)"],
+            "milk": [".5", "cup"],
+            "butter": ["2", "Tbsp(s)"],
+            "green onions": [".5", "package(s)"],
+            "bacon": [".5", "package(s)"],
+            "bread crumbs": [".25", "cup(s)"],
+            "hot sauce": ["2", "Tbsp(s)"],
+            "feta cheese": ["3", "Tbsp(s)"]
+        },
+    "recipe": "Pan fry bacon and chicken. Make make and cheese according to box instructions. Top mac with bacon, cheese, green onions, bread crumbs, hot sauce, and feta to taste. Enjoy!"
 },
 
 {
@@ -2674,7 +3298,7 @@
 }, 
 
 {
-    "meal_name": "tacos and broccoli",
+    "meal_name": "Turkey tacos and broccoli",
     "meat_type": "turkey",
     "reheats_well": "true",
     "price_range": "cheap",
@@ -2691,6 +3315,73 @@
 
 }, 
 
+{
+    "meal_name": "Chicken tacos",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "roma tomatoes": ["1", "unit(s)"],
+            "lettuce": [".25", "unit(s)"],
+            "tortillas or hard taco shells": ["1", "package(s)"],
+            "McCormick Taco Seasoning": ["2", "Tbsp(s)"],
+            "avocado (optional)": ["1", "unit(s)"],
+            "chicken": [".5", "lb(s)"]
+        }, 
+        "recipe": "Prepare chicken taco meat using taco seasoning (usually low boil in taco seasoning and water for about 35 minutes). Then put in tacos with your desired ingredients."
+
+}, 
+
+{
+    "meal_name": "Enchiladas and caesar salad",
+    "meat_type": "vegetarian",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "shredded mexican blend cheese": [".25", "package(s)"],
+            "chicken(optional)": ["1", "unit(s)"],
+            "taco seasoning (optional)": ["2", "Tbsp(s)"],
+            "red enchilada sauce": ["2", "can(s)"],
+            "corn tortillas": ["1", "package(s)"],
+            "caesar salad kit": ["1", "package(s)"]
+        }, 
+        "recipe": "Preheat oven to 350. \nDip each corn tortilla in enchilada sauce until covered, then fill with cheese (and chicken taco meat - optional) and place in a glass casserole dish. \n\nOnce casserole dish is full, pour more red enchilada sauce on top, and cover with a thin layer of cheese. \n\nBake in over at 350 for 15-20 minutes. Prepare caesar salad while it cooks. Serve."
+
+}, 
+
+{
+    "meal_name": "Southwest salad chicken wrap",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "southwest salad mix": ["1", "package(s)"],
+            "frozen chicken tenders": [".25", "package(s)"],
+            "tortilla": ["2", "unit(s)"]
+        }
+
+}, 
+
+{
+    "meal_name": "Southwest salad chicken wrap",
+    "meat_type": "chicken",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+        {
+            "southwest salad mix": ["1", "package(s)"],
+            "frozen chicken tenders": [".25", "package(s)"],
+            "tortilla": ["2", "unit(s)"]
+        }
+}, 
 
 
 {
