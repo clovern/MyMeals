@@ -1252,16 +1252,16 @@
     "reheats_well": "true",
     "price_range": "medium",
     "meal_type": "lunch",
-    "ingredients":
-        {
-            "ham": [".25", "lb(s)"],
-            "salami": [".25", "lb(s)"],
-            "banana peppers":  [".1", "jar(s)"],
-            "iceburg lettuce": [".25", "unit(s)"],
-            "italian dressing": [".1", "package(s)"],
-            "cucumbers": [".5", "unit(s)"],
-            "provolone cheese": [".25", "package"]
-        },
+  "ingredients": {
+    "ham": [ ".25", "lb(s)" ],
+    "salami": [ ".25", "lb(s)" ],
+    "banana peppers": [ ".1", "jar(s)" ],
+    "iceburg lettuce": [ ".25", "unit(s)" ],
+    "italian dressing": [ ".1", "package(s)" ],
+    "cucumbers": [ ".5", "unit(s)" ],
+    "sub buns": [ "1", "package(s)" ],
+    "provolone cheese": [ ".25", "package" ]
+  },
     "recipe": "Turn oven on to a low broil. Place ham, salami, and provolone cheese onto an open sub bun. Bake on a low broil for 2 minutes, until cheese is melted. \n\nAdd banana peppers, cucumber slices, lettuce, and a drizzle of italian dressing. Enjoy!"
 },
 
@@ -1814,7 +1814,6 @@
             "goat cheese": ["1", "package(s)"],
             "poblano peppers": ["1", "unit(s)"],
             "dried dates": [".5", "unit(s)"],
-            "hamburger buns": ["2", "unit(s)"],
             "hash browns": [".5", "package(s)"],
             "olive oil": ["4", "Tbsp(s)"]
         },
