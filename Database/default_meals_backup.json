@@ -157,6 +157,29 @@
 },
 
 {
+    "meal_name": "Mrs. Neff's Chicken, Carrots, & Potatoes",
+    "meat_type": "Chicken",
+    "vegan_only": "false",
+    "reheats_well": "true",
+    "price_range": "cheap",
+    "meal_type": "lunch",
+    "ingredients":
+    {
+        "olive oil": ["1.5", "Tbsp(s)"],
+        "chicken thighs (with skin) - or chicken breast for C": ["3", "unit(s)"],
+        "coarse salt": [".375", "Tbsp(s)"],
+        "dried thyme": ["1", "tsp(s)"],
+        "black pepper": [".75", "tsp(s)"],
+        "nutmeg": [".125", "tsp(s)"],
+        "potatoes": ["1", "lb(s)"],
+        "carrots": ["1", "lb(s)"],
+        "fresh chives": ["1.5", "Tbsp(s)"]
+    },
+    "recipe": "Preheat oven to 350 F. Coat baking sheet with 1 Tbsp oil, and put chicken on, coating with oil. \n\n Make mixture ofa ll the spices and sprinkle half over chicken. Roast chicken for about 10-15 minutes. Then, coat the potatoes and carrots (sliced up) with the remaining spice seasoning and a drizzle of oil. Roast until chicken is cooked through, about 20-30 minutes more. Top with chives and serve."
+    
+},
+
+{
     "meal_name": "Crock Pot Cordon Bleu with side of potatoes",
     "meat_type": "Chicken",
     "vegan_only": "false",
@@ -1527,6 +1550,7 @@
             "iceburg lettuce": [".25", "unit(s)"],
             "italian dressing": [".1", "package(s)"],
             "cucumbers": [".5", "unit(s)"],
+            "sub buns": ["1", "package(s)"],
             "provolone cheese": [".25", "package"]
         },
     "recipe": "Turn oven on to a low broil. Place ham, salami, and provolone cheese onto an open sub bun. Bake on a low broil for 2 minutes, until cheese is melted. \n\nAdd banana peppers, cucumber slices, lettuce, and a drizzle of italian dressing. Enjoy!"
@@ -2963,6 +2987,26 @@
 {
     "meal_name": "Nutmeg and Thyme Chicken Thighs with Carrots and Potatoes",
     "meat_type": "chicken",
+    "reheats_well": "false",
+    "price_range": "cheap",
+    "meal_type": "dinner",
+    "ingredients":
+        {
+            "olive oil": ["3", "Tbsp(s)"],
+            "chicken thighs": ["3", "unit(s)"],
+            "dried thyme": ["2", "tsp(s)"],
+            "ground nutmeg": [".25", "tsp(s)"],
+            "yukon gold potatoes": ["2", "lb(s)"],
+            "carrots": ["2", "lb(s)"],
+            "fresh chives": ["3", "Tbsp(s)"]
+        },
+    "link": "https://www.epicurious.com/recipes/food/views/oven-roasted-chicken-thighs-with-carrots-and-yukon-gold-potatoes-351711"
+    
+},
+
+{
+    "meal_name": "Mom's alfredo sauce w/Fresh Noodles + Broccoli",
+    "meat_type": "vegetarian",
     "reheats_well": "false",
     "price_range": "cheap",
     "meal_type": "dinner",
