@@ -26,7 +26,8 @@
     "meal_type": "breakfast",
     "ingredients":
         {
-            "whole wheat frozen waffles": ["1", "package(s)"]
+            "whole wheat frozen waffles": ["1", "package(s)"],
+            "syrup": ["2", "Tbsp(s)"]
         }
 },
 
