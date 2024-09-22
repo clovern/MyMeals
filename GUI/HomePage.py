@@ -14,7 +14,7 @@ class HomePage:
         self.populate_widgets()
 
     def create_outer_frame(self):
-        self.outer = ttk.Frame(root, height=800, width=800)
+        self.outer = ttk.Frame(root, height=800, width=1200)
         self.outer.grid_propagate(0)
         self.outer.grid(column=0, row=0)
 

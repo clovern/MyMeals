@@ -18,6 +18,7 @@ class MealInfoDisplay(PlanPage):
     
     def createMealDisplay(self):
         self.create_lower_left_frame()
+        self.create_lower_middle_frame()
         self.create_lower_right_frame()
         self.lowercontent["height"] = 600
         self.create_title("You're all set!")

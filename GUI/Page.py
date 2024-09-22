@@ -14,7 +14,7 @@ class Page(ABC):
         self.create_lower_frame()
     
     def create_header_frame(self):
-        self.headercontent = ttk.Frame(self.content, width=800, height = 30)
+        self.headercontent = ttk.Frame(self.content, width=1200, height = 30)
         self.headercontent.grid_propagate(0)
         self.headercontent.grid(column=0, row=0)
 
@@ -26,18 +26,23 @@ class Page(ABC):
         self.special_dropdown = SpecialOptionsDropdown(frame, type)
     
     def create_lower_frame(self):
-        self.lowercontent = ttk.Frame(self.content, height=600, width=800)
+        self.lowercontent = ttk.Frame(self.content, height=600, width=1200)
         self.lowercontent.grid(column=0, row=2, pady = (10, 0))
         self.lowercontent.grid_propagate(0)
     
     def create_lower_left_frame(self):
-        self.lower_left_content = ttk.Frame(self.lowercontent, height=550, width=400)
+        self.lower_left_content = ttk.Frame(self.lowercontent, height=450, width=400)
         self.lower_left_content.grid(column=0, row=0)
         self.lower_left_content.grid_propagate(0)
+
+    def create_lower_middle_frame(self):
+        self.lower_middle_content = ttk.Frame(self.lowercontent, height=450, width=400)
+        self.lower_middle_content.grid(column=1, row=0)
+        self.lower_middle_content.grid_propagate(0)
     
     def create_lower_right_frame(self):
-        self.lower_right_content = ttk.Frame(self.lowercontent, height=550, width=400)
-        self.lower_right_content.grid(column=1, row=0)
+        self.lower_right_content = ttk.Frame(self.lowercontent, height=450, width=400)
+        self.lower_right_content.grid(column=2, row=0)
         self.lower_right_content.grid_propagate(0) 
 
     def create_title(self, title_text):

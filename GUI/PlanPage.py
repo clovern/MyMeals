@@ -33,11 +33,14 @@ class PlanPage(Page):
         return index
     
     def create_day_panel(self, day, index):
-        if (index < 4):
+        if (index < 3):
             self.day_frame= ttk.Frame(self.lower_left_content)
+        elif (index < 6):
+            self.day_frame= ttk.Frame(self.lower_middle_content)
+            index -= 3
         else:
             self.day_frame= ttk.Frame(self.lower_right_content)
-            index -= 4
+            index -= 6
 
         self.day_frame['padding'] = (10, 10, 10, 10)
         self.day_frame.grid(column=0, row=index, sticky='W')
