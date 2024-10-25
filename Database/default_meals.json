@@ -486,7 +486,7 @@
 
 
 {
-    "meal_name": "Ham and Egg Hash",
+    "meal_name": "Vegetarian Egg Hash",
     "meat_type": "vegetarian",
     "reheats_well": "false",
     "price_range": "cheap",
@@ -1301,11 +1301,11 @@
             "olive oil":  ["2", "Tbsp(s)"],
             "red onions": ["1", "unit(s)"],
             "carrots": ["2", "unit(s)"],
-            "red bell peppers": ["2", "unit(s)"],
+            "red bell peppers": ["1", "unit(s)"],
             "jalapenos": ["1", "unit(s)"],
             "chicken broth cubes": ["5", "unit(s)"],
             "fresh cilantro": [".25", "package(s)"],
-            "cumin": ["/25", "tsp(s)"],
+            "cumin": [".25", "tsp(s)"],
             "salt": [".5", "tsp(s)"],
             "pepper": [".25", "tsp(s)"],
             "corn": ["1", "can(s)"]
