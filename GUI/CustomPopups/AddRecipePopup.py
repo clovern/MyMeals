@@ -135,7 +135,7 @@ class AddRecipePopup:
         self.saveoption_button = ttk.Button(frame, text="\u2795", width = 3, default="active")
     
     def add_tag_dropdown(self):
-        dropdown_options = ["Reheats well"]
+        dropdown_options = ["Reheats well", "Difficulty: easy", "Multi Days", "Guests"]
         self.tag_dropdown = MultiCheckDropdown(self.tags_frame, dropdown_options)
     
     def add_pricerange_dropdown(self):
@@ -191,7 +191,10 @@ class AddRecipePopup:
     def save_recipe(self):
         name = self.input_vars["name"].get()
         meat_type = self.meattype_dropdown.get()
-        reheats_well = "true" if "Reheats well" in self.tag_dropdown.get_selected_opts() else "false"
+        reheats_well = "true" if "Reheats well".lower() in self.tag_dropdown.get_selected_opts() else "false"
+        difficulty = "easy" if "Difficulty: easy".lower() in self.tag_dropdown.get_selected_opts() else "None"
+        multi_days = "true" if "Multi Days".lower() in self.tag_dropdown.get_selected_opts() else "false"
+        guests = "true" if "Guests".lower() in self.tag_dropdown.get_selected_opts() else "false"
         price_range = self.get_price_range()
         meal_type = self.mealtype_dropdown.get()
         recipe = self.recipe_text.get("1.0",'end-1c')
@@ -215,8 +218,11 @@ class AddRecipePopup:
         if self.verify_meal(meal_vars) == False:
             self.addrecipe_popup.lift()
             return
+        
+        meat_type = meat_type.lower()
+        meal_type = meal_type.lower()
 
-        newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, ingredients)
+        newmeal = Meal(name, meat_type, reheats_well, price_range, meal_type, recipe, link, vegan_only, difficulty, multi_days, guests, ingredients)
         self.recipe_book.add_meal(newmeal)
         messagebox.showinfo(title="Meal Successfully Added", message= name.title() + " has been successfully added to your recipe list!")
         self.addrecipe_popup.lift()

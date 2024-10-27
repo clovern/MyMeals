@@ -19,7 +19,11 @@ class MealDatabaseEditor:
             recipe_instructions = recipe['recipe'] if 'recipe' in recipe else None
             link = recipe['link'] if 'link' in recipe else None
             vegan_only = recipe['vegan_only'] if 'vegan_only' in recipe else "false"
-            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], recipe['reheats_well'], recipe['price_range'], recipe['meal_type'], recipe_instructions, link, vegan_only, recipe['ingredients'])
+            reheats_well = recipe["reheats_well"] if "reheats_well" in recipe else "false"
+            difficulty = recipe["difficulty"] if "difficulty" in recipe else "None"
+            multi_days = recipe["multi_days"] if "multi_days" in recipe else "false"
+            guests = recipe["guests"] if "guests" in recipe else "false"
+            temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], reheats_well, recipe['price_range'], recipe['meal_type'], recipe_instructions, link, vegan_only, difficulty, multi_days, guests, recipe['ingredients'])
             MealDatabaseEditor.upload_meal_to_array(temp_meal)
         default_file.close()
 
@@ -67,6 +71,9 @@ class MealDatabaseEditor:
             newmeal_object["recipe"] = meal.recipe
         if meal.link != None:
             newmeal_object["link"] = meal.link
+        newmeal_object["difficulty"] = meal.difficulty
+        newmeal_object["multi_days"] = meal.multi_days
+        newmeal_object["guests"] = meal.guests
         newmeal_object["vegan_only"] = meal.vegan_only
 
         return newmeal_object

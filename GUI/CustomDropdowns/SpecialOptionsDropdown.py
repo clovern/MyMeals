@@ -19,9 +19,13 @@ class SpecialOptionsDropdown():
         self.low_price_bool = IntVar()
         self.medium_price_bool = IntVar()
         self.high_price_bool = IntVar()
+        self.difficulty_easy_bool = IntVar()
+        self.guests_bool = IntVar()
+        self.multi_days_bool = IntVar()
 
         self.dropdown_vars = [self.vegan_bool, self.vegetarian_bool, self.chicken_bool, self.pork_bool, self.beef_bool, 
-                             self.turkey_bool, self.seafood_bool, self.reheats_bool, self.low_price_bool, self.medium_price_bool, self.high_price_bool]
+                             self.turkey_bool, self.seafood_bool, self.reheats_bool, self.low_price_bool, self.medium_price_bool, self.high_price_bool,
+                             self.difficulty_easy_bool, self.guests_bool, self.multi_days_bool]
 
         self.dropdown_opts = [    'Vegan',
                     'Vegetarian',
@@ -33,7 +37,11 @@ class SpecialOptionsDropdown():
                     'Reheats-well',
                     '$',
                     '$$',
-                    '$$$']
+                    '$$$',
+                    "Difficulty: Easy",
+                    "Guests",
+                    "Multi-Days"
+                    ]
         
         self.create_special_options_dropdown(type)
 
@@ -190,6 +198,15 @@ class SpecialOptionsDropdown():
 
             elif value.lower() in ["breakfast", "lunch", "dinner"]:
                 meal_types.append(value.lower())
+            
+            elif value.lower() == "difficulty: easy":
+                selected_final["difficulty"] = "easy"
+            
+            elif value.lower() == "guests":
+                selected_final["guests"] = "true"
+
+            elif value.lower() == "multi-days":
+                selected_final["multi_days"] = "true"
 
             else:
                 if (value.lower() == "reheats-well"):

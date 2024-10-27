@@ -32,7 +32,7 @@ class MultiCheckDropdown:
         selected_opts = []
         for index in range(len(self.dropdown_vars)):
             if self.dropdown_vars[index].get() == 1:
-                selected_opts.append(self.dropdown_opts[index])
+                selected_opts.append(self.dropdown_opts[index].lower())
         return selected_opts
 
 

@@ -47,19 +47,6 @@
             }
       },
       {
-            "meal_name": "German Cinnamon Waffles",
-            "meat_type": "vegetarian",
-            "reheats_well": "true",
-            "price_range": "cheap",
-            "meal_type": "breakfast",
-            "ingredients": {
-                  "": [
-                        ".25",
-                        "package(s)"
-                  ]
-            }
-      },
-      {
             "meal_name": "vegan blueberry waffles",
             "meat_type": "vegan",
             "vegan_only": "true",
@@ -228,6 +215,7 @@
             "vegan_only": "false",
             "reheats_well": "true",
             "price_range": "medium",
+            "multi_days": "true",
             "meal_type": "dinner",
             "ingredients": {
                   "chicken breasts": [
@@ -292,7 +280,8 @@
             "reheats_well": "true",
             "price_range": "cheap",
             "meal_type": "dinner",
-            "quick": "true",
+            "multi_days": "true",
+            "guests": "true",
             "ingredients": {
                   "butter": [
                         ".33",
@@ -336,6 +325,69 @@
                   ]
             },
             "recipe": "1. Heat oven to 425. Spread one pie crust on bottom of a casserole dish or pie pan.\n\n 2. In a medium saucepan, melt butter over medium heat. Add onion. cook 2 minutes. Stir in flour, salt, pepper, 1.75 cups chicken broth, and milk. Cook, stirring regularly, until bubbly and thickened.\n\n 3. Stir in chicken and mixed vegetables. Remove from heat. Spoon chicken mixture into crust-lined pan. Top with second crust and seal. Cut slits in several places in the top crust.\n\n 4.Bake 30-40 minutes or until crust is golden brown. During last 15 - 20 minutes, cover crust edge with strips of foil to prevent excessive browning. Let stand 5 minutes before serving. Enjoy!"
+      },
+      {
+            "meal_name": "Crispy Kickin Cayenne Chicken Cutlets",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "carrots": [
+                        "12",
+                        "oz(s)"
+                  ],
+                  "scallions": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "sour cream": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "frank's seasoning blend": [
+                        "0.25",
+                        "oz(s)"
+                  ],
+                  "panko breadcrumbs": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "monterey jack cheese": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "chicken cutlets": [
+                        "10",
+                        "oz(s)"
+                  ],
+                  "potatoes": [
+                        "12",
+                        "oz(s)"
+                  ],
+                  "honey": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "salt": [
+                        "to taste",
+                        ""
+                  ],
+                  "pepper": [
+                        "to taste",
+                        ""
+                  ],
+                  "cooking oil": [
+                        "3",
+                        "tsp(s)"
+                  ],
+                  "butter": [
+                        "3",
+                        "Tbsp(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/crispy-kickin-cayenne-chicken-cutlets-647f3e3302d358ae80bae3c4",
+            "recipe": "Preheat oven to 425 degrees.\n\nWash and dry produce.\n\nTrim, peel, and cut carrots into \u00c2\u00bd-inch-thick pieces.\n\nTrim and thinly slice scallions, separating whites from greens.\n\nIn a small bowl, combine half the sour cream, 0.5 tsp Frank\u00e2\u20ac\u2122s Seasoning Blend, and a big pinch of salt.\n\nStir in water until the mixture reaches a drizzling consistency.\n\nPlace butter in a medium bowl; microwave until melted.\n\nStir in panko, Monterey Jack, remaining Frank\u00e2\u20ac\u2122s Seasoning Blend, and salt and pepper.\n\nDice potatoes into \u00c2\u00bd-inch pieces and cook in salted water until tender, then mash with the remaining sour cream and butter.\n\nToss carrots with oil, salt, and pepper; roast for 5 minutes.\n\nPat chicken dry, season, and press panko mixture on top.\n\nAdd chicken to the baking sheet with carrots and roast until cooked through.\n\nToss roasted carrots with butter, and serve with mashed potatoes and chicken drizzled with Buffalo sauce and honey."
       },
       {
             "meal_name": "Creamy Tomato Spinach Tortellini",
@@ -433,8 +485,8 @@
             "vegan_only": "false",
             "reheats_well": "true",
             "price_range": "expensive",
+            "difficulty": "easy",
             "meal_type": "lunch",
-            "quick": "true",
             "ingredients": {
                   "roma tomatoes": [
                         "1",
@@ -464,13 +516,55 @@
             "link": "https://www.hellofresh.com/recipes/prosciutto-mozzarella-sandwiches-643ee1259d83e260f8084987"
       },
       {
+            "meal_name": "Chicken Tacos",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "multi_days": "true",
+            "guests": "true",
+            "ingredients": {
+                  "chicken breast(s)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "taco shell(s) or tortilla(s)": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "lettuce": [
+                        "0.25",
+                        "package(s)"
+                  ],
+                  "roma tomato(es)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "mexican cheese": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "veggie side of choice": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "mccormick taco seasoning": [
+                        "2",
+                        "Tbsp"
+                  ]
+            },
+            "recipe": "Serves 2. \n\nPut taco seasoning in water, and boil chicken with lid on until cooked through (about 20 minutes). \n\nShred chicken, and assemble tacos. \n\nEnjoy!"
+      },
+      {
             "meal_name": "Prosciutto and Mozzarella Sammies",
             "meat_type": "pork",
             "vegan_only": "false",
             "reheats_well": "true",
             "price_range": "expensive",
+            "difficulty": "easy",
             "meal_type": "dinner",
-            "quick": "true",
             "ingredients": {
                   "roma tomatoes": [
                         "1",
@@ -859,6 +953,44 @@
             "recipe": "Heat olive oil in a skillet on medium high heat. Add sliced bell peppers, onion, and ham (if not vegetarian version) and saute until lightly charred. Put off to side in a bowl. Cook hash brown potatoes in oil. When the potatoes are almost done, cook 4 eggs (2 each skillet) in a separate pan, over easy, and mix onions and peppers back in. Season generously with salt and pepper, finish cooking potato mixture, then transfer to a plate. Immediately top with mexican cheese, and place eggs on top of cheese. Top with sliced green onions."
       },
       {
+            "meal_name": "Ham & Egg Hash",
+            "meat_type": "vegetarian",
+            "reheats_well": "false",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "ingredients": {
+                  "shredded mexican blend cheese": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "frozen cubed potatoes": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "eggs": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "red bell peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "ham steaks": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "white onion": [
+                        ".5",
+                        "unit(s)"
+                  ],
+                  "green onions": [
+                        ".5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Heat olive oil in a skillet on medium high heat. Add sliced bell peppers, onion, and ham (if not vegetarian version) and saute until lightly charred. Put off to side in a bowl. Cook hash brown potatoes in oil. When the potatoes are almost done, cook 4 eggs (2 each skillet) in a separate pan, over easy, and mix onions and peppers back in. Season generously with salt and pepper, finish cooking potato mixture, then transfer to a plate. Immediately top with mexican cheese, and place eggs on top of cheese. Top with sliced green onions."
+      },
+      {
             "meal_name": "Vegetarian Egg Hash",
             "meat_type": "vegetarian",
             "reheats_well": "false",
@@ -966,6 +1098,8 @@
             "meat_type": "pork",
             "reheats_well": "true",
             "price_range": "medium",
+            "difficulty": "easy",
+            "multi_days": "true",
             "meal_type": "dinner",
             "ingredients": {
                   "biscuits": [
@@ -1088,6 +1222,27 @@
             }
       },
       {
+            "meal_name": "peanut butter and jelly",
+            "meat_type": "vegan",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "bread": [
+                        ".25",
+                        "loave(s)"
+                  ],
+                  "peanut butter": [
+                        ".25",
+                        "jar(s)"
+                  ],
+                  "jelly": [
+                        ".25",
+                        "jar(s)"
+                  ]
+            }
+      },
+      {
             "meal_name": "Costco premade turkey wraps",
             "meat_type": "turkey",
             "reheats_well": "true",
@@ -1099,6 +1254,77 @@
                         "package(s)"
                   ]
             }
+      },
+      {
+            "meal_name": "Vegan Thai Ginger Curry",
+            "meat_type": "none",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "jasmine rice": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "bell pepper": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "green beans": [
+                        "6",
+                        "oz(s)"
+                  ],
+                  "shallot": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "ginger": [
+                        "1",
+                        "thumb(s)"
+                  ],
+                  "lime": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "cilantro": [
+                        ".25",
+                        "oz(s)"
+                  ],
+                  "curry powder": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "coconut milk": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "sweet thai chili sauce": [
+                        "1",
+                        "oz(s)"
+                  ],
+                  "veggie stock concentrate": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "peanuts": [
+                        ".5",
+                        "oz(s)"
+                  ],
+                  "cooking oil": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "sugar": [
+                        ".25",
+                        "tsp(s)"
+                  ],
+                  "butter": [
+                        "1",
+                        "Tbsp(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/vegan-thai-ginger-curry-6464650f8ab1333a8ca2506e",
+            "recipe": "1. In a small pot, combine rice, .75 cups water, and a pinch of salt. Bring to a boil, then cover and reduce to a low simmer. Cook until rice is tender, 15-18 minutes. Keep covered off heat until ready to serve.\n\n2. While rice cooks, wash and dry produce. Core, deseed, and dice bell pepper into .5-inch pieces. Trim green beans if necessary; cut crosswise into 1-inch pieces. Halve, peel, and mince shallot. Peel and grate or mince ginger. Zest and quarter lime. Finely chop cilantro.\n\n3. Heat a drizzle of oil in a medium pan over medium-high heat. Add bell pepper, green beans, and a big pinch of salt. Cook, stirring occasionally, until veggies are slightly softened and lightly charred, 4-6 minutes.\n\n4. Add a drizzle of oil to pan with veggies, then stir in shallot, ginger, and half the curry powder. Cook, stirring constantly, until fragrant, 1 minute. Add .5 cup coconut milk to pan, stirring in chili sauce, stock concentrate, juice from half the lime, and .25 tsp sugar. Bring to a simmer, then reduce heat to medium-low.\n\n5. Simmer curry until sauce has thickened and veggies are tender, 4-6 minutes. Stir in half the cilantro. Taste and season with salt and more lime juice if desired. Turn off heat.\n\n6. Roughly chop peanuts. Fluff rice with a fork; stir in lime zest and 1 Tbsp butter. Divide rice between bowls and top with curry. Garnish with peanuts and remaining cilantro."
       },
       {
             "meal_name": "Vegan Curried Roasted Chickpea Bowls",
@@ -1204,6 +1430,7 @@
             "meal_name": "Mongolian beef (or chicken)",
             "meat_type": "beef",
             "reheats_well": "true",
+            "difficulty": "easy",
             "price_range": "cheap",
             "meal_type": "dinner",
             "ingredients": {
@@ -1383,6 +1610,37 @@
             "recipe": "Serves 2.\n\nHeat oil in a pan. Place 6 corn tortillas (can do 2 sets of 3 as needed). Spread with cheese, avocado, tomato, and jalapeno. Place another corn tortilla on top. Flip after about 3 minutes, or when the bottom side is crispy and browned. Enjoy!"
       },
       {
+            "meal_name": "Greek Chicken & Veggies",
+            "meat_type": "chicken",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "guests": "true",
+            "ingredients": {
+                  "italian dressing": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "chicken breast(s)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "red pepper(s)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "white onion(s)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "rice pilaf": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Serves 2. \n\nCut chicken and veggies into cubes. Season chicken with salt and pepper. \n\nPut on kebab sticks and cover in Italian dressing. Place in a casserole dish (still on kebab sticks) and bake at 375\u00c2\u00b0F for 25 minutes, or until cooked through. \n\n Cook rice pilaf according to instructions on packaging. Enjoy!"
+      },
+      {
             "meal_name": "greek salad",
             "meat_type": "vegetarian",
             "reheats_well": "false",
@@ -1424,6 +1682,7 @@
             "meal_name": "greek salad",
             "meat_type": "vegetarian",
             "reheats_well": "false",
+            "difficulty": "easy",
             "price_range": "medium",
             "meal_type": "dinner",
             "ingredients": {
@@ -1450,6 +1709,10 @@
                   "eggs": [
                         "2",
                         "unit(s)"
+                  ],
+                  "croutons": [
+                        "1",
+                        "package(s)"
                   ],
                   "feta cheese": [
                         "3",
@@ -1927,6 +2190,7 @@
             "reheats_well": "true",
             "price_range": "medium",
             "meal_type": "lunch",
+            "guests": "true",
             "ingredients": {
                   "premade broccoli cheddar soup": [
                         ".25",
@@ -1945,6 +2209,7 @@
             "reheats_well": "true",
             "price_range": "medium",
             "meal_type": "dinner",
+            "guests": "true",
             "ingredients": {
                   "premade broccoli cheddar soup": [
                         ".25",
@@ -1956,6 +2221,122 @@
                   ]
             },
             "recipe": "Heat up broccoli cheddar soup in a pan. Bake sourdough bread in oven. Dip bread in soup. Enjoy!"
+      },
+      {
+            "meal_name": "Mom's Chicken Alfredo",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "cream cheese": [
+                        "4",
+                        "oz(s)"
+                  ],
+                  "parmesan cheese": [
+                        "0.375",
+                        "cup(s)"
+                  ],
+                  "butter": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "2% milk": [
+                        "0.75-1",
+                        "cup(s)"
+                  ],
+                  "Mrs. Dash Garlic and Herb Seasoning": [
+                        "to taste",
+                        ""
+                  ],
+                  "grilled chicken (optional - alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "broccoli (optional - alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "pasta of choice (for alfredo)": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "tomatoes (optional-alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "Heat all together on medium low until smooth and creamy.\n\nAdd more milk as needed until smooth.\n\nGrill chicken, and add broccoli or tomatoes to taste."
+      },
+      {
+            "meal_name": "Mom's Chicken Alfredo with Focaccia Bread",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "cream cheese": [
+                        "4",
+                        "oz(s)"
+                  ],
+                  "parmesan cheese": [
+                        "0.375",
+                        "cup(s)"
+                  ],
+                  "butter": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "2% milk": [
+                        "0.75-1",
+                        "cup(s)"
+                  ],
+                  "Mrs. Dash Garlic and Herb Seasoning": [
+                        "to taste",
+                        ""
+                  ],
+                  "grilled chicken (optional - alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "broccoli (optional - alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "pasta of choice (for alfredo)": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "tomatoes (optional-alfredo)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "white sugar (for focaccia)": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "active dry yeast (for focaccia)": [
+                        "1.25",
+                        "oz(s)"
+                  ],
+                  "warm water (for focaccia)": [
+                        "1/3",
+                        "cup(s)"
+                  ],
+                  "all-purpose flour (for focaccia)": [
+                        "2",
+                        "cup(s)"
+                  ],
+                  "olive oil (for focaccia)": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "salt (for focaccia)": [
+                        "1",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "For the Alfredo: Heat all together on medium low until smooth and creamy.\n\nAdd more milk as needed until smooth.\n\nGrill chicken, and add broccoli or tomatoes to taste.\n\n\n\n\nFor the Focaccia: In a small bowl, dissolve sugar and yeast in warm water.\n\nLet stand until creamy, about 10 minutes.\n\nIn a large bowl, combine the yeast mixture with flour and 1/8 tsp salt.\n\nStir well to combine.\n\nStir in additional water, 1 Tbsp at a time, until all flour is absorbed.\n\nWhen the dough has pulled together, turn it out onto a lightly floured surface and knead briefly for about 1 minute.\n\nLightly oil a large bowl, place dough in the bowl, cover with a damp towel, and let rise in a warm place until doubled in volume, about 30 minutes.\n\nPreheat oven to 475 degrees.\n\nDeflate the dough and turn it out onto a lightly floured surface.\n\nBrush with oil, sprinkle with salt and rosemary, and bake for 10-15 minutes."
       },
       {
             "meal_name": "costco chicken alfredo sauce with broccoli",
@@ -2162,6 +2543,52 @@
             "link": "https://www.thelittlepine.com/crustless-spinach-quiche/"
       },
       {
+            "meal_name": "Pan-Seared Sweet Soy-Glazed Pork",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "carrots": [
+                        "9",
+                        "oz(s)"
+                  ],
+                  "broccoli florets": [
+                        "8",
+                        "oz(s)"
+                  ],
+                  "scallions": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "korean chili flakes": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "pork chops": [
+                        "10",
+                        "oz(s)"
+                  ],
+                  "garlic powder": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "sweet soy glaze": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "cooking oil": [
+                        "4",
+                        "tsp(s)"
+                  ],
+                  "butter": [
+                        "1",
+                        "Tbsp(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/pan-seared-sweet-soy-glazed-pork-6434f015e8a33b89a50870a9"
+      },
+      {
             "meal_name": "italian sub",
             "meat_type": "pork",
             "reheats_well": "true",
@@ -2247,6 +2674,7 @@
             "reheats_well": "true",
             "price_range": "medium",
             "meal_type": "lunch",
+            "multi_days": "true",
             "ingredients": {
                   "chicken breasts": [
                         "1",
@@ -2269,7 +2697,7 @@
                         "unit(s)"
                   ],
                   "red bell peppers": [
-                        "2",
+                        "1",
                         "unit(s)"
                   ],
                   "jalapenos": [
@@ -2285,7 +2713,7 @@
                         "package(s)"
                   ],
                   "cumin": [
-                        "/25",
+                        ".25",
                         "tsp(s)"
                   ],
                   "salt": [
@@ -2309,6 +2737,7 @@
             "reheats_well": "true",
             "price_range": "medium",
             "meal_type": "dinner",
+            "multi_days": "true",
             "ingredients": {
                   "chicken breasts": [
                         "1",
@@ -2347,7 +2776,7 @@
                         "package(s)"
                   ],
                   "cumin": [
-                        "/25",
+                        ".25",
                         "tsp(s)"
                   ],
                   "salt": [
@@ -2428,6 +2857,7 @@
             "meat_type": "vegetarian",
             "reheats_well": "true",
             "price_range": "medium",
+            "multi_days": "true",
             "meal_type": "dinner",
             "ingredients": {
                   "butter": [
@@ -2827,6 +3257,44 @@
             }
       },
       {
+            "meal_name": "Hobo packets",
+            "meat_type": "turkey",
+            "difficulty": "easy",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "ground turkey": [
+                        "0.5",
+                        "lb(s)"
+                  ],
+                  "seasoning salt": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "red peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "red onions": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "aluminum foil": [
+                        ".1",
+                        "unit(s)"
+                  ],
+                  "zucchini": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "yellow potatoes": [
+                        "1",
+                        "lb(s)"
+                  ]
+            }
+      },
+      {
             "meal_name": "California Kitchen BBQ Chicken Pizza",
             "meat_type": "chicken",
             "reheats_well": "true",
@@ -2951,11 +3419,13 @@
             "recipe": "1. Combine .25 cup kosher salt, 1 Tbsp black pepper, .75 tsp garlic powder, .75 tsp onion powder, .75 tsp oregano, and 1/8 tsp red pepper flakes to make grill seasoning. \n\n\n2.Prepare the lemon butter sauce: \n(For 4 servings, cut in half for 1). Add 1 Tbsp butter, 2 Tbsp finely chopped yellow onion, and 1 tsp minced garlic to a skillet. Saute for about 3 minutes, then add 1/3 cup white wine and 3 Tbsp lemon joice. Boil until the liquid is reduced to about 1/4 cup - 3-5 minutes. \n\n\n3. Preheat oven to 425 and throw in green beans with salt, pepper, oil. \n\n\n4.  Prepare the grill baste: (for 4 servings amount). Combine 2 Tbsp butter and 1/2 cup finely chopped yellow onion, and saute about 2-3 minutes. Add 1 tsp garlic, and saute for 2-3 minutes. Add 1 Tbsp flour and brown for 2 minutes. Whisk in 1/4 cup red wine vinegar (or red wine), 2 Tbsp lemon juice, and 1 Tbsp Dijon mustard, 1.5 Tbsp sugar, and .5 Tbsp parsley. Cook for 5 minutes on medium low, whisking intermittently. \n\n\n.5. Butterfly chicken breasts. Season with grill seasoning, brush with grill baste, and put on grill or pan. Cook for about 5 minutes on each side, adding grill baste once in middle. In last minute, top each chicken with goat cheese, and top with lemon butter sauce. "
       },
       {
-            "meal_name": "spaghetti",
+            "meal_name": "Spaghetti",
             "meat_type": "beef",
+            "difficulty": "easy",
             "reheats_well": "true",
             "price_range": "cheap",
             "meal_type": "dinner",
+            "multi_days": "true",
             "ingredients": {
                   "spaghetti noodles": [
                         ".5",
@@ -2965,7 +3435,7 @@
                         ".5",
                         "jar(s)"
                   ],
-                  "ground beef": [
+                  "ground beef (or chicken/sausage - for spaghetti)": [
                         ".5",
                         "lb(s)"
                   ],
@@ -3001,8 +3471,10 @@
             "meal_name": "cheddar brats and peas and carrots",
             "meat_type": "pork",
             "reheats_well": "true",
+            "difficulty": "easy",
             "price_range": "cheap",
             "meal_type": "dinner",
+            "multi_days": "true",
             "ingredients": {
                   "Johnsonville cheddar brats": [
                         "1",
@@ -3553,6 +4025,7 @@
             "reheats_well": "false",
             "price_range": "cheap",
             "meal_type": "dinner",
+            "guests": "true",
             "ingredients": {
                   "rice": [
                         ".5",
@@ -3701,6 +4174,7 @@
             "meal_name": "Butter Chicken",
             "meat_type": "chicken",
             "reheats_well": "true",
+            "difficulty": "easy",
             "price_range": "cheap",
             "meal_type": "dinner",
             "quick": "true",
@@ -3721,9 +4195,106 @@
             "recipe": "Prepare rice. Cube chicken breasts. Pan fry until edges are browned. Add Patak's sauce to pan with chicken. Place lid on and simmer on medium-low heat for 6-7 minutes. Serve completed sauce over rice."
       },
       {
+            "meal_name": "Chicken fajitas",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "quick": "true",
+            "ingredients": {
+                  "chicken breast(s)": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "mexican cheese": [
+                        "0.25",
+                        "pack(s)"
+                  ],
+                  "pepper": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "fajita seasoning": [
+                        "1",
+                        "Tbsp"
+                  ]
+            }
+      },
+      {
+            "meal_name": "omelette",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "quick": "true",
+            "ingredients": {
+                  "egg(s)": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "mexican cheese": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "green or white onion": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "optional: fruit for omelette side": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "optional: hash browns for omelette side": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "omelette fillings of choice": [
+                        "1",
+                        "unit(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "omelette",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "breakfast",
+            "quick": "true",
+            "ingredients": {
+                  "egg(s)": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "mexican cheese": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "green or white onion": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "optional: fruit for omelette side": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "optional: hash browns for omelette side": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "omelette fillings of choice": [
+                        "1",
+                        "unit(s)"
+                  ]
+            }
+      },
+      {
             "meal_name": "Butter Chicken with Naan Bread",
             "meat_type": "chicken",
             "reheats_well": "true",
+            "difficulty": "easy",
             "price_range": "medium",
             "meal_type": "dinner",
             "ingredients": {
@@ -3889,7 +4460,7 @@
       },
       {
             "meal_name": "Chicken and Bow Ties",
-            "meat_type": "Chicken",
+            "meat_type": "chicken",
             "reheats_well": "true",
             "price_range": "medium",
             "meal_type": "dinner",
@@ -4130,6 +4701,238 @@
             "link": "https://www.hellofresh.com/recipes/zaatar-crusted-grilling-cheese-5b9199dd30006c7e125da4c2"
       },
       {
+            "meal_name": "Sweet Chili Pork & Cabbage Stir-Fry",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "jasmine rice": [
+                        ".5",
+                        "cup(s)"
+                  ],
+                  "sweet soy glaze": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "sweet thai chili sauce": [
+                        "1",
+                        "oz(s)"
+                  ],
+                  "ponzu sauce": [
+                        ".4",
+                        "fl oz(s)"
+                  ],
+                  "rice wine vinegar": [
+                        "5",
+                        "tsp(s)"
+                  ],
+                  "ground pork": [
+                        "10",
+                        "oz(s)"
+                  ],
+                  "garlic powder": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "red cabbage and carrot mix": [
+                        "4",
+                        "oz(s)"
+                  ],
+                  "crispy fried onions": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "cilantro": [
+                        ".25",
+                        "oz(s)"
+                  ],
+                  "cooking oil": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "butter": [
+                        "1",
+                        "Tbsp(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/sweet-chili-pork-cabbage-stir-fry-61f982ea8f5a8314a3756b5f",
+            "recipe": "1. Wash and dry produce.\n\n2. In a small pot, combine rice, 0.75 cups water (1.5 cups for 4 servings), and a big pinch of salt.\n\n3. Bring to a boil, then cover and reduce to a low simmer.\n\n4. Cook until rice is tender, 15-18 minutes.\n\n5. Keep covered off heat until ready to serve.\n\n6. While rice cooks, in a small bowl, combine sweet soy glaze, chili sauce, ponzu, and half the vinegar (all for 4 servings).\n\n7. Heat a large drizzle of oil in a large pan over medium-high heat.\n\n8. Add pork and garlic powder; season with salt and pepper.\n\n9. Using a spatula, press into an even layer.\n\n10. Cook, undisturbed, until browned on bottom, 3-4 minutes.\n\n11. Break up meat into pieces and continue cooking until pork is cooked through, 1-2 minutes.\n\n12. Stir in sauce and cook, stirring, until slightly thickened, 1 minute more.\n\n13. Stir red cabbage and carrot mix into pan with pork; cook until just tender, 2-3 minutes.\n\n14. Taste and season with salt and pepper.\n\n15. Turn off heat.\n\n16. Fluff rice with a fork; stir in 1 Tbsp butter until melted.\n\n17. Divide rice between bowls and top with stir-fry and crispy fried onions.\n\n18. Pick cilantro leaves from stems; roughly tear and sprinkle over bowls.\n\n19. Serve."
+      },
+      {
+            "meal_name": "Sweet Ginger Pork Chops",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "pork chops": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "soy sauce": [
+                        ".25",
+                        "cup(s)"
+                  ],
+                  "honey": [
+                        ".25",
+                        "cup(s)"
+                  ],
+                  "ginger": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "garlic": [
+                        "3",
+                        "clove(s)"
+                  ],
+                  "olive oil": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "black pepper": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "red pepper flakes": [
+                        "to taste",
+                        ""
+                  ],
+                  "green onions": [
+                        "1/4",
+                        "cup(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/sweet-ginger-pork-chops-61b8b57839e675135c75e4b4",
+            "recipe": "Preheat oven to 375\u00c2\u00b0F.\n\nIn a bowl, whisk soy sauce, honey, ginger, garlic, olive oil, black pepper, and red pepper flakes.\n\nMarinate pork chops for at least 30 minutes.\n\nTransfer to a baking dish, pour marinade over them, and bake for 25-30 minutes until cooked through.\n\nLet rest for 5 minutes, then garnish with green onions."
+      },
+      {
+            "meal_name": "Crock Pot Pulled Pork Sandwiches",
+            "meat_type": "pork loin or pork shoulder",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "pork loin or pork shoulder": [
+                        "3-4",
+                        "lbs"
+                  ],
+                  "BBQ sauce": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "onion": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "garlic powder": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "paprika": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "salt": [
+                        "to taste",
+                        ""
+                  ],
+                  "pepper": [
+                        "to taste",
+                        ""
+                  ],
+                  "coleslaw mix": [
+                        "4",
+                        "cups"
+                  ],
+                  "mayonnaise": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "apple cider vinegar": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "sugar": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "sandwich buns": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "vegetable of choice": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "Place the pork in the crock pot with onion, garlic powder, paprika, salt, and pepper. Pour BBQ sauce over the pork. Cook on low for 8 hours or until tender. Shred the pork with forks. For coleslaw, mix mayonnaise, vinegar, sugar, salt, and pepper. Add coleslaw mix and toss. Serve pulled pork on buns, topped with coleslaw and a side of your choice."
+      },
+      {
+            "meal_name": "Crock Pot Pulled Pork Sandwiches",
+            "meat_type": "pork loin or pork shoulder",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "guests": "true",
+            "multi_days": "true",
+            "ingredients": {
+                  "pork loin or pork shoulder": [
+                        "1.5-2",
+                        "lbs"
+                  ],
+                  "BBQ sauce": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "onion": [
+                        "0.5",
+                        "unit(s)"
+                  ],
+                  "garlic powder": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "paprika": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "salt": [
+                        "to taste",
+                        ""
+                  ],
+                  "pepper": [
+                        "to taste",
+                        ""
+                  ],
+                  "coleslaw mix": [
+                        "2",
+                        "cups"
+                  ],
+                  "mayonnaise": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "apple cider vinegar": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "sugar": [
+                        "0.5",
+                        "Tbsp(s)"
+                  ],
+                  "sandwich buns": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "vegetable of choice": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "Place the pork in the crock pot with onion, garlic powder, paprika, salt, and pepper. Pour BBQ sauce over the pork. Cook on low for 8 hours or until tender. Shred the pork with forks. For coleslaw, mix mayonnaise, vinegar, sugar, salt, and pepper. Add coleslaw mix and toss. Serve pulled pork on buns, topped with coleslaw and a side of your choice."
+      },
+      {
             "meal_name": "Sweet Chili Pork Bowls",
             "meat_type": "pork",
             "reheats_well": "true",
@@ -4181,7 +4984,9 @@
             "reheats_well": "true",
             "price_range": "cheap",
             "meal_type": "dinner",
-            "quick": "true",
+            "difficulty": "easy",
+            "guests": "true",
+            "multi_days": "true",
             "ingredients": {
                   "beef toast": [
                         "1",
@@ -4303,6 +5108,7 @@
             "meat_type": "chicken",
             "reheats_well": "true",
             "price_range": "cheap",
+            "difficulty": "easy",
             "meal_type": "dinner",
             "ingredients": {
                   "eggs": [
@@ -4387,7 +5193,60 @@
             "recipe": "Start spaghetti. Season chicken with italian seasoning, salt, and pepper and cook in a pan until cooked through.\n\n Cut grape tomatoes into halves and cook in olive oil with scallion whites and garlic for ~3-4 minutes.\n\n Meanwhile, combine cream cheese, parmesan, butter, and milk (start with .75 cup and progress to 1 cup of milk as needed) in a pan, whisking until combined and then simmering until thickened. Add Mrs. Dash Garlic and Herb Seasoning, to taste. Add pepper and salt to taste. \n\nCombine alfredo sauce with tomatoes and chciken ,and serve over pasta. Top with green onion greens. Enjoy!"
       },
       {
-            "meal_name": "Nutmeg and Thyme Chicken Thighs with Carrots and Potatoes",
+            "meal_name": "Fetuccini Carbonara",
+            "meat_type": "ham",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "olive oil": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "butter": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "garlic clove": [
+                        "0.5",
+                        "unit(s)"
+                  ],
+                  "shallot": [
+                        "0.5",
+                        "unit(s)"
+                  ],
+                  "white wine": [
+                        "0.17",
+                        "cup(s)"
+                  ],
+                  "ham": [
+                        "0.125",
+                        "lb(s)"
+                  ],
+                  "large eggs": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "heavy cream": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "grated parmesan": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "chopped parsley": [
+                        "0.125",
+                        "cup(s)"
+                  ],
+                  "pepper": [
+                        "0.125",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "Heat the oil and the butter in a skillet over medium heat.\n\nAdd the garlic and shallot and saut\u00c3\u00a9 for 1 minute.\n\nAdd the white wine and heat on high for 2 minutes.\n\nLower the heat, add the ham and saut\u00c3\u00a9 for 1 minute.\n\nBeat the egg and heavy cream together.\n\nStir in the parmesan, parsley, and pepper.\n\nMix the hot ham with the egg and cream mixture and toss immediately with hot pasta.\n\nMake sure the eggs are heated, but not scrambled.\n\nServe."
+      },
+      {
+            "meal_name": "Mrs. Neff's Nutmeg and Thyme Chicken Thighs with Carrots and Potatoes",
             "meat_type": "chicken",
             "reheats_well": "false",
             "price_range": "cheap",
@@ -4423,6 +5282,65 @@
                   ]
             },
             "link": "https://www.epicurious.com/recipes/food/views/oven-roasted-chicken-thighs-with-carrots-and-yukon-gold-potatoes-351711"
+      },
+      {
+            "meal_name": "Golden Chicken Schnitzel",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "Yukon Gold potatoes": [
+                        "12",
+                        "oz(s)"
+                  ],
+                  "Fry Seasoning": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "lemon": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "panko breadcrumbs": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "garlic powder": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "chicken cutlets": [
+                        "10",
+                        "oz(s)"
+                  ],
+                  "green beans": [
+                        "6",
+                        "oz(s)"
+                  ],
+                  "sour cream": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "honey Dijon dressing": [
+                        "1.5",
+                        "oz(s)"
+                  ],
+                  "salt": [
+                        "to taste",
+                        ""
+                  ],
+                  "pepper": [
+                        "to taste",
+                        ""
+                  ],
+                  "vegetable oil": [
+                        "2",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "1. Adjust rack to top position (top and middle positions for 4 servings) and preheat oven to 425\u00c2\u00b0F. Wash and dry all produce.\n\n2. Cut potatoes into \u00c2\u00bd-inch-thick wedges. Toss on one side of a baking sheet with a drizzle of oil, salt, pepper, and Fry Seasoning. Roast on top rack for 10 minutes.\n\n3. Meanwhile, zest and quarter lemon. In a shallow dish, combine panko, lemon zest, and garlic powder. Season with salt and pepper.\n\n4. Pat chicken dry with paper towels; place between two large pieces of plastic wrap. Pound with a mallet or rolling pin until chicken is about \u00c2\u00bd inch thick. Season all over with salt and pepper.\n\n5. Brush chicken all over with half the sour cream. Working one piece at a time, press chicken into panko mixture to coat on both sides.\n\n6. Heat a 1/3-inch layer of oil in a large, heavy-bottomed pan over medium-high heat. Once oil is shimmering and hot enough that a pinch of panko sizzles when added to the pan, add chicken and cook until crust is golden brown and chicken is cooked through, 3-5 minutes per side. Transfer to a paper-towel-lined plate.\n\n7. Once potatoes have roasted for 10 minutes, remove sheet from oven. Carefully toss green beans on empty side with a drizzle of oil, salt, and pepper. Return to top rack until veggies are browned and tender, 12-15 minutes more.\n\n8. In a small bowl, combine honey Dijon dressing with remaining sour cream.\n\n9. Divide chicken, green beans, and potatoes between plates. Serve with sauce for dipping or drizzling on chicken and lemon wedges on the side.",
+            "link": "https://www.hellofresh.com/recipes/golden-chicken-schnitzel-5fa57a339e08b575096f8e26"
       },
       {
             "meal_name": "Soy-Glazed meatballs",
@@ -4523,6 +5441,52 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/white-cheddar-wonderburgers-61cb23eb4547a11c25516b1e"
+      },
+      {
+            "meal_name": "Sheet Pan Dijon Onion Crunch Chicken",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "chicken cutlets": [
+                        "10",
+                        "oz(s)"
+                  ],
+                  "honey dijon dressing": [
+                        "1.5",
+                        "oz(s)"
+                  ],
+                  "monterey jack cheese": [
+                        "0.25",
+                        "cup(s)"
+                  ],
+                  "crispy fried onions": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "green beans": [
+                        "6",
+                        "oz(s)"
+                  ],
+                  "garlic powder": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "ciabatta bread": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "butter": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "cooking oil": [
+                        "1",
+                        "tsp(s)"
+                  ]
+            },
+            "link": "https://www.hellofresh.com/recipes/sheet-pan-dijon-onion-crunch-chicken-621e7f79fda2615c364c54b2"
       },
       {
             "meal_name": "Thai Coconut Curry Chicken",
@@ -4930,6 +5894,86 @@
             "recipe": "1. Heat the broiler with a rack about 6 inches from the heat source. \n\n2. In a large *12 inch) skillet on the stovertop heat enough olive oil to lightly coat the bottom of the pan (about 1 Tablespoon) over medium high. Add half the gnocchi to the pan, breaking up any that are stuck together. Cover with a lid or baking sheet and cook, undisturbed, until golden brown on one side, 2 to 4 minutes. Transfer to a medium bowl. Repeat with the remaining gnocchi and olive oil. \n\n3. Add the butter to the skillet and cook over medium-high, stirrin goften, util golden-brown and tasty, 1-2 minutes. Add the gralic, red pepper flakes, 1.5tsp salt, and a few grinds of pepper, reducing the heat slightly if nececssary to avoid scorching. Add the tomatoes and 3 Tbsp water and cook, shaking hte pan occcasionally, until the tomatoes have softened and the liquid has slightly thickened, 4-6 minutes. Smash the tomatoes as they burst to help them along. \n\n4. Add the seared gnocchi and .25 cup basil (if using). Stir to coat, then shake into an even layer. Top with mozzarella, cut or torn into .5 inch pieces, and drizzle lightly with olive oil. Broil until the cheese is melted and browned in spots, 2-4 minutes. Top with more basil, red pepper flakes, and black pepper if desired."
       },
       {
+            "meal_name": "Stuffed Peppers",
+            "meat_type": "beef",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "meal_type": "dinner",
+            "guests": "true",
+            "multi_days": "true",
+            "ingredients": {
+                  "bell peppers": [
+                        "4",
+                        "unit(s)"
+                  ],
+                  "ground beef": [
+                        "1",
+                        "lb(s)"
+                  ],
+                  "onion": [
+                        "0.5",
+                        "cup(s), chopped"
+                  ],
+                  "jar of spaghetti sauce": [
+                        "15",
+                        "oz(s)"
+                  ],
+                  "rice": [
+                        "1",
+                        "cup(s) before cooking"
+                  ],
+                  "shredded mozzarella cheese": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "salt": [
+                        "to taste",
+                        ""
+                  ],
+                  "pepper": [
+                        "to taste",
+                        ""
+                  ]
+            },
+            "recipe": "Preheat oven to 350\u00c2\u00b0F.\n\nCut the tops off bell peppers and remove seeds.\n\nIn a large pot, bring water to boil, then add peppers and boil for 5 minutes.\n\nIn a skillet, cook ground beef and onion until beef is brown.\n\nStir in 1 cup cooked rice and a jar of spaghetti sauce, then season with salt and pepper.\n\nPlace peppers in baking dish, fill with beef mixture, and cover with foil.\n\nBake for 10 minutes, uncover, add cheese, and bake for 15 more minutes until cheese is melted.\n\n",
+            "link": "https://www.bettycrocker.com/recipes/stuffed-peppers/63e29e18-903e-467c-aec5-fba4ce3a138f"
+      },
+      {
+            "meal_name": "Chicken and Biscuits",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "chicken breasts": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "chicken gravy": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "half and half": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "minced sage": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "black pepper": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "refrigerated biscuits": [
+                        "4",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "Preheat oven to 350\u00c2\u00b0F.\n\nPlace frozen chicken breasts in a casserole dish.\n\nIn a bowl, mix gravy, half and half, sage, and black pepper.\n\nPour mixture over chicken, and bake for 15 minutes.\n\nArrange biscuits on top of the chicken and gravy.\n\nReturn to oven and bake for an additional 10 minutes.\n\nServe.\n\n"
+      },
+      {
             "meal_name": "Shawarma Spiced Chickpea Bowls",
             "meat_type": "vegan",
             "reheats_well": "true",
@@ -4993,7 +6037,8 @@
             "reheats_well": "true",
             "price_range": "cheap",
             "meal_type": "dinner",
-            "quick": "true",
+            "guests": "true",
+            "difficulty": "easy",
             "ingredients": {
                   "smoked sausauge or kielbasa": [
                         "1",
@@ -5043,11 +6088,14 @@
             "link": "https://www.averiecooks.com/sheet-pan-sausage-vegetables/"
       },
       {
-            "meal_name": "Loaded Baked potatoes",
+            "meal_name": "Loaded Baked potatoes + veggie",
             "meat_type": "vegetarian",
             "reheats_well": "true",
-            "price_range": "medium",
+            "difficulty": "easy",
+            "price_range": "cheap",
             "meal_type": "dinner",
+            "multi_days": "true",
+            "guests": "true",
             "ingredients": {
                   "shredded mexican blend cheese": [
                         "1",
@@ -5064,16 +6112,100 @@
                   "green onions": [
                         ".5",
                         "package(s)"
+                  ],
+                  "bacon": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "olive oil": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "veggie side of choice": [
+                        "1",
+                        "unit(s)"
                   ]
             },
             "recipe": "Preheat oven to 425. Poke holes in the potates, rub with olive oil and salt, and bake 45-60 minutes. Fluff and serve with toppings. "
       },
       {
+            "meal_name": "chicken coleslaw sammies + veggie",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "multi_days": "true",
+            "guests": "true",
+            "ingredients": {
+                  "chicken patty(ies) or breast": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "burger bun(s)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "swiss cheese": [
+                        "0.25",
+                        "package(s)"
+                  ],
+                  "coleslaw (sauce)": [
+                        "0.5",
+                        "cup(s)"
+                  ],
+                  "veggie side of choice": [
+                        "1",
+                        "unit(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "BLT + veggie",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "multi_days": "true",
+            "guests": "true",
+            "lunch-leftovers": "true",
+            "ingredients": {
+                  "veggie side": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "nitrate free bacon": [
+                        "0.25",
+                        "package(s)"
+                  ],
+                  "slicing tomato(es)": [
+                        "0.5",
+                        "unit(s)"
+                  ],
+                  "lettuce": [
+                        "0.25",
+                        "unit(s)"
+                  ],
+                  "whole wheat bread": [
+                        "0.1",
+                        "package(s)"
+                  ],
+                  "mayonnaise": [
+                        "2",
+                        "Tbsp"
+                  ]
+            }
+      },
+      {
             "meal_name": "tacos and broccoli",
             "meat_type": "turkey",
             "reheats_well": "true",
+            "difficulty": "easy",
             "price_range": "cheap",
             "meal_type": "dinner",
+            "multi_days": "true",
+            "lunch-leftovers": "true",
             "ingredients": {
                   "shredded mexican blend cheese": [
                         ".25",
@@ -5208,5 +6340,18 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/harissa-chicken-bowls-60e5b5b5ef3f577dad43538b"
+      },
+      {
+            "meal_name": "Test Meal",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "dinner",
+            "ingredients": {},
+            "recipe": "test",
+            "difficulty": "easy",
+            "multi_days": "true",
+            "guests": "true",
+            "vegan_only": "false"
       }
 ]
