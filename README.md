@@ -8,4 +8,4 @@ python main.py
 
 __________________________
 
-Note: Since this is a personal project meant mostly for my own use, I didn't make a responsive UI. The window may not fit on every screen size/resolution. 
+Current working version. Has sizing that works for laptop, updated meals, & updated tags. main is just for displaying on website right now. 
