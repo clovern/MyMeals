@@ -22,6 +22,7 @@ class AdvancedPlanPage(PlanPage):
     
     def create_advanced_plan_display(self):
         self.create_lower_left_frame()
+        self.create_lower_middle_frame()
         self.create_lower_right_frame()
         self.create_back_button()
         self.create_title("Advanced Plan Creator")
