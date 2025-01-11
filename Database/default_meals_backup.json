@@ -2379,6 +2379,51 @@
             "recipe": "Prepare pot stickers and ramen noodles according to instructions on packaging. Top with soy sauce, or your favorite stir fry topping sauce. Slice up green onions and top with these as well. Enjoy!"
       },
       {
+            "meal_name": "costco spinach ravioli",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "costco spinach ravioli": [
+                        ".25",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on packaging."
+      },
+      {
+            "meal_name": "pot stickers, veggies, and rice",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "pot stickers": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "rice": [
+                        "2",
+                        "cup(s)"
+                  ],
+                  "stir fry veggies": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "soy sauce": [
+                        ".15",
+                        "cups(s)"
+                  ]
+
+            },
+            "recipe": "Cook potstickers, rice, veggies. Top with soy sauce to taste."
+      },
+      {
             "meal_name": "Garlic Tomato Bagel with Cream Cheese",
             "meat_type": "vegetarian",
             "reheats_well": "false",
@@ -3011,6 +3056,53 @@
             }
       },
       {
+            "meal_name": "Grilled Veggie Cheese & Tomato Basil Soup",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "sourdough bread": [
+                        ".25",
+                        "loave(s)"
+                  ],
+                  "cheese": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "butter": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "tomato basil soup": [
+                        "1",
+                        "can(s)"
+                  ],
+                  "carrots (side)": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "cucumber": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "mayonnaise": [
+                        "to taste",
+                        "unit(s)"
+                  ],
+                  "grape tomatoes": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "orange pepper": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "Heat up your favorite brand of canned tomato basil soup. Make a grilled cheese. Enjoy with a side of carrots, cucumber, grape tomatoes, and orange pepper as desired."
+      },
+      {
             "meal_name": "brie raspberry grilled cheese",
             "meat_type": "vegetarian",
             "reheats_well": "true",
@@ -3417,6 +3509,122 @@
                   ]
             },
             "recipe": "1. Combine .25 cup kosher salt, 1 Tbsp black pepper, .75 tsp garlic powder, .75 tsp onion powder, .75 tsp oregano, and 1/8 tsp red pepper flakes to make grill seasoning. \n\n\n2.Prepare the lemon butter sauce: \n(For 4 servings, cut in half for 1). Add 1 Tbsp butter, 2 Tbsp finely chopped yellow onion, and 1 tsp minced garlic to a skillet. Saute for about 3 minutes, then add 1/3 cup white wine and 3 Tbsp lemon joice. Boil until the liquid is reduced to about 1/4 cup - 3-5 minutes. \n\n\n3. Preheat oven to 425 and throw in green beans with salt, pepper, oil. \n\n\n4.  Prepare the grill baste: (for 4 servings amount). Combine 2 Tbsp butter and 1/2 cup finely chopped yellow onion, and saute about 2-3 minutes. Add 1 tsp garlic, and saute for 2-3 minutes. Add 1 Tbsp flour and brown for 2 minutes. Whisk in 1/4 cup red wine vinegar (or red wine), 2 Tbsp lemon juice, and 1 Tbsp Dijon mustard, 1.5 Tbsp sugar, and .5 Tbsp parsley. Cook for 5 minutes on medium low, whisking intermittently. \n\n\n.5. Butterfly chicken breasts. Season with grill seasoning, brush with grill baste, and put on grill or pan. Cook for about 5 minutes on each side, adding grill baste once in middle. In last minute, top each chicken with goat cheese, and top with lemon butter sauce. "
+      },
+      {
+            "meal_name": "Chicken Ranch Wraps with Cucumbers",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "false",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "hot sauce": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "ranch": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "chicken breast or just bare chicken": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "flour tortillas": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "lettuce or spring mix": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "cheddar cheese": [
+                        ".25",
+                        "cup(s)"
+                  ],
+                  "cucumber": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "N/A"
+      },
+      {
+            "meal_name": "Easy Cheesy Enchiladas",
+            "meat_type": "vegetarian",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "corn tortillas": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "mexican cheese": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "red enchilada sauce": [
+                        "1",
+                        "can(s)"
+                  ],
+                  "chicken breast(s) (optional)": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "taco seasoning (optional)": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "veggie side of choice": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "1. Preheat oven to 350°F (175°C).\n\n2. Dip corn tortillas in red enchilada sauce to coat.\n\n3. Fill each tortilla with Mexican cheese and optionally, taco-seasoned chicken breast.\n\n4. Roll up tortillas and place in a 9x13 baking pan.\n\n5. Bake for 15 minutes.\n\n6. Serve with your choice of veggie side. Enjoy!"
+      },
+      {
+            "meal_name": "Chicken Ranch Wraps with Cucumbers",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "false",
+            "difficulty": "easy",
+            "guests": true,
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "hot sauce": [
+                        "2",
+                        "tsp(s)"
+                  ],
+                  "ranch": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "chicken breast or just bare chicken": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "flour tortillas": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "lettuce or spring mix": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "cheddar cheese": [
+                        ".25",
+                        "cup(s)"
+                  ],
+                  "cucumber": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "N/A"
       },
       {
             "meal_name": "Spaghetti",
@@ -4808,7 +5016,7 @@
       },
       {
             "meal_name": "Crock Pot Pulled Pork Sandwiches",
-            "meat_type": "pork loin or pork shoulder",
+            "meat_type": "pork",
             "reheats_well": "true",
             "price_range": "moderate",
             "meal_type": "dinner",
@@ -4869,68 +5077,36 @@
             "recipe": "Place the pork in the crock pot with onion, garlic powder, paprika, salt, and pepper. Pour BBQ sauce over the pork. Cook on low for 8 hours or until tender. Shred the pork with forks. For coleslaw, mix mayonnaise, vinegar, sugar, salt, and pepper. Add coleslaw mix and toss. Serve pulled pork on buns, topped with coleslaw and a side of your choice."
       },
       {
-            "meal_name": "Crock Pot Pulled Pork Sandwiches",
-            "meat_type": "pork loin or pork shoulder",
+            "meal_name": "Chicken Sammies with Coleslaw and caesar salad",
+            "meat_type": "chicken",
             "reheats_well": "true",
-            "price_range": "moderate",
+            "price_range": "cheap",
             "meal_type": "dinner",
             "guests": "true",
             "multi_days": "true",
             "ingredients": {
-                  "pork loin or pork shoulder": [
-                        "1.5-2",
-                        "lbs"
+                  "coleslaw": [
+                        ".5",
+                        "package(s)"
                   ],
-                  "BBQ sauce": [
-                        "0.5",
-                        "cup(s)"
-                  ],
-                  "onion": [
-                        "0.5",
-                        "unit(s)"
-                  ],
-                  "garlic powder": [
-                        "0.5",
-                        "tsp(s)"
-                  ],
-                  "paprika": [
-                        "0.5",
-                        "tsp(s)"
-                  ],
-                  "salt": [
-                        "to taste",
-                        ""
-                  ],
-                  "pepper": [
-                        "to taste",
-                        ""
-                  ],
-                  "coleslaw mix": [
-                        "2",
-                        "cups"
-                  ],
-                  "mayonnaise": [
-                        "0.5",
-                        "cup(s)"
-                  ],
-                  "apple cider vinegar": [
-                        "1",
-                        "Tbsp(s)"
-                  ],
-                  "sugar": [
-                        "0.5",
-                        "Tbsp(s)"
-                  ],
-                  "sandwich buns": [
+                  "Just bare chicken patties": [
                         "2",
                         "unit(s)"
                   ],
-                  "vegetable of choice": [
+                  "swiss cheese": [
+                        "2",
+                        "slice(s)"
+                  ],
+                  "caesar salad mix": [
                         "1",
+                        "package(s)"
+                  ],
+                  "burger bun(s)": [
+                        "2",
                         "unit(s)"
                   ]
             },
-            "recipe": "Place the pork in the crock pot with onion, garlic powder, paprika, salt, and pepper. Pour BBQ sauce over the pork. Cook on low for 8 hours or until tender. Shred the pork with forks. For coleslaw, mix mayonnaise, vinegar, sugar, salt, and pepper. Add coleslaw mix and toss. Serve pulled pork on buns, topped with coleslaw and a side of your choice."
+            "recipe": "Air fry chicken patties, melt swiss on it, and top with coleslaw on bun. Prep caesar salad as side. Enjoy!"
       },
       {
             "meal_name": "Sweet Chili Pork Bowls",
@@ -5343,6 +5519,73 @@
             "link": "https://www.hellofresh.com/recipes/golden-chicken-schnitzel-5fa57a339e08b575096f8e26"
       },
       {
+            "meal_name": "Honey Pepper Chicken Strips",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+              "honey": [
+                0.75,
+                "cup(s)"
+              ],
+              "soy sauce": [
+                0.33,
+                "cup(s)"
+              ],
+              "dark brown sugar": [
+                0.25,
+                "cup(s)"
+              ],
+              "pineapple juice": [
+                0.25,
+                "cup(s)"
+              ],
+              "lemon juice": [
+                1,
+                "unit(s)"
+              ],
+              "apple cider vinegar": [
+                2,
+                "Tbsp(s)"
+              ],
+              "olive oil": [
+                2,
+                "Tbsp(s)"
+              ],
+              "ground black pepper": [
+                1,
+                "tsp(s)"
+              ],
+              "cayenne pepper": [
+                0.25,
+                "tsp(s)"
+              ],
+              "paprika": [
+                0.5,
+                "tsp(s)"
+              ],
+              "garlic powder": [
+                0.25,
+                "tsp(s)"
+              ],
+              "boneless skinless chicken breasts": [
+                2,
+                "lbs"
+              ],
+              "egg": [
+                1,
+                "unit(s)"
+              ],
+              "panko bread crumbs": [
+                "to taste"
+              ]
+            },
+            "recipe": "Combine sauce ingredients in a skillet and simmer until thickened. Coat chicken strips in egg, then panko, and bake until cooked through."
+          },
+      {
             "meal_name": "Soy-Glazed meatballs",
             "meat_type": "beef",
             "reheats_well": "false",
@@ -5395,6 +5638,50 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/sweet-chili-soy-glazed-meatballs-5ffca6445307755d3768ed26"
+      },
+      {
+            "meal_name": "Magnus Chicken with caesar salad",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "multi_days": "true",
+            "price_range": "medium",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "cumin": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "prepared caesar salad": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "chicken breasts": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "olive oil": [
+                        ".125",
+                        "cup(s)"
+                  ],
+                  "red pepper flakes": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "minced garlic": [
+                        "0.5",
+                        "tsp(s)"
+                  ],
+                  "habanero peppers": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "broccoli": [
+                        "0.5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "1. Preheat oven to 375°F (190°C).  \n2. In a bowl, mix cumin, olive oil, red pepper flakes, minced garlic, and diced habanero peppers.  \n3. Coat chicken breasts with the spice mixture.  \n4. Place chicken on a baking sheet and bake for 25-30 minutes, or until cooked through.  \n5. Steam or sauté broccoli as a side.  \n6. Serve chicken with broccoli."
       },
       {
             "meal_name": "White Cheddar Wonderburgers",
@@ -5487,6 +5774,484 @@
                   ]
             },
             "link": "https://www.hellofresh.com/recipes/sheet-pan-dijon-onion-crunch-chicken-621e7f79fda2615c364c54b2"
+      },
+      {
+            "meal_name": "Coconut Curry Buddha Bowl",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "multi_days": "true",
+            "price_range": "medium",
+            "difficulty": "easy",
+            "meal_type": "main",
+            "ingredients": {
+                  "raw cashews": [
+                        "1",
+                        "cup"
+                  ],
+                  "green curry paste": [
+                        "2",
+                        "Tbsp"
+                  ],
+                  "coconut cream": [
+                        "1",
+                        "can (14 oz)"
+                  ],
+                  "lime juice": [
+                        "1",
+                        "Tbsp"
+                  ],
+                  "fish sauce": [
+                        "2",
+                        "tsp"
+                  ],
+                  "brown sugar": [
+                        "1",
+                        "tsp"
+                  ],
+                  "kosher salt": [
+                        ".5",
+                        "tsp"
+                  ],
+                  "chicken (optional)": [
+                        "1",
+                        "lb"
+                  ],
+                  "broccoli florets": [
+                        "2",
+                        "cups"
+                  ],
+                  "cremini mushrooms": [
+                        "8",
+                        "large"
+                  ],
+                  "cooked brown rice": [
+                        "4",
+                        "cups"
+                  ],
+                  "shredded red cabbage": [
+                        "2",
+                        "cups"
+                  ],
+                  "julienned carrots": [
+                        "1",
+                        "cup"
+                  ]
+            },
+            "recipe": "1. Blend cashews, curry paste, coconut cream, lime juice, fish sauce, brown sugar, and salt until creamy. \n2. Steam broccoli and mushrooms for about 5 minutes. \n3. Serve by dividing rice into bowls, topping with veggies, and garnishing with coconut flakes and cilantro. Spoon sauce over and serve with lime wedges."
+      },
+      {
+            "meal_name": "Roast Beef Sandwich",
+            "meat_type": "beef",
+            "vegan_only": "false",
+            "reheats_well": "false",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "guests": "true",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "sourdough bread": [
+                        "4",
+                        "slice(s)"
+                  ],
+                  "roast beef": [
+                        ".25",
+                        "lbs"
+                  ],
+                  "Alouette garlic and herb cheese": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "red peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "veggie side of choice": [
+                        ".5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "1. Spread Alouette cheese on slices of sourdough bread. \n\n2. Layer roast beef and sliced red peppers between two slices of bread. \n\n3. Top with remaining bread slices. \n\n4. Serve with a veggie side of your choice. Enjoy!"
+      },
+      {
+            "meal_name": "Pesto Rossa Pasta with Chicken",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "pesto rossa sauce": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "whole wheat pasta": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "chicken breast": [
+                        "1",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "1. Cook pasta according to package directions. Meanwhile, grill or bake the chicken until fully cooked and slice.\n\n2. Toss the cooked pasta with pesto rossa sauce, then top with sliced chicken. Serve and enjoy!"
+      },
+      {
+            "meal_name": "Burgers with Balsamic Goat Cheese Side Salad",
+            "meat_type": "beef",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "goat cheese": [
+                        "2",
+                        "oz"
+                  ],
+                  "balsamic vinaigrette dressing": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "spring mix": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "croutons": [
+                        ".25",
+                        "package(s)"
+                  ],
+                  "burgers": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "burger buns": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "swiss cheese": [
+                        "2",
+                        "slice(s)"
+                  ],
+                  "swiss cheese": [
+                        "2",
+                        "slice(s)"
+                  ]
+            },
+            "recipe": "1. Cook the burgers to your desired doneness, and add a slice of Swiss cheese to each burger during the last minute of cooking to melt.\n\n2. Toast the burger buns, if desired, and assemble the burgers with the goat cheese.\n\n3. In a bowl, toss the spring mix with balsamic vinaigrette dressing, then top with croutons.\n\n4. Serve the burgers with the side salad. Enjoy!"
+      },
+      {
+            "meal_name": "Caprese Chicken",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "chicken breasts": [
+                        "2",
+                        "5-7 oz units"
+                  ],
+                  "italian seasoning": [
+                        "1",
+                        "tsp(s)"
+                  ],
+                  "garlic powder": [
+                        ".5",
+                        "tsp(s)"
+                  ],
+                  "cracked black pepper": [
+                        ".5",
+                        "tsp(s)"
+                  ],
+                  "olive oil": [
+                        "1/2",
+                        "Tbsp(s)"
+                  ],
+                  "fresh mozzarella": [
+                        "4",
+                        "oz, sliced"
+                  ],
+                  "vine-ripened tomatoes": [
+                        "1",
+                        "unit(s), sliced"
+                  ],
+                  "fresh basil": [
+                        "10",
+                        "leaves"
+                  ],
+                  "aged balsamic or balsamic glaze": [
+                        "to taste",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "1. Preheat oven to 375°F. Season chicken with Italian seasoning, garlic powder, and pepper; brush with olive oil.\n\n2. Bake chicken until nearly cooked through. Top with mozzarella and return to oven for 3-5 minutes until cheese is melted.\n\n3. Plate the chicken, add sliced tomatoes and fresh basil leaves, and drizzle with balsamic glaze before serving. Enjoy!"
+      },
+      {
+            "meal_name": "Turkey Burger with Garlic Herb Aioli and Avocado + caesar salad",
+            "meat_type": "turkey",
+            "vegan_only": "false",
+            "reheats_well": "false",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "turkey burger": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "prepared caesar salad": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "garlic herb aioli": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "avocado": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "sugar snap peas": [
+                        "to taste",
+                        "unit(s)"
+                  ],
+                  "spring mix": [
+                        ".1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "1. Cook the turkey burger according to package directions.\n\n2. Slice the avocado.\n\n3. Assemble the burger by spreading garlic herb aioli on the bun, adding the turkey patty, and topping with avocado slices and spring mix.\n\n4. Serve with sugar snap peas or your choice of veggies on the side. Enjoy!"
+      },
+      {
+            "meal_name": "Honey Balsamic Chicken Tenders + caesar salad",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "chicken breasts": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "prepared caesar salad": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "balsamic vinegar": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "garlic": [
+                        ".5",
+                        "clove(s)"
+                  ],
+                  "olive oil": [
+                        "1",
+                        "Tbsp(s)"
+                  ],
+                  "butter": [
+                        "1.5",
+                        "Tbsp(s)"
+                  ],
+                  "honey": [
+                        "1.5",
+                        "Tbsp(s)"
+                  ]
+            },
+            "recipe": "1. Slice chicken into strips and marinate with balsamic vinegar, minced garlic, olive oil, salt, and pepper for at least 30 minutes.\n\n2. Cook chicken in a skillet with olive oil until browned (2-3 minutes per side).\n\n3. In the same skillet, melt butter, add remaining balsamic vinegar, and honey; simmer until thickened.\n\n4. Toss chicken in the sauce and serve immediately. Enjoy!"
+      },
+      {
+            "meal_name": "Kielbasa Kabobs with Balsamic Honey Glaze",
+            "meat_type": "pork",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "kielbasa": [
+                        "1.5",
+                        "unit(s)"
+                  ],
+                  "veggie side of choice": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "wooden skewers": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "yellow peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "red peppers": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "pineapple": [
+                        ".5",
+                        "unit(s)"
+                  ],
+                  "honey": [
+                        ".25",
+                        "cup(s)"
+                  ],
+                  "balsamic vinegar": [
+                        "2",
+                        "Tbsp(s)"
+                  ],
+                  "fresh ground pepper": [
+                        ".125",
+                        "tsp(s)"
+                  ],
+                  "salt": [
+                        ".125",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "1. Combine honey, balsamic vinegar, pepper, and salt in a bowl for the glaze. \n\n2. Chop peppers and pineapple into 1-2\" chunks. \n\n3. Thread kielbasa, red pepper, pineapple, and yellow pepper onto skewers. \n\n4. Grill kabobs, rotating and brushing with glaze until heated through and slightly blackened. \n\n5. Serve immediately with remaining glaze. Enjoy!"
+      },
+      {
+            "meal_name": "Korean Beef With Zucchini Noodles",
+            "meat_type": "beef",
+            "vegan_only": "false",
+            "reheats_well": "false",
+            "price_range": "moderate",
+            "difficulty": "moderate",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "brown sugar": [
+                        ".17",
+                        "cup(s)"
+                  ],
+                  "reduced sodium soy sauce": [
+                        ".17",
+                        "cup(s)"
+                  ],
+                  "freshly grated ginger": [
+                        "1/2",
+                        "Tbsp(s)"
+                  ],
+                  "sesame oil": [
+                        "1/2",
+                        "Tbsp(s)"
+                  ],
+                  "Sriracha": [
+                        "1/2",
+                        "tsp(s)"
+                  ],
+                  "olive oil": [
+                        ".5",
+                        "Tbsp(s)"
+                  ],
+                  "garlic": [
+                        "1.5",
+                        "clove(s)"
+                  ],
+                  "ground beef": [
+                        ".5",
+                        "lbs"
+                  ],
+                  "zucchini": [
+                        "2",
+                        "medium-sized"
+                  ],
+                  "green onions": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "sesame seeds": [
+                        ".125",
+                        "tsp(s)"
+                  ]
+            },
+            "recipe": "1. Whisk brown sugar, soy sauce, ginger, sesame oil, and Sriracha in a small bowl. \n\n2. Heat olive oil in a skillet over medium-high heat. Add minced garlic, cooking for 1 minute. \n\n3. Add ground beef, cooking until browned. Drain excess fat. \n\n4. Stir in zucchini noodles and green onions with the sauce, simmer for 2 minutes. \n\n5. Serve garnished with sesame seeds if desired."
+      },
+      {
+            "meal_name": "Lentil Meatballs with caesar salad",
+            "meat_type": "vegan",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "multi_days": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "olive oil": [
+                        "2",
+                        "tsp"
+                  ],
+                  "prepared caesar salad": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "onion": [
+                        ".5",
+                        "medium"
+                  ],
+                  "mushrooms": [
+                        "2",
+                        "cups"
+                  ],
+                  "cooked lentils": [
+                        "2",
+                        "cups"
+                  ],
+                  "cooked brown rice": [
+                        "1",
+                        "cup"
+                  ],
+                  "sea salt": [
+                        ".5",
+                        "tsp"
+                  ],
+                  "garlic powder": [
+                        ".25",
+                        "tsp"
+                  ],
+                  "dried basil": [
+                        "1",
+                        "tsp"
+                  ],
+                  "instant oats": [
+                        ".67",
+                        "cup(s)"
+                  ],
+                  "breadcrumbs": [
+                        ".5",
+                        "cup"
+                  ],
+                  "parsley": [
+                        "handful",
+                        ""
+                  ],
+                  "cilantro": [
+                        "handful",
+                        ""
+                  ],
+                  "worcestershire sauce": [
+                        "2",
+                        "Tbsp"
+                  ],
+                  "BBQ sauce": [
+                        ".25",
+                        "cup"
+                  ],
+                  "liquid smoke": [
+                        ".5",
+                        "tsp"
+                  ],
+                  "BBQ sauce for coating": [
+                        ".5 - 1",
+                        "cup"
+                  ]
+            },
+            "recipe": "1. Heat 1 tsp olive oil in a skillet over medium heat. \n2. Form lentil balls and place in the pan. Cook for about 2 minutes on each side until caramelized. \n3. Add ½ to 1 cup of BBQ sauce, reduce heat, coat the balls, and simmer for 1-2 minutes. \n4. Remove from heat and cool for 2 minutes before serving."
       },
       {
             "meal_name": "Thai Coconut Curry Chicken",
@@ -6086,6 +6851,34 @@
                   ]
             },
             "link": "https://www.averiecooks.com/sheet-pan-sausage-vegetables/"
+      },
+      {
+            "meal_name": "Roasted Garlic Herb Pork with carrots, potatoes, and brussels",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "guests": "true",
+            "difficulty": "easy",
+            "ingredients": {
+                  "garlic marinated pork loin": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "baby carrots": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "brussels sprouts": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "red skin potatoes": [
+                        ".5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Put veggies in dutch oven. Put pork on top, and cook according to instructions on packaging, to 145 degrees."
       },
       {
             "meal_name": "Loaded Baked potatoes + veggie",

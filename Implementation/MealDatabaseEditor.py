@@ -23,6 +23,9 @@ class MealDatabaseEditor:
             difficulty = recipe["difficulty"] if "difficulty" in recipe else "None"
             multi_days = recipe["multi_days"] if "multi_days" in recipe else "false"
             guests = recipe["guests"] if "guests" in recipe else "false"
+            
+            if 'meat_type' not in recipe:
+                print(f"Recipe missing 'meat_type': {recipe['meal_name']}")
             temp_meal = Meal(recipe['meal_name'], recipe['meat_type'], reheats_well, recipe['price_range'], recipe['meal_type'], recipe_instructions, link, vegan_only, difficulty, multi_days, guests, recipe['ingredients'])
             MealDatabaseEditor.upload_meal_to_array(temp_meal)
         default_file.close()
