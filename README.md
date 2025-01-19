@@ -4,6 +4,7 @@ ___________________________
 pip install tk <br>
 pip install Pillow
 
+Open in your code editor. Navigate to the MyMeals folder thorugh the command prompt, then execute using:
 python main.py
 
 __________________________
