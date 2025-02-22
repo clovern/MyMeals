@@ -370,12 +370,12 @@
                         "tsp(s)"
                   ],
                   "salt": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "pepper": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "cooking oil": [
                         "3",
@@ -2306,8 +2306,8 @@
                         "cup(s)"
                   ],
                   "Mrs. Dash Garlic and Herb Seasoning": [
-                        "to taste",
-                        ""
+                        ".5",
+                        "tsp(s)"
                   ],
                   "grilled chicken (optional - alfredo)": [
                         "1",
@@ -2352,8 +2352,8 @@
                         "cup(s)"
                   ],
                   "Mrs. Dash Garlic and Herb Seasoning": [
-                        "to taste",
-                        ""
+                        ".5",
+                        "tsp(s)"
                   ],
                   "grilled chicken (optional - alfredo)": [
                         "1",
@@ -3236,8 +3236,8 @@
                         "unit(s)"
                   ],
                   "mayonnaise": [
-                        "to taste",
-                        "unit(s)"
+                        "1",
+                        "Tbsp(s)"
                   ],
                   "grape tomatoes": [
                         ".25",
@@ -3671,8 +3671,8 @@
                 "Tbsp(s)"
               ],
               "salt and pepper": [
-                "to taste",
-                ""
+                ".25",
+                "tsp(s)"
               ]
             },
             "recipe": "1. **Marinate the Chicken:** In a bowl, mix 0.5 cup extra virgin olive oil, 2 Tbsp balsamic vinegar, 2 Tbsp lemon juice, 1 Tbsp dried oregano, 0.5 Tbsp smoked paprika, and 2 minced garlic cloves. Add 1 lb boneless, skinless chicken thighs, ensuring they're well-coated. Let marinate for at least 30 minutes, up to 2 hours in the refrigerator.\n\n2. **Prepare the Salad Ingredients:** While the chicken marinates, chop 3 Persian cucumbers, halve 2 cups cherry tomatoes, chop 1 cup roasted red peppers, chop 1 cup artichoke hearts, and dice 2 avocados. Rinse and drain 1 can each of cannellini beans and chickpeas. If using, lightly toast 0.25 cup pine nuts in a dry skillet over medium heat until golden and fragrant.\n\n3. **Cook the Chicken:** Heat a skillet over medium heat. Remove the chicken from the marinade and cook for about 7 minutes on each side, or until fully cooked and browned. Once done, let the chicken rest for a few minutes before slicing into bite-sized pieces.\n\n4. **Prepare the Dressing:** In a small bowl, whisk together 1 minced shallot, 0.5 cup olive oil, 2 Tbsp lemon juice, 2 tsp Dijon mustard, 1 Tbsp honey, and salt and pepper to taste until emulsified.\n\n5. **Assemble the Salad:** In a large bowl, combine the chopped vegetables, beans, toasted pine nuts (if using), 0.5 cup crumbled feta cheese, and a handful of chopped fresh parsley. Add the sliced chicken on top.\n\n6. **Dress the Salad:** Pour the dressing over the assembled salad and gently toss to ensure everything is well-coated.\n\n7. **Serve:** The salad can be served immediately or refrigerated for a short time to allow the flavors to meld. It's perfect for meal prep and can be enjoyed over several days.",
@@ -5486,8 +5486,8 @@
                         "tsp(s)"
                   ],
                   "red pepper flakes": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "green onions": [
                         "1/4",
@@ -5525,12 +5525,12 @@
                         "tsp(s)"
                   ],
                   "salt": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "pepper": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "coleslaw mix": [
                         "4",
@@ -5986,12 +5986,12 @@
                         "oz(s)"
                   ],
                   "salt": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "pepper": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "vegetable oil": [
                         "2",
@@ -6011,59 +6011,60 @@
             "meal_type": "dinner",
             "ingredients": {
               "honey": [
-                0.75,
+                "0.75",
                 "cup(s)"
               ],
               "soy sauce": [
-                0.33,
+                "0.33",
                 "cup(s)"
               ],
               "dark brown sugar": [
-                0.25,
+                "0.25",
                 "cup(s)"
               ],
               "pineapple juice": [
-                0.25,
+                "0.25",
                 "cup(s)"
               ],
               "lemon juice": [
-                1,
+                "1",
                 "unit(s)"
               ],
               "apple cider vinegar": [
-                2,
+                "2",
                 "Tbsp(s)"
               ],
               "olive oil": [
-                2,
+                "2",
                 "Tbsp(s)"
               ],
               "ground black pepper": [
-                1,
+                "1",
                 "tsp(s)"
               ],
               "cayenne pepper": [
-                0.25,
+                "0.25",
                 "tsp(s)"
               ],
               "paprika": [
-                0.5,
+                "0.5",
                 "tsp(s)"
               ],
               "garlic powder": [
-                0.25,
+                "0.25",
                 "tsp(s)"
               ],
               "boneless skinless chicken breasts": [
-                2,
+                "2",
                 "lbs"
               ],
               "egg": [
-                1,
+                "1",
                 "unit(s)"
               ],
               "panko bread crumbs": [
-                "to taste"
+                ".25",
+                "tsp(s)"
               ]
             },
             "recipe": "Combine sauce ingredients in a skillet and simmer until thickened. Coat chicken strips in egg, then panko, and bake until cooked through."
@@ -6493,8 +6494,8 @@
                         "leaves"
                   ],
                   "aged balsamic or balsamic glaze": [
-                        "to taste",
-                        "unit(s)"
+                        "1",
+                        "Tbsp(s)"
                   ]
             },
             "recipe": "1. Preheat oven to 375°F. Season chicken with Italian seasoning, garlic powder, and pepper; brush with olive oil.\n\n2. Bake chicken until nearly cooked through. Top with mozzarella and return to oven for 3-5 minutes until cheese is melted.\n\n3. Plate the chicken, add sliced tomatoes and fresh basil leaves, and drizzle with balsamic glaze before serving. Enjoy!"
@@ -6525,8 +6526,8 @@
                         "unit(s)"
                   ],
                   "sugar snap peas": [
-                        "to taste",
-                        "unit(s)"
+                        "1",
+                        "package(s)"
                   ],
                   "spring mix": [
                         ".1",
@@ -7203,12 +7204,12 @@
                         "cup(s)"
                   ],
                   "salt": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ],
                   "pepper": [
-                        "to taste",
-                        ""
+                        ".25",
+                        "tsp(s)"
                   ]
             },
             "recipe": "Preheat oven to 350\u00c2\u00b0F.\n\nCut the tops off bell peppers and remove seeds.\n\nIn a large pot, bring water to boil, then add peppers and boil for 5 minutes.\n\nIn a skillet, cook ground beef and onion until beef is brown.\n\nStir in 1 cup cooked rice and a jar of spaghetti sauce, then season with salt and pepper.\n\nPlace peppers in baking dish, fill with beef mixture, and cover with foil.\n\nBake for 10 minutes, uncover, add cheese, and bake for 15 more minutes until cheese is melted.\n\n",
