@@ -2185,6 +2185,66 @@
             }
       },
       {
+            "meal_name": "cheese cracker ham platter + cucumber",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "false",
+            "ingredients": {
+                  "ritz crackers": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "thick ham lunchmeat": [
+                        "1",
+                        "lb(s)"
+                  ],
+                  "cheese block": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "cucumber": [
+                        "2",
+                        "unit(s)"
+                  ]
+            },
+            "recipe": "N/A"
+      },
+      {
+            "meal_name": "hummus platter",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "false",
+            "ingredients": {
+                  "hummus": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "wheat thins or triscuits": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "red bell peppers": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "cucumber": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "carrots": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "N/A"
+      },
+      {
             "meal_name": "premade broccoli cheddar soup and sourdough bread",
             "meat_type": "vegetarian",
             "reheats_well": "true",
@@ -2379,6 +2439,38 @@
             "recipe": "Prepare pot stickers and ramen noodles according to instructions on packaging. Top with soy sauce, or your favorite stir fry topping sauce. Slice up green onions and top with these as well. Enjoy!"
       },
       {
+            "meal_name": "ham and cheese hot pocket",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "ham and cheese hot pockets": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on packaging."
+      },
+      {
+            "meal_name": "stouffers french bread pizzas",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "stouffers french bread pizzas": [
+                        "1",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on packaging."
+      },
+      {
             "meal_name": "costco spinach ravioli",
             "meat_type": "vegetarian",
             "reheats_well": "true",
@@ -2393,6 +2485,62 @@
                   ]
             },
             "recipe": "Follow instructions on packaging."
+      },
+      {
+            "meal_name": "mac and cheese",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "mac and cheese box": [
+                        "2",
+                        "package(s)"
+                  ],
+                  "butter": [
+                        "4",
+                        "Tbsp(s)"
+                  ],
+                  "milk": [
+                        "1.5",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on packaging."
+      },
+      {
+            "meal_name": "costco spinach ravioli",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "costco spinach ravioli": [
+                        ".25",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "Follow instructions on packaging."
+      },
+      {
+            "meal_name": "costco street tacos",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "medium",
+            "meal_type": "lunch",
+            "difficulty": "easy",
+            "guests": "true",
+            "ingredients": {
+                  "costco street tacos": [
+                        ".25",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "N/A"
       },
       {
             "meal_name": "pot stickers, veggies, and rice",
@@ -3413,6 +3561,317 @@
             }
       },
       {
+            "meal_name": "Red Baron Three Cheese Pizza",
+            "meat_type": "vegetarian",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "Red Baron Three Cheese Pizza": [
+                        "1",
+                        "package(s)"
+                  ]
+            }
+      },
+      {
+            "meal_name": "Julie's Mediterranean Chicken and Bean Salad",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "moderate",
+            "difficulty": "medium",
+            "meal_type": "dinner",
+            "ingredients": {
+              "Persian cucumbers": [
+                "3",
+                "unit(s)"
+              ],
+              "cherry tomatoes": [
+                "2",
+                "cup(s)"
+              ],
+              "roasted red peppers": [
+                "1",
+                "cup(s)"
+              ],
+              "artichoke hearts": [
+                "1",
+                "cup(s)"
+              ],
+              "avocados": [
+                "2",
+                "unit(s)"
+              ],
+              "cannellini beans": [
+                "1",
+                "can(s)"
+              ],
+              "chickpeas": [
+                "1",
+                "can(s)"
+              ],
+              "pine nuts": [
+                "0.25",
+                "cup(s)"
+              ],
+              "feta cheese": [
+                "0.5",
+                "cup(s)"
+              ],
+              "fresh parsley": [
+                "0.25",
+                "cup(s)"
+              ],
+              "boneless, skinless chicken thighs": [
+                "1",
+                "lb(s)"
+              ],
+              "extra virgin olive oil": [
+                "0.5",
+                "cup(s)"
+              ],
+              "balsamic vinegar": [
+                "2",
+                "Tbsp(s)"
+              ],
+              "lemon juice": [
+                "2",
+                "Tbsp(s)"
+              ],
+              "dried oregano": [
+                "1",
+                "Tbsp(s)"
+              ],
+              "smoked paprika": [
+                "0.5",
+                "Tbsp(s)"
+              ],
+              "garlic cloves, minced": [
+                "2",
+                "unit(s)"
+              ],
+              "shallot, minced": [
+                "1",
+                "unit(s)"
+              ],
+              "olive oil": [
+                "0.5",
+                "cup(s)"
+              ],
+              "lemon juice": [
+                "2",
+                "Tbsp(s)"
+              ],
+              "Dijon mustard": [
+                "2",
+                "tsp(s)"
+              ],
+              "honey": [
+                "1",
+                "Tbsp(s)"
+              ],
+              "salt and pepper": [
+                "to taste",
+                ""
+              ]
+            },
+            "recipe": "1. **Marinate the Chicken:** In a bowl, mix 0.5 cup extra virgin olive oil, 2 Tbsp balsamic vinegar, 2 Tbsp lemon juice, 1 Tbsp dried oregano, 0.5 Tbsp smoked paprika, and 2 minced garlic cloves. Add 1 lb boneless, skinless chicken thighs, ensuring they're well-coated. Let marinate for at least 30 minutes, up to 2 hours in the refrigerator.\n\n2. **Prepare the Salad Ingredients:** While the chicken marinates, chop 3 Persian cucumbers, halve 2 cups cherry tomatoes, chop 1 cup roasted red peppers, chop 1 cup artichoke hearts, and dice 2 avocados. Rinse and drain 1 can each of cannellini beans and chickpeas. If using, lightly toast 0.25 cup pine nuts in a dry skillet over medium heat until golden and fragrant.\n\n3. **Cook the Chicken:** Heat a skillet over medium heat. Remove the chicken from the marinade and cook for about 7 minutes on each side, or until fully cooked and browned. Once done, let the chicken rest for a few minutes before slicing into bite-sized pieces.\n\n4. **Prepare the Dressing:** In a small bowl, whisk together 1 minced shallot, 0.5 cup olive oil, 2 Tbsp lemon juice, 2 tsp Dijon mustard, 1 Tbsp honey, and salt and pepper to taste until emulsified.\n\n5. **Assemble the Salad:** In a large bowl, combine the chopped vegetables, beans, toasted pine nuts (if using), 0.5 cup crumbled feta cheese, and a handful of chopped fresh parsley. Add the sliced chicken on top.\n\n6. **Dress the Salad:** Pour the dressing over the assembled salad and gently toss to ensure everything is well-coated.\n\n7. **Serve:** The salad can be served immediately or refrigerated for a short time to allow the flavors to meld. It's perfect for meal prep and can be enjoyed over several days.",
+            "link": "https://nutritionbykylie.substack.com/p/lemon-honey-mediterranean-dense-bean"
+          },
+          {
+            "meal_name": "Alaika's Butter Chickpeas",
+            "meat_type": "vegan",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+              "tomato puree or passata": [
+                "8",
+                "oz"
+              ],
+              "full-fat coconut milk": [
+                "14",
+                "oz"
+              ],
+              "chickpeas": [
+                "15",
+                "oz"
+              ],
+              "garam masala": [
+                "2",
+                "tsp"
+              ],
+              "paprika": [
+                "0.5",
+                "tsp"
+              ],
+              "salt": [
+                "0.5",
+                "tsp"
+              ],
+              "sugar": [
+                "0.5",
+                "tsp"
+              ],
+              "garlic powder": [
+                "0.75",
+                "tsp"
+              ],
+              "bay leaves": [
+                "2",
+                "unit(s)"
+              ],
+              "dried fenugreek leaves": [
+                "1",
+                "tsp"
+              ],
+              "non-dairy cream or yogurt": [
+                "2",
+                "tbsp"
+              ],
+              "cilantro": [
+                ".5",
+                "package(s)"
+              ],
+              "lime": [
+                "1",
+                "unit(s)"
+              ],
+              "rice": [
+                  "1",
+                  "cup(s)"
+                ],
+                "naan bread": [
+                  "1",
+                  "package(s)"
+                ]
+            },
+            "recipe": "Prepare rice or naan bread as needed. In a large skillet over medium heat, combine all ingredients and mix well. Bring to a boil, then reduce heat and simmer for 5-8 minutes until the sauce thickens. If needed, thicken further by adding a slurry of 2 teaspoons flour mixed with 2 tablespoons water. Serve over rice or with flatbread, garnished with cilantro, lime juice, and sliced green chilies.",
+            "link": "https://www.veganricha.com/butter-chickpeas-1-pan-30-min/#wprm-recipe-container-52096"
+          },
+          
+          
+      {
+            "meal_name": "Chicken Gnocchi Soup",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "ingredients": {
+                  "chicken breasts": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "butter": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "celery": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "sweet onion": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "sweet onion": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "chicken broth": [
+                        "2.33",
+                        "cup(s)"
+                  ],
+                  "thyme": [
+                        ".5",
+                        "tsp(s)"
+                  ],
+                  "half and half": [
+                        "3",
+                        "cup(s)"
+                  ],
+                  "shredded carrots": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "gnocchi": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "spinach": [
+                        "1.75",
+                        "cup(s)"
+                  ],
+                  "parmesan": [
+                        ".5",
+                        "cup(s)"
+                  ]
+                  
+            },
+            "link": "https://myorganizedchaos.net/instant-pot-chicken-gnocchi-soup?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=484557606_17164840_191238#recipe"
+      },
+      {
+            "meal_name": "Chicken Gnocchi Soup",
+            "meat_type": "chicken",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "chicken breasts": [
+                        "2",
+                        "unit(s)"
+                  ],
+                  "butter": [
+                        "3",
+                        "Tbsp(s)"
+                  ],
+                  "celery": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "sweet onion": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "sweet onion": [
+                        ".75",
+                        "cup(s)"
+                  ],
+                  "chicken broth": [
+                        "2.33",
+                        "cup(s)"
+                  ],
+                  "thyme": [
+                        ".5",
+                        "tsp(s)"
+                  ],
+                  "half and half": [
+                        "3",
+                        "cup(s)"
+                  ],
+                  "shredded carrots": [
+                        "1",
+                        "cup(s)"
+                  ],
+                  "gnocchi": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "spinach": [
+                        "1.75",
+                        "cup(s)"
+                  ],
+                  "parmesan": [
+                        ".5",
+                        "cup(s)"
+                  ]
+                  
+            },
+            "link": "https://myorganizedchaos.net/instant-pot-chicken-gnocchi-soup?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=484557606_17164840_191238#recipe"
+      },
+      {
             "meal_name": "Chicken Bryan with green beans",
             "meat_type": "chicken",
             "reheats_well": "true",
@@ -3674,6 +4133,30 @@
                         "unit(s)"
                   ]
             }
+      },
+      {
+            "meal_name": "cheddar brats and carrots",
+            "meat_type": "pork",
+            "reheats_well": "true",
+            "difficulty": "easy",
+            "price_range": "cheap",
+            "meal_type": "lunch",
+            "multi_days": "true",
+            "ingredients": {
+                  "Johnsonville cheddar brats": [
+                        "1",
+                        "package(s)"
+                  ],
+                  "hot dog buns": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "large carrots": [
+                        ".5",
+                        "package(s)"
+                  ]
+            },
+            "recipe": "N/A"
       },
       {
             "meal_name": "cheddar brats and peas and carrots",
@@ -5895,6 +6378,34 @@
                   ]
             },
             "recipe": "1. Cook pasta according to package directions. Meanwhile, grill or bake the chicken until fully cooked and slice.\n\n2. Toss the cooked pasta with pesto rossa sauce, then top with sliced chicken. Serve and enjoy!"
+      },
+      {
+            "meal_name": "Pesto Gnocchi with chicken (or shrimp)",
+            "meat_type": "chicken",
+            "vegan_only": "false",
+            "reheats_well": "true",
+            "price_range": "cheap",
+            "difficulty": "easy",
+            "meal_type": "dinner",
+            "ingredients": {
+                  "pesto sauce": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "gnocchi": [
+                        ".5",
+                        "package(s)"
+                  ],
+                  "chicken breast & shrimp": [
+                        "1",
+                        "unit(s)"
+                  ],
+                  "parmesan": [
+                        ".125",
+                        "cup(s)"
+                  ]
+            },
+            "recipe": "N/A"
       },
       {
             "meal_name": "Burgers with Balsamic Goat Cheese Side Salad",
